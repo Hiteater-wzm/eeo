@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Norfund",
+  "alternateName": "Norwegian Investment Fund",
+  "url": "http://www.norfund.no",
+  "description": "Development finance institution established by the Norwegian Storting and owned by the Norwegian Ministry of Foreign Aff"
+}

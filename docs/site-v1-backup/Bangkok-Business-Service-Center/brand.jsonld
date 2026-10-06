@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bangkok Business Service Center",
+  "alternateName": [
+    "BBSC",
+    "Bangkok Business Service Center Co.",
+    "Ltd."
+  ],
+  "url": "https://bbsclegal.com",
+  "description": "Thai corporate services firm providing company registration, BOI promotion, accounting and visa services"
+}

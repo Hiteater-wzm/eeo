@@ -1,0 +1,17 @@
+# 三井住友銀行
+
+> Japanese multinational banking and financial services company
+
+- 官方网站: http://www.smbc.co.jp/
+- 所属行业: 金融服務
+- 别名: 三井銀行、三井住友银行
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q2660418
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "freispace GmbH",
+  "alternateName": "freispace",
+  "url": "https://freispace.com/",
+  "description": "software company in Berlin, Germany, developing post-production scheduling and resource management software"
+}

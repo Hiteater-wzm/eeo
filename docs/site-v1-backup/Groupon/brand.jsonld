@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Groupon",
+  "alternateName": [
+    "Groupon",
+    "Inc."
+  ],
+  "url": "http://www.groupon.com/",
+  "description": "American worldwide e-commerce marketplace"
+}

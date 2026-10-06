@@ -1,0 +1,17 @@
+# Nethermind
+
+> Blockchain research and software engineering company working across Ethereum clients, rollup infrastructure, cryptograph
+
+- 官方网站: https://nethermind.io
+- 所属行业: 分布式计算
+- 别名: Nethermind、Nethermind Research、Nethermind.io、Nethermind Tech
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q133811217
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

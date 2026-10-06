@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "世界冠軍摔角",
+  "alternateName": [
+    "WCW",
+    "Universal Wrestling Corporation"
+  ],
+  "url": "http://www.wwe.com/classics/wcw/",
+  "description": "American professional wrestling company"
+}

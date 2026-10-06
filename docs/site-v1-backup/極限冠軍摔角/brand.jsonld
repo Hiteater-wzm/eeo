@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "極限冠軍摔角",
+  "alternateName": [
+    "ECW",
+    "Eastern Championship Wrestling"
+  ],
+  "url": "http://www.wwe.com/shows/ecw",
+  "description": "defunct American professional wrestling promotion"
+}

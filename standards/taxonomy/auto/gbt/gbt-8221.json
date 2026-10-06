@@ -1,0 +1,259 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-8221",
+  "industry": "宠物饲养",
+  "industry_aliases": [
+    "8221",
+    "宠物饲养",
+    "居民服务、修理和其他服务业",
+    "其他服务业",
+    "宠物服务"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "mode",
+      "label": "服务方式",
+      "select": "many"
+    },
+    {
+      "id": "format",
+      "label": "经营形态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客群定位",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "价格透明度",
+      "select": "one"
+    },
+    {
+      "select": "many",
+      "id": "breed_mode_b",
+      "label": "养殖方式"
+    },
+    {
+      "select": "many",
+      "id": "breed_health_v",
+      "label": "防疫与用药"
+    },
+    {
+      "id": "team",
+      "label": "团队构成",
+      "select": "many"
+    },
+    {
+      "id": "service",
+      "label": "服务与保障",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "in_store",
+      "group": "mode",
+      "label": "到店服务",
+      "description": "顾客到门店接受服务"
+    },
+    {
+      "id": "door_to_door",
+      "group": "mode",
+      "label": "上门服务",
+      "description": "服务人员上门服务"
+    },
+    {
+      "id": "online_book",
+      "group": "mode",
+      "label": "线上预约",
+      "description": "支持线上选时段预约"
+    },
+    {
+      "id": "chain_l",
+      "group": "format",
+      "label": "连锁品牌",
+      "description": "多门店连锁经营"
+    },
+    {
+      "id": "solo",
+      "group": "format",
+      "label": "个体门店",
+      "description": "个体经营的单店"
+    },
+    {
+      "id": "platform_l",
+      "group": "format",
+      "label": "平台接单",
+      "description": "通过本地生活平台接单"
+    },
+    {
+      "id": "b_family_l",
+      "group": "buyer",
+      "label": "家庭客群",
+      "description": "以家庭客户为主"
+    },
+    {
+      "id": "b_white",
+      "group": "buyer",
+      "label": "上班族",
+      "description": "以上班族为主"
+    },
+    {
+      "id": "b_senior",
+      "group": "buyer",
+      "label": "老年客群",
+      "description": "以老年客户为主"
+    },
+    {
+      "id": "price_board",
+      "group": "pricing",
+      "label": "明码标价公示",
+      "description": "服务价目表对外公示"
+    },
+    {
+      "id": "price_case",
+      "group": "pricing",
+      "label": "按情况报价",
+      "description": "上门查看后按情形报价"
+    },
+    {
+      "id": "breed_free_range",
+      "group": "breed_mode_b",
+      "label": "散养放养",
+      "description": "以散养或放养方式饲养"
+    },
+    {
+      "id": "breed_intensive",
+      "group": "breed_mode_b",
+      "label": "舍饲圈养",
+      "description": "以圈舍集中饲养为主"
+    },
+    {
+      "id": "breed_pasture",
+      "group": "breed_mode_b",
+      "label": "牧场放牧",
+      "description": "在草场放牧饲养"
+    },
+    {
+      "id": "breed_no_agp",
+      "group": "breed_health_v",
+      "label": "不使用促生长抗生素",
+      "description": "承诺不使用促生长用途抗生素，可查用药记录"
+    },
+    {
+      "id": "breed_vaccine_public",
+      "group": "breed_health_v",
+      "label": "免疫记录可查",
+      "description": "检疫和免疫记录可向买家出示"
+    },
+    {
+      "id": "pet_licensed_vet",
+      "group": "team",
+      "label": "执业兽医师",
+      "description": "有执业兽医师坐诊"
+    },
+    {
+      "id": "pet_pet_insurance",
+      "group": "service",
+      "label": "可衔接宠物险",
+      "description": "支持宠物保险结算或衔接"
+    },
+    {
+      "id": "pet_cage_free_p",
+      "group": "service",
+      "label": "寄养监控可看",
+      "description": "寄养期间监控对主人开放"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_l",
+      "group": "decision",
+      "question": "大概多少钱？会不会到现场再加价？",
+      "hint": "回答应给出价格区间和加价的触发条件"
+    },
+    {
+      "id": "staff",
+      "group": "decision",
+      "question": "上门的是什么人？有证件吗？",
+      "hint": "回答应说明人员身份核验方式"
+    },
+    {
+      "id": "book_l",
+      "group": "decision",
+      "question": "怎么预约？最快什么时候能来？",
+      "hint": "回答应给出预约渠道和最快响应时间"
+    },
+    {
+      "id": "material",
+      "group": "detail",
+      "question": "材料辅料谁提供？用什么牌子？",
+      "hint": "回答应说明辅材的品牌和收费"
+    },
+    {
+      "id": "duration",
+      "group": "detail",
+      "question": "一次服务多长时间？做完怎么验收？",
+      "hint": "回答应给出服务时长和验收标准"
+    },
+    {
+      "id": "re_visit",
+      "group": "detail",
+      "question": "做完不满意能返工吗？收费吗？",
+      "hint": "回答应说明返工规则"
+    },
+    {
+      "id": "damage",
+      "group": "risk",
+      "question": "服务中弄坏了东西怎么赔？",
+      "hint": "回答应说明损坏赔偿规则和保险情况"
+    },
+    {
+      "id": "prepaid_l",
+      "group": "risk",
+      "question": "办的卡没用完怎么办？",
+      "hint": "回答应说明储值卡余额和剩余次数的处理"
+    },
+    {
+      "id": "breed_drug_residue",
+      "group": "risk",
+      "question": "兽药残留怎么控制？有检测吗？",
+      "hint": "回答应说明休药期管理和出栏检测"
+    },
+    {
+      "id": "breed_quarantine",
+      "group": "risk",
+      "question": "出栏有检疫证明吗？",
+      "hint": "回答应说明动物检疫合格证明随货情况"
+    },
+    {
+      "id": "breed_breed_cycle",
+      "group": "decision",
+      "question": "养多久出栏（出产）？和快速育肥的差别在哪？",
+      "hint": "回答应给出饲养周期并说明与速成产品的区别"
+    },
+    {
+      "id": "pet_pet_vac",
+      "group": "risk",
+      "question": "寄养就医要提供疫苗证明吗？",
+      "hint": "回答应说明防疫要求"
+    }
+  ]
+}

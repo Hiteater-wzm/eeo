@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mastercard",
+  "alternateName": [
+    "万事达",
+    "万事达卡"
+  ],
+  "url": "https://www.mastercard.com",
+  "description": "美国支付技术公司，总部位于纽约州Purchase，运营Mastercard卡组织网络，提供支付清算、反欺诈与数据分析服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Purchase",
+    "addressCountry": "美国"
+  }
+}

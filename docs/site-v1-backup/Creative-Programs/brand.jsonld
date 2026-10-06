@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Creative Programs",
+  "alternateName": "ABS-CBN Cable Channels",
+  "url": "https://cablechannels.abs-cbn.com",
+  "description": "pay-per-view services to direct-to-home satellite and cable television providers in the Philippines"
+}

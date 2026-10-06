@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stellantis",
+  "alternateName": [
+    "斯特兰蒂斯",
+    "斯泰兰蒂斯"
+  ],
+  "url": "https://www.stellantis.com",
+  "description": "2021年由标致雪铁龙集团与菲亚特克莱斯勒合并成立的汽车集团,旗下品牌包括标致、雪铁龙、菲亚特、Jeep、道奇、Ram与玛莎拉蒂等。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "阿姆斯特丹",
+    "addressCountry": "荷兰"
+  }
+}

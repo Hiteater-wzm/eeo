@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NCR公司",
+  "alternateName": [
+    "National Cash Register",
+    "National Cash Register Company",
+    "NCR Corporation (Atlanta",
+    "GA)",
+    "NCR Voyix Corporation"
+  ],
+  "url": "https://www.ncrvoyix.com/",
+  "description": "American software, consulting and technology company"
+}

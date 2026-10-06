@@ -1,0 +1,17 @@
+# 捷德公司
+
+> supplier of banknotes and solutions for identification, data protection and connectivity
+
+- 官方网站: http://www.gi-de.com
+- 所属行业: 技术
+- 别名: 捷德、德捷公司
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q461257
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

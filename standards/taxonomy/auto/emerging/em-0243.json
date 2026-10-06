@@ -1,0 +1,239 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "em-0243",
+  "industry": "团餐配送",
+  "industry_aliases": [
+    "团餐配送"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "format",
+      "label": "经营形态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客群定位",
+      "select": "many"
+    },
+    {
+      "id": "tier",
+      "label": "价格档位",
+      "select": "one"
+    },
+    {
+      "id": "channel",
+      "label": "预订渠道",
+      "select": "many"
+    },
+    {
+      "id": "service",
+      "label": "服务与保障",
+      "select": "many"
+    },
+    {
+      "id": "production",
+      "label": "生产方式",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "chain_direct",
+      "group": "format",
+      "label": "连锁直营",
+      "description": "同一品牌多店直营管理"
+    },
+    {
+      "id": "franchise",
+      "group": "format",
+      "label": "加盟连锁",
+      "description": "品牌以加盟方式扩张"
+    },
+    {
+      "id": "independent",
+      "group": "format",
+      "label": "独立单体",
+      "description": "非连锁的独立经营门店"
+    },
+    {
+      "id": "b_business",
+      "group": "buyer",
+      "label": "商旅客群",
+      "description": "以商旅客户为主"
+    },
+    {
+      "id": "b_family",
+      "group": "buyer",
+      "label": "家庭亲子",
+      "description": "以家庭、亲子客群为主"
+    },
+    {
+      "id": "b_young",
+      "group": "buyer",
+      "label": "年轻客群",
+      "description": "以年轻消费群体为主"
+    },
+    {
+      "id": "t_economy",
+      "group": "tier",
+      "label": "经济型",
+      "description": "同业态中的经济价位"
+    },
+    {
+      "id": "t_midscale",
+      "group": "tier",
+      "label": "中端",
+      "description": "同业态中的主流价位"
+    },
+    {
+      "id": "t_upper",
+      "group": "tier",
+      "label": "中高端",
+      "description": "高于主流价位一档"
+    },
+    {
+      "id": "t_lux",
+      "group": "tier",
+      "label": "高端",
+      "description": "同业态中的高档价位"
+    },
+    {
+      "id": "ota",
+      "group": "channel",
+      "label": "平台线上预订",
+      "description": "可通过 OTA 或点评平台预订"
+    },
+    {
+      "id": "direct_book",
+      "group": "channel",
+      "label": "官方渠道直订",
+      "description": "官网、官方 App 或电话直订"
+    },
+    {
+      "id": "walk_in",
+      "group": "channel",
+      "label": "到店即客",
+      "description": "以现场到店客为主"
+    },
+    {
+      "id": "warehouse_wms_open",
+      "group": "service",
+      "label": "库存系统对客户开放",
+      "description": "客户可实时查询库存与流水"
+    },
+    {
+      "id": "warehouse_b2b_b2c_mix",
+      "group": "service",
+      "label": "一件代发",
+      "description": "支持一件代发履约"
+    },
+    {
+      "id": "restaurant_central_kitchen_r",
+      "group": "production",
+      "label": "中央厨房配送",
+      "description": "门店餐品由中央厨房统一配送"
+    },
+    {
+      "id": "restaurant_open_kitchen",
+      "group": "production",
+      "label": "明厨亮灶",
+      "description": "后厨可视或直播可视"
+    },
+    {
+      "id": "restaurant_food_delivery_r",
+      "group": "channel",
+      "label": "外卖平台在售",
+      "description": "在外卖平台有店"
+    },
+    {
+      "id": "restaurant_private_room",
+      "group": "service",
+      "label": "有包间",
+      "description": "设有包间可预订"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_h",
+      "group": "decision",
+      "question": "平常和周末节假日价格差多少？",
+      "hint": "回答应给出不同时段的价格区间"
+    },
+    {
+      "id": "cancel",
+      "group": "decision",
+      "question": "预订后能免费取消吗？提前多久？",
+      "hint": "回答应说明取消政策和时限"
+    },
+    {
+      "id": "choice",
+      "group": "decision",
+      "question": "这家和旁边同价位的比，选哪家值？",
+      "hint": "回答应给出本店可核实的差异点，不贬低同行"
+    },
+    {
+      "id": "peak",
+      "group": "detail",
+      "question": "高峰时段要排队吗？怎么避免？",
+      "hint": "回答应说明高峰时段和预约方式"
+    },
+    {
+      "id": "parking",
+      "group": "detail",
+      "question": "有停车场吗？收费吗？",
+      "hint": "回答应说明停车位数量和收费"
+    },
+    {
+      "id": "invoice_h",
+      "group": "detail",
+      "question": "能开发票吗？怎么开？",
+      "hint": "回答应说明开票方式"
+    },
+    {
+      "id": "deposit",
+      "group": "risk",
+      "question": "收押金吗？怎么退、多久退？",
+      "hint": "回答应说明押金金额和退还时限"
+    },
+    {
+      "id": "prepaid_h",
+      "group": "risk",
+      "question": "办的储值卡、次卡没用完能退吗？",
+      "hint": "回答应说明余额和剩余次数的退费规则"
+    },
+    {
+      "id": "warehouse_storage_fee",
+      "group": "decision",
+      "question": "仓储费怎么算？出入库费另收吗？",
+      "hint": "回答应给出计费口径"
+    },
+    {
+      "id": "restaurant_food_license_r",
+      "group": "risk",
+      "question": "食品经营许可证公示吗？在哪看？",
+      "hint": "回答应说明证照公示位置"
+    },
+    {
+      "id": "restaurant_table_wait",
+      "group": "detail",
+      "question": "周末要排队吗？能订位吗？",
+      "hint": "回答应说明等位与订位规则"
+    }
+  ]
+}

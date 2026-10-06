@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "固特异",
+  "alternateName": [
+    "固特異橡膠公司",
+    "固特異橡膠與輪胎公司",
+    "固特異輪胎與橡膠公司",
+    "好時年"
+  ],
+  "url": "https://www.goodyear.com/",
+  "description": "American multinational tire manufacturer"
+}

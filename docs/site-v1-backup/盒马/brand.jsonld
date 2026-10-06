@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "盒马",
+  "alternateName": [
+    "盒马鲜生",
+    "Freshippo"
+  ],
+  "url": "https://www.freshippo.com",
+  "description": "2016年成立于上海的阿里巴巴旗下新零售商超品牌，以线上线下一体化的生鲜即时零售为特色。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上海",
+    "addressCountry": "中国"
+  }
+}

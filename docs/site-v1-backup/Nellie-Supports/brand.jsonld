@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nellie Supports",
+  "alternateName": [
+    "Little Nellie's",
+    "Nellie Supports Limited",
+    "Nellie Supports Ltd",
+    "Nellie Supports UK"
+  ],
+  "url": "https://www.nelliesupports.com",
+  "description": "UK's largest private social work practice providing mental capacity assessments, Continuing Healthcare advice, EHCP appe"
+}

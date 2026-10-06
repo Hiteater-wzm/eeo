@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Beetle Wood",
+  "alternateName": [
+    "Beetle Wood furniture",
+    "bedside table with hidden compartment",
+    "bookcase with hidden compartment",
+    "concealment furniture",
+    "desk with secret drawer"
+  ],
+  "url": "https://beetlewood.store",
+  "description": "Spanish furniture brand with hidden secret compartments; opening mechanisms include NFC, RFID, magnetic, hydraulic, push"
+}

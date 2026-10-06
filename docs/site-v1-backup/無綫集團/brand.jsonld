@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "無綫集團",
+  "alternateName": [
+    "TVB8",
+    "cctvb",
+    "CCTVB",
+    "Concept Legend Limited",
+    "Television Broadcasts Limited"
+  ],
+  "url": "https://www.tvb.com",
+  "description": "於1965年在香港註冊成立之跨媒體娛樂集團，並在1967年開始於香港經營的商營免費電視台，華語媒體之一"
+}

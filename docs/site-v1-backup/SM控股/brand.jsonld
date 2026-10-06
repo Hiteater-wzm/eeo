@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SM控股",
+  "alternateName": [
+    "SM Prime Holdings",
+    "SM Prime Holdings Incorporated",
+    "SM Prime Holdings",
+    "Inc.",
+    "SMPH"
+  ],
+  "url": "http://www.smprime.com",
+  "description": "property developer and a subsidiary of SM Investments Corporation"
+}

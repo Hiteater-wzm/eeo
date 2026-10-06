@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "維亞康姆",
+  "alternateName": [
+    "維康",
+    "Viacom",
+    "維康集團",
+    "维亚康姆集团"
+  ],
+  "url": "http://www.viacom.com/",
+  "description": "American mass media company (2005–2019)"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "精工儀器",
+  "alternateName": [
+    "SII",
+    "Seiko Instruments & Electronics Ltd.",
+    "Seiko Instruments Inc.",
+    "Seiko Insutsuru",
+    "Seiko Insutsurumentsu"
+  ],
+  "url": "http://www.sii.co.jp",
+  "description": "Japanese company, which develops and commercializes semiconductor, micromechatronics, and precision timepiece technology"
+}

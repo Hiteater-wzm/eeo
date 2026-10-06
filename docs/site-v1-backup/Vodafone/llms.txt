@@ -1,0 +1,28 @@
+# Vodafone
+
+> 英国电信集团，总部位于Newbury，在欧洲与非洲多国运营移动与固网业务，并通过合资形式参与印度等市场。
+
+- 官方网站: https://www.vodafone.com
+- 所属行业: 电信运营商
+- 所在城市: Newbury
+- 所在国家: 英国
+- 别名: 沃达丰
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 欧洲与非洲多国运营子公司网络
+- 物联网（IoT）连接管理平台
+- 企业通信与批发承载业务
+
+## 信息来源
+
+- https://www.vodafone.com
+- https://en.wikipedia.org/wiki/Vodafone
+- https://en.wikipedia.org/wiki/List_of_telecommunications_companies
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

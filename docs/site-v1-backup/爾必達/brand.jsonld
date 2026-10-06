@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "爾必達",
+  "alternateName": [
+    "Elpida",
+    "爾必達存儲器股份有限公司"
+  ],
+  "url": "http://www.elpida.com/",
+  "description": "Corporation that developed, designed, manufactured and sold dynamic random-access memory (DRAM) products."
+}

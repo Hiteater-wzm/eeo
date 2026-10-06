@@ -1,0 +1,25 @@
+# Zara
+
+> 西班牙快时尚服装品牌,隶属Inditex集团,以高频上新的服装与配饰产品为主。
+
+- 官方网站: https://www.zara.com
+- 所属行业: 快时尚
+- 所在城市: 阿尔泰霍(拉科鲁尼亚省)
+- 所在国家: 西班牙
+- 别名: 飒拉、Inditex、英德斯
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 母公司Inditex全球门店超过5000家
+- 在马德里上市
+
+## 信息来源
+
+- https://www.zara.com
+- https://en.wikipedia.org/wiki/Inditex
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

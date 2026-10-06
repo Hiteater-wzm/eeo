@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "特斯提爾埃斯庫多",
+  "alternateName": [
+    "第一数据",
+    "第一数据公司"
+  ],
+  "url": "http://www.firstdata.com",
+  "description": "financial services company based in Atlanta"
+}

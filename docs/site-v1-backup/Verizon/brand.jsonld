@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Verizon",
+  "alternateName": "威瑞森",
+  "url": "https://www.verizon.com",
+  "description": "美国电信运营商，总部位于纽约，业务分为消费者（移动与家庭宽带）与企业两大板块，并运营Fios光纤网络。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

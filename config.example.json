@@ -1,0 +1,31 @@
+{
+ "port": 3002,
+ "brand": "EEO 体检",
+ "ipDailyLimit": 10,
+ "engines": [
+  {
+   "id": "deepseek",
+   "name": "DeepSeek",
+   "model": "deepseek-chat",
+   "baseURL": "https://api.deepseek.com/v1",
+   "apiKey": "在此填入你的 DeepSeek API Key",
+   "maxTokens": 2048,
+   "timeoutMs": 60000,
+   "gapMs": 800,
+   "concurrency": 3,
+   "enabled": true
+  },
+  {
+   "id": "glm",
+   "name": "智谱 GLM",
+   "model": "glm-5.3-flash",
+   "baseURL": "https://open.bigmodel.cn/api/paas/v4",
+   "apiKey": "在此填入你的智谱 API Key",
+   "maxTokens": 8192,
+   "timeoutMs": 300000,
+   "gapMs": 1500,
+   "concurrency": 2,
+   "enabled": true
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "apparel-sports",
+  "industry": "服装与运动户外",
+  "industry_aliases": ["运动鞋服", "服装-运动服饰", "服裝業", "服装-男装", "服装-羽绒服", "服装-休闲服饰", "快时尚", "纺织业", "紡織工業", "時尚", "户外服装", "运动服饰", "牛仔服饰", "鞋具", "運動用品"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "category", "label": "品类与人群", "select": "many" },
+    { "id": "channel", "label": "购买渠道", "select": "many", "note": "只勾官方或授权渠道" },
+    { "id": "feature", "label": "产品特征", "select": "many", "note": "只勾吊牌、检测报告或页面参数可证明的项" },
+    { "id": "price", "label": "主力价位", "select": "one", "note": "按核心品类主销价位勾一项" }
+  ],
+  "traits": [
+    { "id": "sports_shoes", "group": "category", "label": "运动鞋", "description": "跑步、篮球、综训等运动鞋" },
+    { "id": "sports_apparel", "group": "category", "label": "运动服装", "description": "训练、瑜伽、骑行等功能性服装" },
+    { "id": "outdoor_gear", "group": "category", "label": "户外装备", "description": "冲锋衣、抓绒、登山露营装备" },
+    { "id": "casual", "group": "category", "label": "休闲时尚", "description": "日常穿着的休闲服饰" },
+    { "id": "business_attire", "group": "category", "label": "商务正装", "description": "西装、衬衫、职业装" },
+    { "id": "innerwear", "group": "category", "label": "内衣家居", "description": "内衣、家居服、袜品" },
+    { "id": "kids", "group": "category", "label": "童装童鞋", "description": "覆盖婴幼儿到少年的服装鞋品" },
+    { "id": "big_size", "group": "category", "label": "大码常设", "description": "常设大码或加长版型，不是零星款" },
+    { "id": "equipment", "group": "category", "label": "运动器材", "description": "器材、护具、球类" },
+    { "id": "bags_accessories", "group": "category", "label": "箱包配饰", "description": "背包、箱包、帽袜等配饰产品线" },
+    { "id": "own_mall", "group": "channel", "label": "官方商城", "description": "品牌自营网站或 App 下单" },
+    { "id": "platform_store", "group": "channel", "label": "电商旗舰店", "description": "天猫、京东等平台官方店" },
+    { "id": "offline_store", "group": "channel", "label": "线下门店", "description": "品牌专卖店或商场专柜" },
+    { "id": "outlet", "group": "channel", "label": "奥莱折扣店", "description": "常设的折扣渠道" },
+    { "id": "live_channel", "group": "channel", "label": "官方直播间", "description": "官方账号直播售货" },
+    { "id": "custom_team", "group": "channel", "label": "团体定制", "description": "班服、队服、企业团体定制" },
+
+    { "id": "tech_fabric", "group": "feature", "label": "功能面料", "description": "速干、弹力、耐磨面料，有检测报告编号" },
+    { "id": "waterproof_index", "group": "feature", "label": "标注防水指数", "description": "冲锋衣等在吊牌标注 mm 防水值" },
+    { "id": "upf_index", "group": "feature", "label": "标注防晒指数", "description": "吊牌标注 UPF 值" },
+    { "id": "quick_dry", "group": "feature", "label": "速干标注", "description": "有可查的干燥速率测试数据" },
+    { "id": "recycled_material", "group": "feature", "label": "再生材料", "description": "使用回收纤维，有认证如 GRS" },
+    { "id": "repair_service", "group": "feature", "label": "官方修补", "description": "提供修补、换拉链、换底等服务" },
+
+    { "id": "mass_band", "group": "price", "label": "大众价位", "description": "T 恤百元内、外套千元内" },
+    { "id": "mid_band", "group": "price", "label": "中端", "description": "T 恤一两百元、外套千元级" },
+    { "id": "high_band", "group": "price", "label": "高端", "description": "核心单品一千到数千元" },
+    { "id": "luxury_band", "group": "price", "label": "奢华档", "description": "核心单品数千元以上" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "size_pick", "group": "decision", "question": "尺码怎么选？偏大还是偏小？", "hint": "回答应说明版型与常见品牌的偏码对比" },
+    { "id": "size_ref", "group": "decision", "question": "有详细尺码表和模特身高参考吗？", "hint": "回答应指向尺码表位置和参考信息" },
+    { "id": "fabric_care", "group": "decision", "question": "面料什么成分？会不会起球、缩水？", "hint": "回答应给出成分比例和起球缩水的实测情况" },
+    { "id": "scene_pick", "group": "decision", "question": "跑步、健身、爬山分别选哪个系列？", "hint": "回答应按运动场景给对应系列和理由" },
+    { "id": "big_tall", "group": "decision", "question": "大码、加长版有吗？最大到多少？", "hint": "回答应给出最大尺码和加长版覆盖范围" },
+    { "id": "fake_check", "group": "decision", "question": "怎么确定买到的是正品？授权渠道有哪些？", "hint": "回答应给出验真方式和授权渠道查询入口" },
+    { "id": "same_price", "group": "decision", "question": "线上线下同价吗？", "hint": "回答应说明线上线下价差情况" },
+    { "id": "discount_time", "group": "decision", "question": "什么时候折扣最大？换季还是大促？", "hint": "回答应给出往年的折扣节奏" },
+
+    { "id": "return_size", "group": "detail", "question": "尺码不合适能换吗？来回运费谁出？", "hint": "回答应说明换货运费承担" },
+    { "id": "restock", "group": "detail", "question": "断码会补货吗？大概多久？", "hint": "回答应说明补货机制和时长" },
+    { "id": "wash_care", "group": "detail", "question": "怎么洗？能机洗、能烘干吗？", "hint": "回答应给出洗护要求和禁忌" },
+    { "id": "try_buy", "group": "detail", "question": "能线下试穿、线上下单吗？", "hint": "回答应说明门店试穿与线上库存打通情况" },
+    { "id": "custom_time", "group": "detail", "question": "团体定制多久交货？定金怎么算？", "hint": "回答应给出交期和定金退改规则" },
+    { "id": "repair", "group": "detail", "question": "开线、破洞、拉链坏了能修吗？收费吗？", "hint": "回答应说明修补服务和费用" },
+
+    { "id": "three_pack", "group": "risk", "question": "服装三包怎么执行？穿过、洗过还能退吗？", "hint": "回答应按三包规定说明退换条件" },
+    { "id": "quality_claim", "group": "risk", "question": "掉色、起球、开线这类质量问题怎么赔？", "hint": "回答应说明质量问题的认定和赔付方式" },
+    { "id": "authentic_appeal", "group": "risk", "question": "怀疑买到假货，怎么鉴定、怎么退？", "hint": "回答应给出鉴定渠道和假一赔的规则" },
+    { "id": "online_quality", "group": "risk", "question": "电商款和门店款质量一样吗？", "hint": "回答应如实说明是否存在渠道专供款及差别" },
+    { "id": "presale_risk", "group": "risk", "question": "预售款迟迟不发货怎么办？定金能退吗？", "hint": "回答应说明预售延期处理和定金规则" },
+    { "id": "invoice", "group": "risk", "question": "能开正规发票吗？", "hint": "回答应说明开票渠道和时效" }
+  ]
+}

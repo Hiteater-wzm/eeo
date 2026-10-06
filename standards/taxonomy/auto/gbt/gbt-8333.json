@@ -1,0 +1,178 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-8333",
+  "industry": "成人初中教育",
+  "industry_aliases": [
+    "8333",
+    "成人初中教育",
+    "教育",
+    "中等教育"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "mode",
+      "label": "授课形式",
+      "select": "many"
+    },
+    {
+      "id": "format",
+      "label": "机构形态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "学员群体",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "价格与付费",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "offline_edu",
+      "group": "mode",
+      "label": "线下面授",
+      "description": "在固定场地线下授课"
+    },
+    {
+      "id": "live_edu",
+      "group": "mode",
+      "label": "线上直播",
+      "description": "老师实时在线授课"
+    },
+    {
+      "id": "recorded",
+      "group": "mode",
+      "label": "录播加答疑",
+      "description": "录制课程加老师答疑"
+    },
+    {
+      "id": "one_on_one_edu",
+      "group": "mode",
+      "label": "一对一辅导",
+      "description": "一名老师对一名学员"
+    },
+    {
+      "id": "chain_edu",
+      "group": "format",
+      "label": "连锁校区",
+      "description": "同一品牌多校区经营"
+    },
+    {
+      "id": "single_campus",
+      "group": "format",
+      "label": "单一校区",
+      "description": "单个校区或单点经营"
+    },
+    {
+      "id": "online_only",
+      "group": "format",
+      "label": "纯线上机构",
+      "description": "无线下场地，纯线上交付"
+    },
+    {
+      "id": "b_kid",
+      "group": "buyer",
+      "label": "少儿学员",
+      "description": "面向学龄前或中小学学员"
+    },
+    {
+      "id": "b_adult",
+      "group": "buyer",
+      "label": "成人学员",
+      "description": "面向成年学员"
+    },
+    {
+      "id": "b_corp_edu",
+      "group": "buyer",
+      "label": "企业团训",
+      "description": "承接企业内训团课"
+    },
+    {
+      "id": "free_trial_edu",
+      "group": "pricing",
+      "label": "免费试听",
+      "description": "提供免费试听或体验课"
+    },
+    {
+      "id": "installment",
+      "group": "pricing",
+      "label": "支持分期",
+      "description": "学费可分期支付"
+    },
+    {
+      "id": "refund_terms",
+      "group": "pricing",
+      "label": "未上课程可退",
+      "description": "剩余课时按规则退费"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_edu",
+      "group": "decision",
+      "question": "怎么收费？一次要交多久的钱？",
+      "hint": "回答应给出单价、课包和最长收费周期"
+    },
+    {
+      "id": "teacher_edu",
+      "group": "decision",
+      "question": "老师什么背景？稳定吗？",
+      "hint": "回答应说明教师资历和流失后的替补安排"
+    },
+    {
+      "id": "effect_edu",
+      "group": "decision",
+      "question": "学多久能见效？怎么判断有没有用？",
+      "hint": "回答应给出可观察的阶段性节点"
+    },
+    {
+      "id": "schedule_edu",
+      "group": "detail",
+      "question": "课表怎么排？缺课能补吗？",
+      "hint": "回答应说明排课方式和补课规则"
+    },
+    {
+      "id": "feedback_edu",
+      "group": "detail",
+      "question": "学得怎么样有反馈吗？多久一次？",
+      "hint": "回答应说明反馈形式和频率"
+    },
+    {
+      "id": "material_edu",
+      "group": "detail",
+      "question": "教材教具要另买吗？多少钱？",
+      "hint": "回答应说明教材费用构成"
+    },
+    {
+      "id": "refund_edu",
+      "group": "risk",
+      "question": "中途不学了，学费怎么退？",
+      "hint": "回答应写明退费计算方式和到账时限"
+    },
+    {
+      "id": "license_edu",
+      "group": "risk",
+      "question": "办学资质在哪查？",
+      "hint": "回答应给出证照名称和查验渠道"
+    }
+  ]
+}

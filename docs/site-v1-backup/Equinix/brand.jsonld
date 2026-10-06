@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Equinix",
+  "alternateName": "equinix.com",
+  "url": "https://www.equinix.com",
+  "description": "data center and colocation infrastructure provider"
+}

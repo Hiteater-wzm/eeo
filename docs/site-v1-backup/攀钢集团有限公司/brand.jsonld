@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "攀钢集团有限公司",
+  "alternateName": [
+    "攀枝花鋼鐵（集團）公司",
+    "攀枝花鋼鐵集團",
+    "攀枝花钢铁（集团）公司",
+    "攀鋼集團"
+  ],
+  "url": "http://www.pzhsteel.com.cn/",
+  "description": "Chinese state-owned company based in Sichuan"
+}

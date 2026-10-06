@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MTZ-Tatarstan",
+  "alternateName": [
+    "MTZ Tatarstan",
+    "MTZ-ElAZ"
+  ],
+  "url": "https://mtz-tatarstan.ru/",
+  "description": "Russian agricultural machinery trading and manufacturing company in Yelabuzhsky District, Tatarstan"
+}

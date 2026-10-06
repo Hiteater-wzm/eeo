@@ -1,0 +1,27 @@
+# 中国电信
+
+> 中国电信运营商，总部位于北京，业务涵盖移动通信、固网宽带、天翼云与产业数字化服务。
+
+- 官方网站: https://www.chinatelecom.com.cn
+- 所属行业: 电信运营商
+- 所在城市: 北京
+- 所在国家: 中国
+- 别名: China Telecom、电信
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 固网宽带与光纤接入网络
+- 天翼云公有云服务
+- 卫星通信（天通）与物联网业务
+
+## 信息来源
+
+- https://www.chinatelecom.com.cn
+- https://en.wikipedia.org/wiki/China_Telecom
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

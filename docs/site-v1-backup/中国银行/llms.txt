@@ -1,0 +1,27 @@
+# 中国银行
+
+> 中国国有商业银行，总部位于北京，外汇交易与跨境人民币业务为传统重点业务，在全球多个国家和地区设有分支机构。
+
+- 官方网站: https://www.boc.cn
+- 所属行业: 商业银行
+- 所在城市: 北京
+- 所在国家: 中国
+- 别名: Bank of China、中行、BOC
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 全球化机构网络覆盖60多个国家和地区
+- 外汇专业银行为历史定位
+- 跨境人民币结算与贸易融资业务线
+
+## 信息来源
+
+- https://www.boc.cn
+- https://en.wikipedia.org/wiki/Bank_of_China
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

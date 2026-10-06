@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "德邦快递",
+  "alternateName": [
+    "Deppon",
+    "德邦物流股份有限公司"
+  ],
+  "url": "https://www.deppon.com",
+  "description": "1996年创立于上海的物流企业，以大件快递与零担运输为主要业务，2018年在上海证券交易所上市（603056.SH）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上海",
+    "addressCountry": "中国"
+  }
+}

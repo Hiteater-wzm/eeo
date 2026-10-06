@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Invitee Site",
+  "alternateName": [
+    "Invitee",
+    "Invsite"
+  ],
+  "url": "https://invitee.site",
+  "description": "Online digital invitation (website, video, image) service provider in Indonesia"
+}

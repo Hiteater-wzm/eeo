@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sirius卫星收音机",
+  "alternateName": [
+    "天狼星卫星广播",
+    "天狼星卫星电台"
+  ],
+  "url": "http://www.sirius.com/",
+  "description": "former satellite radio service that merged into Sirius XM in 2008"
+}

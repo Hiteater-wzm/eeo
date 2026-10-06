@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Projexiom",
+  "alternateName": "Projexiom.net",
+  "url": "https://projexiom.net",
+  "description": "boutique consulting firm offering project management, change management, AI consulting, and training programs"
+}

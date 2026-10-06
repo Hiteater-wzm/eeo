@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Clínica Thodos",
+  "alternateName": [
+    "Alergiafacil S.L.",
+    "Clinica Thodos",
+    "Thodos Clinic"
+  ],
+  "url": "https://clinicathodos.com/",
+  "description": "private multi-specialty medical clinic in Granada, Spain, focused on allergic and type 2 inflammatory diseases"
+}

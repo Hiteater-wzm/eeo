@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Moderna",
+  "alternateName": "莫德纳",
+  "url": "https://www.modernatx.com",
+  "description": "美国生物技术公司，总部位于马萨诸塞州Cambridge，基于mRNA技术平台开发疫苗与疗法，新冠疫苗为其主要商业化产品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cambridge",
+    "addressCountry": "美国"
+  }
+}

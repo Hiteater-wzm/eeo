@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zapp AG",
+  "alternateName": "Zapp Group",
+  "url": "http://www.zapp.com",
+  "description": "international group of companies in the field of metal working based in Ratingen, Germany"
+}

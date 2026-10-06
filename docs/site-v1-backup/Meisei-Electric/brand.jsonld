@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Meisei Electric",
+  "alternateName": [
+    "Meisei Electric Co.",
+    "Ltd."
+  ],
+  "url": "https://www.meisei.co.jp/",
+  "description": "Japanese electronics and communication equipment manufacturer"
+}

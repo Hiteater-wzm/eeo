@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "E-C.O.P (Thailand) Limited",
+  "alternateName": [
+    "ECOP",
+    "E-C.O.P",
+    "E-C.O.P Thailand",
+    "Erawan66",
+    "บริษัท อี-ซี.โอ.พี (ประเทศไทย) จำกัด"
+  ],
+  "url": "https://www.ecop.co.th",
+  "description": "Thai cybersecurity company providing managed security services (MSSP) and threat intelligence since 2007"
+}

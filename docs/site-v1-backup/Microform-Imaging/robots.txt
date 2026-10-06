@@ -1,0 +1,78 @@
+# EEO 品牌信息站
+# 向主流 AI 爬虫与搜索引擎全面开放抓取
+# Search/AI-Input/AI-Train 为 Content Signals 用途指令（IETF AIPREF 草案）
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: OAI-SearchBot
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: ChatGPT-User
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: ClaudeBot
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: Claude-SearchBot
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: claude-web
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: PerplexityBot
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: Google-Extended
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: Bytespider
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: YisouSpider
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: Amazonbot
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes
+
+User-agent: ccpb
+Allow: /
+Search: yes
+AI-Input: yes
+AI-Train: yes

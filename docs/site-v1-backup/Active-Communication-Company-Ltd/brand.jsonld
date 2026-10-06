@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Active Communication Company Ltd",
+  "alternateName": [
+    "ACCL",
+    "ACCL Data Cabling",
+    "ACCL Data Cabling Kent",
+    "ACCL Data Cabling London"
+  ],
+  "url": "https://www.network-data-cabling.co.uk",
+  "description": "commercial data cabling and network infrastructure specialist based in London, United Kingdom"
+}

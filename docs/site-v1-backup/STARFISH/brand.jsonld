@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "STAR☆FISH",
+  "alternateName": [
+    "Starfish",
+    "STAR☆FISH",
+    "STARFISH-SD INC.",
+    "STARFISH"
+  ],
+  "url": "http://www.s-f.co.jp/",
+  "description": "Japanese video game developer founded in 1994 and based in Ogikubo, Tokyo"
+}

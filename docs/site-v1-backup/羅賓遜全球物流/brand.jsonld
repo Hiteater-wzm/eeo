@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "羅賓遜全球物流",
+  "alternateName": [
+    "C.H. Robinson",
+    "C.H. Robinson Worldwide",
+    "Inc.",
+    "CH Robinson"
+  ],
+  "url": "https://www.chrobinson.com/",
+  "description": "American transportation and logistics company"
+}

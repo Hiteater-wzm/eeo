@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hiclawcrane",
+  "alternateName": [
+    "HiClawCrane",
+    "Hiclawcrane.com",
+    "MSAAN"
+  ],
+  "url": "https://www.hiclawcrane.com",
+  "description": "Chinese arcade claw machine brand owned by Guangzhou Meishan Trading Co., Ltd."
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novo Nordisk",
+  "alternateName": "诺和诺德",
+  "url": "https://www.novonordisk.com",
+  "description": "丹麦制药公司，总部位于哥本哈根近郊Bagsvaerd，以糖尿病与肥胖治疗（司美格鲁肽系列）及罕见病用药为核心业务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bagsvaerd",
+    "addressCountry": "丹麦"
+  }
+}

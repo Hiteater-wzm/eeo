@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vodafone",
+  "alternateName": "沃达丰",
+  "url": "https://www.vodafone.com",
+  "description": "英国电信集团，总部位于Newbury，在欧洲与非洲多国运营移动与固网业务，并通过合资形式参与印度等市场。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Newbury",
+    "addressCountry": "英国"
+  }
+}

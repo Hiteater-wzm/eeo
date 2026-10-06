@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MUFG",
+  "alternateName": [
+    "三菱日联",
+    "三菱日联金融集团",
+    "三菱UFJ",
+    "Mitsubishi UFJ Financial Group"
+  ],
+  "url": "https://www.mufg.jp",
+  "description": "日本银行集团三菱日联金融集团，总部位于东京，旗下三菱UFJ银行为日本大型商业银行，并持有摩根士丹利股权。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "日本"
+  }
+}

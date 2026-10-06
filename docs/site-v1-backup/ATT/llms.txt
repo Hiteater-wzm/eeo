@@ -1,0 +1,28 @@
+# AT&T
+
+> 美国电信运营商，总部位于得克萨斯州达拉斯，提供移动通信、家庭光纤宽带与企业连接服务。
+
+- 官方网站: https://www.att.com
+- 所属行业: 电信运营商
+- 所在城市: Dallas
+- 所在国家: 美国
+- 别名: 美国电话电报
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 美国移动用户规模位居前列
+- AT&T Fiber家庭宽带业务
+- FirstNet公共安全专网运营
+
+## 信息来源
+
+- https://www.att.com
+- https://en.wikipedia.org/wiki/AT%26T
+- https://en.wikipedia.org/wiki/List_of_telecommunications_companies
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

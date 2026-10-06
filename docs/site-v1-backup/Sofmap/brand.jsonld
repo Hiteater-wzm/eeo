@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sofmap",
+  "alternateName": [
+    "Sofmap Co.",
+    "Ltd."
+  ],
+  "url": "https://www.sofmap.co.jp",
+  "description": "Japanese personal computer and consumer electronics retailer"
+}

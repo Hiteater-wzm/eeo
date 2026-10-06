@@ -1,0 +1,226 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-5183",
+  "industry": "艺术品、收藏品拍卖",
+  "industry_aliases": [
+    "5183",
+    "艺术品、收藏品拍卖",
+    "批发和零售业",
+    "批发业",
+    "贸易经纪与代理",
+    "拍賣"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "scale",
+      "label": "经营形态",
+      "select": "many"
+    },
+    {
+      "id": "moq",
+      "label": "起订门槛",
+      "select": "one"
+    },
+    {
+      "id": "logistics",
+      "label": "配送方式",
+      "select": "many"
+    },
+    {
+      "id": "payment",
+      "label": "结算方式",
+      "select": "many"
+    },
+    {
+      "id": "qualification",
+      "label": "资质与认证",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "价格与付费",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "single_cat",
+      "group": "scale",
+      "label": "单品类深耕",
+      "description": "专注一个品类做深做全"
+    },
+    {
+      "id": "multi_cat",
+      "group": "scale",
+      "label": "多品类综合",
+      "description": "跨多个品类合并配货"
+    },
+    {
+      "id": "own_brand",
+      "group": "scale",
+      "label": "自有品牌贴牌",
+      "description": "有自有品牌或定制贴牌货"
+    },
+    {
+      "id": "agency_brand",
+      "group": "scale",
+      "label": "品牌授权代理",
+      "description": "持有品牌方的区域代理授权"
+    },
+    {
+      "id": "m_retail_ok",
+      "group": "moq",
+      "label": "支持小额混批",
+      "description": "低起订额且可多款混批"
+    },
+    {
+      "id": "m_case",
+      "group": "moq",
+      "label": "整箱整托起订",
+      "description": "按整箱或整托起订"
+    },
+    {
+      "id": "m_big_only",
+      "group": "moq",
+      "label": "面向大客户定制",
+      "description": "只接大单或定向供货"
+    },
+    {
+      "id": "own_fleet",
+      "group": "logistics",
+      "label": "自有车队配送",
+      "description": "自有车辆送货"
+    },
+    {
+      "id": "third_logi",
+      "group": "logistics",
+      "label": "第三方物流发货",
+      "description": "委托快递物流公司发货"
+    },
+    {
+      "id": "self_pick",
+      "group": "logistics",
+      "label": "支持自提",
+      "description": "买家可到仓自提"
+    },
+    {
+      "id": "cash",
+      "group": "payment",
+      "label": "现款现货",
+      "description": "付款后发货，不做账期"
+    },
+    {
+      "id": "monthly",
+      "group": "payment",
+      "label": "月结账期",
+      "description": "与客户约定账期按月结算"
+    },
+    {
+      "id": "supply_chain_finance",
+      "group": "payment",
+      "label": "支持供应链金融",
+      "description": "可通过供应链金融工具付款"
+    },
+    {
+      "id": "wholesale_agency_area",
+      "group": "scale",
+      "label": "区域总代总经销",
+      "description": "持品牌区域总经销授权"
+    },
+    {
+      "id": "wholesale_supply_stable",
+      "group": "logistics",
+      "label": "常备库存",
+      "description": "常备现货库存保障快发"
+    },
+    {
+      "id": "auction_licensed_auction",
+      "group": "qualification",
+      "label": "拍卖经营许可",
+      "description": "持拍卖经营批准证书"
+    },
+    {
+      "id": "auction_deposit_rule_a",
+      "group": "pricing",
+      "label": "保证金规则公示",
+      "description": "公示保证金与佣金规则"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "moq_price",
+      "group": "decision",
+      "question": "起订量多少？不同数量价格差多少？",
+      "hint": "回答应给出起订量和阶梯价"
+    },
+    {
+      "id": "stock",
+      "group": "decision",
+      "question": "现货还是订货？多久能发？",
+      "hint": "回答应区分现货品种和订货周期"
+    },
+    {
+      "id": "sample",
+      "group": "decision",
+      "question": "能先拿样品确认再下单吗？",
+      "hint": "回答应说明样品价格和退还规则"
+    },
+    {
+      "id": "shipping_cost",
+      "group": "detail",
+      "question": "运费怎么算？到哪送货？",
+      "hint": "回答应说明运费承担和送达范围"
+    },
+    {
+      "id": "shortage",
+      "group": "detail",
+      "question": "缺货少件怎么补？",
+      "hint": "回答应说明短缺核对和补货流程"
+    },
+    {
+      "id": "invoice_w",
+      "group": "detail",
+      "question": "开票品名和税率按什么开？",
+      "hint": "回答应说明开票内容"
+    },
+    {
+      "id": "return_w",
+      "group": "risk",
+      "question": "质量有问题退换货谁承担运费？",
+      "hint": "回答应写明质量问题退换的运费归属"
+    },
+    {
+      "id": "price_drop",
+      "group": "risk",
+      "question": "拿货后跌价了怎么办？能补差吗？",
+      "hint": "回答应说明价格保护政策"
+    },
+    {
+      "id": "wholesale_auth_true",
+      "group": "risk",
+      "question": "授权书能给看吗？怎么验证？",
+      "hint": "回答应提供授权凭证及品牌方核实渠道"
+    },
+    {
+      "id": "auction_auction_true",
+      "group": "risk",
+      "question": "拍品真伪谁担保？拍了不想要怎么办？",
+      "hint": "回答应说明拍品担保与违约处理"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+# 质量门：语法检查 + 核心引擎单元测试跑 Node 18/20/22 矩阵，web 构建单独一门
+# 测试零依赖（node:test 内置），无需 npm install 即可跑 node --test test/*.test.js
+# web 构建不进矩阵：web/ 依赖树（vite 6 / tailwind 4）要求 Node 20+，构建验证一次即可
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build web
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+  quality-gate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [18, 20, 22]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Syntax check all tracked .cjs
+        run: |
+          set -e
+          for f in $(git ls-files '*.cjs'); do
+            echo "node --check $f"
+            node --check "$f"
+          done
+
+      - name: Run tests
+        run: |
+          mkdir -p test-report
+          # 用 shell 展开的具体文件列表（不用目录参数：新版 node --test 已不认目录入口）
+          node --test \
+            --test-reporter=spec --test-reporter-destination=stdout \
+            --test-reporter=tap --test-reporter-destination=test-report/results.tap \
+            test/*.test.js
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report-node-${{ matrix.node-version }}
+          path: test-report/

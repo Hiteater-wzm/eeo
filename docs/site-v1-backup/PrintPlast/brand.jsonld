@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PrintPlast",
+  "alternateName": [
+    "PrintPlast Smart Card Technologies",
+    "Printplast Cards",
+    "Printplast Plastik Mamulleri Ticaret Ve Sanayi AŞ"
+  ],
+  "url": "https://www.printplast.com",
+  "description": "Manufacturer of RFID hotel key cards and smart cards, founded 1989"
+}

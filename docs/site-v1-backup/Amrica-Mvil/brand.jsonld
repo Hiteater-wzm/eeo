@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "América Móvil",
+  "alternateName": [
+    "墨西哥美洲电信",
+    "America Movil",
+    "Claro"
+  ],
+  "url": "https://www.americamovil.com",
+  "description": "墨西哥电信集团，总部位于墨西哥城，旗下Claro等品牌在拉美多国及欧洲（奥地利与东欧）提供移动与固网服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mexico City",
+    "addressCountry": "墨西哥"
+  }
+}

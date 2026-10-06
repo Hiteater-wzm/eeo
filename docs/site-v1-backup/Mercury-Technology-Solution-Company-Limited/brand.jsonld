@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mercury Technology Solution Company Limited",
+  "alternateName": [
+    "Mercury Technology Solutions",
+    "Mercury Bridge",
+    "Mercury Core",
+    "mtsoln"
+  ],
+  "url": "https://www.mtsoln.com",
+  "description": "Asia-based software development and digital consulting firm"
+}

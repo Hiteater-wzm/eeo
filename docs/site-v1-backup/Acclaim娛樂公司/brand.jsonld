@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Acclaim娛樂公司",
+  "alternateName": [
+    "Acclaim娱乐",
+    "喝采娛樂公司",
+    "阿克莱姆娱乐"
+  ],
+  "url": "http://www.acclaim.com",
+  "description": "defunct American game developer and publisher"
+}

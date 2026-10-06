@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TONE SEOUL",
+  "alternateName": [
+    "plaad",
+    "plaad Inc.",
+    "tone seoul",
+    "toneseoul"
+  ],
+  "url": "https://tone-seoul.com",
+  "description": "South Korean company operating a medical tourism platform connecting foreign patients with dermatology and plastic surge"
+}

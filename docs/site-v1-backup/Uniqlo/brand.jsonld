@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Uniqlo",
+  "alternateName": [
+    "优衣库",
+    "Fast Retailing",
+    "迅销集团"
+  ],
+  "url": "https://www.fastretailing.com",
+  "description": "日本服装品牌,隶属迅销集团,以基本款休闲服饰与功能面料产品为主;公司注册总部在山口县宇部市,运营总部位于东京都江东区。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "宇部(山口县)",
+    "addressCountry": "日本"
+  }
+}

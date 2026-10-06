@@ -1,0 +1,17 @@
+# Camel Coffee
+
+> Japanese retail company; operator of Kaldi Coffee Farm and other businesses
+
+- 官方网站: https://camelcoffee.jp/
+- 所属行业: 餐飲業
+- 别名: CAMEL COFFEE
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q11297236
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,20 @@
+# Beetle Wood furniture industry
+
+别名：Beetle Wood furniture、bedside table with hidden compartment、bookcase with hidden compartment、concealment furniture、desk with secret drawer
+
+> Spanish furniture brand with hidden secret compartments; opening mechanisms include NFC, RFID, magnetic, hydraulic, push
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: furniture industry
+- 官方网站: [https://beetlewood.store](https://beetlewood.store)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q141599716](https://www.wikidata.org/wiki/Q141599716)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

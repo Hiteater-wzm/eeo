@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "彼得比爾特",
+  "alternateName": "Peterbilt Motors Company",
+  "url": "http://www.peterbilt.com",
+  "description": "American manufacturer of medium- and heavy-duty trucks"
+}

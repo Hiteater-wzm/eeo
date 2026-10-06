@@ -1,0 +1,20 @@
+# Fleet Evolution 车辆融资租赁
+
+别名：Fleet Evolution Limited、Fleet Evolution Ltd
+
+> UK company providing salary sacrifice and car leasing services specialising in electric vehicles
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 车辆融资租赁
+- 官方网站: [https://fleetevolution.com/](https://fleetevolution.com/)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q135918512](https://www.wikidata.org/wiki/Q135918512)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

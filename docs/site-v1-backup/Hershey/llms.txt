@@ -1,0 +1,25 @@
+# Hershey
+
+> 美国巧克力与糖果公司,旗下品牌包括好时巧克力、好时之吻、锐滋,并持有奇巧(Kit Kat)美国市场经营权。
+
+- 官方网站: https://www.thehersheycompany.com
+- 所属行业: 糖果巧克力
+- 所在城市: 好时(宾夕法尼亚州)
+- 所在国家: 美国
+- 别名: 好时
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 1894年创立
+- 在纽约证券交易所上市
+
+## 信息来源
+
+- https://www.thehersheycompany.com
+- https://en.wikipedia.org/wiki/The_Hershey_Company
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

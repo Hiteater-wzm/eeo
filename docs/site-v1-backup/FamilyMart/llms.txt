@@ -1,0 +1,25 @@
+# FamilyMart
+
+> 日本便利店连锁,1981年创立,业务覆盖日本及亚洲多个市场。
+
+- 官方网站: https://www.family.co.jp
+- 所属行业: 便利店
+- 所在城市: 东京
+- 所在国家: 日本
+- 别名: 全家、全家便利商店
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 在东京证券交易所上市
+- 在亚洲多市场开展业务
+
+## 信息来源
+
+- https://www.family.co.jp
+- https://en.wikipedia.org/wiki/FamilyMart
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

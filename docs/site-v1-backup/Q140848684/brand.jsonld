@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Q140848684",
+  "alternateName": [
+    "GGB",
+    "GGBmbH"
+  ],
+  "url": "https://ggb.de",
+  "description": "German engineering company for geotechnical measurement and structural health monitoring"
+}

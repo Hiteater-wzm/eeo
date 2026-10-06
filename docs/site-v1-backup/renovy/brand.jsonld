@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "renovy",
+  "alternateName": [
+    "renovy Inc.",
+    "reversible renovation"
+  ],
+  "url": "https://renovy.jp/",
+  "description": "Japanese reversible renovation service company for rental housing"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "78 Over 37 Ltd",
+  "alternateName": "Overload.su",
+  "url": "https://overload.su/",
+  "description": "Overload.su was created to help website owners identify vulnerabilities in their infrastructure."
+}

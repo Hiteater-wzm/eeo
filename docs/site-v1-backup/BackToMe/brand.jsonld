@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BackToMe",
+  "alternateName": "backtome",
+  "url": "https://backtome.fr",
+  "description": "French SaaS publisher specializing in compliance with the consumer withdrawal button required by French consumer code ar"
+}

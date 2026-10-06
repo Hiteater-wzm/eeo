@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "舍溫-威廉斯",
+  "alternateName": [
+    "Sherwin Williams",
+    "Sherwin-Williams Company"
+  ],
+  "url": "https://www.sherwin-williams.com.mx",
+  "description": "American paint and coatings manufacturing company"
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gilead Sciences",
+  "alternateName": [
+    "吉利德科学",
+    "吉利德"
+  ],
+  "url": "https://www.gilead.com",
+  "description": "美国生物制药公司，总部位于加州Foster City，以抗病毒药物（HIV、乙肝、丙肝）为核心业务，并拓展肿瘤与炎症领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Foster City",
+    "addressCountry": "美国"
+  }
+}

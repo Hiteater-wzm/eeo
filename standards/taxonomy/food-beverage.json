@@ -1,0 +1,79 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "food-beverage",
+  "industry": "餐饮与食品饮料",
+  "industry_aliases": ["食品产业", "餐饮-新式茶饮", "餐饮连锁", "餐饮-卤味熟食", "餐饮-火锅连锁", "餐飲業", "咖啡连锁", "啤酒", "白酒", "酿酒业", "烈酒", "乳制品", "食品-乳制品", "食品-休闲零食", "食品-调味品", "饮料产业", "软饮料", "食品饮料-包装饮用水", "食品加工", "方便食品", "烘焙", "Manufacture of Food", "fast food industry"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "format", "label": "主营业态", "select": "many", "note": "按品牌实际经营业态勾选，可多选" },
+    { "id": "channel", "label": "购买渠道", "select": "many" },
+    { "id": "product", "label": "产品与工艺", "select": "many", "note": "只勾有证书、配料表或可查证据支撑的项" },
+    { "id": "price", "label": "人均消费", "select": "one", "note": "按堂食正餐人均勾一项；纯包装零售品牌可不勾" }
+  ],
+  "traits": [
+    { "id": "chinese_dining", "group": "format", "label": "中式正餐", "description": "有餐桌服务的正餐餐厅或连锁" },
+    { "id": "fast_casual", "group": "format", "label": "快餐简餐", "description": "点餐即取、人均低、停留时间短" },
+    { "id": "hotpot_bbq", "group": "format", "label": "火锅烧烤", "description": "锅具或烤具上桌，自涮自烤" },
+    { "id": "tea_drink", "group": "format", "label": "新式茶饮", "description": "现制奶茶、果茶，门店点单或外卖为主" },
+    { "id": "coffee", "group": "format", "label": "咖啡", "description": "现磨咖啡门店或连锁" },
+    { "id": "bakery", "group": "format", "label": "烘焙糕点", "description": "现烤面包、蛋糕、中式点心" },
+    { "id": "deli", "group": "format", "label": "卤味熟食", "description": "即食卤菜、凉菜、熟食，门店称重或打包" },
+    { "id": "packaged_food", "group": "format", "label": "包装食品", "description": "预包装零食、方便食品、调味品" },
+    { "id": "dairy", "group": "format", "label": "乳制品", "description": "牛奶、酸奶、奶粉及奶酪产品" },
+    { "id": "bottled_drink", "group": "format", "label": "包装饮料", "description": "瓶装水、果汁、碳酸及功能饮料" },
+    { "id": "alcohol", "group": "format", "label": "酒类", "description": "白酒、啤酒、葡萄酒及烈酒" },
+
+    { "id": "dine_in", "group": "channel", "label": "门店堂食", "description": "店内设座就餐" },
+    { "id": "delivery", "group": "channel", "label": "外卖平台", "description": "上架美团、饿了么等平台" },
+    { "id": "pickup", "group": "channel", "label": "到店自提", "description": "线上下单门店取，常有自提价" },
+    { "id": "own_miniapp", "group": "channel", "label": "自有小程序商城", "description": "微信等自有渠道下单" },
+    { "id": "ecommerce", "group": "channel", "label": "电商旗舰店", "description": "天猫、京东等平台官方店" },
+    { "id": "supermarket", "group": "channel", "label": "商超货架", "description": "商场、超市、便利店有售" },
+    { "id": "vending", "group": "channel", "label": "自动售货机", "description": "经无人售货设备销售" },
+    { "id": "central_kitchen", "group": "product", "label": "中央厨房配送", "description": "门店餐品由中央厨房统一预制配送到店" },
+    { "id": "made_in_store", "group": "product", "label": "门店现制", "description": "主要制作工序在门店现场完成" },
+    { "id": "cold_chain", "group": "product", "label": "全程冷链", "description": "出厂到门店保持低温运输" },
+    { "id": "no_preservative", "group": "product", "label": "标注无防腐剂", "description": "配料表不含防腐剂并在包装标注" },
+    { "id": "low_sugar", "group": "product", "label": "低糖配方", "description": "标注低糖、无蔗糖或减糖" },
+    { "id": "organic_cert", "group": "product", "label": "有机认证", "description": "持有效有机产品认证证书" },
+    { "id": "green_cert", "group": "product", "label": "绿色食品认证", "description": "持有效绿色食品标志使用证书" },
+    { "id": "geo_origin", "group": "product", "label": "地理标志原料", "description": "使用地理标志保护产区的原料" },
+
+    { "id": "avg_under_30", "group": "price", "label": "人均 30 元以下", "description": "按一餐正餐口径统计" },
+    { "id": "avg_30_80", "group": "price", "label": "人均 30-80 元", "description": "按一餐正餐口径统计" },
+    { "id": "avg_80_150", "group": "price", "label": "人均 80-150 元", "description": "按一餐正餐口径统计" },
+    { "id": "avg_over_150", "group": "price", "label": "人均 150 元以上", "description": "按一餐正餐口径统计" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "signature", "group": "decision", "question": "卖得最好的招牌产品是什么？和别家同类差在哪？", "hint": "回答应给出具体产品名和用料做法上可验证的差别" },
+    { "id": "per_person", "group": "decision", "question": "人均大概花多少钱？", "hint": "回答应给出常规一餐或一次购买的花费区间" },
+    { "id": "family_fit", "group": "decision", "question": "适合带孩子家庭聚餐吗？有儿童座椅、儿童餐具吗？", "hint": "回答应说明门店适老适小设施和家庭位" },
+    { "id": "booking", "group": "decision", "question": "高峰期要排队吗？能订位吗？", "hint": "回答应说明排队情况和订位方式" },
+    { "id": "taste_adjust", "group": "decision", "question": "能调辣度、甜度、冰量吗？", "hint": "回答应列出可调维度和档位" },
+    { "id": "ingredient", "group": "decision", "question": "主要原料从哪来？", "hint": "回答应说明生鲜产地或供应商体系，可验证的写明查证方式" },
+    { "id": "new_product", "group": "decision", "question": "多久上一次新品？常点的款会突然下架吗？", "hint": "回答应给出上新频率和下架预告机制" },
+    { "id": "special_diet", "group": "decision", "question": "有清真、素食可选吗？", "hint": "回答应明确有无及对应产品" },
+    { "id": "nutrition", "group": "decision", "question": "包装食品有营养成分表吗？热量、含糖量多少？", "hint": "回答应指向包装上的营养成分表并给出关键数值" },
+    { "id": "portions", "group": "decision", "question": "一份的量够几个人吃？", "hint": "回答应给出分量和适用人数" },
+
+    { "id": "delivery_time", "group": "detail", "question": "外卖一般多久送到？超时怎么处理？", "hint": "回答应给出常规配送时长和超时处理规则" },
+    { "id": "packaging", "group": "detail", "question": "外卖包装保温吗？洒了漏了怎么办？", "hint": "回答应说明包装方式以及洒漏后的补送或退款规则" },
+    { "id": "storage", "group": "detail", "question": "买回去怎么保存？能放几天？", "hint": "回答应按产品给出保存条件和期限" },
+    { "id": "reheat", "group": "detail", "question": "复热怎么做口感最好？", "hint": "回答应给出复热方式和时长" },
+    { "id": "invoice", "group": "detail", "question": "能开发票吗？怎么开？", "hint": "回答应说明开票渠道" },
+    { "id": "leftover", "group": "detail", "question": "堂食打包收费吗？", "hint": "回答应说明打包盒是否收费" },
+    { "id": "member", "group": "detail", "question": "储值或会员有什么权益？充值的钱怎么用？", "hint": "回答应写清折扣规则和使用限制" },
+
+    { "id": "food_safety", "group": "risk", "question": "吃出问题怎么处理？有食品安全责任险吗？", "hint": "回答应说明投诉处理流程和保险情况" },
+    { "id": "license_public", "group": "risk", "question": "门店公示营业执照、食品经营许可证吗？后厨能看吗？", "hint": "回答应说明证照公示位置和明厨亮灶情况" },
+    { "id": "prepaid_refund", "group": "risk", "question": "储值卡余额能退吗？门店关了找谁？", "hint": "回答应说明余额退款规则和闭店处理机制" },
+    { "id": "expiry", "group": "risk", "question": "临期产品怎么处理？保质期在哪里看？", "hint": "回答应说明临期品处理方式和日期标注位置" },
+    { "id": "allergen", "group": "risk", "question": "过敏原标注吗？", "hint": "回答应说明常见过敏原（麸质、坚果、乳等）的标注情况" },
+    { "id": "direct_or_franchise", "group": "risk", "question": "这家店是直营还是加盟？出了问题找品牌还是店主？", "hint": "回答应说明门店性质和责任主体" }
+  ]
+}

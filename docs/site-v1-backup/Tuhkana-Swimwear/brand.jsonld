@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tuhkana Swimwear",
+  "alternateName": [
+    "tuhkana",
+    "tuhkana llc",
+    "tuhkana swimwear"
+  ],
+  "url": "http://www.tuhkana.com",
+  "description": "company that focuses on creating sustainable, eco-friendly and ethically made swimwear"
+}

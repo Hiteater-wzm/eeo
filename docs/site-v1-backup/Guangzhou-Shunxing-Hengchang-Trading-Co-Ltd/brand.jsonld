@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Guangzhou Shunxing Hengchang Trading Co., Ltd.",
+  "alternateName": [
+    "VINBOX",
+    "VINBOX Auto Parts"
+  ],
+  "url": "https://www.vinboxauto.com/",
+  "description": "auto parts exporter in Guangzhou, China, founded 1996"
+}

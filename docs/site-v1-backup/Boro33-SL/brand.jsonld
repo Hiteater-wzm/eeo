@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Boro33 SL",
+  "alternateName": [
+    "Boro 33",
+    "Boro-33",
+    "Boro33"
+  ],
+  "url": "https://boro-33.com",
+  "description": "Spanish technology company specialising in custom software, e-commerce platforms and business process automation"
+}

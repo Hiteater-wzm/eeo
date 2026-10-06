@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wellzen by Diana",
+  "alternateName": [
+    "WellZen",
+    "WellZen by Diana Massagens",
+    "WellZen Lisbon",
+    "WellZen Massagens Lisboa"
+  ],
+  "url": "https://wellzen.pt",
+  "description": "massage therapy business in Lisbon, Portugal, offering Ayurvedic, therapeutic, and hot stone massage services"
+}

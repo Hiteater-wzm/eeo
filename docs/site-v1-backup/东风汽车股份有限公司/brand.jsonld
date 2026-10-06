@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "东风汽车股份有限公司",
+  "alternateName": [
+    "DFAC",
+    "Dongfeng Automobile Co.",
+    "Ltd."
+  ],
+  "url": "https://www.dfac.com/",
+  "description": "Chinese light commercial vehicle manufacturer"
+}

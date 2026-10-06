@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EEO Audit Local</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0!important;font-family:"Microsoft YaHei",system-ui,sans-serif}
+body{background:#FFFBEB;color:#16181d;line-height:1.9;font-size:14px}
+.stripe{height:10px;background:repeating-linear-gradient(45deg,#000 0 9px,#FFDE59 9px 18px)}
+.wrap{max-width:920px;margin:0 auto;padding:30px 22px 70px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:3px solid #000;padding-bottom:14px;margin-bottom:24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo .mark{width:34px;height:34px;background:#FFDE59;border:3px solid #000;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:3px 3px 0 #000}
+.logo b{font-size:17px}
+.logo span{display:block;font-size:10px;letter-spacing:.25em;color:#999;font-weight:800}
+.btn{background:#FFDE59;border:2.5px solid #000;color:#000;font-weight:900;font-size:14px;padding:10px 26px;cursor:pointer;box-shadow:4px 4px 0 #000;transition:all .1s}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000}
+.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:0 0 0 #000}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:#fff}
+.card{background:#fff;border:2.5px solid #000;box-shadow:5px 5px 0 #000;padding:20px 22px;margin-bottom:20px}
+.card h3{font-size:15px;font-weight:900;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h3::before{content:"";width:9px;height:9px;background:#FFDE59;border:2px solid #000}
+label{display:block;font-size:12.5px;font-weight:800;color:#444;margin:12px 0 4px}
+input,select{width:100%;background:#fff;border:2px solid #000;padding:9px 11px;font-size:14px;outline:none;font-family:inherit}
+input:focus,select:focus{box-shadow:3px 3px 0 #000}
+.hint{font-size:11.5px;color:#777;font-weight:600;margin-top:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.row{grid-template-columns:1fr}}
+/* 引擎目录 */
+.eng-cat{font-size:12px;font-weight:900;letter-spacing:.2em;color:#666;margin:16px 0 8px;border-bottom:2px solid #000;padding-bottom:3px}
+.eng-item{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;border:2px solid #000;padding:10px 12px;margin-bottom:8px;background:#fff}
+.eng-item.on{background:#FFF8DC;box-shadow:3px 3px 0 #000}
+.eng-item .ck{width:20px;height:20px;margin-top:6px;cursor:pointer;accent-color:#000}
+.eng-item .nm{font-weight:900;font-size:13.5px}
+.eng-item .nm .tag{font-size:10px;background:#FFDE59;border:1.5px solid #000;padding:0 6px;margin-left:6px;font-weight:800}
+.eng-item .kv{display:grid;grid-template-columns:1fr 1.2fr;gap:8px}
+.eng-item .kv input{padding:6px 9px;font-size:12.5px}
+.depths{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.dep{border:2.5px solid #000;padding:12px 14px;cursor:pointer;background:#fff}
+.dep.on{background:#FFDE59;box-shadow:4px 4px 0 #000}
+.dep b{display:block;font-size:14px}
+.dep span{font-size:11.5px;color:#555;font-weight:700}
+.status{border:2.5px solid #000;background:#fff;box-shadow:5px 5px 0 #000;padding:18px 20px;margin-bottom:20px}
+.stage{font-weight:900;font-size:15px;display:flex;align-items:center;gap:10px}
+.dot{width:12px;height:12px;background:#FFDE59;border:2px solid #000;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.engbar{margin-top:10px;display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800}
+.engbar .nm{width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{flex:1;height:14px;border:2px solid #000;background:#fff}
+.fill{height:100%;background:#FFDE59;transition:width .4s}
+/* 报告 */
+.gradebox{display:flex;gap:18px;flex-wrap:wrap;align-items:stretch}
+.gbadge{min-width:150px;text-align:center;border:3px solid #000;box-shadow:6px 6px 0 #000;padding:18px 12px}
+.gbadge .g{font-size:58px;font-weight:900;line-height:1.1}
+.gbadge .t{font-size:12px;font-weight:800}
+.scorebar{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;margin:6px 0}
+.scorebar .nm{width:74px}
+.scorebar .tr{flex:1;height:13px;border:2px solid #000;background:#fff}
+.scorebar .fl{height:100%;background:#FFDE59}
+.scorebar .vl{width:50px;text-align:right}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#fff;border:2.5px solid #000;margin-top:8px}
+th{background:#FFDE59;border:1.5px solid #000;padding:6px 8px;text-align:left;font-weight:900}
+td{border:1.5px solid #000;padding:6px 8px;vertical-align:top}
+.yes{color:#00A344;font-weight:900}
+.no{color:#999}
+.un{background:#FF4D4D;color:#fff;font-weight:900;padding:0 5px}
+.bar-row{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;margin:5px 0}
+.bar-row .nm{width:110px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-row .tr{flex:1;height:18px;border:2px solid #000;background:#fff}
+.bar-row .fl{height:100%;background:#FFDE59}
+.quote{border:2px solid #000;border-left:6px solid #FF4D4D;background:#fff;padding:10px 14px;font-size:12.5px;margin:8px 0}
+.quote .src{display:block;color:#888;font-size:11px;font-weight:700;margin-top:4px}
+.orig{background:#FFFBEB;border:2px solid #000;padding:10px;white-space:pre-wrap;font-size:12.5px;max-height:300px;overflow:auto;margin:6px 0}
+.tr-click{cursor:pointer}
+.tr-click:hover{background:#FFF8DC}
+/* AI 引用来源 */
+.src-sub{font-weight:900;font-size:13px;margin:12px 0 4px}
+.cc-line{margin:4px 0;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.cc-nm{background:#000;color:#FFDE59;font-weight:900;font-size:12px;padding:1px 8px;flex:none}
+.schip{display:inline-block;border:1.5px solid #000;background:#fff;color:#000;font-size:11.5px;font-weight:800;padding:0 8px;max-width:70%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.schip.pf{background:#FFDE59}
+a.schip:hover{background:#FFDE59;transform:translate(-1px,-1px);box-shadow:2px 2px 0 #000}
+.export{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.warn{background:#000;color:#FFDE59;padding:12px 16px;font-size:12.5px;font-weight:800;margin:12px 0}
+.foot{margin-top:40px;border-top:3px solid #000;padding-top:14px;font-size:11.5px;color:#777;font-weight:700}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<div class="wrap">
+
+<header>
+  <div class="logo">
+    <div class="mark">EEO</div>
+    <div><b>EEO Audit Local</b><span>本地检测</span></div>
+  </div>
+  <div class="btn ghost" onclick="toggleEngines()">引擎目录 <span id="engCount">2</span> 家</div>
+</header>
+
+<div class="card hidden" id="enginesCard">
+  <h3>引擎目录</h3>
+  <div class="hint">密钥只存本机 没填的自动跳过</div>
+  <div id="engList"></div>
+  <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+    <button class="btn" onclick="saveEngines()">保存</button>
+    <button class="btn ghost" onclick="testEngines()">测试</button>
+  </div>
+  <div class="hint" id="testResult" style="margin-top:8px"></div>
+</div>
+
+<div class="card" id="formCard">
+  <h3>发起检测</h3>
+  <div class="row">
+    <div>
+      <label>品牌名 *</label>
+      <input id="inBrand" maxlength="30" placeholder="品牌名">
+    </div>
+    <div>
+      <label>城市（选填）</label>
+      <input id="inCity" maxlength="20" placeholder="成都">
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <label>所在行业</label>
+      <select id="inIndustry">
+        <option>少儿编程培训</option><option>K12 教育培训</option><option>职业教育</option>
+        <option>留学咨询</option><option>家政服务</option><option>装修建材</option>
+        <option>餐饮门店</option><option>法律咨询</option><option>口腔医疗</option>
+        <option>汽车服务</option><option>摄影婚庆</option><option>健身私教</option>
+        <option>软件与互联网服务</option><option>电商品牌</option><option>其他</option>
+      </select>
+    </div>
+    <div>
+      <label>竞品（选填）</label>
+      <input id="inComp" maxlength="120" placeholder="编程猫 核桃编程">
+    </div>
+  </div>
+  <label>深度</label>
+  <div class="depths">
+    <div class="dep on" data-d="quick" onclick="pickDepth(this)"><b>快速</b><span>12 题</span></div>
+    <div class="dep" data-d="standard" onclick="pickDepth(this)"><b>标准</b><span>30 题</span></div>
+    <div class="dep" data-d="deep" onclick="pickDepth(this)"><b>深度</b><span>48 题</span></div>
+  </div>
+  <div class="warn">本地运行 密钥不出本机 引擎越多耗时越长</div>
+  <button class="btn" id="btnGo" onclick="startRun()">开始检测</button>
+</div>
+
+<div class="status hidden" id="statusBox">
+  <div class="stage"><span class="dot"></span><span id="stageTxt">准备中</span></div>
+  <div id="engBars"></div>
+  <div class="hint">别关页面</div>
+</div>
+
+<div id="reportBox"></div>
+
+<div class="foot">
+  EEO Audit Local Apache-2.0<br>模型直问测离线记忆 单次采样有波动
+</div>
+</div>
+<div class="stripe" style="margin-top:30px"></div>
+
+<script>
+'use strict';
+/* ============ 引擎目录（预设 20+；用户可勾选/改模型） ============ */
+/* platform: 密钥按平台共享；apiType: openai 默认 | anthropic；note 标注特性 */
+var CATALOG = [
+  { cat: '国内原生' },
+  { id: 'ds', platform: 'deepseek', name: 'DeepSeek', url: 'https://api.deepseek.com/v1/chat/completions', model: 'deepseek-chat', maxTokens: 2048, timeout: 90000, def: true },
+  { id: 'glm', platform: 'zhipu', name: '智谱 GLM', url: 'https://open.bigmodel.cn/api/paas/v4/chat/completions', model: 'glm-5.3-flash', maxTokens: 8192, timeout: 300000, note: '较慢', def: true },
+  { id: 'ark', platform: 'volcengine', name: '豆包（火山方舟）', url: 'https://ark.cn-beijing.volces.com/api/v3/chat/completions', model: 'doubao-seed-1-6-flash-250815', maxTokens: 4096, timeout: 120000 },
+  { id: 'qwen', platform: 'aliyun', name: '通义千问（百炼）', url: 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions', model: 'qwen-plus', maxTokens: 4096, timeout: 120000 },
+  { id: 'kimi', platform: 'moonshot', name: 'Kimi（月之暗面）', url: 'https://api.moonshot.cn/v1/chat/completions', model: 'kimi-latest', maxTokens: 4096, timeout: 120000 },
+  { id: 'ernie', platform: 'baidu', name: '文心一言（千帆）', url: 'https://qianfan.baidubce.com/v2/chat/completions', model: 'ernie-4.5-turbo-128k', maxTokens: 4096, timeout: 120000 },
+  { id: 'hunyuan', platform: 'tencent', name: '腾讯混元', url: 'https://api.hunyuan.cloud.tencent.com/v1/chat/completions', model: 'hunyuan-turbos-latest', maxTokens: 4096, timeout: 120000 },
+  { id: 'spark', platform: 'iflytek', name: '讯飞星火', url: 'https://spark-api-open.xf-yun.com/v1/chat/completions', model: 'generalv3.5', maxTokens: 4096, timeout: 120000 },
+  { id: 'yi', platform: 'lingyi', name: '零一万物 Yi', url: 'https://api.lingyiwanwu.com/v1/chat/completions', model: 'yi-lightning', maxTokens: 4096, timeout: 120000 },
+  { id: 'minimax', platform: 'minimax', name: 'MiniMax', url: 'https://api.minimax.chat/v1/chat/completions', model: 'abab6.5s-chat', maxTokens: 4096, timeout: 120000 },
+  { id: 'step', platform: 'stepfun', name: '阶跃星辰 Step', url: 'https://api.stepfun.com/v1/chat/completions', model: 'step-1-8k', maxTokens: 4096, timeout: 120000 },
+  { cat: '国内聚合' },
+  { id: 'sf1', platform: 'siliconflow', name: '硅基流动 Qwen', url: 'https://api.siliconflow.cn/v1/chat/completions', model: 'Qwen/Qwen2.5-72B-Instruct', maxTokens: 4096, timeout: 120000, note: '聚合' },
+  { id: 'sf2', platform: 'siliconflow', name: '硅基流动 GLM', url: 'https://api.siliconflow.cn/v1/chat/completions', model: 'zai-org/glm-4-9b-chat', maxTokens: 4096, timeout: 120000, note: '聚合' },
+  { id: 'sf3', platform: 'siliconflow', name: '硅基流动 DeepSeek', url: 'https://api.siliconflow.cn/v1/chat/completions', model: 'deepseek-ai/DeepSeek-V3', maxTokens: 4096, timeout: 120000, note: '聚合' },
+  { cat: '国际原生' },
+  { id: 'openai', platform: 'openai', name: 'OpenAI GPT', url: 'https://api.openai.com/v1/chat/completions', model: 'gpt-4o-mini', maxTokens: 4096, timeout: 120000 },
+  { id: 'gemini', platform: 'google', name: 'Google Gemini', url: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', model: 'gemini-2.0-flash', maxTokens: 4096, timeout: 120000 },
+  { id: 'claude', platform: 'anthropic', name: 'Anthropic Claude', url: 'https://api.anthropic.com/v1/messages', model: 'claude-sonnet-4-20250514', maxTokens: 4096, timeout: 120000, apiType: 'anthropic' },
+  { id: 'grok', platform: 'xai', name: 'xAI Grok', url: 'https://api.x.ai/v1/chat/completions', model: 'grok-3-mini', maxTokens: 4096, timeout: 120000 },
+  { id: 'mistral', platform: 'mistral', name: 'Mistral', url: 'https://api.mistral.ai/v1/chat/completions', model: 'mistral-small-latest', maxTokens: 4096, timeout: 120000 },
+  { id: 'pplx', platform: 'perplexity', name: 'Perplexity Sonar', url: 'https://api.perplexity.ai/chat/completions', model: 'sonar', maxTokens: 4096, timeout: 120000, note: '联网型' },
+  { id: 'groq', platform: 'groq', name: 'Groq Llama', url: 'https://api.groq.com/openai/v1/chat/completions', model: 'llama-3.3-70b-versatile', maxTokens: 4096, timeout: 120000 },
+  { id: 'cohere', platform: 'cohere', name: 'Cohere', url: 'https://api.cohere.com/compatibility/v1/chat/completions', model: 'command-r-plus-08-2024', maxTokens: 4096, timeout: 120000 },
+  { cat: '国际聚合' },
+  { id: 'or1', platform: 'openrouter', name: 'OpenRouter GPT', url: 'https://openrouter.ai/api/v1/chat/completions', model: 'openai/gpt-4o-mini', maxTokens: 4096, timeout: 120000, note: '聚合' },
+  { id: 'or2', platform: 'openrouter', name: 'OpenRouter Claude', url: 'https://openrouter.ai/api/v1/chat/completions', model: 'anthropic/claude-3.5-haiku', maxTokens: 4096, timeout: 120000, note: '聚合' },
+  { id: 'or3', platform: 'openrouter', name: 'OpenRouter Gemini', url: 'https://openrouter.ai/api/v1/chat/completions', model: 'google/gemini-2.0-flash-001', maxTokens: 4096, timeout: 120000, note: '聚合' },
+  { id: 'or4', platform: 'openrouter', name: 'OpenRouter Llama', url: 'https://openrouter.ai/api/v1/chat/completions', model: 'meta-llama/llama-3.3-70b-instruct', maxTokens: 4096, timeout: 120000, note: '聚合' },
+];
+
+var DEPTHS = { quick: { brand: 4, cat: 6, scene: 2, total: 12, label: '快速 12 题' }, standard: { brand: 8, cat: 16, scene: 6, total: 30, label: '标准 30 题' }, deep: { brand: 12, cat: 28, scene: 8, total: 48, label: '深度 48 题' } };
+var GRADE_COLOR = { S: '#FFDE59', A: '#00C853', B: '#fff', C: '#FF8A00', D: '#FF4D4D' };
+var GRADE_TX = { S: '#000', A: '#000', B: '#000', C: '#000', D: '#fff' };
+var curDepth = 'quick';
+var running = false;
+
+function ls(k, v) { if (arguments.length === 2) { localStorage.setItem(k, v); return v; } return localStorage.getItem(k) || ''; }
+function platKey(p) { return 'eeo_key_' + p; }
+function enabledIds() { var def = CATALOG.filter(function (e) { return e.def; }).map(function (e) { return e.id; }); try { return JSON.parse(ls('eeo_enabled') || 'null') || def; } catch (e) { return def; } }
+
+/* ============ 分析逻辑（与服务版同源） ============ */
+var SUFFIX_RE = /(工坊|工作室|科技|教育|信息技术|有限公司|网络|学院|平台|中心|机构|学堂|编程|ai|AI)$/g;
+function coreWord(brand) {
+  var b = brand.trim();
+  if (b.length < 4) return [b];
+  var w = b, changed = true;
+  while (changed && w.length >= 3) {
+    changed = false;
+    var m = w.match(SUFFIX_RE);
+    if (m && w.length - m[0].length >= 2) { w = w.slice(0, w.length - m[0].length); changed = true; }
+  }
+  return (w !== b && w.length >= 2) ? [b, w] : [b];
+}
+function countHits(text, pats) {
+  var n = 0;
+  pats.forEach(function (p) { var i = text.indexOf(p); while (i !== -1) { n++; i = text.indexOf(p, i + 1); } });
+  return n;
+}
+var NOINFO_RE = /(没有|无法|暂未|未能|不在我|没听说过|缺乏|查不到|查不到任何|没有查到)[^。！？]{0,100}(信息|资料|了解|掌握|记录|听说过|数据|机构|品牌|公司)|并不是一个广为人知|无法确认其|没有可靠信息|没有听说过该|并未听说过/;
+var AMBIG_RE = /不同语境|含义差别很大|如果(你说的?|指的是)|可能指(代|的是)?|指的是哪个|哪个方面|具体指什么|能具体说说|请(你)?补充|告诉我(更多|具体|是什么)|需要更多信息|上下文|几种(可能|情况)|缩写(有点)?模糊|有时候并不是|并不(一定)?是品牌|可能是以下几种|先列几个最常见的|无法确定(它|你|该)|需要你提供/;
+function gradeOf(x) {
+  if (x >= 0.8) return { g: 'S', t: 'AI 眼中的默认选项' };
+  if (x >= 0.6) return { g: 'A', t: '认知稳固 推荐在列' };
+  if (x >= 0.4) return { g: 'B', t: '有认知 推荐缺席' };
+  if (x >= 0.15) return { g: 'C', t: '边缘存在' };
+  return { g: 'D', t: 'AI 视野之外' };
+}
+function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+
+/* ============ 引擎目录 UI ============ */
+function toggleEngines() { document.getElementById('enginesCard').classList.toggle('hidden'); }
+function renderEngines() {
+  var en = enabledIds();
+  var html = '';
+  CATALOG.forEach(function (e) {
+    if (e.cat) { html += '<div class="eng-cat">' + e.cat + '</div>'; return; }
+    var on = en.indexOf(e.id) !== -1;
+    var k = ls(platKey(e.platform));
+    html += '<div class="eng-item' + (on ? ' on' : '') + '" id="ei_' + e.id + '">'
+      + '<input type="checkbox" class="ck" ' + (on ? 'checked' : '') + ' onchange="this.closest(\'.eng-item\').classList.toggle(\'on\',this.checked);updateCount()">'
+      + '<div><div class="nm">' + esc(e.name) + (e.note ? '<span class="tag">' + esc(e.note) + '</span>' : '') + '</div>'
+      + '<div class="kv">'
+      + '<input type="password" placeholder="' + (k ? '密钥已存' : 'API Key') + '" id="key_' + e.id + '" oninput="syncPlatformKey(\'' + e.platform + '\',this.value)">'
+      + '<input type="text" value="' + esc(ls('eeo_model_' + e.id, e.model)) + '" id="model_' + e.id + '" onchange="ls(\'eeo_model_' + e.id + '\',this.value)" placeholder="模型名">'
+      + '</div></div></div>';
+  });
+  document.getElementById('engList').innerHTML = html;
+  updateCount();
+}
+function syncPlatformKey(platform, val) {
+  if (val) ls(platKey(platform), val);
+}
+function saveEngines() {
+  var en = [];
+  document.querySelectorAll('.eng-item').forEach(function (el) {
+    var ck = el.querySelector('.ck');
+    if (ck.checked) {
+      var id = el.id.replace('ei_', '');
+      en.push(id);
+      var k = document.getElementById('key_' + id).value.trim();
+      if (k) ls(platKey(catById(id).platform), k);
+      ls('eeo_model_' + id, document.getElementById('model_' + id).value.trim() || catById(id).model);
+    }
+  });
+  ls('eeo_enabled', JSON.stringify(en));
+  renderEngines();
+  document.getElementById('testResult').textContent = '设置已保存到本机浏览器';
+}
+function catById(id) { return CATALOG.filter(function (e) { return e.id === id; })[0]; }
+function updateCount() {
+  var n = document.querySelectorAll('.eng-item .ck:checked').length;
+  document.getElementById('engCount').textContent = n;
+}
+function activeEngines() {
+  return enabledIds().map(catById).filter(function (e) { return e && ls(platKey(e.platform)); });
+}
+function testEngines() {
+  var out = document.getElementById('testResult');
+  var act = activeEngines();
+  if (!act.length) { out.textContent = '请勾选并填入至少一个引擎的密钥'; return; }
+  out.textContent = '测试中（' + act.length + ' 家）';
+  var ok = 0;
+  var ps = act.map(function (e) {
+    return ask(e, '回复一个字：好').then(function () { ok++; });
+  });
+  Promise.all(ps).then(function () { out.textContent = ok + '/' + act.length + ' 家连接正常'; })
+    .catch(function () { out.textContent = ok + '/' + act.length + ' 家连接正常 失败的引擎请检查密钥或本机网络'; });
+}
+
+/* ============ 模型调用 ============ */
+function ask(e, question, maxTokens) {
+  var isAnthropic = e.apiType === 'anthropic';
+  var body, headers;
+  if (isAnthropic) {
+    body = JSON.stringify({ model: ls('eeo_model_' + e.id, e.model), max_tokens: maxTokens || e.maxTokens, messages: [{ role: 'user', content: question }] });
+    headers = { 'Content-Type': 'application/json', 'x-api-key': ls(platKey(e.platform)), 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' };
+  } else {
+    body = JSON.stringify({ model: ls('eeo_model_' + e.id, e.model), messages: [{ role: 'user', content: question }], max_tokens: maxTokens || e.maxTokens, temperature: 0.7, stream: false });
+    headers = { 'Content-Type': 'application/json', Authorization: 'Bearer ' + ls(platKey(e.platform)) };
+  }
+  var ctrl = new AbortController();
+  var timer = setTimeout(function () { ctrl.abort(); }, e.timeout);
+  return fetch(e.url, { method: 'POST', headers: headers, body: body, signal: ctrl.signal })
+    .then(function (r) {
+      if (!r.ok) return r.text().then(function (t) { throw new Error('HTTP ' + r.status + ' ' + t.slice(0, 80)); });
+      return r.json();
+    })
+    .then(function (d) {
+      clearTimeout(timer);
+      var txt = isAnthropic
+        ? (d.content && d.content[0] && d.content[0].text)
+        : (d.choices && d.choices[0] && d.choices[0].message && d.choices[0].message.content);
+      if (!txt) throw new Error('空回复');
+      return txt;
+    })
+    .catch(function (err) { clearTimeout(timer); throw err; });
+}
+
+/* ============ 并发池 ============ */
+function pool(items, limit, worker) {
+  return new Promise(function (resolve) {
+    var idx = 0, alive = 0, done = 0;
+    var total = items.length;
+    if (!total) return resolve();
+    function next() {
+      if (done >= total) return resolve();
+      while (alive < limit && idx < total) {
+        var my = idx++; alive++;
+        worker(items[my], my).catch(function () { }).then(function () { alive--; done++; next(); });
+      }
+    }
+    next();
+  });
+}
+
+/* ============ 题库 ============ */
+function genQuestions(job, dsE) {
+  var dep = DEPTHS[job.depth];
+  var usr = '为品牌「' + job.brand + '」（行业：' + job.industry + (job.city ? '，所在城市 ' + job.city : '') + '）生成 ' + dep.total + ' 个中文提问，模拟真实买家向 AI 助手咨询时的问法。要求：\n'
+    + '1. cat="品牌" 共 ' + dep.brand + ' 题：直接问 ' + job.brand + ' 的情况\n'
+    + '2. cat="品类" 共 ' + dep.cat + ' 题：买家不带品牌名的比较与选择问题\n'
+    + '3. cat="场景" 共 ' + dep.scene + ' 题：结合具体情境' + (job.city ? '（含 ' + job.city + ' 本地问法）' : '') + '的问法\n'
+    + (job.competitors.length ? '个别品类题可自然提到：' + job.competitors.join('、') + '\n' : '')
+    + '只输出 JSON 数组：[{"cat":"品牌","q":"..."}]';
+  return ask(dsE, usr, 4000).then(function (txt) {
+    var m = txt.match(/\[[\s\S]*\]/);
+    var qs = JSON.parse(m[0]);
+    if (Array.isArray(qs) && qs.length >= Math.min(10, dep.total)) {
+      return qs.slice(0, dep.total).map(function (x, i) { return { id: i + 1, cat: ['品牌', '品类', '场景'].indexOf(x.cat) !== -1 ? x.cat : '品类', q: String(x.q).slice(0, 80) }; });
+    }
+    throw new Error('题库格式异常');
+  });
+}
+function fallbackQuestions(job) {
+  var dep = DEPTHS[job.depth];
+  var comp = job.competitors[0] || '同类机构';
+  var out = [
+    { id: 1, cat: '品牌', q: job.brand + '是什么？' },
+    { id: 2, cat: '品牌', q: job.brand + '靠谱吗？' },
+    { id: 3, cat: '品牌', q: job.brand + '怎么收费？' },
+    { id: 4, cat: '品牌', q: job.brand + '和' + comp + '比哪个好？' },
+    { id: 5, cat: '品类', q: job.industry + '有哪些值得推荐的机构？' },
+    { id: 6, cat: '品类', q: '想选' + job.industry + '的服务怎么挑比较好？' },
+    { id: 7, cat: '品类', q: job.industry + '哪家性价比高？' },
+    { id: 8, cat: '品类', q: job.industry + '的头部品牌都有哪些？' },
+    { id: 9, cat: '品类', q: '第一次接触' + job.industry + '从哪里入手？' },
+    { id: 10, cat: '品类', q: job.industry + '线上和线下怎么选？' },
+    { id: 11, cat: '场景', q: job.city ? job.city + '有哪些' + job.industry + '？' : '本地找' + job.industry + '有什么靠谱选择？' },
+    { id: 12, cat: '场景', q: job.city ? job.city + '选' + job.industry + '要注意什么？' : '新手尝试' + job.industry + '要注意什么？' },
+  ];
+  var catQs = [job.industry + '的价格一般是多少？', '怎么判断' + job.industry + '哪家专业？', job.industry + '有哪些坑要注意？', '选' + job.industry + '最看重什么？', job.industry + '怎么规划预算？', job.industry + '适合什么人？', job.industry + '一般怎么收费？', '选择' + job.industry + '时常犯什么错？', job.industry + '的口碑怎么看？', '怎么对比不同' + job.industry + '？'];
+  for (var i = out.length; i < 4 + dep.cat; i++) out.push({ id: i + 1, cat: '品类', q: catQs[(i - 4) % catQs.length] });
+  var scQs = ['第一次购买' + job.industry + '服务的人有什么建议？', '预算有限时怎么选' + job.industry + '？', '怎么判断' + job.industry + '的真实水平？'];
+  for (var j = out.length; j < 4 + dep.cat + dep.scene; j++) out.push({ id: j + 1, cat: '场景', q: scQs[(j - 4 - dep.cat) % scQs.length] });
+  return out.slice(0, dep.total);
+}
+
+/* ============ 主流程 ============ */
+function pickDepth(el) {
+  document.querySelectorAll('.dep').forEach(function (d) { d.classList.remove('on'); });
+  el.classList.add('on');
+  curDepth = el.getAttribute('data-d');
+}
+function setStage(t) { document.getElementById('stageTxt').textContent = t; }
+function setProgress(eid, done, total) {
+  var f = document.getElementById('fill_' + eid);
+  var t = document.getElementById('txt_' + eid);
+  if (f) f.style.width = (total ? Math.round(done / total * 100) : 0) + '%';
+  if (t) t.textContent = done + '/' + (total || 0);
+}
+function renderBars(engines) {
+  var html = '';
+  engines.forEach(function (e) {
+    html += '<div class="engbar"><span class="nm">' + esc(e.name) + '</span><div class="track"><div class="fill" id="fill_' + e.id + '" style="width:0"></div></div><span id="txt_' + e.id + '">0/0</span></div>';
+  });
+  document.getElementById('engBars').innerHTML = html;
+}
+function startRun() {
+  var brand = document.getElementById('inBrand').value.trim();
+  if (brand.length < 2) { alert('请填写品牌名称'); return; }
+  var engines = activeEngines();
+  if (!engines.length) { alert('请在引擎目录中勾选并填入至少一个引擎的密钥'); toggleEngines(); return; }
+  if (running) return;
+  running = true;
+  document.getElementById('btnGo').disabled = true;
+  document.getElementById('statusBox').classList.remove('hidden');
+  document.getElementById('reportBox').innerHTML = '';
+  renderBars(engines);
+
+  var job = {
+    brand: brand,
+    city: document.getElementById('inCity').value.trim(),
+    industry: document.getElementById('inIndustry').value,
+    competitors: document.getElementById('inComp').value.split(/[,，、\s]+/).map(function (x) { return x.trim(); }).filter(Boolean).slice(0, 5),
+    depth: curDepth,
+    at: new Date().toLocaleString('zh-CN'),
+  };
+  var dsE = engines.filter(function (e) { return e.id === 'ds'; })[0] || engines[0];
+
+  setStage('问题生成中');
+  genQuestions(job, dsE)
+    .catch(function () { return fallbackQuestions(job); })
+    .then(function (qs) {
+      job.questions = qs;
+      setStage('逐题提问中');
+      var tasks = [];
+      var counters = {};
+      engines.forEach(function (e) { counters[e.id] = 0; });
+      engines.forEach(function (e) {
+        qs.forEach(function (q) { tasks.push({ e: e, q: q }); });
+      });
+      return pool(tasks, 4, function (t) {
+        return ask(t.e, t.q.q)
+          .then(function (txt) { t.q.answers = t.q.answers || {}; t.q.answers[t.e.id] = txt; })
+          .catch(function () { t.q.answers = t.q.answers || {}; t.q.answers[t.e.id] = ''; })
+          .then(function () { counters[t.e.id]++; setProgress(t.e.id, counters[t.e.id], qs.length); });
+      }).then(function () {
+        var results = {};
+        engines.forEach(function (e) { results[e.id] = { name: e.name, aware: 0, awareTotal: 0, mention: 0, mentionTotal: 0, comp: {} }; });
+        qs.forEach(function (q) {
+          q.answers = q.answers || {};
+          Object.keys(results).forEach(function (eid) { if (!(eid in q.answers)) q.answers[eid] = ''; });
+        });
+        return { results: results, qs: qs };
+      });
+    })
+    .then(function (o) {
+      setStage('分析中');
+      return new Promise(function (res) { setTimeout(function () { res(analyze(job, o.results, o.qs)); }, 50); });
+    })
+    .then(function (rep) {
+      running = false;
+      document.getElementById('btnGo').disabled = false;
+      document.getElementById('statusBox').classList.add('hidden');
+      window.__lastReport = rep;
+      renderReport(rep);
+    })
+    .catch(function (err) {
+      running = false;
+      document.getElementById('btnGo').disabled = false;
+      document.getElementById('statusBox').classList.add('hidden');
+      alert('检测中断：' + err.message);
+    });
+}
+
+/* ============ 引用来源分析（与服务版 core.cjs 同源） ============ */
+var URL_RE = /https?:\/\/[A-Za-z0-9\-._~%!$&'()*+,;=:@/?#\[\]]+/g;
+var PLATFORMS = [
+  { name: '微信公众号', domains: ['mp.weixin.qq.com'], words: ['微信公众号', '公众号'] },
+  { name: '腾讯新闻', domains: ['news.qq.com'], words: ['腾讯新闻'] },
+  { name: '知乎', domains: ['zhihu.com'], words: ['知乎'] },
+  { name: 'CSDN', domains: ['csdn.net'], words: ['CSDN'] },
+  { name: '维基百科', domains: ['wikipedia.org'], words: ['维基百科'] },
+  { name: 'GitHub', domains: ['github.com'], words: ['GitHub'] },
+  { name: '百度百科', domains: ['baike.baidu.com'], words: ['百度百科'] },
+  { name: '微博', domains: ['weibo.com'], words: ['微博'] },
+  { name: 'B站', domains: ['bilibili.com', 'b23.tv'], words: ['B站', '哔哩哔哩', 'bilibili'] },
+  { name: '36氪', domains: ['36kr.com'], words: ['36氪', '36kr'] },
+  { name: '搜狐', domains: ['sohu.com'], words: ['搜狐'] },
+  { name: '网易', domains: ['163.com'], words: ['网易'] },
+  { name: '新浪', domains: ['sina.com', 'sina.com.cn'], words: ['新浪'] },
+];
+function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+function platformOfHost(host) {
+  if (!host) return null;
+  for (var i = 0; i < PLATFORMS.length; i++) {
+    var p = PLATFORMS[i];
+    for (var j = 0; j < p.domains.length; j++) {
+      var d = p.domains[j];
+      if (host === d || host.slice(-(d.length + 1)) === '.' + d) return p.name;
+    }
+  }
+  return null;
+}
+function rootDomain(host) {
+  var h = host.replace(/^www\./i, '');
+  var m2 = h.match(/([^.]+\.(?:com|net|org|gov|edu|ac)\.(?:cn|hk|tw|jp|uk))$/i);
+  if (m2) return m2[1];
+  var m = h.match(/([^.]+\.[^.]+)$/);
+  return m ? m[1] : h;
+}
+function trimUrl(raw) {
+  var s = raw.replace(/[.,;:!?'"，。；：！？、）》」』】\]]+$/, '');
+  var bal = 0;
+  for (var i = 0; i < s.length; i++) { if (s[i] === '(') bal++; else if (s[i] === ')') bal--; }
+  while (bal < 0 && s.charAt(s.length - 1) === ')') { s = s.slice(0, -1); bal++; }
+  return s;
+}
+function hostOf(u) {
+  var m = u.match(/^https?:\/\/([^/?#]+)/i);
+  if (!m) return null;
+  return m[1].split('@').pop().split(':')[0].toLowerCase();
+}
+function countPlatformWords(lowText, words) {
+  var alts = words.map(function (w) { return escRe(w.toLowerCase()); }).sort(function (a, b) { return b.length - a.length; }).join('|');
+  var m = lowText.match(new RegExp(alts, 'g'));
+  return m ? m.length : 0;
+}
+function extractSources(qs, competitors) {
+  var urlCounts = {}, domainCounts = {}, platformCounts = {}, byQuestion = {};
+  qs.forEach(function (q) {
+    var perQ = [];
+    var addSrc = function (s) { if (perQ.indexOf(s) === -1) perQ.push(s); };
+    var answers = q.answers ? Object.keys(q.answers).map(function (k) { return q.answers[k]; }) : [];
+    answers.forEach(function (a) {
+      if (!a) return;
+      var text = String(a);
+      var urls = (text.match(URL_RE) || []).map(trimUrl).filter(function (u) { return /^https?:\/\//i.test(u); });
+      urls.forEach(function (u) {
+        urlCounts[u] = (urlCounts[u] || 0) + 1;
+        var host = hostOf(u);
+        if (host) {
+          var rd = rootDomain(host);
+          if (rd) domainCounts[rd] = (domainCounts[rd] || 0) + 1;
+          var pn = platformOfHost(host);
+          if (pn) { platformCounts[pn] = (platformCounts[pn] || 0) + 1; addSrc(pn); }
+        }
+        addSrc(u);
+      });
+      var bare = text.replace(URL_RE, ' ').toLowerCase();
+      PLATFORMS.forEach(function (p) {
+        var n = countPlatformWords(bare, p.words);
+        if (n) { platformCounts[p.name] = (platformCounts[p.name] || 0) + n; addSrc(p.name); }
+      });
+    });
+    byQuestion[q.id] = perQ;
+  });
+  var topUrls = Object.keys(urlCounts).map(function (u) { return { url: u, count: urlCounts[u] }; })
+    .sort(function (a, b) { return b.count - a.count || (a.url < b.url ? -1 : 1); });
+  var topDomains = Object.keys(domainCounts).map(function (d) { return { domain: d, count: domainCounts[d] }; })
+    .sort(function (a, b) { return b.count - a.count || (a.domain < b.domain ? -1 : 1); });
+  var competitorContext = (competitors || []).map(function (c) {
+    var pats = coreWord(c);
+    var seen = [];
+    var mentioned = 0;
+    qs.forEach(function (q) {
+      var answers = q.answers ? Object.keys(q.answers).map(function (k) { return q.answers[k]; }) : [];
+      var hit = answers.some(function (a) { return a && pats.some(function (p) { return String(a).indexOf(p) !== -1; }); });
+      if (hit) { mentioned++; (byQuestion[q.id] || []).forEach(function (s) { if (seen.indexOf(s) === -1) seen.push(s); }); }
+    });
+    return { competitor: c, mentioned: mentioned, sources: seen };
+  });
+  return {
+    totalUrls: topUrls.reduce(function (a, x) { return a + x.count; }, 0),
+    topUrls: topUrls, topDomains: topDomains,
+    byPlatform: platformCounts, byQuestion: byQuestion, competitorContext: competitorContext,
+  };
+}
+
+function analyze(job, results, qs) {
+  var pats = coreWord(job.brand);
+  var compPats = {};
+  job.competitors.forEach(function (c) { compPats[c] = coreWord(c); });
+  var quotes = [];
+  Object.keys(results).forEach(function (eid) {
+    var s = results[eid];
+    qs.forEach(function (q) {
+      var a = q.answers[eid] || '';
+      if (!a) return;
+      if (q.cat === '品牌') {
+        s.awareTotal++;
+        var noinfo = NOINFO_RE.test(a), ambig = AMBIG_RE.test(a);
+        var hit = pats.some(function (p) { return a.indexOf(p) !== -1; });
+        if (hit && !noinfo && !ambig && a.length > 150) s.aware++;
+        else if (noinfo && quotes.length < 6) quotes.push({ engine: s.name, q: q.q, snippet: a.replace(/\s+/g, ' ').slice(0, 90) + '……' });
+      } else {
+        s.mentionTotal++;
+        s.mention += countHits(a, pats);
+        job.competitors.forEach(function (c) {
+          var n = countHits(a, compPats[c]);
+          if (n) s.comp[c] = (s.comp[c] || 0) + n;
+        });
+      }
+    });
+  });
+  var ids = Object.keys(results);
+  var avgAware = ids.length ? ids.reduce(function (a, k) { return a + (results[k].awareTotal ? results[k].aware / results[k].awareTotal : 0); }, 0) / ids.length : 0;
+  var totalMention = ids.reduce(function (a, k) { return a + results[k].mention; }, 0);
+  var mentionCap = ids.reduce(function (a, k) { return a + results[k].mentionTotal; }, 0) || 1;
+  var mentionRate = Math.min(1, totalMention / (mentionCap * 0.3));
+  var overall = avgAware * 0.5 + mentionRate * 0.5;
+  var labels = {};
+  qs.forEach(function (q) {
+    labels[q.id] = {};
+    ids.forEach(function (eid) {
+      var a = q.answers[eid] || '';
+      if (!a) { labels[q.id][eid] = '未答'; return; }
+      var noinfo = NOINFO_RE.test(a), ambig = AMBIG_RE.test(a);
+      var hit = pats.some(function (p) { return a.indexOf(p) !== -1; });
+      if (q.cat === '品牌') labels[q.id][eid] = (hit && !noinfo && !ambig) ? '有实料' : '无实料';
+      else labels[q.id][eid] = hit ? '提及' : '未提及';
+    });
+  });
+  return { job: job, results: results, questions: qs, quotes: quotes, labels: labels, sources: extractSources(qs, job.competitors), score: { overall: Math.round(overall * 100), awareRate: Math.round(avgAware * 100), mentionRate: Math.round(mentionRate * 100), grade: gradeOf(overall) } };
+}
+
+/* ============ 报告 ============ */
+function attrEsc(s) { return esc(s).replace(/"/g, '&quot;'); }
+function renderSources(rep) {
+  if (!rep.sources) return ''; // 旧版报告无此字段 整块跳过
+  var so = rep.sources;
+  var plats = Object.keys(so.byPlatform || {}).map(function (k) { return [k, so.byPlatform[k]]; })
+    .sort(function (a, b) { return b[1] - a[1]; });
+  var cc = (so.competitorContext || []).filter(function (c) { return c.mentioned > 0 && (c.sources || []).length; });
+  var tu = (so.topUrls || []).slice(0, 10);
+  if (!plats.length && !cc.length && !tu.length) return '';
+  var html = '<div class="card"><h3>AI 引用来源</h3><div class="hint" style="margin:0">回答里引用或提及的外部内容 平台含链接域名与纯文本提及 链接共 ' + (so.totalUrls || 0) + ' 处</div>';
+  if (plats.length) {
+    var maxP = plats[0][1] || 1;
+    html += '<div class="src-sub">平台引用频次</div>';
+    plats.forEach(function (p) {
+      html += '<div class="bar-row"><span class="nm">' + esc(p[0]) + '</span><div class="tr"><div class="fl" style="width:' + Math.max(4, Math.round(p[1] / maxP * 100)) + '%"></div></div><span style="width:44px;text-align:right">' + p[1] + ' 次</span></div>';
+    });
+  }
+  if (cc.length) {
+    html += '<div class="src-sub">推荐竞品时 AI 同时引用</div>';
+    cc.forEach(function (c) {
+      html += '<div class="cc-line"><span class="cc-nm">' + esc(c.competitor) + '</span>';
+      c.sources.forEach(function (s) {
+        if (/^https?:\/\//i.test(s)) html += '<a class="schip" href="' + attrEsc(s) + '" target="_blank" rel="noopener noreferrer">' + esc(s) + '</a>';
+        else html += '<span class="schip pf">' + esc(s) + '</span>';
+      });
+      html += '</div>';
+    });
+  }
+  if (tu.length) {
+    html += '<div class="src-sub">高频链接 前 10</div>';
+    tu.forEach(function (u) {
+      html += '<div class="cc-line"><a class="schip" href="' + attrEsc(u.url) + '" target="_blank" rel="noopener noreferrer">' + esc(u.url) + '</a><span style="font-size:11px;color:#777;font-weight:800">' + u.count + ' 次</span></div>';
+    });
+  }
+  return html + '</div>';
+}
+function renderReport(rep) {
+  var g = rep.score.grade;
+  var box = document.getElementById('reportBox');
+  var ids = Object.keys(rep.results);
+  var html = '';
+  html += '<div class="card"><div class="hint" style="margin:0">' + esc(rep.job.brand) + ' ' + esc(rep.job.at) + ' ' + DEPTHS[rep.job.depth].label + ' ' + ids.length + ' 家引擎</div><h2 style="font-size:24px;font-weight:900;margin-top:4px">检测报告</h2>';
+  html += '<div class="gradebox" style="margin-top:14px">';
+  html += '<div class="gbadge" style="background:' + GRADE_COLOR[g.g] + '"><div class="g" style="color:' + GRADE_TX[g.g] + '">' + g.g + '</div><div class="t" style="color:' + GRADE_TX[g.g] + '">' + g.t + '</div></div>';
+  html += '<div style="flex:1;min-width:230px;display:flex;flex-direction:column;justify-content:center;gap:4px">';
+  [['综合评分', rep.score.overall], ['品牌认知率', rep.score.awareRate], ['品类提及率', rep.score.mentionRate]].forEach(function (p) {
+    html += '<div class="scorebar"><span class="nm">' + p[0] + '</span><div class="tr"><div class="fl" style="width:' + Math.min(100, p[1]) + '%"></div></div><span class="vl">' + p[1] + ' 分</span></div>';
+  });
+  html += '</div></div></div>';
+
+  html += '<div class="card"><h3>引擎结果</h3><table><tr><th>引擎</th><th>品牌认知</th><th>品类提及</th></tr>';
+  ids.forEach(function (eid) {
+    var s = rep.results[eid];
+    html += '<tr><td><b>' + esc(s.name) + '</b></td><td>' + s.aware + '/' + s.awareTotal + '</td><td>' + s.mention + ' 次</td></tr>';
+  });
+  html += '</table></div>';
+
+  if (rep.quotes.length) {
+    html += '<div class="card"><h3>AI 原话</h3>';
+    rep.quotes.forEach(function (q) { html += '<div class="quote">' + esc(q.snippet) + '<span class="src">—— ' + esc(q.engine) + '，「' + esc(q.q) + '」</span></div>'; });
+    html += '</div>';
+  }
+
+  html += '<div class="card"><h3>名称出现次数</h3>';
+  ids.forEach(function (eid) {
+    var s = rep.results[eid];
+    html += '<div style="font-weight:900;font-size:13px;margin:8px 0 4px">' + esc(s.name) + '</div>';
+    var rows = [[rep.job.brand, s.mention]].concat(Object.keys(s.comp).map(function (k) { return [k, s.comp[k]]; }));
+    rows.forEach(function (r) {
+      html += '<div class="bar-row"><span class="nm">' + esc(r[0]) + '</span><div class="tr"><div class="fl" style="width:' + Math.min(100, r[1] * 10) + '%"></div></div><span style="width:44px;text-align:right">' + r[1] + ' 次</span></div>';
+    });
+  });
+  html += '</div>';
+
+  html += renderSources(rep);
+
+  html += '<div class="card"><h3>逐题明细</h3><table><tr><th>#</th><th>问题</th><th>类别</th>';
+  ids.forEach(function (eid) { html += '<th>' + esc(rep.results[eid].name) + '</th>'; });
+  html += '</tr>';
+  rep.questions.forEach(function (q) {
+    html += '<tr class="tr-click" onclick="toggleQ(' + q.id + ')"><td>' + q.id + '</td><td>' + esc(q.q) + '</td><td>' + q.cat + '</td>';
+    ids.forEach(function (eid) {
+      var l = rep.labels[q.id][eid];
+      html += '<td class="' + (l === '有实料' || l === '提及' ? 'yes' : (l === '无实料' ? 'un' : 'no')) + '">' + l + '</td>';
+    });
+    html += '</tr>';
+    html += '<tr class="hidden" id="qrow' + q.id + '"><td colspan="' + (3 + ids.length) + '">';
+    ids.forEach(function (eid) {
+      html += '<div style="font-weight:800;font-size:11.5px;color:#777;margin-top:6px">' + esc(rep.results[eid].name) + '</div><div class="orig">' + esc((q.answers && q.answers[eid]) || '（无回答）') + '</div>';
+    });
+    html += '</td></tr>';
+  });
+  html += '</table></div>';
+
+  html += '<div class="export"><button class="btn" onclick="exportJson()">导出 JSON</button><button class="btn ghost" onclick="window.print()">打印</button></div>';
+  box.innerHTML = html;
+  box.scrollIntoView({ behavior: 'smooth' });
+}
+function toggleQ(qid) { document.getElementById('qrow' + qid).classList.toggle('hidden'); }
+function exportJson() {
+  var blob = new Blob([JSON.stringify(window.__lastReport, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'eeo-report-' + (window.__lastReport.job.brand) + '-' + Date.now() + '.json';
+  a.click();
+}
+
+/* ============ 初始化 ============ */
+renderEngines();
+</script>
+</body>
+</html>

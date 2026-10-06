@@ -1,0 +1,175 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "ds-0040",
+  "industry": "生物材料与护肤",
+  "industry_aliases": [
+    "生物材料与护肤"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "model",
+      "label": "服务方式",
+      "select": "many"
+    },
+    {
+      "id": "team",
+      "label": "团队形态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客户类型",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "计价方式",
+      "select": "one"
+    }
+  ],
+  "traits": [
+    {
+      "id": "project_based",
+      "group": "model",
+      "label": "项目制服务",
+      "description": "按项目界定范围和交付"
+    },
+    {
+      "id": "retainer",
+      "group": "model",
+      "label": "长期顾问",
+      "description": "按年度或周期提供顾问服务"
+    },
+    {
+      "id": "per_case",
+      "group": "model",
+      "label": "按次服务",
+      "description": "按单次委托提供服务"
+    },
+    {
+      "id": "onsite",
+      "group": "model",
+      "label": "驻场外包",
+      "description": "派员到客户现场驻场"
+    },
+    {
+      "id": "big_firm",
+      "group": "team",
+      "label": "品牌大所",
+      "description": "成规模的品牌机构"
+    },
+    {
+      "id": "boutique",
+      "group": "team",
+      "label": "精品工作室",
+      "description": "小团队精品化经营"
+    },
+    {
+      "id": "platform_b",
+      "group": "team",
+      "label": "平台接单",
+      "description": "通过平台撮合接单服务"
+    },
+    {
+      "id": "b_big",
+      "group": "buyer",
+      "label": "大中型企业",
+      "description": "主要客户为大中型企业"
+    },
+    {
+      "id": "b_sme",
+      "group": "buyer",
+      "label": "小微企业",
+      "description": "主要客户为小微企业"
+    },
+    {
+      "id": "b_personal",
+      "group": "buyer",
+      "label": "个人客户",
+      "description": "服务个人委托"
+    },
+    {
+      "id": "fixed_fee",
+      "group": "pricing",
+      "label": "固定打包价",
+      "description": "按服务包固定报价"
+    },
+    {
+      "id": "hourly",
+      "group": "pricing",
+      "label": "按工时计费",
+      "description": "按投入工时计费"
+    },
+    {
+      "id": "success_fee",
+      "group": "pricing",
+      "label": "按结果计费",
+      "description": "与达成结果挂钩收费"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "fit",
+      "group": "decision",
+      "question": "我们这种规模和需求，你们接吗？",
+      "hint": "回答应说明适合的客户类型和起接门槛"
+    },
+    {
+      "id": "fee_b",
+      "group": "decision",
+      "question": "这个事办下来大概多少钱？",
+      "hint": "回答应给出典型情形的价格区间和计价口径"
+    },
+    {
+      "id": "team_who",
+      "group": "decision",
+      "question": "具体谁来做？干活的是资深的人还是新人？",
+      "hint": "回答应说明项目团队构成和资历"
+    },
+    {
+      "id": "process_b",
+      "group": "detail",
+      "question": "流程怎么走？多久出结果？",
+      "hint": "回答应列出阶段、节点和周期"
+    },
+    {
+      "id": "deliver_b",
+      "group": "detail",
+      "question": "最后交付什么？修改次数有限制吗？",
+      "hint": "回答应说明交付物和修改范围"
+    },
+    {
+      "id": "contact_b",
+      "group": "detail",
+      "question": "对接人怎么联系？多久回复？",
+      "hint": "回答应给出对接安排和响应时限"
+    },
+    {
+      "id": "confidential",
+      "group": "risk",
+      "question": "我们的商业信息会保密吗？签保密协议吗？",
+      "hint": "回答应说明保密安排"
+    },
+    {
+      "id": "refund_b",
+      "group": "risk",
+      "question": "办不成怎么办？费用退吗？",
+      "hint": "回答应说明未达成结果的费用处理"
+    }
+  ]
+}

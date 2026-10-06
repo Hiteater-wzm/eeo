@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shanghai Jahwa",
+  "alternateName": [
+    "上海家化",
+    "上海家化联合股份"
+  ],
+  "url": "https://www.jahwa.com.cn",
+  "description": "中国日化企业,旗下品牌包括佰草集、六神、美加净、启初等,历史可追溯至1898年成立的香港广生行。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上海",
+    "addressCountry": "中国"
+  }
+}

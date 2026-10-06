@@ -1,0 +1,17 @@
+# 德铁机动物流
+
+> German company (Aktiengesellschaft) founded 2003 with focus on rail-based and other forms of transport/logistics
+
+- 官方网站: http://www.deutschebahn.com
+- 所属行业: 运输
+- 别名: 德铁移动物流
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q392157
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

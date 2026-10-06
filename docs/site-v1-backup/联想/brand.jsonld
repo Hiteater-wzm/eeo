@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "联想",
+  "alternateName": [
+    "Lenovo",
+    "联想集团"
+  ],
+  "url": "https://www.lenovo.com.cn",
+  "description": "1984年成立于北京，个人电脑与智能设备制造商，旗下含ThinkPad与拯救者等产品线，于香港交易所上市。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

@@ -1,0 +1,17 @@
+# HANAMII, Inc.
+
+> Japanese company that develops and operates Hanamii, a Japan-made PaaS cloud platform
+
+- 官方网站: https://hanamii.jp/
+- 所属行业: 雲端運算
+- 别名: hanamii
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q141176593
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

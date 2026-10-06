@@ -1,0 +1,230 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-876",
+  "industry": "电影放映",
+  "industry_aliases": [
+    "876",
+    "电影放映",
+    "文化、体育和娱乐业",
+    "广播、电视、电影和录音制作业"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "format",
+      "label": "内容形态",
+      "select": "many"
+    },
+    {
+      "id": "revenue",
+      "label": "变现方式",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "受众与客户",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "定价方式",
+      "select": "one"
+    },
+    {
+      "id": "service_p",
+      "label": "配套服务",
+      "select": "many"
+    },
+    {
+      "id": "license",
+      "label": "许可与备案",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "live_show",
+      "group": "format",
+      "label": "现场演出",
+      "description": "售票的现场演出内容"
+    },
+    {
+      "id": "screen_content",
+      "group": "format",
+      "label": "影视内容",
+      "description": "影视、剧集、短片等内容制作"
+    },
+    {
+      "id": "publishing_c",
+      "group": "format",
+      "label": "出版物",
+      "description": "图书、报刊、音像出版"
+    },
+    {
+      "id": "digital_content",
+      "group": "format",
+      "label": "数字内容",
+      "description": "线上数字内容产品"
+    },
+    {
+      "id": "ticket_rev",
+      "group": "revenue",
+      "label": "票房与票务",
+      "description": "以售票收入为主"
+    },
+    {
+      "id": "copyright_rev",
+      "group": "revenue",
+      "label": "版权授权",
+      "description": "以版权授权收入为主"
+    },
+    {
+      "id": "ad_rev",
+      "group": "revenue",
+      "label": "广告与赞助",
+      "description": "以广告赞助收入为主"
+    },
+    {
+      "id": "derivative_rev",
+      "group": "revenue",
+      "label": "衍生品",
+      "description": "以周边衍生品收入为主"
+    },
+    {
+      "id": "b_audience",
+      "group": "buyer",
+      "label": "大众受众",
+      "description": "面向大众消费者"
+    },
+    {
+      "id": "b_fans",
+      "group": "buyer",
+      "label": "垂直圈层",
+      "description": "面向特定兴趣圈层"
+    },
+    {
+      "id": "b_advertiser",
+      "group": "buyer",
+      "label": "品牌广告主",
+      "description": "主要收入来自品牌客户"
+    },
+    {
+      "id": "p_ticket",
+      "group": "pricing",
+      "label": "按场次售票",
+      "description": "按场次和座位定价售票"
+    },
+    {
+      "id": "p_subscription",
+      "group": "pricing",
+      "label": "会员订阅",
+      "description": "以会员订阅方式收费"
+    },
+    {
+      "id": "p_free",
+      "group": "pricing",
+      "label": "免费加广告",
+      "description": "内容免费以广告变现"
+    },
+    {
+      "id": "av_tune_room",
+      "group": "service_p",
+      "label": "上门调校",
+      "description": "提供上门安装调校服务"
+    },
+    {
+      "id": "av_panel_warranty",
+      "group": "service_p",
+      "label": "屏体质保",
+      "description": "屏幕面板有单独质保条款"
+    },
+    {
+      "id": "film_film_license_f",
+      "group": "license",
+      "label": "公映许可",
+      "description": "影片持公映许可证"
+    },
+    {
+      "id": "film_settlement_box",
+      "group": "revenue",
+      "label": "票房分账",
+      "description": "收入以票房分账为主"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "content_fit",
+      "group": "decision",
+      "question": "适合什么人看？孩子能看吗？",
+      "hint": "回答应说明内容定位和适宜提示"
+    },
+    {
+      "id": "price_c",
+      "group": "decision",
+      "question": "票价多少钱？座位怎么选？",
+      "hint": "回答应给出票价结构和选座建议"
+    },
+    {
+      "id": "refund_c",
+      "group": "decision",
+      "question": "临时有事能退票吗？扣多少？",
+      "hint": "回答应说明退改签规则"
+    },
+    {
+      "id": "duration_c",
+      "group": "detail",
+      "question": "一场多长时间？中途能出场吗？",
+      "hint": "回答应说明时长和出入规则"
+    },
+    {
+      "id": "access_c",
+      "group": "detail",
+      "question": "在哪看？怎么取票？",
+      "hint": "回答应给出观看或取票方式"
+    },
+    {
+      "id": "new_content",
+      "group": "detail",
+      "question": "多久更新或上新一次？",
+      "hint": "回答应给出上新频率"
+    },
+    {
+      "id": "license_c",
+      "group": "risk",
+      "question": "演出或出版有审批文号吗？",
+      "hint": "回答应给出审批信息及查询方式"
+    },
+    {
+      "id": "privacy_c",
+      "group": "risk",
+      "question": "会员信息和支付安全怎么保障？",
+      "hint": "回答应说明账户与支付安全保障"
+    },
+    {
+      "id": "av_av_install",
+      "group": "detail",
+      "question": "挂架、走线包安装吗？",
+      "hint": "回答应说明安装范围与收费"
+    },
+    {
+      "id": "film_film_invest",
+      "group": "risk",
+      "question": "影视投资份额是真是假？资金监管吗？",
+      "hint": "回答应说明份额发行的真实性与风险提示"
+    }
+  ]
+}

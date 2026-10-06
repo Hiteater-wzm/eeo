@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>EEO Audit 快检</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="stripe"></div>
+<div class="wrap">
+
+  <header>
+    <div class="logo">
+      <div class="mark">EEO</div>
+      <div><b>EEO Audit</b><span>品牌可见性快检</span></div>
+    </div>
+    <button class="btn small ghost" id="btnSet">设置</button>
+  </header>
+
+  <div class="card" id="siteCard">
+    <h3>当前站点</h3>
+    <div class="kv"><span class="k">域名</span><span class="v" id="siteDomain">读取中</span></div>
+    <div class="kv"><span class="k">识别来源</span><span class="v" id="siteSrc">页面标题</span></div>
+    <label for="inBrand">品牌名 自动识别 可修改</label>
+    <input id="inBrand" maxlength="30" placeholder="品牌名">
+    <label for="inIndustry">所在行业</label>
+    <select id="inIndustry"></select>
+    <div class="warn">本地直连引擎 密钥只存本机 快速档 12 题</div>
+    <button class="btn" id="btnGo">检测此品牌</button>
+    <div class="hint">弹窗可以关 检测在后台 跑完自动存历史</div>
+  </div>
+
+  <div class="status hidden" id="statusBox">
+    <div class="stage"><span class="dot"></span><span id="stageTxt">准备中</span></div>
+    <div id="engBars"></div>
+  </div>
+
+  <div id="warnBox"></div>
+  <div id="reportBox"></div>
+
+  <div class="card hidden" id="setCard">
+    <h3>密钥设置</h3>
+    <label for="keyDs">DeepSeek API Key</label>
+    <input type="password" id="keyDs" placeholder="sk- 开头" autocomplete="off">
+    <label for="keyGlm">智谱 API Key</label>
+    <input type="password" id="keyGlm" placeholder="在 open.bigmodel.cn 获取" autocomplete="off">
+    <div class="hint">密钥只存本机 chrome.storage.local 不外传 没填的引擎自动跳过</div>
+    <button class="btn" id="btnSave">保存设置</button>
+  </div>
+
+  <div class="card" id="histCard">
+    <h3>最近检测</h3>
+    <div id="histList"><div class="hint">暂无记录</div></div>
+  </div>
+
+  <div class="foot">
+    <button class="btn small ghost" id="lnkFull">打开完整版 eeo-local 26 家引擎 逐题原文</button>
+    <div>EEO Audit Apache-2.0 模型直问 单次采样有波动</div>
+  </div>
+
+</div>
+<div class="stripe"></div>
+<script src="../lib/eeo-core.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# T-Mobile US
+
+> 美国移动运营商，总部位于华盛顿州Bellevue，2020年完成与Sprint的合并，提供5G移动与家庭互联网服务。
+
+- 官方网站: https://www.t-mobile.com
+- 所属行业: 电信运营商
+- 所在城市: Bellevue
+- 所在国家: 美国
+- 别名: T-Mobile美国
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 与Sprint合并后频谱与用户规模扩大
+- 5G网络中频段覆盖
+- Uncarrier品牌营销与家庭宽带延伸产品
+
+## 信息来源
+
+- https://www.t-mobile.com
+- https://en.wikipedia.org/wiki/T-Mobile_US
+- https://en.wikipedia.org/wiki/List_of_telecommunications_companies
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

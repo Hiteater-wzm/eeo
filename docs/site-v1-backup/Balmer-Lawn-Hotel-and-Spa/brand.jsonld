@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Balmer Lawn Hotel and Spa",
+  "alternateName": [
+    "Balmer Lawn Hotel",
+    "Balmer Lawn Hotel & New Forest Spa",
+    "Balmer Lawn Hotel & Spa",
+    "The Balmer Lawn Hotel",
+    "The New Forest Spa"
+  ],
+  "url": "https://www.balmerlawnhotel.com/",
+  "description": "A 54 room, luxury hotel and spa in the New Forest. Located in the village of Brockenhurst, the hotel offers contemporary"
+}

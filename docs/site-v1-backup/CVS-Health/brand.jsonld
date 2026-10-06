@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CVS Health",
+  "alternateName": [
+    "CVS",
+    "西维斯健康"
+  ],
+  "url": "https://www.cvshealth.com",
+  "description": "美国零售药房与健康服务公司，总部位于罗德岛州Woonsocket，运营CVS药房连锁、药品福利管理（CVS Caremark）与Aetna健康保险。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Woonsocket",
+    "addressCountry": "美国"
+  }
+}

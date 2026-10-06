@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "天合光能",
+  "alternateName": [
+    "天合光能有限公司",
+    "天合光能股份有限公司"
+  ],
+  "url": "http://www.trinasolar.com/",
+  "description": "the world’s leading provider of PV and smart energy total solutions"
+}

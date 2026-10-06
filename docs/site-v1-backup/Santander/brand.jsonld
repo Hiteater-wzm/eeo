@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Santander",
+  "alternateName": [
+    "桑坦德",
+    "西班牙桑坦德银行",
+    "Banco Santander"
+  ],
+  "url": "https://www.santander.com",
+  "description": "西班牙银行集团，总部位于马德里，在欧洲与美洲多国经营零售与商业银行，旗下含桑坦德消费金融。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madrid",
+    "addressCountry": "西班牙"
+  }
+}

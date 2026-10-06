@@ -1,0 +1,17 @@
+# HQS Quantum Simulations GmbH
+
+> German company developing quantum-physics-based simulation software for spectroscopy and NMR analysis
+
+- 官方网站: https://quantumsimulations.de/
+- 所属行业: 量子力学
+- 别名: HQS、HQS Quantum Simulations
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q108294069
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

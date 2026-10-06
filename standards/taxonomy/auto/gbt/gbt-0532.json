@@ -1,0 +1,237 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-0532",
+  "industry": "畜禽粪污处理活动",
+  "industry_aliases": [
+    "0532",
+    "畜禽粪污处理活动",
+    "农、林、牧、渔业",
+    "农、林、牧、渔专业及辅助性活动",
+    "畜牧专业及辅助性活动"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "sales",
+      "label": "销售渠道",
+      "select": "many"
+    },
+    {
+      "id": "org",
+      "label": "生产组织",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "主要买方",
+      "select": "many"
+    },
+    {
+      "id": "tier",
+      "label": "产品定位",
+      "select": "one"
+    },
+    {
+      "select": "many",
+      "id": "breed_mode_b",
+      "label": "养殖方式"
+    },
+    {
+      "select": "many",
+      "id": "breed_health_v",
+      "label": "防疫与用药"
+    }
+  ],
+  "traits": [
+    {
+      "id": "wholesale_local",
+      "group": "sales",
+      "label": "产地批发给收购商",
+      "description": "主要在产地批发市场或通过收购商走货"
+    },
+    {
+      "id": "direct_supply",
+      "group": "sales",
+      "label": "商超餐饮直供",
+      "description": "与商超、餐饮企业签订直供协议"
+    },
+    {
+      "id": "ecom_direct",
+      "group": "sales",
+      "label": "电商直销",
+      "description": "自有网店或平台店铺直接卖给消费者"
+    },
+    {
+      "id": "member_delivery",
+      "group": "sales",
+      "label": "会员周期配送",
+      "description": "按周期向会员家庭宅配"
+    },
+    {
+      "id": "own_base",
+      "group": "org",
+      "label": "自有基地生产",
+      "description": "产品产自自营种养基地"
+    },
+    {
+      "id": "farmer_order",
+      "group": "org",
+      "label": "农户订单收购",
+      "description": "与农户签订单按标准收购"
+    },
+    {
+      "id": "coop",
+      "group": "org",
+      "label": "合作社联营",
+      "description": "以合作社形式组织生产销售"
+    },
+    {
+      "id": "b_processor",
+      "group": "buyer",
+      "label": "加工企业",
+      "description": "主要买方是下游加工厂"
+    },
+    {
+      "id": "b_retail",
+      "group": "buyer",
+      "label": "零售与餐饮企业",
+      "description": "主要买方是零售商、餐饮企业"
+    },
+    {
+      "id": "b_consumer",
+      "group": "buyer",
+      "label": "个人消费者",
+      "description": "直接卖给个人买家"
+    },
+    {
+      "id": "t_bulk",
+      "group": "tier",
+      "label": "大宗经济型",
+      "description": "走量为主，按大宗行情定价"
+    },
+    {
+      "id": "t_mid",
+      "group": "tier",
+      "label": "常规中端",
+      "description": "常规品质，价格带位于市场中位"
+    },
+    {
+      "id": "t_premium",
+      "group": "tier",
+      "label": "精品高端",
+      "description": "分级精选、礼盒或认证产品，价格高于大宗行情"
+    },
+    {
+      "id": "breed_free_range",
+      "group": "breed_mode_b",
+      "label": "散养放养",
+      "description": "以散养或放养方式饲养"
+    },
+    {
+      "id": "breed_intensive",
+      "group": "breed_mode_b",
+      "label": "舍饲圈养",
+      "description": "以圈舍集中饲养为主"
+    },
+    {
+      "id": "breed_pasture",
+      "group": "breed_mode_b",
+      "label": "牧场放牧",
+      "description": "在草场放牧饲养"
+    },
+    {
+      "id": "breed_no_agp",
+      "group": "breed_health_v",
+      "label": "不使用促生长抗生素",
+      "description": "承诺不使用促生长用途抗生素，可查用药记录"
+    },
+    {
+      "id": "breed_vaccine_public",
+      "group": "breed_health_v",
+      "label": "免疫记录可查",
+      "description": "检疫和免疫记录可向买家出示"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "origin",
+      "group": "decision",
+      "question": "东西产自哪里？什么季节上市？",
+      "hint": "回答应给出产地、上市时间和当季供应量"
+    },
+    {
+      "id": "grade",
+      "group": "decision",
+      "question": "怎么分级定价？一级和二级差在哪？",
+      "hint": "回答应说明分级标准和各级价差"
+    },
+    {
+      "id": "moq",
+      "group": "decision",
+      "question": "起批量是多少？散买卖不卖？",
+      "hint": "回答应给出起批量和零售是否可单买"
+    },
+    {
+      "id": "visit",
+      "group": "detail",
+      "question": "基地能参观吗？能看现场采摘或分拣吗？",
+      "hint": "回答应说明是否开放参观及预约方式"
+    },
+    {
+      "id": "delivery_fresh",
+      "group": "detail",
+      "question": "发货后几天到？损耗坏了怎么算？",
+      "hint": "回答应给出运输时限和破损坏果的赔付规则"
+    },
+    {
+      "id": "trace",
+      "group": "detail",
+      "question": "能查到这批货的产地和检测记录吗？",
+      "hint": "回答应说明溯源方式和检测报告获取渠道"
+    },
+    {
+      "id": "cert",
+      "group": "risk",
+      "question": "宣传的有机、绿色认证，证书编号在哪查？",
+      "hint": "回答应给出证书类型、编号和官方查询入口"
+    },
+    {
+      "id": "settle",
+      "group": "risk",
+      "question": "大宗采购怎么签合同？价格波动谁承担？",
+      "hint": "回答应说明合同定价方式、订金和违约条款"
+    },
+    {
+      "id": "breed_drug_residue",
+      "group": "risk",
+      "question": "兽药残留怎么控制？有检测吗？",
+      "hint": "回答应说明休药期管理和出栏检测"
+    },
+    {
+      "id": "breed_quarantine",
+      "group": "risk",
+      "question": "出栏有检疫证明吗？",
+      "hint": "回答应说明动物检疫合格证明随货情况"
+    },
+    {
+      "id": "breed_breed_cycle",
+      "group": "decision",
+      "question": "养多久出栏（出产）？和快速育肥的差别在哪？",
+      "hint": "回答应给出饲养周期并说明与速成产品的区别"
+    }
+  ]
+}

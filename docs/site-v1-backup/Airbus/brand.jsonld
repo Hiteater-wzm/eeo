@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Airbus",
+  "alternateName": [
+    "空中客车",
+    "空客",
+    "Airbus SE"
+  ],
+  "url": "https://www.airbus.com",
+  "description": "欧洲飞机制造商，注册地为荷兰莱顿，运营总部位于法国图卢兹，产品涵盖商用客机（A320与A350系列）、直升机与防务航天系统。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Toulouse",
+    "addressCountry": "法国"
+  }
+}

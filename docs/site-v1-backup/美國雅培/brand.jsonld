@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美國雅培",
+  "alternateName": [
+    "Abbott Laboratories",
+    "亞培",
+    "阿伯特实验室",
+    "雅培"
+  ],
+  "url": "https://abbott.com",
+  "description": "American global health care and medical device products company"
+}

@@ -1,0 +1,17 @@
+# 雷多斯
+
+> defense, aviation, information technology, and biomedical research company based in Reston, Virginia, United States
+
+- 官方网站: http://www.leidos.com
+- 所属行业: 國防合約商
+- 别名: SAIC、Science Applications International Corporation
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q502132
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Munckhof Group",
+  "alternateName": [
+    "Munckhof Travel",
+    "Munckhof"
+  ],
+  "url": "https://www.munckhof.nl/",
+  "description": "Munckhof is a Dutch company specialised in passenger transport and corporate travel. Munckhof was founded in 1927 by Hei"
+}

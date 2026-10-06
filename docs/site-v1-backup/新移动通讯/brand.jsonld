@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "新移动通讯",
+  "alternateName": [
+    "新世界传动网",
+    "新世界傳動網",
+    "新移動通訊"
+  ],
+  "url": "https://www.sunmobile.com.hk/",
+  "description": "Hong Kong virtual mobile network operator"
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-793",
+  "industry": "土地登记服务",
+  "industry_aliases": [
+    "793",
+    "土地登记服务",
+    "水利、环境和公共设施管理业",
+    "土地管理业"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "biz",
+      "label": "业务类型",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客户类型",
+      "select": "many"
+    },
+    {
+      "id": "model",
+      "label": "合作模式",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "计价方式",
+      "select": "one"
+    }
+  ],
+  "traits": [
+    {
+      "id": "engineering",
+      "group": "biz",
+      "label": "工程治理",
+      "description": "承接污染治理工程的建设施工"
+    },
+    {
+      "id": "operation",
+      "group": "biz",
+      "label": "设施运营",
+      "description": "长期托管运营治理设施"
+    },
+    {
+      "id": "monitoring",
+      "group": "biz",
+      "label": "监测检测",
+      "description": "提供环境监测与检测服务"
+    },
+    {
+      "id": "consult_e",
+      "group": "biz",
+      "label": "咨询与管家",
+      "description": "提供环保咨询、管家式服务"
+    },
+    {
+      "id": "b_gov",
+      "group": "buyer",
+      "label": "政府与国企",
+      "description": "主要客户为政府平台与国企"
+    },
+    {
+      "id": "b_factory",
+      "group": "buyer",
+      "label": "工业企业",
+      "description": "主要客户为排污工业企业"
+    },
+    {
+      "id": "b_park",
+      "group": "buyer",
+      "label": "园区",
+      "description": "主要客户为工业园区"
+    },
+    {
+      "id": "epc_e",
+      "group": "model",
+      "label": "EPC 总承包",
+      "description": "工程总承包交付"
+    },
+    {
+      "id": "bot",
+      "group": "model",
+      "label": "BOT 特许经营",
+      "description": "投资建设并特许运营"
+    },
+    {
+      "id": "third_party",
+      "group": "model",
+      "label": "第三方治理",
+      "description": "按第三方治理模式托管治污"
+    },
+    {
+      "id": "per_project_e",
+      "group": "pricing",
+      "label": "按项目计价",
+      "description": "按工程或服务项目计价"
+    },
+    {
+      "id": "per_ton",
+      "group": "pricing",
+      "label": "按处理量计价",
+      "description": "按吨或水量等处理量计费"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "effect",
+      "group": "decision",
+      "question": "治理后能稳定达标吗？达不了标怎么办？",
+      "hint": "回答应给出达标承诺和未达标的责任条款"
+    },
+    {
+      "id": "case_e",
+      "group": "decision",
+      "question": "有同类项目的案例吗？运行数据能看吗？",
+      "hint": "回答应提供可核实的同类项目案例"
+    },
+    {
+      "id": "subsidy",
+      "group": "decision",
+      "question": "能申请什么补贴？你们协助申报吗？",
+      "hint": "回答应说明可申请的政策支持和代办范围"
+    },
+    {
+      "id": "run_cost",
+      "group": "detail",
+      "question": "建好后日常运行成本多少？",
+      "hint": "回答应给出能耗、药剂、人工等运行成本测算"
+    },
+    {
+      "id": "monitor_data",
+      "group": "detail",
+      "question": "运行数据我们能看到吗？多长上报一次？",
+      "hint": "回答应说明数据开放方式和上报频率"
+    },
+    {
+      "id": "maintenance",
+      "group": "detail",
+      "question": "设备维护谁管？备件多久到？",
+      "hint": "回答应说明维保责任和响应时限"
+    },
+    {
+      "id": "compliance",
+      "group": "risk",
+      "question": "被环保检查查出问题，责任怎么分？",
+      "hint": "回答应划分运营方与业主的责任边界"
+    },
+    {
+      "id": "penalty",
+      "group": "risk",
+      "question": "你们有过环保处罚记录吗？在哪查？",
+      "hint": "回答应说明合规记录和公开查询渠道"
+    }
+  ]
+}

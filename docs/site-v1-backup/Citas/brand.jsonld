@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Citas",
+  "alternateName": [
+    "CITAS",
+    "Citas SP"
+  ],
+  "url": "https://www.citas.com.br",
+  "description": "Brazilian urban regeneration and residential rental platform operating retrofitted buildings in São Paulo"
+}

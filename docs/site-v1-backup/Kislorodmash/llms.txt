@@ -1,0 +1,17 @@
+# Kislorodmash
+
+> former scientific and industrial complex in Odesa specialized in manufacturing air separation machines
+
+- 官方网站: http://www.kislorodmash.org//
+- 所属行业: 机械工程
+- 别名: Kysenmash
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q4222226
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

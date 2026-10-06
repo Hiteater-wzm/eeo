@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BRAINSROOT",
+  "alternateName": [
+    "Brainsroot",
+    "Brainsroot Inc"
+  ],
+  "url": "https://brainsroot.com",
+  "description": "global digital studio for websites, web apps, desktop apps, and automation"
+}

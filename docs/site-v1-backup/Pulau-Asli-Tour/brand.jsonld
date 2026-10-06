@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pulau Asli Tour",
+  "alternateName": [
+    "PAT",
+    "Pulau Asli Tour"
+  ],
+  "url": "https://pulauaslitour.com",
+  "description": "Indonesian tour operator specializing in Mentawai tribe cultural tours and surf camps on Siberut Island"
+}

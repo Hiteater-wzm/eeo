@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AIZ Business Consulta",
+  "alternateName": [
+    "AIZ",
+    "AIZ Business",
+    "AIZ Consulting",
+    "AIZ Restaurant",
+    "AIZ Real Estate"
+  ],
+  "url": "https://aizconsulta.com/",
+  "description": "For business owners who don't want to stay average - we diagnose what's holding growth back, define the right strategy,"
+}

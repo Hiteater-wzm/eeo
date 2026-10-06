@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gutachter Koop",
+  "alternateName": [
+    "Gutachter Koop Lüdenscheid",
+    "Koop Automotive Expert"
+  ],
+  "url": "https://gutachter-koop.de",
+  "description": "Independent vehicle appraiser in Lüdenscheid, Germany, founded 2013 by master technician Andreas Koop (former Audi Motor"
+}

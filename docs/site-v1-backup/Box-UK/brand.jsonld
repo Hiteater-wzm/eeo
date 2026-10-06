@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Box UK",
+  "alternateName": [
+    "boxuk",
+    "boxuk.com"
+  ],
+  "url": "https://www.boxuk.com/",
+  "description": "Box UK are award-winning Agile software consultants, bespoke software developers and UX practitioners delivering high pe"
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hengrui Biotechnology",
+  "alternateName": [
+    "Hengrui (Guangdong) Biotechnology",
+    "Hengrui (Guangdong) Biotechnology Co.",
+    "Ltd."
+  ],
+  "url": "https://hengruibiotechnology.com/",
+  "description": "dietary supplement contract manufacturer in Zhuhai, China"
+}

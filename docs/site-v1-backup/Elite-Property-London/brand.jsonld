@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Elite Property London",
+  "alternateName": "EPL",
+  "url": "https://elitepropertylondon.co.uk",
+  "description": "London-based property management company specialising in guaranteed rent schemes and company lets"
+}

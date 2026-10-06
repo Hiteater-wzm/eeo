@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "高云",
+  "alternateName": "Gowin",
+  "url": "http://www.gowinsemi.com/",
+  "description": "semi-conductor maker company, specialized in FPGA"
+}

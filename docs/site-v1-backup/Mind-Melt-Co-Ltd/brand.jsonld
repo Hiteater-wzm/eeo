@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mind Melt Co., Ltd.",
+  "alternateName": [
+    "Mind Melt",
+    "Mind Melt Japan",
+    "MindMelt"
+  ],
+  "url": "https://mindmelt.jp",
+  "description": "Tokyo-based Japan market entry consultancy and creative studio"
+}

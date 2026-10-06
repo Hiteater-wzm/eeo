@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "飛斯妥",
+  "alternateName": [
+    "Festo (Germany)",
+    "Festo Group",
+    "Festo SE & Co. KG"
+  ],
+  "url": "https://www.festo.com",
+  "description": "Group of companies in the area of control and automation technology with headquarter in Esslingen am Neckar"
+}

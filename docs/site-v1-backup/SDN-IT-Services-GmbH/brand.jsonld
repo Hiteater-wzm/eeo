@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SDN IT-Services GmbH",
+  "alternateName": [
+    "SDN",
+    "SDN IT Services",
+    "SDN IT-Services"
+  ],
+  "url": "https://sdn-it.de",
+  "description": "German IT-services company headquartered in Frankfurt am Main, operator of the LexA legal-tech platform"
+}

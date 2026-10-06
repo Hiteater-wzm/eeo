@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GetGrant",
+  "alternateName": "GetGrant Service",
+  "url": "https://getgrant.ua",
+  "description": "Ukrainian service for grant search, grant-writing training, and proposal consulting"
+}

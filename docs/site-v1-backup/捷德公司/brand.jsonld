@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "捷德公司",
+  "alternateName": [
+    "捷德",
+    "德捷公司"
+  ],
+  "url": "http://www.gi-de.com",
+  "description": "supplier of banknotes and solutions for identification, data protection and connectivity"
+}

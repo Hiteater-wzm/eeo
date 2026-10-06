@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Earthy Timber Ltd",
+  "alternateName": [
+    "Earthy Timber",
+    "Earthy Timber Limited"
+  ],
+  "url": "https://www.earthytimber.com/",
+  "description": "UK-based, sustainable furniture manufacturer crafting luxury solid wood tables, wooden desks, kitchen islands, worktops"
+}

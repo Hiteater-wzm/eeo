@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Juniper Networks",
+  "alternateName": [
+    "Juniper networks",
+    "瞻博網路",
+    "瞻博网路"
+  ],
+  "url": "https://juniper.net",
+  "description": "American multinational technology company"
+}

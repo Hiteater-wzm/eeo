@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SPA Deluxe GmbH",
+  "alternateName": [
+    "SPA Deluxe",
+    "Spadeluxe"
+  ],
+  "url": "https://spadeluxe.de",
+  "description": "German retailer of hot tubs, swim spas and saunas based in Senden, North Rhine-Westphalia"
+}

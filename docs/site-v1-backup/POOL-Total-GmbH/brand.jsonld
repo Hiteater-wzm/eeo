@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "POOL Total GmbH",
+  "alternateName": [
+    "Pool Total",
+    "pooltotal",
+    "pool total"
+  ],
+  "url": "https://www.pooltotal.com",
+  "description": "German family-owned online specialist retailer based in Minden offering pools, pool technology, water care, and sauna an"
+}

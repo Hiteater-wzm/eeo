@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Berliner Wohnungsauflösungen",
+  "alternateName": [
+    "Berliner Wohnungsaufloesung",
+    "Flat Clearance Berlin",
+    "house clearance Berlin",
+    "property clearance Berlin"
+  ],
+  "url": "https://www.wohnungsaufloesung-berlin.de/",
+  "description": "German service company for property clearings (Flat Clearance) and liquidations in Berlin"
+}

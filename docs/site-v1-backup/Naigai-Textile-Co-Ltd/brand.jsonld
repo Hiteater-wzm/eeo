@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Naigai Textile Co., Ltd.",
+  "alternateName": [
+    "Naigai Orimono Co.",
+    "Ltd.",
+    "Naigai orimono kabushikigaisha"
+  ],
+  "url": "http://naigai-orimono.co.jp",
+  "description": "located in Nishiwaki, Japan, manufacturing and selling local Banshu-ori textiles since 1949"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "狮门娱乐",
+  "alternateName": [
+    "狮门家庭娱乐公司",
+    "狮门影业",
+    "獅門娛樂",
+    "獅門娛樂公司",
+    "獅門家庭娛樂"
+  ],
+  "url": "http://www.lionsgate.com",
+  "description": "Canadian-American entertainment company"
+}

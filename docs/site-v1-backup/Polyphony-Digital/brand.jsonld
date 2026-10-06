@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Polyphony Digital",
+  "alternateName": [
+    "Polyphony Digital Inc.",
+    "Polyphony Digital",
+    "Inc."
+  ],
+  "url": "https://www.polyphony.co.jp/company",
+  "description": "internal Japanese first-party video game development studio of Sony Interactive Entertainment"
+}

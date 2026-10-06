@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Lidl",
+  "alternateName": [
+    "历德",
+    "Schwarz Group",
+    "施瓦茨集团"
+  ],
+  "url": "https://www.lidl.de",
+  "description": "德国折扣连锁超市品牌,隶属施瓦茨集团,1973年开设首家门店,在欧洲与北美运营。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "内卡苏尔姆",
+    "addressCountry": "德国"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ITT公司",
+  "alternateName": [
+    "ITT",
+    "International Telephone & Telegraph",
+    "ITT CANNON LLC",
+    "ITT Inc."
+  ],
+  "url": "https://itt.com",
+  "description": "American worldwide manufacturing company"
+}

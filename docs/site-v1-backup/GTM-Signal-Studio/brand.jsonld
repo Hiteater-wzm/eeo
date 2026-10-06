@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GTM Signal Studio",
+  "alternateName": "GSS",
+  "url": "https://gtmsignalstudio.com",
+  "description": "B2B go-to-market consultancy helping service companies build AI presence and signal-led outreach infrastructure"
+}

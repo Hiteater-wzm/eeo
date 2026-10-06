@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ORAGO GmbH",
+  "alternateName": [
+    "ORAGO",
+    "ORAGO Software",
+    "ORAGO Software & Consulting"
+  ],
+  "url": "https://orago.de",
+  "description": "German software company developing manufacturing cost intelligence platform, founded 2010 in Frankfurt am Main"
+}

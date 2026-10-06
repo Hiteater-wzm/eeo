@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GE HealthCare",
+  "alternateName": "GE医疗",
+  "url": "https://www.gehealthcare.com",
+  "description": "美国医学影像与医疗设备公司，2023年从通用电气分拆独立上市，总部位于芝加哥，产品涵盖CT、MRI、超声与造影剂。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chicago",
+    "addressCountry": "美国"
+  }
+}

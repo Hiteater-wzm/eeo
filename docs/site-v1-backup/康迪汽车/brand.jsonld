@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "康迪汽车",
+  "alternateName": [
+    "Kandi Technologies Group",
+    "Kandi Technologies Group",
+    "Inc"
+  ],
+  "url": "http://en.kandivehicle.com/",
+  "description": "Chinese battery and electric vehicle manufacturer"
+}

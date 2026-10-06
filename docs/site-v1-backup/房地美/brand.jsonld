@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "房地美",
+  "alternateName": [
+    "Freddie Mac",
+    "房貸美",
+    "联邦住房贷款抵押公司",
+    "聯邦住房抵押貸款公司"
+  ],
+  "url": "http://www.freddiemac.com",
+  "description": "American government-sponsored enterprise"
+}

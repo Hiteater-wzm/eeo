@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Equinor",
+  "alternateName": [
+    "挪威国家石油公司",
+    "Statoil"
+  ],
+  "url": "https://www.equinor.com",
+  "description": "挪威能源公司（前称Statoil），总部位于斯塔万格，以海上油气生产为主，并发展海上风电与可再生能源。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Stavanger",
+    "addressCountry": "挪威"
+  }
+}

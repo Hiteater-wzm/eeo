@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CTW Inc.",
+  "alternateName": "CTW INC.",
+  "url": "https://ctw.inc/",
+  "description": "Tokyo-based IT company operating the G123 browser game platform."
+}

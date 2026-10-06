@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Schecter Guitar Research",
+  "alternateName": [
+    "Schecter",
+    "Schecter Guitars"
+  ],
+  "url": "http://www.schecterguitars.com",
+  "description": "US guitar, bass and amplifier manufacturer"
+}

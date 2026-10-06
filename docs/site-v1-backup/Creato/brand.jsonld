@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Creato",
+  "alternateName": [
+    "creato app",
+    "Creato app",
+    "Creato App",
+    "creato platform",
+    "Creato platform"
+  ],
+  "url": "https://usecreato.com",
+  "description": "creator and talent management software platform for influencer agencies, based in Hamburg, Germany"
+}

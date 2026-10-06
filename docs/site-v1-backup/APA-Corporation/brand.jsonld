@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "APA Corporation",
+  "alternateName": [
+    "Apache Corp.",
+    "Apache Corporation",
+    "Apache Oil Corporation"
+  ],
+  "url": "http://www.apachecorp.com",
+  "description": "Holding company for Apache Corporation, an American company engaged in hydrocarbon exploration."
+}

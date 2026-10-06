@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ENTEGA AG",
+  "alternateName": [
+    "HSE",
+    "Entega Plus",
+    "ENTEGA AG",
+    "HEAG Südhessische Energie AG"
+  ],
+  "url": "https://www.entega.de/",
+  "description": "German energy and infrastructure service provider and supplier of green electricity and natural gas based in Darmstadt"
+}

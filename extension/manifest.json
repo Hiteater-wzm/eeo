@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "EEO Audit 快检",
+  "short_name": "EEO",
+  "version": "1.0.0",
+  "description": "浏览任意网站 一键查该品牌在 AI 回答里的可见性评级",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "EEO 品牌可见性快检",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://api.deepseek.com/*",
+    "https://open.bigmodel.cn/*"
+  ]
+}

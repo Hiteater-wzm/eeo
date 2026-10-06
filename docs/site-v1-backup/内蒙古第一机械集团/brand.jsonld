@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "内蒙古第一机械集团",
+  "alternateName": [
+    "Baotau Tank Plant",
+    "Factory 617",
+    "First Inner Mongolia Machinery Factory"
+  ],
+  "url": "http://yjjt.norincogroup.com.cn/",
+  "description": "military equipment manufacturer in China, part of Norinco Group"
+}

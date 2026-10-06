@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CompTIA",
+  "alternateName": [
+    "ABCD",
+    "Association of Better Computer Dealers",
+    "Computing Technology Industry Association"
+  ],
+  "url": "https://www.comptia.org/",
+  "description": "non-profit that issues IT certifications"
+}

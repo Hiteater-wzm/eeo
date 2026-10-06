@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Coach A",
+  "alternateName": [
+    "COACH A",
+    "COACH A Co.",
+    "Ltd."
+  ],
+  "url": "https://www.coacha.com/",
+  "description": "Japanese coaching and organizational development company based in Chiyoda, Tokyo"
+}

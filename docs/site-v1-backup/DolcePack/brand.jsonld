@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DolcePack",
+  "alternateName": [
+    "Dolce Pack",
+    "DolcePack SA",
+    "DolcePack Switzerland"
+  ],
+  "url": "https://www.dolcepack.com",
+  "description": "Swiss engineering and manufacturing company specializing in flexible packaging machinery; designs premade pouch filling"
+}

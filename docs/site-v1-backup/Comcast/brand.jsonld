@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Comcast",
+  "alternateName": [
+    "康卡斯特",
+    "Xfinity"
+  ],
+  "url": "https://corporate.comcast.com",
+  "description": "美国有线电视与电信集团，总部位于费城，旗下Xfinity品牌提供宽带、视频与移动服务，并持有NBC环球媒体资产。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Philadelphia",
+    "addressCountry": "美国"
+  }
+}

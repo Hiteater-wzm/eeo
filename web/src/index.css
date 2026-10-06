@@ -1,0 +1,276 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-bg-page: #fffbeb;
+  --color-tx: #000000;
+  --font-sans: "Inter", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+/* 直角规矩：全局禁圆角（品牌目录子树同样全直角） */
+*, *::before, *::after {
+  border-radius: 0 !important;
+}
+
+html, body {
+  background-color: var(--color-bg-page);
+  color: var(--color-tx);
+  font-family: var(--font-sans);
+}
+
+::selection { background: #ffde59; color: #000; }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: #fffbec; }
+::-webkit-scrollbar-thumb { background: #000; border: 3px solid #fffbec; }
+::-webkit-scrollbar-thumb:hover { background: #404040; }
+
+/* 斜纹警示条：黑白黄 45 度 */
+.stripe-bar {
+  height: 8px;
+  background: repeating-linear-gradient(45deg, #000 0 8px, #ffde59 8px 16px);
+}
+
+/* 主按钮：文字式（按钮禁方块规矩），无底无边框，粗下划线三态 */
+.btn-primary {
+  background: transparent;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  transition: color .08s ease, text-decoration-color .08s ease;
+}
+.btn-primary:hover:not(:disabled) { color: #b45309; text-decoration-color: #ffde59; }
+.btn-primary:active:not(:disabled) { color: #7c2d12; }
+.btn-primary:disabled { opacity: .45; cursor: not-allowed; }
+
+/* 次按钮：文字式 */
+.btn-ghost {
+  background: transparent;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 5px;
+  transition: color .08s ease, text-decoration-color .08s ease;
+}
+.btn-ghost:hover { color: #b45309; text-decoration-color: #ffde59; }
+.btn-ghost:active { color: #7c2d12; }
+
+/* 输入框：白底黑边，focus 出硬阴影 */
+.field {
+  width: 100%;
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 10px 12px;
+  font-size: 15px;
+  outline: none;
+  transition: box-shadow .08s ease;
+}
+.field:focus { box-shadow: 4px 4px 0 #000; }
+.field::placeholder { color: #71717a; }
+
+/* 卡片 hover：阴影加深并轻移 */
+.card-hover { transition: box-shadow .12s ease, transform .12s ease; }
+.card-hover:hover { box-shadow: 6px 6px 0 #000; transform: translate(-2px, -2px); }
+
+/* 进度填充：品牌黄（与数据条配色统一） */
+.bar-fill {
+  background: #ffde59;
+}
+
+/* 引擎勾选卡 */
+.eng-card {
+  cursor: pointer;
+  border: 2px solid #000;
+  background: #fff;
+  box-shadow: 4px 4px 0 #000;
+  transition: transform .08s ease, box-shadow .08s ease, background .08s ease;
+}
+.eng-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #000; }
+.eng-card.on { background: #ffde59; }
+
+/* 黑字白底黑边小标签 */
+.tag {
+  display: inline-block;
+  border: 2px solid #000;
+  background: #fff;
+  padding: 1px 8px;
+  box-shadow: 2px 2px 0 #000;
+  font-weight: 700;
+}
+
+/* FAQ marker */
+details summary::-webkit-details-marker { display: none; }
+details summary::after { content: "+"; float: right; font-weight: 900; color: #000; }
+details[open] summary::after { content: "-"; }
+
+/* 动效关闭（无障碍） */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: "Inter", "Microsoft YaHei", system-ui, sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ===== 品牌目录（.eeo-dir 作用域）：shadcn/ui 浅色主题 ===== */
+/* 白底 + #F8FAFC 卡片；主色 #0F172A（深蓝灰，不用默认蓝），辅助 #64748B；全直角；Geist 仅作用于目录子树 */
+.eeo-dir {
+  --card: #f8fafc;
+  --background: #ffffff;
+  --primary: #0F172A;
+  --primary-foreground: #ffffff;
+  --ring: #0F172A;
+  --muted-foreground: #64748B;
+  font-family: 'Geist Variable', 'Inter', 'Microsoft YaHei', system-ui, sans-serif;
+  background-color: #ffffff;
+}
+
+/* 目录视图挂 body.on-dir：页面级滚动条与背景切到浅色 */
+body.on-dir { background-color: #ffffff; }
+body.on-dir::-webkit-scrollbar { width: 10px; height: 10px; }
+body.on-dir::-webkit-scrollbar-track { background: #f1f5f9; }
+body.on-dir::-webkit-scrollbar-thumb { background: #cbd5e1; border: 2px solid #f1f5f9; }
+body.on-dir::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* 目录内部滚动条（弹窗、下拉等） */
+.eeo-dir ::-webkit-scrollbar { width: 8px; height: 8px; }
+.eeo-dir ::-webkit-scrollbar-track { background: #f1f5f9; }
+.eeo-dir ::-webkit-scrollbar-thumb { background: #cbd5e1; border: none; }
+.eeo-dir ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }

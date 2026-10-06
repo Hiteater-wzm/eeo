@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美国BD公司",
+  "alternateName": [
+    "碧迪医疗",
+    "贝克顿-迪金森公司"
+  ],
+  "url": "http://www.bd.com/",
+  "description": "American multinational medical technology company"
+}

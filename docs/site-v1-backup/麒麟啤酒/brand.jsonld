@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "麒麟啤酒",
+  "alternateName": [
+    "Kirin Brewery Company",
+    "Limited"
+  ],
+  "url": "https://www.kirinholdings.co.jp/company/organization/kirinbrewery/",
+  "description": "A Mitsubishi Group beer manufacturer headquartered in Nakano, Nakano Ward, Tokyo."
+}

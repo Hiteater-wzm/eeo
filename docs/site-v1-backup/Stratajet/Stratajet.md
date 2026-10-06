@@ -1,0 +1,20 @@
+# Stratajet 航空
+
+别名：Oxcis Aviation Ltd、StrataFBO、StrataFleet、Stratajet Private Jet Hire
+
+> Private aviation company. Stratajet provides a real-time private jet booking platform to give its passengers total contr
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 航空
+- 官方网站: [https://www.stratajet.com/](https://www.stratajet.com/)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q49772307](https://www.wikidata.org/wiki/Q49772307)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

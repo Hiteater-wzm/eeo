@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ZENIT KI GmbH",
+  "alternateName": "ZENIT KI",
+  "url": "https://www.zenit-ki.de",
+  "description": "AI consulting and implementation firm for German Mittelstand companies, based in Leipzig"
+}

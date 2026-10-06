@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "XTalent, Inc.",
+  "alternateName": "XTalent",
+  "url": "https://xtalent.co.jp/",
+  "description": "Japanese recruitment company operating the career service \"withwork\""
+}

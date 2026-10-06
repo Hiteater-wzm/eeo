@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Heilan Home",
+  "alternateName": [
+    "海澜之家",
+    "海澜之家集团"
+  ],
+  "url": "https://www.heilanhome.com",
+  "description": "中国服装企业,主营海澜之家品牌男装及连锁零售业务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "江阴(江苏省)",
+    "addressCountry": "中国"
+  }
+}

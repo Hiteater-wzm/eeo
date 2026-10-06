@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BooksForTopics",
+  "alternateName": "Books for Topics | BfT | booksfortopics.com",
+  "url": "https://www.booksfortopics.com/",
+  "description": "UK-based educational resource website providing curated book recommendations for schools"
+}

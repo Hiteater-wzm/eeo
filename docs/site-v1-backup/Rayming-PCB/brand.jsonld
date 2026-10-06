@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rayming PCB",
+  "alternateName": "Rayming PCB & Assembly",
+  "url": "https://www.raypcb.com",
+  "description": "Printed circuit board manufacturer and assembly supplier"
+}

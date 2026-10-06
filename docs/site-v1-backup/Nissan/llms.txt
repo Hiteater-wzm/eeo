@@ -1,0 +1,25 @@
+# Nissan
+
+> 日本汽车制造商,产品包括乘用车与电动车,旗下品牌包括日产与英菲尼迪,1933年成立。
+
+- 官方网站: https://www.nissan-global.com
+- 所属行业: 汽车制造
+- 所在城市: 横滨
+- 所在国家: 日本
+- 别名: 日产、日产汽车
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 在东京证券交易所上市
+- 与雷诺、三菱汽车组成联盟
+
+## 信息来源
+
+- https://www.nissan-global.com
+- https://en.wikipedia.org/wiki/Nissan
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

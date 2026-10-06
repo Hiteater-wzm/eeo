@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "西贝",
+  "alternateName": [
+    "西贝莜面村",
+    "西贝餐饮集团",
+    "XIBEI"
+  ],
+  "description": "1988年起源于内蒙古巴彦淖尔、总部位于北京的中式餐饮集团，主品牌西贝莜面村主打西北菜。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

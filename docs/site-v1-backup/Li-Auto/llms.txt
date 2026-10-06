@@ -1,0 +1,25 @@
+# Li Auto
+
+> 中国新能源汽车制造商,2015年成立,以增程式电动车起步,产品包括理想L系列SUV与MEGA MPV。
+
+- 官方网站: https://www.lixiang.com
+- 所属行业: 电动汽车
+- 所在城市: 北京
+- 所在国家: 中国
+- 别名: 理想、理想汽车
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 在纳斯达克与香港交易所上市
+- 增程与纯电双技术路线
+
+## 信息来源
+
+- https://www.lixiang.com
+- https://en.wikipedia.org/wiki/Li_Auto
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

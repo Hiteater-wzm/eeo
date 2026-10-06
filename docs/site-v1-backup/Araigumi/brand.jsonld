@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Araigumi",
+  "alternateName": [
+    "Araigumi Co.",
+    "Ltd."
+  ],
+  "url": "http://www.araigumi.co.jp/",
+  "description": "construction company based in Nishinomiya, Hyogo Prefecture, Japan"
+}

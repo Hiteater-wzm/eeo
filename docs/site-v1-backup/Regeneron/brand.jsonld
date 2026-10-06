@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Regeneron",
+  "alternateName": [
+    "再生元",
+    "再生元制药"
+  ],
+  "url": "https://www.regeneron.com",
+  "description": "美国生物技术公司，总部位于纽约州Tarrytown，以抗体发现与Trap技术平台开发眼科、免疫与肿瘤药物。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tarrytown",
+    "addressCountry": "美国"
+  }
+}

@@ -1,0 +1,27 @@
+# Bristol Myers Squibb
+
+> 美国生物制药公司，总部位于纽约，产品覆盖肿瘤、血液病、心血管与免疫领域。
+
+- 官方网站: https://www.bms.com
+- 所属行业: 生物制药
+- 所在城市: New York
+- 所在国家: 美国
+- 别名: 百时美施贵宝、BMS
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 免疫肿瘤与血液肿瘤药物构成核心产品线
+- 心血管口服抗凝药为长期产品
+- 通过收购新基与Mirati扩大肿瘤管线
+
+## 信息来源
+
+- https://www.bms.com
+- https://en.wikipedia.org/wiki/Bristol-Myers_Squibb
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

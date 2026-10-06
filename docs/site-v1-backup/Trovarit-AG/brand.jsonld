@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Trovarit AG",
+  "alternateName": "Trovarit",
+  "url": "https://www.trovarit.com",
+  "description": "German consulting firm for business software selection and implementation, headquartered in Aachen"
+}

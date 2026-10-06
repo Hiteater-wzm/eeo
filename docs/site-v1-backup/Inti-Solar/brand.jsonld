@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Inti Solar",
+  "alternateName": [
+    "Intisolar",
+    "PT Inti Sarana Adi Sejahtera"
+  ],
+  "url": "https://intisolar.com/",
+  "description": "Indonesian solar water heater company operated by PT Inti Sarana Adi Sejahtera."
+}

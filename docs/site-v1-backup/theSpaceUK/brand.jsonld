@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "theSpaceUK",
+  "alternateName": [
+    "theSpace",
+    "theSpace @ Niddry St",
+    "theSpace @ Surgeons Hall",
+    "theSpace @ Symposium Hall",
+    "theSpace on North Bridge"
+  ],
+  "url": "https://www.thespaceuk.com/",
+  "description": "Venue operator hosting live performance at the heart of the Edinburgh Festival Fringe. Offering a programme of new and o"
+}

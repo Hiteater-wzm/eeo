@@ -1,0 +1,27 @@
+# Pfizer
+
+> 美国制药公司，总部位于纽约，产品涵盖肿瘤、疫苗、内科与抗感染等领域，mRNA新冠疫苗与相关疗法为其近年主要产品线。
+
+- 官方网站: https://www.pfizer.com
+- 所属行业: 制药
+- 所在城市: New York
+- 所在国家: 美国
+- 别名: 辉瑞、辉瑞制药
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- mRNA疫苗与抗病毒药物构成传染病产品线
+- 肿瘤靶向药管线覆盖多个癌种
+- 收购Seagen后抗体偶联药物（ADC）管线扩大
+
+## 信息来源
+
+- https://www.pfizer.com
+- https://en.wikipedia.org/wiki/Pfizer
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Avocet Mining",
+  "alternateName": [
+    "AVM",
+    "Avocet Mining plc"
+  ],
+  "url": "http://www.avocetmining.com",
+  "description": "Avocet is a focused West African gold mining and exploration company with its primary operations in Burkina Faso and Gui"
+}

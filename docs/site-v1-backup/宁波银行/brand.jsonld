@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "宁波银行",
+  "alternateName": [
+    "宁波银行股份有限公司",
+    "寧波銀行"
+  ],
+  "url": "http://www.nbcb.cn",
+  "description": "Chinese bank based in Ningbo, Zhejiang province, China"
+}

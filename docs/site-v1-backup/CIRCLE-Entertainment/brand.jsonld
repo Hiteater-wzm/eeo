@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CIRCLE Entertainment",
+  "alternateName": [
+    "Fly High Works",
+    "CIRCLE Ent."
+  ],
+  "url": "http://cir-ent.com/",
+  "description": "game publisher for localizations of various smaller titles around the world. publications on the DS, 3DS, PSP, PC and iO"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Flowgrade GmbH",
+  "alternateName": [
+    "Biotrakr UG",
+    "Flowgrade"
+  ],
+  "url": "https://www.flowgrade.de",
+  "description": "German company for flow, biohacking and longevity (programs, events, podcast), founded in 2014 by Max Gotzler"
+}

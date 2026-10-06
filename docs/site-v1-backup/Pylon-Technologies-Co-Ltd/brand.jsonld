@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pylon Technologies Co., Ltd.",
+  "alternateName": [
+    "派能科技",
+    "派能"
+  ],
+  "url": "https://en.pylontech.com.cn/",
+  "description": "派能科技是一家储能电池系统提供商，专注于磷酸铁锂电芯、模组及储能电池系统的研发、生产和销售。"
+}

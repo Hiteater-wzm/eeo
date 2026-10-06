@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "精工",
+  "alternateName": [
+    "SEIKO",
+    "精工手表",
+    "精工表",
+    "精工錶"
+  ],
+  "url": "https://www.seiko.co.jp/",
+  "description": "Japanese company that manufactures and sells watches, clocks, electronic devices, semiconductors and optical products"
+}

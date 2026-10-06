@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中国移动",
+  "alternateName": [
+    "China Mobile",
+    "移动"
+  ],
+  "url": "https://www.10086.cn",
+  "description": "中国电信运营商，总部位于北京，移动用户规模超过10亿，业务涵盖移动通信、家庭宽带与政企数字化服务，按收入计位居全球电信运营商首位（Omdia统计2025）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

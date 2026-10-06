@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Compaq",
+  "alternateName": "HP Compaq",
+  "url": "https://www.compaq.com/",
+  "description": "American information technology company"
+}

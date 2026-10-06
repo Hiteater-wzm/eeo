@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nexoria Systems",
+  "alternateName": [
+    "Nexoria",
+    "Nexoria Systems UG",
+    "Nexoria Systems UG (haftungsbeschränkt)"
+  ],
+  "url": "https://nexoria-systems.de",
+  "description": "German provider of a work platform with knowledge storage, enterprise search, AI and office applications"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tsingtao Brewery",
+  "alternateName": "青岛啤酒",
+  "url": "https://www.tsingtao.com.cn",
+  "description": "中国啤酒生产企业,产品包括青岛啤酒主品牌与崂山等品牌,历史可追溯至1903年英德酿酒厂。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "青岛",
+    "addressCountry": "中国"
+  }
+}

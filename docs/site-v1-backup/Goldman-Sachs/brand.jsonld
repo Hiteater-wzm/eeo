@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Goldman Sachs",
+  "alternateName": [
+    "高盛",
+    "Goldman"
+  ],
+  "url": "https://www.goldmansachs.com",
+  "description": "美国投资银行与证券公司，业务包括投资银行、全球市场交易与做市、资产与财富管理以及平台解决方案。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

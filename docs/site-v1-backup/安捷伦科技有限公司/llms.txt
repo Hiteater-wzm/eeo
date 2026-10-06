@@ -1,0 +1,17 @@
+# 安捷伦科技有限公司
+
+> American life sciences company that provides instruments, software, services, and consumables for the entire laboratory
+
+- 官方网站: http://www.agilent.com
+- 所属行业: 高效液相色谱法
+- 别名: 安捷倫
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q393762
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

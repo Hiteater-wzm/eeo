@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "榮耀擂台摔角",
+  "alternateName": [
+    "榮耀擂臺摔角",
+    "榮譽戒指",
+    "榮譽擂台",
+    "荣耀擂台"
+  ],
+  "url": "https://www.rohwrestling.com/",
+  "description": "American professional wrestling promotion"
+}

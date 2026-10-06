@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ferrero",
+  "alternateName": "费列罗",
+  "url": "https://www.ferrero.com",
+  "description": "意大利糖果集团,控股公司费列罗国际注册于卢森堡,旗下品牌包括费列罗、能多益(Nutella)、健达、嘀嗒糖等。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "阿尔巴(皮埃蒙特)",
+    "addressCountry": "意大利"
+  }
+}

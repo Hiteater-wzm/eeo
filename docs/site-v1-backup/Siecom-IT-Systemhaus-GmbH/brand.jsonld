@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Siecom IT-Systemhaus GmbH",
+  "alternateName": [
+    "SIECOM",
+    "Siecom Computer & Software GmbH"
+  ],
+  "url": "https://www.siecom.de",
+  "description": "German IT services company based in Dresden, operator of the online letter mailing service easyNova"
+}

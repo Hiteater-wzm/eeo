@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HSBC",
+  "alternateName": [
+    "汇丰",
+    "汇丰银行",
+    "汇丰控股"
+  ],
+  "url": "https://www.hsbc.com",
+  "description": "欧洲银行集团，总部位于伦敦，业务网络遍及亚太、欧洲、中东与美洲，涵盖零售银行、工商金融与全球银行及资本市场。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "英国"
+  }
+}

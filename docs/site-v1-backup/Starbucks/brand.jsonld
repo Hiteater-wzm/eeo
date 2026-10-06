@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Starbucks",
+  "alternateName": "星巴克",
+  "url": "https://www.starbucks.com",
+  "description": "咖啡连锁运营商,销售现制咖啡、茶饮与食品,并在零售渠道销售包装咖啡产品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "西雅图",
+    "addressCountry": "美国"
+  }
+}

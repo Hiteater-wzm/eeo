@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "乌克兰能源机械股份公司",
+  "alternateName": [
+    "Turboatom",
+    "Ukrenergymachines",
+    "JSC Ukrainian Energy Machines"
+  ],
+  "url": "https://ukrenergymachines.com/",
+  "description": "Ukrainian manufacturer of power-engineering equipment in Kharkiv, named Turboatom until 2021"
+}

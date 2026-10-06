@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toyosaka kotsu",
+  "alternateName": [
+    "Toyoko",
+    "Geiyo Taxi",
+    "Toyoko Taxi"
+  ],
+  "url": "http://toyosaka-kotsu.co.jp/",
+  "description": "bus and taxicab operator based in Higashihiroshima, Hiroshima prefecture, Japan"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中國重汽（香港）",
+  "alternateName": [
+    "中國重汽",
+    "中国重汽",
+    "中國重汽(香港)有限公司",
+    "中國重汽香港",
+    "重汽香港"
+  ],
+  "url": "http://www.sinotruk.com/",
+  "description": "listed automobile manufacturer incorporated in Hong Kong, China"
+}

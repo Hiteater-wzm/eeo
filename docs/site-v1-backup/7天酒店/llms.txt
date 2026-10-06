@@ -1,0 +1,17 @@
+# 7天酒店
+
+> hotel chain headquartered in Guangzhou, China
+
+- 官方网站: http://www.7daysinn.cn/
+- 所属行业: 飯店
+- 别名: 7天连锁酒店集团
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q4643844
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

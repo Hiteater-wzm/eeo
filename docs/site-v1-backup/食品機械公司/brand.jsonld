@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "食品機械公司",
+  "alternateName": [
+    "FMC公司",
+    "富美实",
+    "富美實",
+    "富美實公司"
+  ],
+  "url": "https://www.fmc.com/",
+  "description": "American chemical manufacturing company"
+}

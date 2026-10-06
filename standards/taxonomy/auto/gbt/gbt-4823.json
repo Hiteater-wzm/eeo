@@ -1,0 +1,209 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-4823",
+  "industry": "港口及航运设施工程建筑",
+  "industry_aliases": [
+    "4823",
+    "港口及航运设施工程建筑",
+    "建筑业",
+    "土木工程建筑业",
+    "水利和水运工程建筑",
+    "航运"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "contract",
+      "label": "承接方式",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "主要客户",
+      "select": "many"
+    },
+    {
+      "id": "settle",
+      "label": "结算方式",
+      "select": "one"
+    },
+    {
+      "id": "qualification",
+      "label": "资质等级",
+      "select": "many"
+    },
+    {
+      "id": "biz",
+      "label": "业务环节",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "gc",
+      "group": "contract",
+      "label": "施工总承包",
+      "description": "作为总包承接整项工程"
+    },
+    {
+      "id": "sub",
+      "group": "contract",
+      "label": "专业分包",
+      "description": "承接单项专业工程分包"
+    },
+    {
+      "id": "epc",
+      "group": "contract",
+      "label": "设计施工一体化（EPC）",
+      "description": "从设计到施工一体化承接"
+    },
+    {
+      "id": "reno",
+      "group": "contract",
+      "label": "装修改造专项",
+      "description": "专注装修、改造、翻新工程"
+    },
+    {
+      "id": "b_dev",
+      "group": "buyer",
+      "label": "房地产开发商",
+      "description": "主要客户是房企"
+    },
+    {
+      "id": "b_gov",
+      "group": "buyer",
+      "label": "政府与市政",
+      "description": "主要客户是政府投资项目"
+    },
+    {
+      "id": "b_enterprise",
+      "group": "buyer",
+      "label": "企事业单位",
+      "description": "主要客户是企业厂房、办公楼"
+    },
+    {
+      "id": "b_personal",
+      "group": "buyer",
+      "label": "个人业主",
+      "description": "主要客户是家装的个体业主"
+    },
+    {
+      "id": "fixed",
+      "group": "settle",
+      "label": "固定总价",
+      "description": "按合同总价包干结算"
+    },
+    {
+      "id": "boq",
+      "group": "settle",
+      "label": "清单计价按实结算",
+      "description": "按工程量清单据实结算"
+    },
+    {
+      "id": "unit_price",
+      "group": "settle",
+      "label": "单价包干",
+      "description": "按单价乘工程量结算"
+    },
+    {
+      "id": "q_first",
+      "group": "qualification",
+      "label": "一级及以上总承包资质",
+      "description": "持施工总承包一级或特级资质"
+    },
+    {
+      "id": "q_prof",
+      "group": "qualification",
+      "label": "专业承包资质",
+      "description": "持相应专业承包资质"
+    },
+    {
+      "id": "q_design",
+      "group": "qualification",
+      "label": "设计资质",
+      "description": "持工程设计相应等级资质"
+    },
+    {
+      "id": "shipping_m_own_vessel",
+      "group": "biz",
+      "label": "自营船队",
+      "description": "自有运力自营航线"
+    },
+    {
+      "id": "shipping_m_charter",
+      "group": "biz",
+      "label": "租船经纪",
+      "description": "提供租船订舱经纪服务"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "quote",
+      "group": "decision",
+      "question": "报价怎么出？免费量房或勘测吗？",
+      "hint": "回答应说明报价流程和勘测是否收费"
+    },
+    {
+      "id": "reference",
+      "group": "decision",
+      "question": "附近有做过的项目能看看吗？",
+      "hint": "回答应提供可参观或可核实的过往项目"
+    },
+    {
+      "id": "schedule",
+      "group": "decision",
+      "question": "工期多长？延误了怎么赔？",
+      "hint": "回答应给出工期和延期违约条款"
+    },
+    {
+      "id": "payment_steps",
+      "group": "detail",
+      "question": "工程款分几笔付？验收标准是什么？",
+      "hint": "回答应列出付款节点和验收依据"
+    },
+    {
+      "id": "changes",
+      "group": "detail",
+      "question": "施工中改方案怎么计价？",
+      "hint": "回答应说明变更签证流程和计价规则"
+    },
+    {
+      "id": "site_mgmt",
+      "group": "detail",
+      "question": "工地怎么管理？能看进度吗？",
+      "hint": "回答应说明现场管理和进度反馈方式"
+    },
+    {
+      "id": "warranty",
+      "group": "risk",
+      "question": "竣工后保修几年？防水、隐蔽工程保多久？",
+      "hint": "回答应分列各部位保修年限"
+    },
+    {
+      "id": "bond",
+      "group": "risk",
+      "question": "有质保金吗？出了问题扣谁的？",
+      "hint": "回答应说明质保金比例和返还条件"
+    },
+    {
+      "id": "shipping_m_schedule_s",
+      "group": "decision",
+      "question": "船期固定吗？甩柜了怎么办？",
+      "hint": "回答应说明船期稳定性与甩柜处理"
+    }
+  ]
+}

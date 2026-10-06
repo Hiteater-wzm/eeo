@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Siemens",
+  "alternateName": [
+    "西门子",
+    "西门子股份公司"
+  ],
+  "url": "https://www.siemens.com",
+  "description": "德国科技集团，总部位于慕尼黑，业务聚焦数字化工业、智能基础设施与交通（Siemens Mobility），并持有西门子医疗与西门子能源股权。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Munich",
+    "addressCountry": "德国"
+  }
+}

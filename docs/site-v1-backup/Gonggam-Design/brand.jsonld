@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gonggam Design",
+  "alternateName": [
+    "GONGGAM DESIGN",
+    "Gonggam Interior Co.",
+    "Ltd."
+  ],
+  "url": "https://ggid.co.kr",
+  "description": "South Korean residential interior design and construction company based in Gangnam, Seoul"
+}

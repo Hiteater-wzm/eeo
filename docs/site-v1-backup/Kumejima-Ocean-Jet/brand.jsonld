@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kumejima Ocean Jet",
+  "alternateName": "KOJ",
+  "url": "https://ko-jet.com",
+  "description": "Jetfoil ferry operator connecting Naha and Kumejima in Okinawa, Japan"
+}

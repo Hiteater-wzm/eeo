@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sanofi",
+  "alternateName": "赛诺菲",
+  "url": "https://www.sanofi.com",
+  "description": "法国制药公司，总部位于巴黎，业务涵盖免疫（Dupixent）、疫苗、罕见病与普通药品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "法国"
+  }
+}

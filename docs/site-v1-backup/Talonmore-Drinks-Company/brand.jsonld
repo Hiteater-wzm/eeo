@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Talonmore Drinks Company",
+  "alternateName": [
+    "Talonmore",
+    "Talonmore Drinks Company Limited"
+  ],
+  "url": "https://talonmoredrinks.com/",
+  "description": "Scottish producer of Talonmore, a non-alcoholic dark spirit; founded in Edinburgh in 2020"
+}

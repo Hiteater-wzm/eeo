@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "La Decormarmi",
+  "alternateName": [
+    "La Decormarmi Italy",
+    "La Decormarmi S.r.l.",
+    "La Decormarmi SRL"
+  ],
+  "url": "https://ladecormarmi.com",
+  "description": "Italian e-commerce company specialized in the online sale and distribution of professional products, tools, machinery an"
+}

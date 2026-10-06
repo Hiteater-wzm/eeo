@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "戴森",
+  "alternateName": [
+    "dyson",
+    "Dyson Appliances Ltd.",
+    "Dyson Limited",
+    "Dyson Pte. Ltd."
+  ],
+  "url": "https://www.dyson.com",
+  "description": "Technology company based in Singapore that designs and manufactures vacuum cleaners, hand dryers, bladeless fans and hea"
+}

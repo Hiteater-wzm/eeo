@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Lockheed Martin",
+  "alternateName": [
+    "洛克希德马丁",
+    "洛马"
+  ],
+  "url": "https://www.lockheedmartin.com",
+  "description": "美国防务与航天公司，总部位于马里兰州Bethesda，产品涵盖F-35战斗机、导弹与火控、航天系统与直升机（西科斯基）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bethesda",
+    "addressCountry": "美国"
+  }
+}

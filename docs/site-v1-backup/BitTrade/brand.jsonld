@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BitTrade",
+  "alternateName": "BitTrade Inc.",
+  "url": "https://www.bittrade.co.jp/",
+  "description": "A cryptocurrency exchange headquartered in Minato-ku, Tokyo, Japan"
+}

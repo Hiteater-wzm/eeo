@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stadtreinigungs-, Transport- und Baubetrieb Lüdenscheid",
+  "alternateName": "STL Lüdenscheid",
+  "url": "https://www.stl-luedenscheid.de/",
+  "description": "municipal company responsible for cleaning, transport and construction in Lüdenscheid, Germany"
+}

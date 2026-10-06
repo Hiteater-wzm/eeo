@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HORAiZON GmbH",
+  "alternateName": [
+    "HORAiZON",
+    "Horaizon GmbH"
+  ],
+  "url": "https://horaizon.one",
+  "description": "German software company; developer of HORAiZON ONE, an AI for Amazon listing optimization (Langenfeld, NRW)"
+}

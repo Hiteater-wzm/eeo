@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "regenold GmbH",
+  "alternateName": [
+    "Regenold",
+    "regenold"
+  ],
+  "url": "https://regenold.com/",
+  "description": "German life sciences consultancy specializing in regulatory affairs, product development and market access for pharmaceu"
+}

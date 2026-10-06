@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "金風科技",
+  "alternateName": "Goldwind (China)",
+  "url": "https://www.goldwind.com/en/",
+  "description": "Chinese multinational wind turbine manufacturer"
+}

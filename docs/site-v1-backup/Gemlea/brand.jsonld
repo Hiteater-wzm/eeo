@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gemlea",
+  "alternateName": [
+    "GemLea",
+    "Gemlea Limited",
+    "GemLea Limited"
+  ],
+  "url": "https://gemlea.co.uk",
+  "description": "British company providing services to jewellery designers and brands: gem sourcing, design, production, branding and sal"
+}

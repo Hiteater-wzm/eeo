@@ -1,0 +1,20 @@
+# EEO (Every Engine Optimization)
+
+> Open brand directory and AI-visibility tooling. Brands define themselves for the AI era: measure how AI engines know and recommend a brand, publish a machine-readable brand card, claim ownership via domain verification.
+
+Links:
+- Repository: https://github.com/Hiteater-wzm/eeo
+- Brand directory (this site): /eeo/
+- Audit tool: /eeo/audit/
+- Standard & provider convention: https://github.com/Hiteater-wzm/eeo/blob/main/docs/eeo-standard.md
+- Claim process: https://github.com/Hiteater-wzm/eeo/blob/main/platform/README.md
+
+Data:
+- Full registry, sharded JSONL under CC0 / Apache-2.0 (1,542,575 brands): https://github.com/Hiteater-wzm/eeo/tree/main/datasets/registry
+- Lightweight site index: /eeo/data/brand-index.json
+- Curated seed set, 1,000 brands: https://raw.githubusercontent.com/Hiteater-wzm/eeo/main/datasets/brands-1k.json
+- Industry taxonomy, 3,119 entries: https://github.com/Hiteater-wzm/eeo/tree/main/standards/taxonomy
+
+Notes:
+- Accuracy: every entry passed multiple rounds of per-entry AI review before merging (five passes, 1.5M candidates judged, 46,883 non-organizations rejected; verdict files archived under datasets/harvest/verdicts/ in the repository), plus deterministic rule-based cleaning.
+- Data originates from Wikidata (CC0) plus curated entries. Weekly sync planned.

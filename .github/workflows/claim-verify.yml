@@ -1,0 +1,85 @@
+name: Claim verify
+
+# 品牌认领核验：PR 打开后自动抓取品牌官网根目录的验证文件
+# eeo-claim-{token}.txt，内容含品牌名即通过，结果贴到 PR 评论。
+# 要让它真正拦住未验证的合并，需在 Settings → Branches 把
+# "Claim verify / verify" 设为 required status check。
+# 机制见 docs/eeo-standard.md 第 1.3 节（先收录后认领）。
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: claim-verify-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 全量历史，才能对 base 分支做 diff
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: List changed JSON files
+        id: files
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          base="$(git merge-base "origin/${BASE_REF}" HEAD)"
+          {
+            echo 'files<<EOF'
+            git diff --name-only --diff-filter=ACMR "$base" HEAD -- '*.json'
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Verify claims
+        id: verify
+        env:
+          PR_FILES: ${{ steps.files.outputs.files }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          CLAIM_REPORT: ${{ runner.temp }}/claim-report.md
+        run: node platform/claim-verify.cjs
+
+      # 核验失败也要评论（if: always()），让品牌方在 PR 上直接看到原因
+      - name: Report result on PR
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          CLAIM_REPORT: ${{ runner.temp }}/claim-report.md
+        with:
+          script: |
+            const fs = require('fs');
+            let body = '';
+            try { body = fs.readFileSync(process.env.CLAIM_REPORT, 'utf8').trim(); } catch (e) {}
+            if (!body) {
+              core.info('no claim report (no claiming cards in this PR), skip comment');
+              return;
+            }
+            // 同一个 marker 只更新一条评论，避免每次 push 都刷屏
+            const marker = '<!-- eeo-claim-report -->';
+            const full = marker + '\n' + body;
+            const { data: comments } = await github.rest.issues.listComments({
+              ...context.repo,
+              issue_number: context.issue.number,
+            });
+            const prev = comments.find((c) => c.body && c.body.includes(marker));
+            if (prev) {
+              await github.rest.issues.updateComment({ ...context.repo, comment_id: prev.id, body: full });
+            } else {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: context.issue.number,
+                body: full,
+              });
+            }

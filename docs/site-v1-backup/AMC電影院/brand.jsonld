@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AMC電影院",
+  "alternateName": [
+    "AMC娛樂公司",
+    "AMC戲院",
+    "AMC院線"
+  ],
+  "url": "https://www.amctheatres.com",
+  "description": "US-based movie theater chain in the US and Europe"
+}

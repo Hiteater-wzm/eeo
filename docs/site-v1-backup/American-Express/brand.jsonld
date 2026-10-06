@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "American Express",
+  "alternateName": [
+    "美国运通",
+    "Amex",
+    "运通"
+  ],
+  "url": "https://www.americanexpress.com",
+  "description": "美国综合性支付公司，同时开展自营发卡、卡组织网络与商户收单业务，采用发卡与收单闭环模式。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

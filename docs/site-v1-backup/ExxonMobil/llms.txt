@@ -1,0 +1,27 @@
+# ExxonMobil
+
+> 美国能源公司，总部位于得克萨斯州Spring，为上下游一体化的油气生产商，业务涵盖勘探生产、炼化与化工。
+
+- 官方网站: https://corporate.exxonmobil.com
+- 所属行业: 石油天然气一体化
+- 所在城市: Spring
+- 所在国家: 美国
+- 别名: 埃克森美孚、Exxon、Mobil、美孚
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 圭亚那与二叠纪盆地油气资产
+- 炼化与乙烯化工一体化产能
+- 美孚润滑油与加油站零售品牌
+
+## 信息来源
+
+- https://corporate.exxonmobil.com
+- https://en.wikipedia.org/wiki/ExxonMobil
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

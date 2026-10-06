@@ -1,0 +1,17 @@
+# 嘉宝产品公司
+
+> a purveyor of baby food and baby products
+
+- 官方网站: http://gerber.com/
+- 所属行业: 食品产业
+- 别名: Gerber、Gerber Baby Products
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q523452
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

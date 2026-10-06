@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Eni",
+  "alternateName": [
+    "埃尼",
+    "意大利国家碳化氢公司"
+  ],
+  "url": "https://www.eni.com",
+  "description": "意大利能源公司，总部位于罗马，业务涵盖油气勘探生产、天然气与LNG、炼化与化工，并投资生物燃料与海上风电。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rome",
+    "addressCountry": "意大利"
+  }
+}

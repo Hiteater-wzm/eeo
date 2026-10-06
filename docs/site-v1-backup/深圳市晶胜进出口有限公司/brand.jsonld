@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "深圳市晶胜进出口有限公司",
+  "alternateName": [
+    "Kingseng",
+    "Kingseng LED Lighting"
+  ],
+  "url": "https://ksimpexp.com",
+  "description": "ISO 9001:2015认证的深圳LED照明OEM/ODM制造商，年产50万件以上，持有ETL、CE、DLC Premium、RoHS认证"
+}

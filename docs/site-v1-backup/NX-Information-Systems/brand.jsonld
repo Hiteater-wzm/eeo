@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NX Information Systems",
+  "alternateName": [
+    "Nittsu Information Systems",
+    "NX Information Systems Co.",
+    "Ltd."
+  ],
+  "url": "https://www.nx-infosys.com/",
+  "description": "A core IT company of the NIPPON EXPRESS Holdings (formerly Nippon Express) Group"
+}

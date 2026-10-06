@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Relo AI",
+  "alternateName": [
+    "Relo AI Ltd",
+    "ReloAI"
+  ],
+  "url": "https://www.reloai.net",
+  "description": "UK AI consultancy and SaaS platform specialising in AI automations and generative engine optimisation for the internatio"
+}

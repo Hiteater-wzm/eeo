@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "赛默飞世尔科技",
+  "alternateName": [
+    "TMO",
+    "Thermo Fisher",
+    "ThermoFisher"
+  ],
+  "url": "https://www.thermofisher.com/",
+  "description": "multinational company providing scientific instrumentation"
+}

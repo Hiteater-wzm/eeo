@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FF Rollerskis",
+  "alternateName": [
+    "FFskis",
+    "ffskis.com"
+  ],
+  "url": "https://ffskis.com",
+  "description": "Rollerski developer and manufacturer with high performance dampening frames and V- Track wheels. Safety focus for both n"
+}

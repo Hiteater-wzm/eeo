@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "1Moby",
+  "alternateName": [
+    "1Moby Corp",
+    "One Moby",
+    "1Moby Co.",
+    "Ltd."
+  ],
+  "url": "https://www.1moby.com",
+  "description": "Thai technology company providing marketing technology consulting, business communication platforms, and customer data s"
+}

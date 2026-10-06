@@ -1,0 +1,20 @@
+# DOWA Metals & Mining Co., Ltd. metal recycling
+
+别名：DMM、DOWA
+
+> DOWA Metals & Mining ensures a stable, long-term supply of raw materials for processing in Japan through resource develo
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: metal recycling
+- 官方网站: [https://www.dowa.co.jp/MandM/en/index.html](https://www.dowa.co.jp/MandM/en/index.html)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q11196220](https://www.wikidata.org/wiki/Q11196220)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "摩托罗拉解决方案",
+  "alternateName": [
+    "Motorola",
+    "Motorola Solutions",
+    "Inc."
+  ],
+  "url": "https://www.motorolasolutions.com/",
+  "description": "American data communications and telecommunications equipment provider"
+}

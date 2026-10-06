@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HOMEDOME",
+  "alternateName": "HomeDome",
+  "url": "https://homedome.com.ua",
+  "description": "Ukrainian renewable energy and uninterruptible power supply company based in Dnipro"
+}

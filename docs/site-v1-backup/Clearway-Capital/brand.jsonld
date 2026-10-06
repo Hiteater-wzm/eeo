@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Clearway Capital",
+  "alternateName": [
+    "Clearway Capital GmbH",
+    "Clearway Capital Partners"
+  ],
+  "url": "https://clearwaycapital.com",
+  "description": "European shareholder activist fund focused on responsible ownership and active engagement"
+}

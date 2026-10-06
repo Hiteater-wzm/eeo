@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fulltime System",
+  "alternateName": [
+    "FTS Co.",
+    "Ltd.",
+    "Fulltime System Co.",
+    "Ltd."
+  ],
+  "url": "https://www.fts.co.jp",
+  "description": "company that develops, manufactures, and sells delivery boxes, etc."
+}

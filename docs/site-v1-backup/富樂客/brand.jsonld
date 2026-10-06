@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "富樂客",
+  "alternateName": [
+    "Foot Locker",
+    "Inc."
+  ],
+  "url": "https://www.footlocker-inc.com",
+  "description": "American sportswear and footwear retailer"
+}

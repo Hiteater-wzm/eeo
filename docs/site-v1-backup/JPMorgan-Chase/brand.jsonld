@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JPMorgan Chase",
+  "alternateName": [
+    "摩根大通",
+    "JP Morgan",
+    "JPM"
+  ],
+  "url": "https://www.jpmorgan.com",
+  "description": "美国银行控股公司，业务涵盖消费与社区银行、公司与投资银行、商业银行以及资产与财富管理。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

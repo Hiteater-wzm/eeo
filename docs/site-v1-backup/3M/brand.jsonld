@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "3M",
+  "alternateName": [
+    "3M公司",
+    "明尼苏达矿务及制造业公司"
+  ],
+  "url": "https://www.3m.com",
+  "description": "美国多元化制造公司，总部位于明尼苏达州St. Paul，产品涵盖工业胶粘与研磨材料、安防防护与办公耗材，2024年分拆健康业务（Solventum）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "St. Paul",
+    "addressCountry": "美国"
+  }
+}

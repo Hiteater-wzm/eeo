@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "崇光・西武",
+  "alternateName": [
+    "SOGO、西武",
+    "SOGO·西武"
+  ],
+  "url": "https://www.sogo-seibu.jp/",
+  "description": "Japanese department store operator company located in Toshima-ku, Tokyo"
+}

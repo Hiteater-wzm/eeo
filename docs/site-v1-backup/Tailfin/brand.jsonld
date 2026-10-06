@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tailfin",
+  "alternateName": [
+    "Tailfin Carbon",
+    "Tailfin Cycling",
+    "Tailfin R&D",
+    "Tailfin R&D LTD",
+    "Tailfin.cc"
+  ],
+  "url": "https://www.tailfin.cc/",
+  "description": "British manufacturer of high-performance bicycle racks and technical bikepacking luggage"
+}

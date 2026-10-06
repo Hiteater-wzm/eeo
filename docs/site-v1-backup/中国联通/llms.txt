@@ -1,0 +1,27 @@
+# 中国联通
+
+> 中国电信运营商，总部位于北京，业务涵盖移动通信、固定宽带与云计算产业互联网服务。
+
+- 官方网站: https://www.chinaunicom.com
+- 所属行业: 电信运营商
+- 所在城市: 北京
+- 所在国家: 中国
+- 别名: China Unicom、联通
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 与中国广电共建共享5G网络
+- 联通云与数据中心业务
+- 混改引入的多家互联网公司股东
+
+## 信息来源
+
+- https://www.chinaunicom.com
+- https://en.wikipedia.org/wiki/China_Unicom
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

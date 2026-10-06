@@ -1,0 +1,17 @@
+# APA Corporation
+
+> Holding company for Apache Corporation, an American company engaged in hydrocarbon exploration.
+
+- 官方网站: http://www.apachecorp.com
+- 所属行业: 石油产业
+- 别名: Apache Corp.、Apache Corporation、Apache Oil Corporation
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q119991
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

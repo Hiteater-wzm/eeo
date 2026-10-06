@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Takoman",
+  "alternateName": [
+    "Takoman Co.",
+    "Ltd."
+  ],
+  "url": "http://takoman.co.jp/",
+  "description": "confectionery maker in Kakegawa City, Shizuoka Prefecture, Japan"
+}

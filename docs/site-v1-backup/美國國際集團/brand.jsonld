@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美國國際集團",
+  "alternateName": [
+    "AIG",
+    "美國國際集團公司"
+  ],
+  "url": "https://www.aig.com",
+  "description": "American multinational insurance corporation"
+}

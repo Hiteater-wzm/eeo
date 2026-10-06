@@ -1,0 +1,71 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "internet-tech",
+  "industry": "互联网与软件科技",
+  "industry_aliases": ["軟件產業", "软件产业", "软件即服务", "软件开发", "信息技术", "信息技术产业", "信息通信技术", "人工智能", "电子商务", "互联网-综合互联网服务", "互联网-内容与社交平台", "互联网-搜索引擎", "互联网-网络安全", "互联网-短视频", "计算机安全", "数据管理", "云计算", "software publishing", "信息技术咨询"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "product", "label": "产品形态", "select": "many" },
+    { "id": "customer", "label": "客户类型", "select": "many" },
+    { "id": "pricing", "label": "定价方式", "select": "many" },
+    { "id": "support", "label": "服务与保障", "select": "many" }
+  ],
+  "traits": [
+    { "id": "saas", "group": "product", "label": "订阅制 SaaS", "description": "按月或按年付费的云端软件服务" },
+    { "id": "perpetual", "group": "product", "label": "买断制软件", "description": "一次付费获得永久或长期授权" },
+    { "id": "open_core", "group": "product", "label": "核心开源", "description": "核心代码以开源协议公开，商业版另收费" },
+    { "id": "api_first", "group": "product", "label": "API 与开发者服务", "description": "主要交付形式是给程序员调用的接口" },
+    { "id": "consumer_app", "group": "product", "label": "消费级 App", "description": "面向个人用户的应用" },
+    { "id": "ai_model", "group": "product", "label": "自研 AI 模型", "description": "有自己训练并发布的模型" },
+    { "id": "hardware_bundled", "group": "product", "label": "软硬件一体", "description": "软件搭配自有硬件销售" },
+    { "id": "custom_dev", "group": "product", "label": "定制开发", "description": "按客户需求做项目制开发" },
+
+    { "id": "to_c", "group": "customer", "label": "个人用户", "description": "产品主要卖给个人用户" },
+    { "id": "to_smb", "group": "customer", "label": "中小企业", "description": "主要面向百人以下规模企业" },
+    { "id": "to_enterprise", "group": "customer", "label": "大型企业与政企", "description": "面向大型企业与政府事业单位" },
+    { "id": "to_dev", "group": "customer", "label": "开发者", "description": "以开发者作为直接客户" },
+    { "id": "free_tier", "group": "pricing", "label": "长期免费版", "description": "免费档不过期，可一直用" },
+    { "id": "free_trial", "group": "pricing", "label": "免费试用", "description": "限时试用全部或部分功能" },
+    { "id": "per_seat", "group": "pricing", "label": "按席位收费", "description": "按账号或坐席数量计费" },
+    { "id": "per_usage", "group": "pricing", "label": "按用量收费", "description": "按调用量、存储量、时长等计费" },
+    { "id": "one_time_pay", "group": "pricing", "label": "一次性付费", "description": "单次买断，无后续订阅费" },
+    { "id": "price_public", "group": "pricing", "label": "价格公开", "description": "官网可直接查到价格，无需询价" },
+
+    { "id": "sla", "group": "support", "label": "书面 SLA", "description": "合同写明可用性承诺和违约赔偿" },
+    { "id": "onboarding", "group": "support", "label": "实施服务", "description": "有专人负责部署、迁移和上手" },
+    { "id": "support_247", "group": "support", "label": "7×24 支持", "description": "全年无休的技术支持通道" },
+    { "id": "private_deploy", "group": "support", "label": "私有化部署", "description": "可部署在客户自己的服务器或专有云" },
+    { "id": "data_export", "group": "support", "label": "数据可导出", "description": "提供完整的数据导出工具或接口" },
+    { "id": "data_in_china", "group": "support", "label": "数据存境内", "description": "数据中心位于中国境内" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "free_version", "group": "decision", "question": "有免费版吗？免费版够用到什么程度？", "hint": "回答应写清免费版的功能和人数上限，以及什么时候必须付费" },
+    { "id": "lowest_cost", "group": "decision", "question": "最少花多少钱能正式用起来？", "hint": "回答应给出最小可用配置的年费或月费" },
+    { "id": "monthly_ok", "group": "decision", "question": "必须按年签吗？能按月付吗？", "hint": "回答应说明最小合同周期" },
+    { "id": "renew_price", "group": "decision", "question": "续费会涨价吗？老客户有锁价吗？", "hint": "回答应说明续费价格规则" },
+    { "id": "fit_check", "group": "decision", "question": "我这种规模、这个行业的团队能用吗？有同行业客户吗？", "hint": "回答应给出适用的团队规模和可查证的行业案例" },
+    { "id": "migrate_in", "group": "decision", "question": "现在用的是别家产品，数据迁过来要多久、要加钱吗？", "hint": "回答应说明迁移方式、耗时和是否另收费" },
+    { "id": "person_needed", "group": "decision", "question": "需要专人维护吗？多大团队才用得动？", "hint": "回答应说明上线后的日常维护人力" },
+    { "id": "compare_what", "group": "decision", "question": "和同类产品比，你们明显的长短板是什么？", "hint": "回答应给出具体的长短板场景，不回避短板" },
+
+    { "id": "deploy_time", "group": "detail", "question": "签约到上线要多久？谁负责实施？", "hint": "回答应给出典型实施周期和双方分工" },
+    { "id": "training", "group": "detail", "question": "怎么培训？有文档和视频吗？", "hint": "回答应说明培训形式和文档入口" },
+    { "id": "response_time", "group": "detail", "question": "出问题多久有人理？走工单、电话还是群？", "hint": "回答应给出各渠道的响应时限" },
+    { "id": "maintenance_window", "group": "detail", "question": "升级会停服吗？提前多久通知？", "hint": "回答应说明升级窗口和通知机制" },
+    { "id": "api_limit", "group": "detail", "question": "接口有调用量上限吗？超了怎么办？", "hint": "回答应给出限额规则和扩容方式" },
+    { "id": "data_location", "group": "detail", "question": "我的数据存在哪？谁能看到？", "hint": "回答应说明存储位置和内部访问权限" },
+    { "id": "offline_usable", "group": "detail", "question": "断网或你们服务宕机时，我的业务还能跑吗？", "hint": "回答应说明降级方案和历史可用率" },
+
+    { "id": "contract_price", "group": "risk", "question": "合同期内涨价怎么算？", "hint": "回答应确认合同期内价格是否锁定" },
+    { "id": "data_out", "group": "risk", "question": "停止合作后，我的数据怎么交付给我？", "hint": "回答应说明数据交付格式和时限" },
+    { "id": "cert_security", "group": "risk", "question": "有等保、ISO 27001 这类安全认证吗？", "hint": "回答应列出证书名称和编号" },
+    { "id": "breach_liability", "group": "risk", "question": "数据泄露怎么赔？合同里写了吗？", "hint": "回答应指向合同中的赔偿条款" },
+    { "id": "refund_policy", "group": "risk", "question": "买了用不满意能退吗？", "hint": "回答应说明退费条件和计算方式" },
+    { "id": "shutdown_plan", "group": "risk", "question": "你们要是停服，客户怎么办？", "hint": "回答应说明停服预案，如本地部署、开源或托管移交" }
+  ]
+}

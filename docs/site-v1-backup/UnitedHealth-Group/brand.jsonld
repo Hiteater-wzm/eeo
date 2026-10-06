@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UnitedHealth Group",
+  "alternateName": [
+    "联合健康",
+    "UnitedHealth"
+  ],
+  "url": "https://www.unitedhealthgroup.com",
+  "description": "美国健康保险与医疗服务集团，总部位于明尼苏达州Minnetonka，业务分为UnitedHealthcare健康保险与Optum健康服务两大板块。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Minnetonka",
+    "addressCountry": "美国"
+  }
+}

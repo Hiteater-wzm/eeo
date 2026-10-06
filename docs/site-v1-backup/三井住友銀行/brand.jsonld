@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "三井住友銀行",
+  "alternateName": [
+    "三井銀行",
+    "三井住友银行"
+  ],
+  "url": "http://www.smbc.co.jp/",
+  "description": "Japanese multinational banking and financial services company"
+}

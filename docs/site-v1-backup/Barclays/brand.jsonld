@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Barclays",
+  "alternateName": [
+    "巴克莱",
+    "巴克莱银行"
+  ],
+  "url": "https://home.barclays",
+  "description": "英国银行集团，总部位于伦敦，业务分为Barclays UK零售银行与Barclays International（投行、公司与国际消费银行）两大板块。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "英国"
+  }
+}

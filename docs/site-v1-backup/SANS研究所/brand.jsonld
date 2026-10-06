@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SANS研究所",
+  "alternateName": [
+    "SANS协会",
+    "系統網路安全協會"
+  ],
+  "url": "https://www.sans.org/",
+  "description": "American cybersecurity training and certification organization"
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "理想汽车",
+  "alternateName": [
+    "Li Auto",
+    "北京车和家信息技术有限公司"
+  ],
+  "url": "https://www.lixiang.com",
+  "description": "2015年成立的新能源汽车企业，总部位于北京，2020年在纳斯达克上市，主力产品为家庭定位的增程与纯电SUV。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

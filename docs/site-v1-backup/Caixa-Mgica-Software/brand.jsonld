@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Caixa Mágica Software",
+  "alternateName": [
+    "CMS",
+    "Caixa Mágica"
+  ],
+  "url": "https://caixamagica.pt",
+  "description": "Portuguese software company founded in 2004, specialising in custom software development, digital identity and open sour"
+}

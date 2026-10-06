@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "漢思集團",
+  "alternateName": [
+    "漢思能源",
+    "漢思能源有限公司",
+    "漢思集團控股",
+    "漢思集團控股有限公司",
+    "智業控股"
+  ],
+  "url": "https://www.hanshg.com/",
+  "description": "energy solutions and public transport service provider based in Hong Kong"
+}

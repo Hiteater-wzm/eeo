@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "赫斯特国际集团",
+  "alternateName": [
+    "Heasst",
+    "赫斯特公司",
+    "赫斯特报业",
+    "赫斯特集團"
+  ],
+  "url": "https://www.hearst.com/",
+  "description": "American multinational mass media conglomerate group"
+}

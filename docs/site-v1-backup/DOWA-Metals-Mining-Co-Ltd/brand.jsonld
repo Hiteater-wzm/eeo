@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DOWA Metals & Mining Co., Ltd.",
+  "alternateName": [
+    "DMM",
+    "DOWA"
+  ],
+  "url": "https://www.dowa.co.jp/MandM/en/index.html",
+  "description": "DOWA Metals & Mining ensures a stable, long-term supply of raw materials for processing in Japan through resource develo"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "亿航智能",
+  "alternateName": "Ehang 184",
+  "url": "https://ehang.com/",
+  "description": "company that develops and manufactures UAVs and PAVs"
+}

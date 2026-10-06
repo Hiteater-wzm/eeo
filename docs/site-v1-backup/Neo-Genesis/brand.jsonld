@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Neo Genesis",
+  "alternateName": [
+    "Neo-Genesis",
+    "NeoGenesis"
+  ],
+  "url": "https://neogenesis.app",
+  "description": "AI-native automation company running 11 live business units with a single autonomous AI system"
+}

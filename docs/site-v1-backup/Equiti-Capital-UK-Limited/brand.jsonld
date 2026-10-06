@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Equiti Capital UK Limited",
+  "alternateName": [
+    "Divisa UK Limited",
+    "Equiti Capital UK",
+    "MBT Financial UK Ltd"
+  ],
+  "url": "https://www.equiticapital.co.uk/",
+  "description": "British investment firm based in London, authorised by the Financial Conduct Authority"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SMBC信託銀行",
+  "alternateName": "SMBC信托银行",
+  "url": "https://www.smbctb.co.jp/",
+  "description": "Japanese trust bank affiliated with Sumitomo Mitsui Banking Corporation"
+}

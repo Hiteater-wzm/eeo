@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Berkshire Hathaway",
+  "alternateName": [
+    "伯克希尔哈撒韦",
+    "Berkshire"
+  ],
+  "url": "https://www.berkshirehathaway.com",
+  "description": "美国控股公司，总部位于内布拉斯加州奥马哈，以保险承保与再保险为核心业务，并持有铁路（BNSF）、能源、制造、零售与服务等多元化投资。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Omaha",
+    "addressCountry": "美国"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sendai Aoba Seika",
+  "alternateName": [
+    "Sendai Aoba Seika Co.",
+    "Ltd.",
+    "Sendai Aoba Seika Kabushiki Gaisha",
+    "Sendai Chuo Seika Oroshiuri",
+    "Senjirushi"
+  ],
+  "url": "https://www.senaoba.com/",
+  "description": "Vegetables & Fruits wholesaler of Sendai sity central market"
+}

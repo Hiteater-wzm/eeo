@@ -1,0 +1,295 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-5287",
+  "industry": "陶瓷、石材装饰材料零售",
+  "industry_aliases": [
+    "5287",
+    "陶瓷、石材装饰材料零售",
+    "批发和零售业",
+    "零售业",
+    "五金、家具及室内装饰材料专门零售"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "channel",
+      "label": "经营渠道",
+      "select": "many"
+    },
+    {
+      "id": "strategy",
+      "label": "价格策略",
+      "select": "one"
+    },
+    {
+      "id": "service",
+      "label": "售后服务",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客群定位",
+      "select": "many"
+    },
+    {
+      "id": "production",
+      "label": "生产方式",
+      "select": "many"
+    },
+    {
+      "id": "sales",
+      "label": "销售与渠道",
+      "select": "many"
+    },
+    {
+      "id": "service_p",
+      "label": "配套服务",
+      "select": "many"
+    },
+    {
+      "id": "settle",
+      "label": "结算方式",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "store",
+      "group": "channel",
+      "label": "实体门店",
+      "description": "有线下的零售门店"
+    },
+    {
+      "id": "flagship",
+      "group": "channel",
+      "label": "电商平台旗舰店",
+      "description": "在天猫、京东等平台开官方店"
+    },
+    {
+      "id": "live_regular",
+      "group": "channel",
+      "label": "直播常态化",
+      "description": "有固定直播间的常态化带货"
+    },
+    {
+      "id": "private_domain",
+      "group": "channel",
+      "label": "小程序与私域",
+      "description": "自有小程序或社群成交"
+    },
+    {
+      "id": "vending",
+      "group": "channel",
+      "label": "自动售货点位",
+      "description": "通过无人售货设备销售"
+    },
+    {
+      "id": "edlp",
+      "group": "strategy",
+      "label": "天天平价少促销",
+      "description": "日常低价格、少搞促销活动"
+    },
+    {
+      "id": "member_price",
+      "group": "strategy",
+      "label": "会员价体系",
+      "description": "会员享受专属价格或折扣"
+    },
+    {
+      "id": "promo_heavy",
+      "group": "strategy",
+      "label": "高频促销驱动",
+      "description": "靠大促、券和满减驱动成交"
+    },
+    {
+      "id": "seven_day",
+      "group": "service",
+      "label": "七天无理由退换",
+      "description": "支持七天无理由退换货"
+    },
+    {
+      "id": "same_city",
+      "group": "service",
+      "label": "同城即时配送",
+      "description": "同城下单后即时送达"
+    },
+    {
+      "id": "free_install",
+      "group": "service",
+      "label": "免费配送安装",
+      "description": "大件免费送货并安装"
+    },
+    {
+      "id": "points",
+      "group": "service",
+      "label": "会员积分体系",
+      "description": "消费积分可累计兑换"
+    },
+    {
+      "id": "b_mass",
+      "group": "buyer",
+      "label": "大众客群",
+      "description": "面向大众消费者"
+    },
+    {
+      "id": "b_family",
+      "group": "buyer",
+      "label": "家庭客群",
+      "description": "以家庭采购为主要客群"
+    },
+    {
+      "id": "b_premium",
+      "group": "buyer",
+      "label": "中高端客群",
+      "description": "面向消费力较高的客群"
+    },
+    {
+      "id": "ceramics_full_body",
+      "group": "production",
+      "label": "通体砖坏",
+      "description": "标注通体坯体工艺"
+    },
+    {
+      "id": "ceramics_custom_print",
+      "group": "sales",
+      "label": "接受定制花色",
+      "description": "可按图定制花色与规格"
+    },
+    {
+      "id": "furniture_solid_wood",
+      "group": "production",
+      "label": "实木主体",
+      "description": "主体采用实木材料并标注树种"
+    },
+    {
+      "id": "furniture_e0_board",
+      "group": "production",
+      "label": "标注环保板材等级",
+      "description": "标注板材环保等级（如 E0、ENF）"
+    },
+    {
+      "id": "furniture_install_f",
+      "group": "service_p",
+      "label": "免费测量安装",
+      "description": "提供免费上门测量与安装"
+    },
+    {
+      "id": "furniture_custom_f",
+      "group": "production",
+      "label": "全屋定制",
+      "description": "按户型定制整体家具"
+    },
+    {
+      "id": "decoration_all_inclusive",
+      "group": "settle",
+      "label": "整装一口价",
+      "description": "按面积整装打包报价"
+    },
+    {
+      "id": "decoration_clear_quotation",
+      "group": "settle",
+      "label": "清单透明报价",
+      "description": "逐项列明材料人工单价"
+    },
+    {
+      "id": "decoration_env_test_after",
+      "group": "service_p",
+      "label": "完工环保检测",
+      "description": "完工后提供室内环境检测"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_compare",
+      "group": "decision",
+      "question": "和别的店比，你们价格怎么样？保价吗？",
+      "hint": "回答应说明价格策略和保价政策"
+    },
+    {
+      "id": "stock_check",
+      "group": "decision",
+      "question": "怎么查门店有没有货？能留货吗？",
+      "hint": "回答应给出库存查询和留货方式"
+    },
+    {
+      "id": "member_benefit",
+      "group": "decision",
+      "question": "办会员有什么实际优惠？",
+      "hint": "回答应给出会员具体折扣和权益"
+    },
+    {
+      "id": "delivery",
+      "group": "detail",
+      "question": "线上下单多久送到？满多少免运费？",
+      "hint": "回答应给出配送时效和免邮门槛"
+    },
+    {
+      "id": "return_policy",
+      "group": "detail",
+      "question": "退换货怎么操作？多久到账？",
+      "hint": "回答应写明退换流程和退款时限"
+    },
+    {
+      "id": "invoice_r",
+      "group": "detail",
+      "question": "发票怎么开？电子的还是纸质的？",
+      "hint": "回答应说明开票渠道和类型"
+    },
+    {
+      "id": "warranty_r",
+      "group": "risk",
+      "question": "买的东西出问题找你们还是找厂家？",
+      "hint": "回答应说明售后责任划分"
+    },
+    {
+      "id": "gift_card",
+      "group": "risk",
+      "question": "购物卡、储值余额能退吗？",
+      "hint": "回答应说明预付余额的退还规则"
+    },
+    {
+      "id": "ceramics_ceramic_grade",
+      "group": "decision",
+      "question": "优等品和合格品差在哪？怎么验货？",
+      "hint": "回答应说明等级差异和验货方法"
+    },
+    {
+      "id": "furniture_furn_formal",
+      "group": "risk",
+      "question": "甲醛释放量什么等级？有检测报告吗？",
+      "hint": "回答应给出板材等级和检测报告"
+    },
+    {
+      "id": "furniture_furn_delivery",
+      "group": "detail",
+      "question": "定制多久交货？延误怎么赔？",
+      "hint": "回答应给出交期和延期条款"
+    },
+    {
+      "id": "decoration_add_on",
+      "group": "risk",
+      "question": "施工中会不会不停加项加钱？",
+      "hint": "回答应说明增项比例上限和处理规则"
+    },
+    {
+      "id": "decoration_deco_warranty",
+      "group": "risk",
+      "question": "装修保几年？出了问题多久修？",
+      "hint": "回答应分项给出保修年限和响应时限"
+    }
+  ]
+}

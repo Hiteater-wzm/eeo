@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NX Shoji",
+  "alternateName": [
+    "Nittsu Shoji",
+    "NX SHOJI CO.",
+    "LTD."
+  ],
+  "url": "https://www.nx-shoji.com/",
+  "description": "A trading company of the NX Group, headquartered in Minato-ku, Tokyo"
+}

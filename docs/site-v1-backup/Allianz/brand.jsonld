@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Allianz",
+  "alternateName": [
+    "安联",
+    "安联保险"
+  ],
+  "url": "https://www.allianz.com",
+  "description": "德国保险集团，总部位于慕尼黑，主营财产险、人寿与健康保险及资产管理，PIMCO为其资产管理板块组成部分。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Munich",
+    "addressCountry": "德国"
+  }
+}

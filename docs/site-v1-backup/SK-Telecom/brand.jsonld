@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SK Telecom",
+  "alternateName": [
+    "SK电讯",
+    "SKT"
+  ],
+  "url": "https://www.sktelecom.com",
+  "description": "韩国移动运营商，总部位于首尔，提供5G移动通信、有线宽带与企业数字化服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seoul",
+    "addressCountry": "韩国"
+  }
+}

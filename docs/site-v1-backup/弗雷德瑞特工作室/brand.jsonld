@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "弗雷德瑞特工作室",
+  "alternateName": [
+    "弗雷得瑞特工作室",
+    "弗雷德雷特工作室"
+  ],
+  "url": "https://frederator.com",
+  "description": "American animation television production studio"
+}

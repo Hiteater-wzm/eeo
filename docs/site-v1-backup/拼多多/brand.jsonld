@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "拼多多",
+  "alternateName": [
+    "Pinduoduo",
+    "PDD"
+  ],
+  "url": "https://www.pinduoduo.com",
+  "description": "2015年成立于上海，以社交拼团模式起家的电商平台，跨境业务以Temu品牌运营，于纳斯达克上市。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上海",
+    "addressCountry": "中国"
+  }
+}

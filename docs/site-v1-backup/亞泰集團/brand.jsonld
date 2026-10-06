@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "亞泰集團",
+  "alternateName": [
+    "亞泰",
+    "亞泰集團股份",
+    "吉林亞泰集團",
+    "吉林亞泰集團股份",
+    "吉林亞泰集團股份有限公司"
+  ],
+  "url": "http://www.yatai.com/",
+  "description": "private conglomerate enterprise in China"
+}

@@ -1,0 +1,208 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-5539",
+  "industry": "其他水上运输辅助活动",
+  "industry_aliases": [
+    "5539",
+    "其他水上运输辅助活动",
+    "交通运输、仓储和邮政业",
+    "水上运输业",
+    "水上运输辅助活动"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "service",
+      "label": "业务类型",
+      "select": "many"
+    },
+    {
+      "id": "sla",
+      "label": "时效承诺",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "主要客户",
+      "select": "many"
+    },
+    {
+      "id": "claim",
+      "label": "丢损赔付",
+      "select": "one"
+    },
+    {
+      "id": "biz",
+      "label": "业务环节",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "ftl",
+      "group": "service",
+      "label": "整车运输",
+      "description": "按整车承运"
+    },
+    {
+      "id": "ltl",
+      "group": "service",
+      "label": "零担运输",
+      "description": "接受不足整车的小批量货物拼载"
+    },
+    {
+      "id": "express",
+      "group": "service",
+      "label": "快递寄递",
+      "description": "提供门到门快递服务"
+    },
+    {
+      "id": "instant",
+      "group": "service",
+      "label": "即时配送",
+      "description": "同城小时级或分钟级配送"
+    },
+    {
+      "id": "warehousing",
+      "group": "service",
+      "label": "仓配一体",
+      "description": "提供仓储加配送一体化服务"
+    },
+    {
+      "id": "cold_chain_t",
+      "group": "service",
+      "label": "冷链运输",
+      "description": "全程温控运输"
+    },
+    {
+      "id": "dangerous",
+      "group": "service",
+      "label": "危险品运输",
+      "description": "持有危险品运输资质"
+    },
+    {
+      "id": "same_day",
+      "group": "sla",
+      "label": "当日达",
+      "description": "承诺当日送达"
+    },
+    {
+      "id": "next_day",
+      "group": "sla",
+      "label": "次日达",
+      "description": "承诺次日送达"
+    },
+    {
+      "id": "timed",
+      "group": "sla",
+      "label": "定时达",
+      "description": "可约定具体时间窗送达"
+    },
+    {
+      "id": "b_corp",
+      "group": "buyer",
+      "label": "企业合同物流",
+      "description": "与企业签年度合同价"
+    },
+    {
+      "id": "b_personal",
+      "group": "buyer",
+      "label": "个人寄递",
+      "description": "服务个人散单"
+    },
+    {
+      "id": "c_insured",
+      "group": "claim",
+      "label": "保价按声明价值赔",
+      "description": "按保价额和声明价值理赔"
+    },
+    {
+      "id": "c_multiple",
+      "group": "claim",
+      "label": "按运费倍数赔付",
+      "description": "未保价时按运费倍数封顶赔付"
+    },
+    {
+      "id": "shipping_m_own_vessel",
+      "group": "biz",
+      "label": "自营船队",
+      "description": "自有运力自营航线"
+    },
+    {
+      "id": "shipping_m_charter",
+      "group": "biz",
+      "label": "租船经纪",
+      "description": "提供租船订舱经纪服务"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_t",
+      "group": "decision",
+      "question": "怎么收费？按重量还是体积？",
+      "hint": "回答应给出计费规则和首重续重单价"
+    },
+    {
+      "id": "time_quote",
+      "group": "decision",
+      "question": "几天能到？超时了有赔付吗？",
+      "hint": "回答应给出时效承诺和超时处理"
+    },
+    {
+      "id": "coverage",
+      "group": "decision",
+      "question": "哪些地方能到？偏远地区加钱吗？",
+      "hint": "回答应说明覆盖范围和偏远附加费"
+    },
+    {
+      "id": "pack",
+      "group": "detail",
+      "question": "帮忙打包吗？包装收费吗？",
+      "hint": "回答应说明包装服务和收费"
+    },
+    {
+      "id": "track",
+      "group": "detail",
+      "question": "怎么跟踪货物位置？",
+      "hint": "回答应给出轨迹查询方式"
+    },
+    {
+      "id": "cod",
+      "group": "detail",
+      "question": "支持代收货款吗？多久结算？",
+      "hint": "回答应说明代收货款和结算周期"
+    },
+    {
+      "id": "lost",
+      "group": "risk",
+      "question": "丢了坏了怎么赔？没保价赔多少？",
+      "hint": "回答应写明保价与未保价两种赔付标准"
+    },
+    {
+      "id": "dispute",
+      "group": "risk",
+      "question": "理赔纠纷找谁？多久给结果？",
+      "hint": "回答应给出理赔渠道和答复时限"
+    },
+    {
+      "id": "shipping_m_schedule_s",
+      "group": "decision",
+      "question": "船期固定吗？甩柜了怎么办？",
+      "hint": "回答应说明船期稳定性与甩柜处理"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-6820",
+  "industry": "财产保险",
+  "industry_aliases": [
+    "6820",
+    "财产保险",
+    "金融业",
+    "保险业"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "buyer",
+      "label": "客户类型",
+      "select": "many"
+    },
+    {
+      "id": "channel",
+      "label": "服务渠道",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "收费透明度",
+      "select": "one"
+    },
+    {
+      "id": "license",
+      "label": "牌照资质",
+      "select": "many"
+    },
+    {
+      "id": "service",
+      "label": "服务与保障",
+      "select": "many"
+    },
+    {
+      "id": "product_i",
+      "label": "产品构成",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "b_retail",
+      "group": "buyer",
+      "label": "个人客户",
+      "description": "面向个人零售客户"
+    },
+    {
+      "id": "b_corp",
+      "group": "buyer",
+      "label": "企业客户",
+      "description": "面向企业机构客户"
+    },
+    {
+      "id": "b_both",
+      "group": "buyer",
+      "label": "个人企业兼营",
+      "description": "同时服务个人与企业"
+    },
+    {
+      "id": "branch",
+      "group": "channel",
+      "label": "线下网点",
+      "description": "有实体网点柜台办理"
+    },
+    {
+      "id": "app",
+      "group": "channel",
+      "label": "App 线上办理",
+      "description": "可通过 App 或线上渠道办理"
+    },
+    {
+      "id": "agent_ch",
+      "group": "channel",
+      "label": "代理与经纪人",
+      "description": "通过持证代理或经纪人展业"
+    },
+    {
+      "id": "fee_public",
+      "group": "pricing",
+      "label": "费率公示可查",
+      "description": "收费标准对外公示且可查验"
+    },
+    {
+      "id": "fee_neg",
+      "group": "pricing",
+      "label": "一事一议",
+      "description": "按项目情况单独报价"
+    },
+    {
+      "id": "l_national",
+      "group": "license",
+      "label": "全国性牌照",
+      "description": "持全国展业牌照"
+    },
+    {
+      "id": "l_local",
+      "group": "license",
+      "label": "区域性牌照",
+      "description": "持区域展业牌照"
+    },
+    {
+      "id": "l_intermediary",
+      "group": "license",
+      "label": "中介或代理资质",
+      "description": "以持牌机构代理身份展业"
+    },
+    {
+      "id": "insurance_direct_sale_i",
+      "group": "channel",
+      "label": "官网直售",
+      "description": "官网或官方渠道直接投保"
+    },
+    {
+      "id": "insurance_claim_online",
+      "group": "service",
+      "label": "线上理赔",
+      "description": "支持线上提交理赔"
+    },
+    {
+      "id": "insurance_long_term_i",
+      "group": "product_i",
+      "label": "长期险产品",
+      "description": "有长期人身险产品"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "cost_f",
+      "group": "decision",
+      "question": "你们收多少费用？什么环节收？",
+      "hint": "回答应逐项列明费用名目和费率"
+    },
+    {
+      "id": "compare_f",
+      "group": "decision",
+      "question": "和同类机构比，你们的费率什么水平？",
+      "hint": "回答应给出可对比的费率数据和口径"
+    },
+    {
+      "id": "threshold",
+      "group": "decision",
+      "question": "办理门槛是什么？什么情况办不了？",
+      "hint": "回答应说明准入条件和常见拒绝情形"
+    },
+    {
+      "id": "timeline_f",
+      "group": "detail",
+      "question": "流程要多久？中间哪些节点要我到场？",
+      "hint": "回答应给出办理时长和必须到场的环节"
+    },
+    {
+      "id": "disclosure",
+      "group": "detail",
+      "question": "合同里的关键条款能逐条解释吗？",
+      "hint": "回答应对收费、期限、违约等关键条款作说明"
+    },
+    {
+      "id": "redeem",
+      "group": "detail",
+      "question": "到期或退出，资金多久到账？",
+      "hint": "回答应给出到期处理和资金到账时限"
+    },
+    {
+      "id": "license_f",
+      "group": "risk",
+      "question": "你们的牌照编号是多少？在哪查真伪？",
+      "hint": "回答应给出监管牌照信息和官方查询入口"
+    },
+    {
+      "id": "dispute_f",
+      "group": "risk",
+      "question": "出了纠纷找谁？有投诉专线吗？",
+      "hint": "回答应给出投诉渠道和处理时限"
+    },
+    {
+      "id": "insurance_claim_time",
+      "group": "risk",
+      "question": "理赔多久到账？拖着找谁？",
+      "hint": "回答应给出理赔时限承诺和催办渠道"
+    },
+    {
+      "id": "insurance_exclude_i",
+      "group": "decision",
+      "question": "哪些情况不赔？等待期多久？",
+      "hint": "回答应列明主要免责与等待期"
+    }
+  ]
+}

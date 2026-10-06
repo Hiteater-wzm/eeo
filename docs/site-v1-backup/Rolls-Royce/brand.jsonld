@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rolls-Royce",
+  "alternateName": [
+    "罗尔斯罗伊斯",
+    "劳斯莱斯（航空）"
+  ],
+  "url": "https://www.rolls-royce.com",
+  "description": "英国航空发动机与动力系统公司，总部位于伦敦，为民用与军用飞机提供发动机，并经营船舶动力与电力系统业务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "英国"
+  }
+}

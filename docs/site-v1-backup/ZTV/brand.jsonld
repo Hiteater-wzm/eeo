@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ZTV",
+  "alternateName": [
+    "ZTV Company",
+    "Limited"
+  ],
+  "url": "https://www.ztv.co.jp/",
+  "description": "Japanese cable television operator headquartered in Tsu, Mie Prefecture, Japan"
+}

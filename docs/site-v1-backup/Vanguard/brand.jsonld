@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vanguard",
+  "alternateName": [
+    "先锋领航",
+    "The Vanguard Group",
+    "先锋集团"
+  ],
+  "url": "https://www.vanguard.com",
+  "description": "美国资产管理公司，总部位于宾夕法尼亚州Malvern，采用基金持有人共治的所有权结构，以指数基金与低成本共同基金为主要产品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Malvern",
+    "addressCountry": "美国"
+  }
+}

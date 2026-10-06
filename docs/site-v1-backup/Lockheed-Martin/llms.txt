@@ -1,0 +1,27 @@
+# Lockheed Martin
+
+> 美国防务与航天公司，总部位于马里兰州Bethesda，产品涵盖F-35战斗机、导弹与火控、航天系统与直升机（西科斯基）。
+
+- 官方网站: https://www.lockheedmartin.com
+- 所属行业: 航天与防务
+- 所在城市: Bethesda
+- 所在国家: 美国
+- 别名: 洛克希德马丁、洛马
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- F-35联合攻击战斗机项目
+- 航天业务涵盖卫星与深空探测
+- 西科斯基直升机与导弹火控产品线
+
+## 信息来源
+
+- https://www.lockheedmartin.com
+- https://en.wikipedia.org/wiki/Lockheed_Martin
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

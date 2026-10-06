@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "微创医疗",
+  "alternateName": [
+    "MicroPort",
+    "微创医疗科学有限公司"
+  ],
+  "url": "https://www.microport.com",
+  "description": "1998年创立于上海的高值医疗器械集团，产品涵盖心血管介入、骨科与大血管及外科器械，2010年在香港交易所上市。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上海",
+    "addressCountry": "中国"
+  }
+}

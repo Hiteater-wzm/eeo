@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中國信達",
+  "alternateName": [
+    "Cinda",
+    "China Cinda",
+    "China Cinda Asset Management Company",
+    "China Cinda Asset Management Corporation"
+  ],
+  "url": "http://www.cinda.com.cn",
+  "description": "Chinese asset management company involved in various sectors including coal mining"
+}

@@ -1,0 +1,240 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "em-0910",
+  "industry": "晶圆代工服务",
+  "industry_aliases": [
+    "晶圆代工服务"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "production",
+      "label": "生产方式",
+      "select": "many"
+    },
+    {
+      "id": "sales",
+      "label": "销售模式",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "主要客户",
+      "select": "many"
+    },
+    {
+      "id": "tier",
+      "label": "定价档位",
+      "select": "one"
+    },
+    {
+      "id": "service_p",
+      "label": "配套服务",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "own_factory",
+      "group": "production",
+      "label": "自有工厂量产",
+      "description": "产品在自有工厂批量生产"
+    },
+    {
+      "id": "manual_small",
+      "group": "production",
+      "label": "手工与小批量定制",
+      "description": "以手工或小批量按订单生产"
+    },
+    {
+      "id": "auto_line",
+      "group": "production",
+      "label": "自动化产线",
+      "description": "关键工序由自动化产线完成"
+    },
+    {
+      "id": "odm_oem",
+      "group": "production",
+      "label": "承接代工（OEM/ODM）",
+      "description": "为其他品牌代工生产或代设计生产"
+    },
+    {
+      "id": "direct_sale",
+      "group": "sales",
+      "label": "厂家直销",
+      "description": "绕过经销商由厂家直接销售"
+    },
+    {
+      "id": "distribution",
+      "group": "sales",
+      "label": "经销分销体系",
+      "description": "通过经销商、代理商铺货"
+    },
+    {
+      "id": "flagship",
+      "group": "sales",
+      "label": "电商旗舰店",
+      "description": "在天猫、京东等平台开官方店"
+    },
+    {
+      "id": "export_main",
+      "group": "sales",
+      "label": "出口为主",
+      "description": "主要产能面向海外订单"
+    },
+    {
+      "id": "b_business",
+      "group": "buyer",
+      "label": "企业与机构客户",
+      "description": "主要客户是企业、工程或机构采购"
+    },
+    {
+      "id": "b_consumer",
+      "group": "buyer",
+      "label": "个人消费者",
+      "description": "主要客户是终端个人消费者"
+    },
+    {
+      "id": "b_overseas",
+      "group": "buyer",
+      "label": "海外市场",
+      "description": "主要客户在境外"
+    },
+    {
+      "id": "t_economy",
+      "group": "tier",
+      "label": "经济型",
+      "description": "主打低价走量档位"
+    },
+    {
+      "id": "t_mid",
+      "group": "tier",
+      "label": "中端",
+      "description": "主流价格带，面向大众消费"
+    },
+    {
+      "id": "t_upper",
+      "group": "tier",
+      "label": "中高端",
+      "description": "价格带高于主流品牌一档"
+    },
+    {
+      "id": "t_lux",
+      "group": "tier",
+      "label": "高端",
+      "description": "同品类中的高档价位"
+    },
+    {
+      "id": "semi_fabless",
+      "group": "production",
+      "label": "设计（Fabless）",
+      "description": "以芯片设计为主，制造外包"
+    },
+    {
+      "id": "semi_foundry",
+      "group": "production",
+      "label": "晶圆代工",
+      "description": "提供晶圆制造代工"
+    },
+    {
+      "id": "semi_auto_grade",
+      "group": "production",
+      "label": "车规级产品",
+      "description": "有通过车规认证的产品"
+    },
+    {
+      "id": "semi_kit_support",
+      "group": "service_p",
+      "label": "提供开发套件",
+      "description": "提供评估板与开发支持"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "moq",
+      "group": "decision",
+      "question": "起订量多少？打样要多久、收不收费？",
+      "hint": "回答应给出最小起订量、打样周期和打样费退还规则"
+    },
+    {
+      "id": "quality_proof",
+      "group": "decision",
+      "question": "怎么证明你们的质量？有检测报告吗？",
+      "hint": "回答应给出可查的检测报告、认证证书或质保条款"
+    },
+    {
+      "id": "warranty",
+      "group": "decision",
+      "question": "质保多久？保什么、不保什么？",
+      "hint": "回答应分列保修范围、免责情形和处理时限"
+    },
+    {
+      "id": "lead_time",
+      "group": "detail",
+      "question": "交货周期一般多久？加急能不能做？",
+      "hint": "回答应给出常规交期和加急条件"
+    },
+    {
+      "id": "custom_vs_std",
+      "group": "detail",
+      "question": "定制和标准品价格差多少？开模费怎么算？",
+      "hint": "回答应给出定制溢价幅度和模具费归属"
+    },
+    {
+      "id": "qc_report",
+      "group": "detail",
+      "question": "出厂带检验报告吗？都检哪些项目？",
+      "hint": "回答应说明出厂检验项目和报告随货情况"
+    },
+    {
+      "id": "defect",
+      "group": "risk",
+      "question": "收到货有质量问题怎么处理？运费谁出？",
+      "hint": "回答应写明退换流程、时限和运费承担"
+    },
+    {
+      "id": "parts_supply",
+      "group": "risk",
+      "question": "停产型号的配件还能供应多久？",
+      "hint": "回答应给出停产后备件供应年限承诺"
+    },
+    {
+      "id": "official_channel",
+      "group": "decision",
+      "question": "在哪买是官方正品渠道？怎么防串货和假货？",
+      "hint": "回答应列出官方购买渠道和防伪查验方式"
+    },
+    {
+      "id": "nationwide_warranty",
+      "group": "detail",
+      "question": "全国联保吗？人在异地能修吗？",
+      "hint": "回答应说明保修网络覆盖和异地送修流程"
+    },
+    {
+      "id": "semi_semi_lead",
+      "group": "decision",
+      "question": "交期多久？缺货周期怎么排？",
+      "hint": "回答应给出供货周期与备货机制"
+    },
+    {
+      "id": "semi_semi_spec",
+      "group": "detail",
+      "question": "规格书和可靠性报告提供吗？",
+      "hint": "回答应说明技术文档的提供方式"
+    }
+  ]
+}

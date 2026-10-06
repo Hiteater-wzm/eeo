@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AOT GmbH",
+  "alternateName": [
+    "AOT",
+    "All Organic Trading GmbH",
+    "All Organic Treasures GmbH",
+    "AOT Ingredients"
+  ],
+  "url": "https://www.aot.de",
+  "description": "German producer and supplier of plant-based oils, fats, and proteins for the food and cosmetics industries."
+}

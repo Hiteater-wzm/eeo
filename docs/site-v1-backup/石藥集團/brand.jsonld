@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "石藥集團",
+  "alternateName": [
+    "中国制药",
+    "中國製藥",
+    "中國製藥集團"
+  ],
+  "url": "http://www.e-cspc.com/",
+  "description": "pharmaceutical company based in Shijiazhuang, Hebei, China"
+}

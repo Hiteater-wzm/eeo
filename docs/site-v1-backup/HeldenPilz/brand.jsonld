@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HeldenPilz",
+  "alternateName": [
+    "helden-pilz.de",
+    "HeldenPilz GmbH"
+  ],
+  "url": "https://helden-pilz.de",
+  "description": "German e-commerce company specializing in fermentation starter cultures and gut health supplements"
+}

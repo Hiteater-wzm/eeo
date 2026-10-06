@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fiberline Building Profiles A/S",
+  "alternateName": [
+    "Fiberline",
+    "Fiberline Building Profiles"
+  ],
+  "url": "https://fiberline.com/",
+  "description": "Danish company producing and supplying fibreglass profiles, planks and gratings for construction and industry"
+}

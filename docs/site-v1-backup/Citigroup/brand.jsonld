@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Citigroup",
+  "alternateName": [
+    "花旗",
+    "花旗集团",
+    "Citi"
+  ],
+  "url": "https://www.citigroup.com",
+  "description": "美国跨国银行集团，由花旗银行与旅行者集团合并组建，业务分为全球消费者银行与机构客户集团（投行、交易、托管）等板块。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

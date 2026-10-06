@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GA Salons",
+  "alternateName": [
+    "Evera Ltd",
+    "GA Hair Salon",
+    "GA Salon",
+    "Gennaro Dell'Aquila Hair and Beauty",
+    "Gennaro Dell'Aquila Ltd"
+  ],
+  "url": "https://gennarodellaquila.co.uk/",
+  "description": "Italian hair salon group in London founded in 2015 by Gennaro Dell'Aquila, specialising in plant-based hair colour; oper"
+}

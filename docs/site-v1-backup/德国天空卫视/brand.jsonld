@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "德国天空卫视",
+  "alternateName": [
+    "Sky",
+    "Sky Deutschland AG",
+    "Sky Deutschland GmbH",
+    "Sky Germany"
+  ],
+  "url": "http://sky.de",
+  "description": "German media company which operates a Direct Broadcast Satellite Pay TV platform in Germany, Austria and Switzerland ."
+}

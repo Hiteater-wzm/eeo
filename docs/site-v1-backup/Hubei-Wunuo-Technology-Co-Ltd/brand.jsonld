@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hubei Wunuo Technology Co., Ltd.",
+  "alternateName": [
+    "Hubei Uno Technology",
+    "Hubei Wunuo",
+    "WNOTECH AIR"
+  ],
+  "url": "https://www.hubei-uno.com/",
+  "description": "Chinese air conditioner export company based in Wuhan"
+}

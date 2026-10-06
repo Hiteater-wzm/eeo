@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AAI公司",
+  "alternateName": [
+    "Aircraft Armaments Inc.",
+    "Aircraft Armaments Incorporated"
+  ],
+  "url": "http://www.textronsystems.com/",
+  "description": "aerospace and defense development and manufacturing firm"
+}

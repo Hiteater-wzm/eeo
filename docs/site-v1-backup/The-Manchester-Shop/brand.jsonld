@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Manchester Shop",
+  "alternateName": [
+    "Manc & Proud",
+    "Manc And Proud",
+    "The Manc Shop",
+    "The MCR Shop"
+  ],
+  "url": "https://www.themanchestershop.co.uk/",
+  "description": "The Manchester Shop was opened in November 2016. The company designs & sells products inspired by the Manchester Worker"
+}

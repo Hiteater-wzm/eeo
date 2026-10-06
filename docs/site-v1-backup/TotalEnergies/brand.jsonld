@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TotalEnergies",
+  "alternateName": [
+    "道达尔能源",
+    "道达尔",
+    "Total"
+  ],
+  "url": "https://www.totalenergies.com",
+  "description": "法国能源公司，总部位于巴黎拉德芳斯商务区，业务涵盖油气勘探生产、液化天然气、炼化与电力及可再生能源。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Courbevoie",
+    "addressCountry": "法国"
+  }
+}

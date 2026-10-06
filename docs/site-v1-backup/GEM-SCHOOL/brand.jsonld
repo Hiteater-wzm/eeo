@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GEM SCHOOL",
+  "alternateName": [
+    "Gem School",
+    "Gemschool"
+  ],
+  "url": "https://www.gemschool.com",
+  "description": "English conversation school (eikaiwa) chain based in Kagawa and Ehime Prefectures, Japan, founded 1981"
+}

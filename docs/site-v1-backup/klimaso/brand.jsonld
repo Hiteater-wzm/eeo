@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "klima&so",
+  "alternateName": [
+    "klima & so",
+    "klima und so",
+    "klimaundso",
+    "klimaundso UG",
+    "klimaundso UG (haftungsbeschränkt)"
+  ],
+  "url": "https://www.klimaundso.de",
+  "description": "German climate tech startup for social media emissions, co-founded by Jean-Paul Laue and Patrick Schnitzler"
+}

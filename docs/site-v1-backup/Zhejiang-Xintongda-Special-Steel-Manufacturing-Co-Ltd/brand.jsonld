@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zhejiang Xintongda Special Steel Manufacturing Co., Ltd.",
+  "alternateName": [
+    "XTD",
+    "Xintongda",
+    "Xintongda Special Steel",
+    "Zhejiang Xintongda Special Steel"
+  ],
+  "url": "https://www.xtd-ss.com/",
+  "description": "Chinese manufacturer of seamless stainless steel, duplex, and nickel-alloy pipes and tubes"
+}

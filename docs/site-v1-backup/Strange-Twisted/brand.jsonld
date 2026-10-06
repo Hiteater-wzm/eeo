@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Strange & Twisted",
+  "alternateName": [
+    "Strange & Twisted Apparel",
+    "Strange and Twisted",
+    "Strange and Twisted Apparel"
+  ],
+  "url": "https://www.strangeandtwisted.com/",
+  "description": "UK based online clothing brand specialising in horror, paranormal, Cryptid and occult themed T shirts and apparel"
+}

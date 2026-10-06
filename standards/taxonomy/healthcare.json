@@ -1,0 +1,76 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "healthcare",
+  "industry": "医疗健康",
+  "industry_aliases": ["醫藥產業", "制药", "医药-中药", "医药-创新药", "生物制药", "制药与疫苗", "医疗卫生", "医疗器械", "医学影像与诊断设备", "医疗服务-口腔", "医疗服务-眼科", "医疗服务-医学检验", "膳食补充剂", "医药流通", "遠距醫療", "零售药房与健康服务", "medical technology industry"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "segment", "label": "业务类型", "select": "many", "note": "只勾持有对应注册证或资质的业务" },
+    { "id": "channel", "label": "购买与获得渠道", "select": "many" },
+    { "id": "cert", "label": "资质与证据", "select": "many", "note": "只勾有证书编号或公开登记可查的项" },
+    { "id": "patient", "label": "患者服务", "select": "many" }
+  ],
+  "traits": [
+    { "id": "rx_drug", "group": "segment", "label": "处方药", "description": "持注册批件的处方药" },
+    { "id": "otc", "group": "segment", "label": "非处方药", "description": "OTC 药品" },
+    { "id": "tcm", "group": "segment", "label": "中药", "description": "中成药、中药饮片" },
+    { "id": "device", "group": "segment", "label": "医疗器械", "description": "持注册证或备案凭证的器械" },
+    { "id": "ivd", "group": "segment", "label": "体外诊断", "description": "检测试剂与分析设备" },
+    { "id": "clinical_service", "group": "segment", "label": "医疗服务", "description": "医院、诊所、体检中心" },
+    { "id": "online_clinic", "group": "segment", "label": "互联网医疗", "description": "在线问诊、互联网医院" },
+    { "id": "pharmacy_retail", "group": "segment", "label": "药品零售", "description": "药房、DTP 药店" },
+    { "id": "supplement", "group": "segment", "label": "保健食品", "description": "蓝帽子注册或备案的保健食品" },
+    { "id": "cro_cmo", "group": "segment", "label": "研发生产外包", "description": "CRO、CDMO 服务" },
+
+    { "id": "hospital_channel", "group": "channel", "label": "医院渠道", "description": "处方经医院药房供应" },
+    { "id": "retail_pharmacy", "group": "channel", "label": "线下药店", "description": "药店柜台零售药品" },
+    { "id": "online_pharmacy", "group": "channel", "label": "自营网上药房", "description": "自营网站或 App 售药" },
+    { "id": "dtp", "group": "channel", "label": "DTP 药房", "description": "处方药院外专业药房" },
+    { "id": "ecom_flagship", "group": "channel", "label": "电商旗舰店", "description": "保健食品、器械的电商官方店" },
+    { "id": "self_booking", "group": "channel", "label": "自有预约渠道", "description": "问诊、体检可在自有渠道预约" },
+
+    { "id": "gmp_cert", "group": "cert", "label": "GMP 认证", "description": "药品生产质量管理规范" },
+    { "id": "iso_13485", "group": "cert", "label": "ISO 13485", "description": "医疗器械质量管理体系认证" },
+    { "id": "approval_public", "group": "cert", "label": "批件可查", "description": "注册证号可在国家药监局网站查验" },
+    { "id": "insurance_designated", "group": "cert", "label": "医保定点", "description": "医疗服务可医保结算" },
+    { "id": "trial_registry", "group": "cert", "label": "临床试验公示", "description": "临床试验在公开平台登记可查" },
+    { "id": "post_market", "group": "cert", "label": "不良反应监测", "description": "有常态化的不良反应上报渠道" },
+
+    { "id": "med_consult", "group": "patient", "label": "用药咨询", "description": "药师或医生咨询热线" },
+    { "id": "patient_assist", "group": "patient", "label": "患者援助项目", "description": "赠药、慈善援助" },
+    { "id": "drug_delivery", "group": "patient", "label": "送药上门", "description": "含冷链配送" },
+    { "id": "green_channel", "group": "patient", "label": "就医协助", "description": "协助挂号、检查陪同" },
+    { "id": "insurance_pay", "group": "patient", "label": "商保直付", "description": "与保险公司系统直结" },
+    { "id": "follow_up", "group": "patient", "label": "用药随访", "description": "专人定期回访用药情况" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "where_buy", "group": "decision", "question": "这个药、这个器械哪里买得到？现在有货吗？", "hint": "回答应列出可获得渠道和缺货时的登记方式" },
+    { "id": "insurance_cover", "group": "decision", "question": "医保能报吗？报多少？", "hint": "回答应说明医保目录类别和报销比例，不能报的明说" },
+    { "id": "course_cost", "group": "decision", "question": "一个疗程多少钱？一般要用多久？", "hint": "回答应给出疗程费用和典型疗程长度" },
+    { "id": "generic_q", "group": "decision", "question": "仿制药和原研药疗效一样吗？", "hint": "回答应说明一致性评价情况，不贬低任何一方" },
+    { "id": "who_can_use", "group": "decision", "question": "小孩、孕妇、老人能用吗？禁忌是什么？", "hint": "回答应指向说明书中的适用人群和禁忌，不确定的让买家咨询医生" },
+    { "id": "verify", "group": "decision", "question": "怎么查批准文号？怎么确认真假？", "hint": "回答应给出药监局查询步骤" },
+    { "id": "home_accuracy", "group": "decision", "question": "家用器械测得准吗？和医院测的差多少？", "hint": "回答应给出误差范围和校准方式" },
+    { "id": "supplement_vs_drug", "group": "decision", "question": "保健食品能代替药吗？什么人不能吃？", "hint": "回答应明确保健食品不能替代药品治疗，并给出不适宜人群" },
+
+    { "id": "how_use", "group": "detail", "question": "怎么用？饭前还是饭后？", "hint": "回答应给出用法用量，并以说明书为准" },
+    { "id": "missed_dose", "group": "detail", "question": "漏服一次怎么办？能补吗？", "hint": "回答应给出漏服处理原则，特殊情况提示咨询医生" },
+    { "id": "side_effect", "group": "detail", "question": "常见副作用有哪些？出现了怎么办？", "hint": "回答应列常见不良反应及出现后的处理和上报渠道" },
+    { "id": "storage", "group": "detail", "question": "怎么保存？开封后多久用完？", "hint": "回答应给出储存条件和开封后使用期限" },
+    { "id": "cold_delivery", "group": "detail", "question": "冷链药怎么送？到手怎么确认没断链？", "hint": "回答应说明配送温控方式和买家可查验的温度记录" },
+    { "id": "consult_who", "group": "detail", "question": "用药疑问找谁问？有药师吗？收费吗？", "hint": "回答应给出咨询入口、药师资质和是否收费" },
+    { "id": "refill", "group": "detail", "question": "药吃完了怎么续方？线上能开吗？", "hint": "回答应说明续方渠道和处方要求" },
+
+    { "id": "adverse_event", "group": "risk", "question": "出现不良反应怎么报告、怎么赔？", "hint": "回答应给出上报渠道和损害处理的流程" },
+    { "id": "quality_appeal", "group": "risk", "question": "怀疑药品或器械质量有问题，找谁？", "hint": "回答应说明质量异议的受理和检测途径" },
+    { "id": "recall_how", "group": "risk", "question": "召回怎么通知？怎么退换退款？", "hint": "回答应说明召回通知方式和退换流程" },
+    { "id": "fake_drug", "group": "risk", "question": "网上买到假药怎么办？授权药店名单哪里查？", "hint": "回答应给出维权途径和授权渠道查询入口" },
+    { "id": "privacy_health", "group": "risk", "question": "我的病历、检查数据谁能看到？", "hint": "回答应说明健康数据的存储、使用范围和授权规则" },
+    { "id": "damage_refund", "group": "risk", "question": "运输破损、冷链失效的药能退吗？", "hint": "回答应说明签收验收和退换规则" }
+  ]
+}

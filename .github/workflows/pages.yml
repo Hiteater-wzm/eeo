@@ -1,0 +1,22 @@
+name: Deploy site to Pages
+# public/ 是入库的 SPA 构建产物（vite build 后由 dist/ 同步，含目录数据 brand-index.json）。
+# 数据或前端变更后：npm run build（web/）→ 同步 dist 到 public/ → 提交推送即可触发部署。
+on:
+  push:
+    branches: [main]
+    paths: ['public/**', 'web/**', 'datasets/brands-all.json', 'tools/build-index.cjs', '.github/workflows/pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "广州泰基电子有限公司",
+  "alternateName": [
+    "广州泰基电子有限公司",
+    "泰基电子"
+  ],
+  "url": "https://www.hotekey.com/",
+  "description": "中国广州的酒店客房控制系统与智能控制设备制造商，旗下有看塘人OXYTAI智慧水产品牌"
+}

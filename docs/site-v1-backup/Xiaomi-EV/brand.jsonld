@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Xiaomi EV",
+  "alternateName": [
+    "小米汽车",
+    "Xiaomi Automobile"
+  ],
+  "url": "https://www.xiaomiev.com",
+  "description": "小米集团旗下智能电动汽车业务,由小米汽车有限公司在北京经济技术开发区生产,首款产品为小米SU7轿车。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

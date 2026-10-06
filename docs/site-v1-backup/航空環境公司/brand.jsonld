@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "航空環境公司",
+  "alternateName": "宇航环境公司",
+  "url": "http://www.avinc.com",
+  "description": "Company that designs and manufactures UAVs for U.S. Department of Defense and allied military services"
+}

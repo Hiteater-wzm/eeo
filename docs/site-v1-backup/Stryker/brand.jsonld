@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stryker",
+  "alternateName": "史赛克",
+  "url": "https://www.stryker.com",
+  "description": "美国医疗器械公司，总部位于密歇根州Kalamazoo，产品涵盖骨科植入物、手术设备与神经技术。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kalamazoo",
+    "addressCountry": "美国"
+  }
+}

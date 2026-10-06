@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SR (企業)",
+  "alternateName": "Supreme Railways",
+  "url": "http://www.srail.co.kr/",
+  "description": "subsidiary of Korea Railroad Corporation tasked with the operation of high-speed rail in the Seoul metropolitan area"
+}

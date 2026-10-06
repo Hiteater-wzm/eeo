@@ -1,0 +1,17 @@
+# RG Gesellschaft für Information und Organisation mbH
+
+> German provider of certified continuing medical education (CME) based in Gräfelfing, Bavaria
+
+- 官方网站: https://cme.rg-web.de/
+- 所属行业: 继续医学教育
+- 别名: RG ÄRZTEFORTBILDUNG
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q140606014
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TVT.media GmbH",
+  "alternateName": [
+    "TVTmedia",
+    "TVT Media",
+    "TVT.media Cologne",
+    "tvtmedia"
+  ],
+  "url": "https://tvtmedia.de/",
+  "description": "Full-service agency for video production, corporate film, employer branding and corporate communication in Cologne, Germ"
+}

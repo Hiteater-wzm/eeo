@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Siemens Energy",
+  "alternateName": "西门子能源",
+  "url": "https://www.siemens-energy.com",
+  "description": "德国能源技术公司，总部位于慕尼黑，产品涵盖燃气轮机、电网设备、风机（Siemens Gamesa）与电解制氢设备。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Munich",
+    "addressCountry": "德国"
+  }
+}

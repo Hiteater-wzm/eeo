@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TES Capital Co., Ltd.",
+  "alternateName": [
+    "TESキャピタル",
+    "株式会社TESキャピタル"
+  ],
+  "url": "https://tescapital.net/",
+  "description": "Japanese real estate company specializing in sale, management improvement, and exit strategy planning for investment pro"
+}

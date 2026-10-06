@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Structify Solutions",
+  "alternateName": "Structify",
+  "url": "https://www.structify.solutions",
+  "description": "German software company for digital construction documentation, based in Berg near Neumarkt, Bavaria"
+}

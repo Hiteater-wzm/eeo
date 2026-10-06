@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Casselini",
+  "alternateName": [
+    "Casselini Co.",
+    "Ltd.",
+    "Casselini Inc.",
+    "CASSELINI"
+  ],
+  "url": "https://www.casselini.com/",
+  "description": "Japanese company that designs, manufactures and sells women's bags and fashion accessories"
+}

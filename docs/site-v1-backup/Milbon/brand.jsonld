@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Milbon",
+  "alternateName": [
+    "Milbon Co.",
+    "Ltd."
+  ],
+  "url": "http://www.milbon.co.jp/",
+  "description": "Japanese company specializing in hair cosmetics for beauty salons."
+}

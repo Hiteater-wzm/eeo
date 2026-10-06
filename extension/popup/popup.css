@@ -1,0 +1,70 @@
+/* EEO Audit 快检 弹窗样式 延续 eeo-local 品牌系统
+ * 奶油白底 黑黄 硬阴影 全直角 无圆角 无 emoji
+ */
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0!important;font-family:"Microsoft YaHei",system-ui,sans-serif}
+html,body{width:360px}
+body{background:#FFFBEB;color:#16181d;line-height:1.8;font-size:13px}
+.wrap{padding:12px 14px 16px}
+.stripe{height:8px;background:repeating-linear-gradient(45deg,#000 0 8px,#FFDE59 8px 16px)}
+
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #000;padding-bottom:10px;margin-bottom:12px}
+.logo{display:flex;align-items:center;gap:9px}
+.logo .mark{width:30px;height:30px;background:#FFDE59;border:3px solid #000;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:10px;box-shadow:3px 3px 0 #000}
+.logo b{font-size:15px}
+.logo span{display:block;font-size:9px;letter-spacing:.2em;color:#999;font-weight:800}
+
+.btn{background:#FFDE59;border:2.5px solid #000;color:#000;font-weight:900;font-size:14px;padding:10px 24px;cursor:pointer;box-shadow:4px 4px 0 #000;transition:all .1s;width:100%}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000}
+.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:0 0 0 #000}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:#fff}
+.btn.small{width:auto;font-size:12px;padding:6px 14px;box-shadow:3px 3px 0 #000}
+
+.card{background:#fff;border:2.5px solid #000;box-shadow:4px 4px 0 #000;padding:14px 16px;margin-bottom:14px}
+.card h3{font-size:14px;font-weight:900;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card h3::before{content:"";width:8px;height:8px;background:#FFDE59;border:2px solid #000;flex:none}
+label{display:block;font-size:12px;font-weight:800;color:#444;margin:10px 0 3px}
+input,select{width:100%;background:#fff;border:2px solid #000;padding:8px 10px;font-size:13.5px;outline:none;font-family:inherit}
+input:focus,select:focus{box-shadow:3px 3px 0 #000}
+.hint{font-size:11px;color:#777;font-weight:600;margin-top:6px}
+.warn{background:#000;color:#FFDE59;padding:8px 12px;font-size:11.5px;font-weight:800;margin:10px 0}
+.kv{display:flex;gap:8px;font-size:12px;margin:2px 0}
+.kv .k{width:64px;flex:none;font-weight:800;color:#666}
+.kv .v{font-weight:800;word-break:break-all}
+
+.status{border:2.5px solid #000;background:#fff;box-shadow:4px 4px 0 #000;padding:12px 14px;margin-bottom:14px}
+.stage{font-weight:900;font-size:13.5px;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;background:#FFDE59;border:2px solid #000;animation:pulse 1.2s infinite;flex:none}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.engbar{margin-top:8px;display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800}
+.engbar .nm{width:86px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{flex:1;height:12px;border:2px solid #000;background:#fff}
+.fill{height:100%;background:#FFDE59;transition:width .4s}
+.engbar .ct{width:38px;text-align:right;flex:none}
+
+.gradebox{display:flex;gap:12px;align-items:stretch}
+.gbadge{width:104px;flex:none;text-align:center;border:3px solid #000;box-shadow:5px 5px 0 #000;padding:12px 6px}
+.gbadge .g{font-size:44px;font-weight:900;line-height:1.1}
+.gbadge .t{font-size:10.5px;font-weight:800;line-height:1.5}
+.scores{flex:1;display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:0}
+.scorebar{display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800}
+.scorebar .nm{width:62px;flex:none}
+.scorebar .tr{flex:1;height:12px;border:2px solid #000;background:#fff}
+.scorebar .fl{height:100%;background:#FFDE59}
+.scorebar .vl{width:42px;text-align:right;flex:none}
+table{width:100%;border-collapse:collapse;font-size:11.5px;background:#fff;border:2px solid #000;margin-top:10px}
+th{background:#FFDE59;border:1.5px solid #000;padding:5px 7px;text-align:left;font-weight:900}
+td{border:1.5px solid #000;padding:5px 7px;vertical-align:top}
+.quote{border:2px solid #000;border-left:5px solid #FF4D4D;background:#fff;padding:8px 11px;font-size:11.5px;margin:8px 0}
+.quote .src{display:block;color:#888;font-size:10.5px;font-weight:700;margin-top:3px}
+
+.hist-item{display:flex;align-items:center;gap:8px;border:2px solid #000;background:#fff;padding:5px 8px;margin-bottom:6px;cursor:pointer;font-size:12px}
+.hist-item:hover{background:#FFF8DC;transform:translate(-1px,-1px);box-shadow:2px 2px 0 #000}
+.hist-chip{width:22px;height:22px;flex:none;border:2px solid #000;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px}
+.hist-brand{font-weight:900;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hist-meta{font-size:10.5px;color:#888;font-weight:700;flex:none;text-align:right}
+.hist-meta b{display:block;color:#000}
+
+.foot{margin-top:4px;border-top:3px solid #000;padding-top:10px;font-size:10.5px;color:#777;font-weight:700}
+.foot .btn{margin-bottom:8px;font-size:11.5px;padding:7px 10px}
+.hidden{display:none}

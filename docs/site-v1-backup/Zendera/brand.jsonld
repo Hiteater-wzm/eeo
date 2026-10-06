@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zendera",
+  "alternateName": [
+    "Zendera AS",
+    "Zendera TMS"
+  ],
+  "url": "https://zendera.eu",
+  "description": "Company providing a transportation management system (TMS) for food and beverage logistics"
+}

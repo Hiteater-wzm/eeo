@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ask Amélie",
+  "alternateName": [
+    "Ask Amelie",
+    "AskAmelie"
+  ],
+  "url": "https://askamelie.com",
+  "description": "French edtech company building AI personalized tutors for medical school prep, English coaching, and French integration"
+}

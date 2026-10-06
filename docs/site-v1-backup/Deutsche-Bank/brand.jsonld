@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deutsche Bank",
+  "alternateName": [
+    "德意志银行",
+    "DB"
+  ],
+  "url": "https://www.db.com",
+  "description": "德国银行，总部位于法兰克福，业务涵盖公司银行、投资银行、私人银行与资产管理。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Frankfurt",
+    "addressCountry": "德国"
+  }
+}

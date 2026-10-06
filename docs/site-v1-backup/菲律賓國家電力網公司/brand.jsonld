@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "菲律賓國家電力網公司",
+  "alternateName": "菲律宾国家电网公司",
+  "url": "https://www.ngcp.ph",
+  "description": "consortium of electric corporations which is a transmission system operator for the Philippines"
+}

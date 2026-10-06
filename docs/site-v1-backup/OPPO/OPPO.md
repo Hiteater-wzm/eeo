@@ -1,0 +1,27 @@
+# OPPO 消费电子-智能手机
+
+别名：OPPO广东移动通信有限公司
+
+> 2004年创立于东莞长安镇，智能手机厂商，产品线包括Find、Reno与一加（OnePlus）系列。
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 消费电子-智能手机
+- 所在城市: 中国 东莞
+- 官方网站: [https://www.oppo.com/cn/](https://www.oppo.com/cn/)
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 可核验优势
+
+1. 智能手机出货量位居全球前列
+2. 线下渠道网点覆盖较广
+
+## 信息来源
+
+- [https://www.oppo.com/cn/](https://www.oppo.com/cn/)
+- [https://www.worldbrandlab.com/](https://www.worldbrandlab.com/)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

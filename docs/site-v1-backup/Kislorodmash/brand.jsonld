@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kislorodmash",
+  "alternateName": "Kysenmash",
+  "url": "http://www.kislorodmash.org//",
+  "description": "former scientific and industrial complex in Odesa specialized in manufacturing air separation machines"
+}

@@ -1,0 +1,17 @@
+# Riitek
+
+> Chinese manufacturer of consumer electronics
+
+- 官方网站: http://www.riitek.com/
+- 所属行业: 消费电子行业
+- 别名: Rii、Shenzhen Riitek、Shenzhen Riitek CO.，Ltd、Shenzhen Riitek Electronics Co.、LTD
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q135956167
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Singtel",
+  "alternateName": [
+    "新加坡电信",
+    "Singapore Telecommunications"
+  ],
+  "url": "https://www.singtel.com",
+  "description": "新加坡电信集团，总部位于新加坡，在新加坡与澳大利亚（Optus）提供电信服务，并持有亚太多国运营商股权。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Singapore",
+    "addressCountry": "新加坡"
+  }
+}

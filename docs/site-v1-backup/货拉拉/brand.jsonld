@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "货拉拉",
+  "alternateName": [
+    "Lalamove",
+    "深圳依时货拉拉科技有限公司"
+  ],
+  "url": "https://www.huolala.cn",
+  "description": "2013年创立的同城与跨城货运平台，运营主体位于深圳，提供货车匹配、搬家与企业物流服务，月活司机超百万。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "深圳",
+    "addressCountry": "中国"
+  }
+}

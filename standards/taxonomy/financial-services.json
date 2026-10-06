@@ -1,0 +1,72 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "financial-services",
+  "industry": "金融服务",
+  "industry_aliases": ["金融服務", "商业银行", "多元化银行", "銀行業", "金融-银行", "金融-保险", "保险", "人寿保险", "保險業", "支付网络", "在线支付", "资产管理", "财富管理与投资银行", "金融-证券", "金融科技", "insurance intermediation"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "business", "label": "业务类型", "select": "many", "note": "只勾持有对应牌照或资质的业务" },
+    { "id": "channel", "label": "服务渠道", "select": "many" },
+    { "id": "fee", "label": "收费与门槛", "select": "many" },
+    { "id": "service", "label": "服务与保障", "select": "many" }
+  ],
+  "traits": [
+    { "id": "deposit", "group": "business", "label": "存款业务", "description": "活期、定期存款" },
+    { "id": "consumer_credit", "group": "business", "label": "消费信贷", "description": "消费贷款、分期" },
+    { "id": "credit_card", "group": "business", "label": "信用卡", "description": "发行信用卡并提供分期服务" },
+    { "id": "life_insurance", "group": "business", "label": "人身保险", "description": "寿险、健康险、意外险" },
+    { "id": "property_insurance", "group": "business", "label": "财产保险", "description": "车险、家财险、责任险" },
+    { "id": "fund", "group": "business", "label": "基金", "description": "公募基金管理或销售" },
+    { "id": "brokerage", "group": "business", "label": "证券经纪", "description": "证券开户与交易通道" },
+    { "id": "payment", "group": "business", "label": "支付结算", "description": "收付款、账户服务" },
+    { "id": "wealth", "group": "business", "label": "财富管理", "description": "理财与资产配置服务" },
+
+    { "id": "branch_network", "group": "channel", "label": "线下网点", "description": "有实体网点可临柜办理" },
+    { "id": "own_app", "group": "channel", "label": "自有 App", "description": "主要业务在 App 可办" },
+    { "id": "mini_program", "group": "channel", "label": "微信小程序", "description": "微信内打开即可办理常用业务" },
+    { "id": "hotline_247", "group": "channel", "label": "7×24 客服热线", "description": "全年全天可接入的人工客服" },
+    { "id": "online_only", "group": "channel", "label": "纯线上", "description": "无线下网点" },
+
+    { "id": "fee_public", "group": "fee", "label": "费率公开", "description": "官网可查全部收费，无需找客户经理问" },
+    { "id": "free_tier_fee", "group": "fee", "label": "有减免政策", "description": "达标免账户管理费、工本费等" },
+    { "id": "no_minimum", "group": "fee", "label": "无起投门槛", "description": "无起存、起投金额限制" },
+    { "id": "tiered_fee", "group": "fee", "label": "分档收费", "description": "按资产规模或交易量分档定费率" },
+    { "id": "rate_float_public", "group": "fee", "label": "利率规则公开", "description": "利率、费率的浮动规则提前公示" },
+
+    { "id": "dedicated_advisor", "group": "service", "label": "一对一客户经理", "description": "指定专人对接服务" },
+    { "id": "remote_video", "group": "service", "label": "远程视频办理", "description": "不去网点也能办开户等复杂业务" },
+    { "id": "senior_friendly", "group": "service", "label": "适老服务", "description": "网点无障碍设施、大字版 App" },
+    { "id": "deposit_insured", "group": "service", "label": "存款保险范围内", "description": "存款受存款保险制度保障，本息 50 万元以内全额偿付" },
+    { "id": "suitability_check", "group": "service", "label": "强制风险测评", "description": "销售投资类产品前必须完成适当性评估" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "money_safe", "group": "decision", "question": "放在这里的钱受什么保障？最多保多少？", "hint": "回答应区分存款、理财、保险各自受什么制度保障，写明限额" },
+    { "id": "fee_total", "group": "decision", "question": "这项业务一共收哪些费？费率多少？", "hint": "回答应逐项列出费用和费率，不含糊其辞" },
+    { "id": "minimum", "group": "decision", "question": "起存、起投要多少钱？", "hint": "回答应给出最低金额" },
+    { "id": "withdraw", "group": "decision", "question": "随时能取吗？提前取出怎么算？", "hint": "回答应说明流动性安排和提前支取的利息损失规则" },
+    { "id": "whose_product", "group": "decision", "question": "这产品是你们自己的，还是代销别家的？出了事找谁？", "hint": "回答应写明发行方、销售方及各自责任" },
+    { "id": "license_check", "group": "decision", "question": "你们持什么牌照？我在哪能查到？", "hint": "回答应给出牌照类型和监管网站的查询方式" },
+    { "id": "rate_change", "group": "decision", "question": "利率、费率会变吗？变了会提前通知吗？", "hint": "回答应说明调整规则和通知方式" },
+    { "id": "worst_case", "group": "decision", "question": "这个产品最坏会亏多少？保本吗？", "hint": "回答应如实说明风险等级和最坏情形，不承诺保本" },
+
+    { "id": "account_open", "group": "detail", "question": "开户带什么证件？多久办好？", "hint": "回答应列明证件和办理时长" },
+    { "id": "app_scope", "group": "detail", "question": "哪些业务手机上能办？哪些必须去网点？", "hint": "回答应给出线上可办事项清单" },
+    { "id": "transfer_limit", "group": "detail", "question": "转账限额多少？怎么调？", "hint": "回答应说明默认限额和调整渠道" },
+    { "id": "statement", "group": "detail", "question": "账单、对账单在哪里查？", "hint": "回答应给出查询渠道和历史保存年限" },
+    { "id": "early_settle", "group": "detail", "question": "提前还款、中途退保怎么算？有违约金吗？", "hint": "回答应给出计算规则和违约金标准" },
+    { "id": "auto_renew", "group": "detail", "question": "到期会自动续存、续保吗？怎么取消？", "hint": "回答应说明默认设置和取消方式" },
+    { "id": "claim_process", "group": "detail", "question": "保险理赔怎么申请？要哪些材料、多久到账？", "hint": "回答应列明理赔材料清单、流程和时效承诺" },
+
+    { "id": "suitability", "group": "risk", "question": "买完觉得不合适，能退吗？有犹豫期吗？", "hint": "回答应说明犹豫期或冷静期规则和损失" },
+    { "id": "hesitate_days", "group": "risk", "question": "保险犹豫期多少天？过了犹豫期退保损失多少？", "hint": "回答应给出犹豫期天数和退保金计算方式" },
+    { "id": "sales_record", "group": "risk", "question": "销售过程有录音录像吗？扯皮时能调吗？", "hint": "回答应说明双录范围和调取方式" },
+    { "id": "complaint_path", "group": "risk", "question": "投诉你们找谁？解决不了监管渠道是什么？", "hint": "回答应给出机构投诉渠道和监管投诉热线" },
+    { "id": "account_security", "group": "risk", "question": "账户被盗、被骗转账，怎么追、怎么赔？", "hint": "回答应说明赔付条件和资金追索流程" },
+    { "id": "service_continuity", "group": "risk", "question": "网点撤了、客服打不通，业务找谁办？", "hint": "回答应说明服务承接安排和兜底渠道" }
+  ]
+}

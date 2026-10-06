@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "山東墨龍",
+  "alternateName": [
+    "墨龍",
+    "山東墨龍石油機械股份",
+    "山東墨龍石油機械股份有限公司"
+  ],
+  "url": "http://www.molonggroup.com/",
+  "description": "Chinese petroleum machinery manufacturer"
+}

@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Philips",
+  "alternateName": [
+    "飞利浦",
+    "皇家飞利浦",
+    "Koninklijke Philips"
+  ],
+  "url": "https://www.philips.com",
+  "description": "荷兰健康科技公司，总部位于阿姆斯特丹，产品涵盖影像监护、呼吸睡眠医疗设备与个人健康消费产品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amsterdam",
+    "addressCountry": "荷兰"
+  }
+}

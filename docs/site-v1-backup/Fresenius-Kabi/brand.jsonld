@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fresenius Kabi",
+  "alternateName": "Fresenius subsidiary Kabi",
+  "url": "https://www.fresenius-kabi.com/",
+  "description": "company based in Bad Homborg, Germany; offers health products for the critically and chronically ill."
+}

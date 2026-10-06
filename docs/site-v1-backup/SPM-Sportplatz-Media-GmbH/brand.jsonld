@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SPM Sportplatz Media GmbH",
+  "alternateName": [
+    "Sportplatz Media",
+    "SPM"
+  ],
+  "url": "https://sportplatz-media.com/",
+  "description": "A German company specializing in digital media marketing and app development in the sports industry."
+}

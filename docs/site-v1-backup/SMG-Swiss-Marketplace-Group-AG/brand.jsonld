@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SMG Swiss Marketplace Group AG",
+  "alternateName": [
+    "SMG",
+    "SMG Swiss Marketplace Group",
+    "Swiss Marketplace Group"
+  ],
+  "url": "https://swissmarketplace.group/",
+  "description": "SMG Swiss Marketplace Group AG is a Swiss company that operates various Internet platforms, in particular virtual market"
+}

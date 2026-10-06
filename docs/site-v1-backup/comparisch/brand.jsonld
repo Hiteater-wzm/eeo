@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "comparis.ch",
+  "alternateName": [
+    "Comparis",
+    "comparis",
+    "Comparis.ch"
+  ],
+  "url": "https://www.comparis.ch/",
+  "description": "Swiss provider of online price comparisons with independent tariff and service comparisons in the areas of health insura"
+}

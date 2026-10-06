@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Biortus Biosciences Co., Ltd.",
+  "alternateName": [
+    "Pharmaron",
+    "Wuxi Biortus Biosciences",
+    "Biortus"
+  ],
+  "url": "https://www.wuxibiortus.com/",
+  "description": "A Pharmaron company, based in Jiangyin, China"
+}

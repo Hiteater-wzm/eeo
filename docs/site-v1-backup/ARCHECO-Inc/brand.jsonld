@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ARCHECO Inc.",
+  "alternateName": "ARCHECO",
+  "url": "https://archeco.co.jp/",
+  "description": "Japanese consulting company for new business development and generative AI adoption"
+}

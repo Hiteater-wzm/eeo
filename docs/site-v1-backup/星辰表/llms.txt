@@ -1,0 +1,17 @@
+# 星辰表
+
+> core company of a Japanese global corporate group based in Tokyo, Japan
+
+- 官方网站: http://www.citizen.co.jp
+- 所属行业: 鐘錶學
+- 别名: 西铁城
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q1368019
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

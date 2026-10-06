@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Audo Copenhagen",
+  "alternateName": [
+    "Audo",
+    "Audo US",
+    "audocph.com"
+  ],
+  "url": "https://www.audocph.com",
+  "description": "Audo Copenhagen is a contemporary Danish design brand offering furniture, lighting and accessories for residential, hosp"
+}

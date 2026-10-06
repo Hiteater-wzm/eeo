@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Landbell",
+  "alternateName": "Landbell Group",
+  "url": "http://www.landbell.de",
+  "description": "leading supplier of service and consulting for global environmental and chemical compliance"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "莫帕爾",
+  "alternateName": [
+    "PDCD",
+    "Plymouth",
+    "Dodge",
+    "Chrysler",
+    "and DeSoto"
+  ],
+  "url": "https://www.mopar.com/",
+  "description": "American car parts, service, and customer care company"
+}

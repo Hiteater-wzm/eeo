@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "KIDO MEIMOKU",
+  "alternateName": [
+    "Kido Meimoku Co.",
+    "Ltd.",
+    "Kidomeimoku"
+  ],
+  "url": "https://kidomeimoku.co.jp",
+  "description": "Japanese company manufacturing and selling single-slab solid wood furniture, based in Tsushima, Aichi"
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HM Services and Consultancy",
+  "alternateName": [
+    "HM Services & Consultancy",
+    "HMSC",
+    "HMSC Intelligence Division"
+  ],
+  "url": "https://www.hms-consultancy.co.uk",
+  "description": "Research and advisory firm providing strategic intelligence, threat assessments, and geopolitical risk insights"
+}

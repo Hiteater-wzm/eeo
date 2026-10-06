@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TRW公司",
+  "alternateName": [
+    "TRW Systems",
+    "Thompson Products",
+    "Thompson Ramo Wooldridge",
+    "inc."
+  ],
+  "url": "http://www.trw.com",
+  "description": "American corporation involved in mainly aerospace, electronics, automotive, and credit reporting, etc."
+}

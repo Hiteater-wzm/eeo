@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HQS Quantum Simulations GmbH",
+  "alternateName": [
+    "HQS",
+    "HQS Quantum Simulations"
+  ],
+  "url": "https://quantumsimulations.de/",
+  "description": "German company developing quantum-physics-based simulation software for spectroscopy and NMR analysis"
+}

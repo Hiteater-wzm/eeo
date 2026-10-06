@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "长安福特马自达",
+  "alternateName": "長安福特馬自達",
+  "url": "http://www.ford.com.cn/servlet/ContentServer?pagename=DFY/CN",
+  "description": "automotive manufacturing company headquartered in Chongqing, China"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Yoii Inc.",
+  "alternateName": "Yoii",
+  "url": "https://yoii.jp/",
+  "description": "Japanese fintech company that provides the revenue-based financing service Yoii Fuel"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pfizer UK",
+  "alternateName": "Pfizer Limited",
+  "url": "http://www.pfizer.co.uk/default.aspx",
+  "description": "principal subsidiary of the multinational pharmaceutical company Pfizer in the United Kingdom"
+}

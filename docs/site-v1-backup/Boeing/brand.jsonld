@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Boeing",
+  "alternateName": "波音",
+  "url": "https://www.boeing.com",
+  "description": "美国飞机与防务公司，总部位于弗吉尼亚州阿灵顿，业务涵盖商用飞机（737与787系列）、防务航天与全球服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Arlington",
+    "addressCountry": "美国"
+  }
+}

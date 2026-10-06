@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "iCube Logics",
+  "alternateName": [
+    "ICL",
+    "iCube",
+    "iCube Logics Private Limited",
+    "iCube Logics Pvt. Ltd.",
+    "iCube logics (I) Pvt Ltd"
+  ],
+  "url": "https://www.icubelogics.com/",
+  "description": "Engineering software and services company specialising in PLM, AI document intelligence, Mixed Reality, IoT, Robotics, a"
+}

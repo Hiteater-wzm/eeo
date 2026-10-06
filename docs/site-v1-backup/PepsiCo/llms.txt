@@ -1,0 +1,27 @@
+# PepsiCo
+
+> 美国食品饮料公司,旗下品牌包括百事可乐、乐事、佳得乐、桂格、立体脆等,业务同时覆盖饮料与休闲食品。
+
+- 官方网站: https://www.pepsico.com
+- 所属行业: 食品与饮料
+- 所在城市: 帕切斯(纽约州)
+- 所在国家: 美国
+- 别名: 百事、百事公司
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 业务覆盖200多个国家和地区
+- 食品与饮料双主业组合
+- 在纳斯达克上市
+
+## 信息来源
+
+- https://www.pepsico.com
+- https://en.wikipedia.org/wiki/PepsiCo
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

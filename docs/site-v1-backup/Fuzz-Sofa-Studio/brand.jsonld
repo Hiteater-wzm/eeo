@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fuzz Sofa Studio",
+  "alternateName": "Fuzz Sofa",
+  "url": "https://fuzzsofa.com",
+  "description": "Furniture design studio specializing in sculptural animal-shaped sofas"
+}

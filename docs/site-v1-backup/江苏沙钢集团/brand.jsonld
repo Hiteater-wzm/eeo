@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "江苏沙钢集团",
+  "alternateName": [
+    "江苏沙钢",
+    "江苏沙钢集团有限公司",
+    "沙河鋼鐵廠",
+    "沙洲县钢铁厂",
+    "沙钢"
+  ],
+  "url": "http://www.sha-steel.com",
+  "description": "Among the biggest Chinese steel producers, from Jiangsu, in 2015 world 6th largest steel manufacturer"
+}

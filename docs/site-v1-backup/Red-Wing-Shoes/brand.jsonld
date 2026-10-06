@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Red Wing Shoes",
+  "alternateName": [
+    "Red Wing",
+    "Redwing",
+    "Red Wing Shoe Company",
+    "Red Wing Shoe Company",
+    "LLC"
+  ],
+  "url": "https://www.redwingshoes.com",
+  "description": "American footwear company based in Red Wing, Minnesota"
+}

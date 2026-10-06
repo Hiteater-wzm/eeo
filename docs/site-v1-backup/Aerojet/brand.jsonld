@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aerojet",
+  "alternateName": [
+    "喷气飞机公司",
+    "氣體噴射公司",
+    "航空喷气公司"
+  ],
+  "url": "http://www.aerojet.com/",
+  "description": "former American rocket and missile propulsion manufacturer"
+}

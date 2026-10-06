@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bank of America",
+  "alternateName": [
+    "美国银行",
+    "BofA",
+    "美银"
+  ],
+  "url": "https://www.bankofamerica.com",
+  "description": "美国银行控股公司，总部位于北卡罗来纳州夏洛特，通过美银证券等子公司提供零售银行、企业与机构银行和财富管理服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Charlotte",
+    "addressCountry": "美国"
+  }
+}

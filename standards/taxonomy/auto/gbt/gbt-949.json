@@ -1,0 +1,166 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-949",
+  "industry": "其他社会保障",
+  "industry_aliases": [
+    "949",
+    "其他社会保障",
+    "公共管理、社会保障和社会组织",
+    "社会保障"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "mode",
+      "label": "办理方式",
+      "select": "many"
+    },
+    {
+      "id": "fee",
+      "label": "收费情况",
+      "select": "one"
+    },
+    {
+      "id": "buyer",
+      "label": "服务对象",
+      "select": "many"
+    },
+    {
+      "id": "area",
+      "label": "管辖范围",
+      "select": "one"
+    }
+  ],
+  "traits": [
+    {
+      "id": "window",
+      "group": "mode",
+      "label": "窗口办理",
+      "description": "线下窗口现场办理"
+    },
+    {
+      "id": "online_gov",
+      "group": "mode",
+      "label": "线上办理",
+      "description": "可通过网上平台办理"
+    },
+    {
+      "id": "appointment_gov",
+      "group": "mode",
+      "label": "预约办理",
+      "description": "支持提前预约取号"
+    },
+    {
+      "id": "one_stop",
+      "group": "mode",
+      "label": "一窗综合受理",
+      "description": "一个窗口受理全套事项"
+    },
+    {
+      "id": "self_service",
+      "group": "mode",
+      "label": "自助终端办理",
+      "description": "设有自助办理终端"
+    },
+    {
+      "id": "free_gov",
+      "group": "fee",
+      "label": "不收费",
+      "description": "服务事项不收费"
+    },
+    {
+      "id": "std_fee",
+      "group": "fee",
+      "label": "按标准收费",
+      "description": "按公示标准收费"
+    },
+    {
+      "id": "b_citizen",
+      "group": "buyer",
+      "label": "个人",
+      "description": "面向个人办事"
+    },
+    {
+      "id": "b_org",
+      "group": "buyer",
+      "label": "企业与组织",
+      "description": "面向企业和社会组织"
+    },
+    {
+      "id": "a_local",
+      "group": "area",
+      "label": "本级辖区",
+      "description": "管辖本辖区事项"
+    },
+    {
+      "id": "a_cross",
+      "group": "area",
+      "label": "跨区域通办",
+      "description": "支持跨区域办理"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "materials",
+      "group": "decision",
+      "question": "要带什么材料？缺一样能办吗？",
+      "hint": "回答应列出材料清单和容缺范围"
+    },
+    {
+      "id": "gov_fee",
+      "group": "decision",
+      "question": "收不收费？收多少？",
+      "hint": "回答应给出收费标准依据"
+    },
+    {
+      "id": "where",
+      "group": "decision",
+      "question": "去哪办？几点上班？",
+      "hint": "回答应给出办理地点和时段"
+    },
+    {
+      "id": "time_gov",
+      "group": "detail",
+      "question": "多久能办完？怎么查进度？",
+      "hint": "回答应给出办理时限和进度查询方式"
+    },
+    {
+      "id": "validity",
+      "group": "detail",
+      "question": "办出来的证件有效期多久？到期怎么办？",
+      "hint": "回答应说明有效期和续期方式"
+    },
+    {
+      "id": "online_help",
+      "group": "detail",
+      "question": "线上办不会操作有人教吗？",
+      "hint": "回答应说明帮办渠道"
+    },
+    {
+      "id": "appeal",
+      "group": "risk",
+      "question": "对结果不服怎么办？",
+      "hint": "回答应给出复核或申诉渠道"
+    },
+    {
+      "id": "complaint_gov",
+      "group": "risk",
+      "question": "投诉找谁？多久回复？",
+      "hint": "回答应给出投诉渠道和答复时限"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tesla",
+  "alternateName": "特斯拉",
+  "url": "https://www.tesla.com",
+  "description": "美国电动汽车制造商,产品包括Model 3、Model Y、Model S、Model X与Cybertruck,并生产储能产品与太阳能设备,2003年创立。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "奥斯汀(得克萨斯州)",
+    "addressCountry": "美国"
+  }
+}

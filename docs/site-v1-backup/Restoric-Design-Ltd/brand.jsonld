@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Restoric Design Ltd",
+  "alternateName": "Restoric",
+  "url": "https://restoric.co.uk",
+  "description": "UK engineering consultancy providing CAD services, reverse engineering and steel detailing, based in Hitchin, Hertfordsh"
+}

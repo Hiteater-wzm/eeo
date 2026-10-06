@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "蒂芙尼公司",
+  "alternateName": [
+    "Tiffany & Co",
+    "Tiffany & Co.",
+    "第凡內",
+    "蒂凡尼",
+    "蒂梵尼"
+  ],
+  "url": "https://www.tiffany.com/",
+  "description": "American multinational luxury jewelry and specialty retailer"
+}

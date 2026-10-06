@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EEO Audit Local</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0!important;font-family:"Microsoft YaHei",system-ui,sans-serif}
+body{background:#FFFBEB;color:#16181d;line-height:1.9;font-size:14px}
+.stripe{height:10px;background:repeating-linear-gradient(45deg,#000 0 9px,#FFDE59 9px 18px)}
+.wrap{max-width:920px;margin:0 auto;padding:30px 22px 70px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:3px solid #000;padding-bottom:14px;margin-bottom:24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo .mark{width:34px;height:34px;background:#FFDE59;border:3px solid #000;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:3px 3px 0 #000}
+.logo b{font-size:17px}
+.logo span{display:block;font-size:10px;letter-spacing:.25em;color:#999;font-weight:800}
+.btn{background:#FFDE59;border:2.5px solid #000;color:#000;font-weight:900;font-size:14px;padding:10px 26px;cursor:pointer;box-shadow:4px 4px 0 #000;transition:all .1s}
+.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 #000}
+.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:0 0 0 #000}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:#fff}
+.card{background:#fff;border:2.5px solid #000;box-shadow:5px 5px 0 #000;padding:20px 22px;margin-bottom:20px}
+.card h3{font-size:15px;font-weight:900;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.card h3::before{content:"";width:9px;height:9px;background:#FFDE59;border:2px solid #000}
+label{display:block;font-size:12.5px;font-weight:800;color:#444;margin:12px 0 4px}
+input,select{width:100%;background:#fff;border:2px solid #000;padding:9px 11px;font-size:14px;outline:none;font-family:inherit}
+input:focus,select:focus{box-shadow:3px 3px 0 #000}
+.hint{font-size:11.5px;color:#777;font-weight:600;margin-top:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.row{grid-template-columns:1fr}}
+/* 引擎目录 */
+.eng-cat{font-size:12px;font-weight:900;letter-spacing:.2em;color:#666;margin:16px 0 8px;border-bottom:2px solid #000;padding-bottom:3px}
+.eng-item{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;border:2px solid #000;padding:10px 12px;margin-bottom:8px;background:#fff}
+.eng-item.on{background:#FFF8DC;box-shadow:3px 3px 0 #000}
+.eng-item .ck{width:20px;height:20px;margin-top:6px;cursor:pointer;accent-color:#000}
+.eng-item .nm{font-weight:900;font-size:13.5px}
+.eng-item .nm .tag{font-size:10px;background:#FFDE59;border:1.5px solid #000;padding:0 6px;margin-left:6px;font-weight:800}
+.eng-item .kv{display:grid;grid-template-columns:1fr 1.2fr;gap:8px}
+.eng-item .kv input{padding:6px 9px;font-size:12.5px}
+.depths{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.dep{border:2.5px solid #000;padding:12px 14px;cursor:pointer;background:#fff}
+.dep.on{background:#FFDE59;box-shadow:4px 4px 0 #000}
+.dep b{display:block;font-size:14px}
+.dep span{font-size:11.5px;color:#555;font-weight:700}
+.status{border:2.5px solid #000;background:#fff;box-shadow:5px 5px 0 #000;padding:18px 20px;margin-bottom:20px}
+.stage{font-weight:900;font-size:15px;display:flex;align-items:center;gap:10px}
+.dot{width:12px;height:12px;background:#FFDE59;border:2px solid #000;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.engbar{margin-top:10px;display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800}
+.engbar .nm{width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{flex:1;height:14px;border:2px solid #000;background:#fff}
+.fill{height:100%;background:#FFDE59;transition:width .4s}
+/* 报告 */
+.gradebox{display:flex;gap:18px;flex-wrap:wrap;align-items:stretch}
+.gbadge{min-width:150px;text-align:center;border:3px solid #000;box-shadow:6px 6px 0 #000;padding:18px 12px}
+.gbadge .g{font-size:58px;font-weight:900;line-height:1.1}
+.gbadge .t{font-size:12px;font-weight:800}
+.scorebar{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;margin:6px 0}
+.scorebar .nm{width:74px}
+.scorebar .tr{flex:1;height:13px;border:2px solid #000;background:#fff}
+.scorebar .fl{height:100%;background:#FFDE59}
+.scorebar .vl{width:50px;text-align:right}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#fff;border:2.5px solid #000;margin-top:8px}
+th{background:#FFDE59;border:1.5px solid #000;padding:6px 8px;text-align:left;font-weight:900}
+td{border:1.5px solid #000;padding:6px 8px;vertical-align:top}
+.yes{color:#00A344;font-weight:900}
+.no{color:#999}
+.un{background:#FF4D4D;color:#fff;font-weight:900;padding:0 5px}
+.bar-row{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;margin:5px 0}
+.bar-row .nm{width:110px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-row .tr{flex:1;height:18px;border:2px solid #000;background:#fff}
+.bar-row .fl{height:100%;background:#FFDE59}
+.quote{border:2px solid #000;border-left:6px solid #FF4D4D;background:#fff;padding:10px 14px;font-size:12.5px;margin:8px 0}
+.quote .src{display:block;color:#888;font-size:11px;font-weight:700;margin-top:4px}
+.orig{background:#FFFBEB;border:2px solid #000;padding:10px;white-space:pre-wrap;font-size:12.5px;max-height:300px;overflow:auto;margin:6px 0}
+.tr-click{cursor:pointer}
+.tr-click:hover{background:#FFF8DC}
+/* AI 引用来源 */
+.src-sub{font-weight:900;font-size:13px;margin:12px 0 4px}
+.cc-line{margin:4px 0;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.cc-nm{background:#000;color:#FFDE59;font-weight:900;font-size:12px;padding:1px 8px;flex:none}
+.schip{display:inline-block;border:1.5px solid #000;background:#fff;color:#000;font-size:11.5px;font-weight:800;padding:0 8px;max-width:70%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.schip.pf{background:#FFDE59}
+a.schip:hover{background:#FFDE59;transform:translate(-1px,-1px);box-shadow:2px 2px 0 #000}
+.export{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.warn{background:#000;color:#FFDE59;padding:12px 16px;font-size:12.5px;font-weight:800;margin:12px 0}
+.foot{margin-top:40px;border-top:3px solid #000;padding-top:14px;font-size:11.5px;color:#777;font-weight:700}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<div class="wrap">
+
+<header>
+  <div class="logo">
+    <div class="mark">EEO</div>
+    <div><b>EEO Audit Local</b><span>本地检测</span></div>
+  </div>
+  <div class="btn ghost" id="btnEngines">引擎目录 <span id="engCount">2</span> 家</div>
+</header>
+
+<div class="card hidden" id="enginesCard">
+  <h3>引擎目录</h3>
+  <div class="hint">密钥只存本机 没填的自动跳过</div>
+  <div id="engList"></div>
+  <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+    <button class="btn" id="btnSaveEng" type="button">保存</button>
+    <button class="btn ghost" id="btnTestEng" type="button">测试</button>
+  </div>
+  <div class="hint" id="testResult" style="margin-top:8px"></div>
+</div>
+
+<div class="card" id="formCard">
+  <h3>发起检测</h3>
+  <div class="row">
+    <div>
+      <label>品牌名 *</label>
+      <input id="inBrand" maxlength="30" placeholder="品牌名">
+    </div>
+    <div>
+      <label>城市（选填）</label>
+      <input id="inCity" maxlength="20" placeholder="成都">
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <label>所在行业</label>
+      <select id="inIndustry">
+        <option>少儿编程培训</option><option>K12 教育培训</option><option>职业教育</option>
+        <option>留学咨询</option><option>家政服务</option><option>装修建材</option>
+        <option>餐饮门店</option><option>法律咨询</option><option>口腔医疗</option>
+        <option>汽车服务</option><option>摄影婚庆</option><option>健身私教</option>
+        <option>软件与互联网服务</option><option>电商品牌</option><option>其他</option>
+      </select>
+    </div>
+    <div>
+      <label>竞品（选填）</label>
+      <input id="inComp" maxlength="120" placeholder="编程猫 核桃编程">
+    </div>
+  </div>
+  <label>深度</label>
+  <div class="depths">
+    <div class="dep on" data-d="quick"><b>快速</b><span>12 题</span></div>
+    <div class="dep" data-d="standard"><b>标准</b><span>30 题</span></div>
+    <div class="dep" data-d="deep"><b>深度</b><span>48 题</span></div>
+  </div>
+  <div class="warn">本地运行 密钥不出本机 引擎越多耗时越长</div>
+  <button class="btn" id="btnGo" type="button">开始检测</button>
+</div>
+
+<div class="status hidden" id="statusBox">
+  <div class="stage"><span class="dot"></span><span id="stageTxt">准备中</span></div>
+  <div id="engBars"></div>
+  <div class="hint">别关页面</div>
+</div>
+
+<div id="reportBox"></div>
+
+<div class="foot">
+  EEO Audit Local Apache-2.0<br>模型直问测离线记忆 单次采样有波动
+</div>
+</div>
+<div class="stripe" style="margin-top:30px"></div>
+
+<!-- 插件内置副本 内联脚本已外置以符合 MV3 CSP 事件绑定见 eeo-local.js 末尾适配段 -->
+<script src="eeo-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "通用动力",
+  "alternateName": [
+    "General Dynamics",
+    "薩科防務",
+    "通用動力公司"
+  ],
+  "url": "https://www.gd.com/",
+  "description": "American aerospace and defense manufacturing conglomerate"
+}

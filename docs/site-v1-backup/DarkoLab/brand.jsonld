@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DarkoLab",
+  "alternateName": [
+    "DarkoLab",
+    "DarkoLab AI"
+  ],
+  "url": "https://darkolab.com",
+  "description": "DarkoLab is a Canadian artificial intelligence company building software products for AI education, career readiness, an"
+}

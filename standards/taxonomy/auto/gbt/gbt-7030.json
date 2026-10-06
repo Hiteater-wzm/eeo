@@ -1,0 +1,171 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-7030",
+  "industry": "房地产中介服务",
+  "industry_aliases": [
+    "7030",
+    "房地产中介服务",
+    "房地产业"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "biz",
+      "label": "业务类型",
+      "select": "many"
+    },
+    {
+      "id": "asset",
+      "label": "业态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客群定位",
+      "select": "many"
+    },
+    {
+      "id": "channel",
+      "label": "交易渠道",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "develop_sale",
+      "group": "biz",
+      "label": "开发销售",
+      "description": "开发后出售物业"
+    },
+    {
+      "id": "hold_operate",
+      "group": "biz",
+      "label": "持有运营",
+      "description": "自持物业出租运营"
+    },
+    {
+      "id": "agency_r",
+      "group": "biz",
+      "label": "经纪代理",
+      "description": "提供买卖租赁的居间代理"
+    },
+    {
+      "id": "mgmt_r",
+      "group": "biz",
+      "label": "物业管理",
+      "description": "提供物业服务"
+    },
+    {
+      "id": "residential",
+      "group": "asset",
+      "label": "住宅",
+      "description": "以住宅物业为主"
+    },
+    {
+      "id": "commercial",
+      "group": "asset",
+      "label": "商办物业",
+      "description": "以商业办公物业为主"
+    },
+    {
+      "id": "industrial_park",
+      "group": "asset",
+      "label": "产业园区",
+      "description": "以产业园区为主"
+    },
+    {
+      "id": "b_first",
+      "group": "buyer",
+      "label": "首置刚需",
+      "description": "面向首次置业客群"
+    },
+    {
+      "id": "b_upgrade",
+      "group": "buyer",
+      "label": "改善型",
+      "description": "面向置换改善客群"
+    },
+    {
+      "id": "b_invest",
+      "group": "buyer",
+      "label": "机构投资",
+      "description": "面向机构投资客群"
+    },
+    {
+      "id": "online_r",
+      "group": "channel",
+      "label": "线上平台挂牌",
+      "description": "在互联网平台挂牌展示"
+    },
+    {
+      "id": "offline_r",
+      "group": "channel",
+      "label": "门店经纪带看",
+      "description": "通过线下门店和经纪人带看成交"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "fee_r",
+      "group": "decision",
+      "question": "中介费或服务费收多少？谁出？",
+      "hint": "回答应给出费率和买卖双方承担方式"
+    },
+    {
+      "id": "true_price",
+      "group": "decision",
+      "question": "挂牌价和成交价差多少？有议价空间吗？",
+      "hint": "回答应说明近期成交价参考"
+    },
+    {
+      "id": "loan",
+      "group": "decision",
+      "question": "贷款你们协助办吗？办不下来算谁的？",
+      "hint": "回答应说明贷款协助责任和失败处理"
+    },
+    {
+      "id": "contract_r",
+      "group": "detail",
+      "question": "合同里产权瑕疵、户口迁出怎么约定？",
+      "hint": "回答应说明关键条款的兜底约定"
+    },
+    {
+      "id": "handover",
+      "group": "detail",
+      "question": "交房流程怎么走？水电燃气怎么过户？",
+      "hint": "回答应列出交房节点和过户事项"
+    },
+    {
+      "id": "lease_terms",
+      "group": "detail",
+      "question": "租约押几付几？中途退租怎么算？",
+      "hint": "回答应说明押付方式和提前退租规则"
+    },
+    {
+      "id": "escrow_r",
+      "group": "risk",
+      "question": "交易资金走监管账户吗？",
+      "hint": "回答应说明资金监管方式"
+    },
+    {
+      "id": "broker_license",
+      "group": "risk",
+      "question": "带看的经纪人有备案吗？在哪查？",
+      "hint": "回答应说明经纪机构和人员备案查询方式"
+    }
+  ]
+}

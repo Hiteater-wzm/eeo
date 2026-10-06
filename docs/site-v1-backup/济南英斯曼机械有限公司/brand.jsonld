@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "济南英斯曼机械有限公司",
+  "alternateName": [
+    "YSM Pumps",
+    "英斯曼"
+  ],
+  "url": "https://ysmpumps.com",
+  "description": "中国ANSI/ASME B73.1化工流程泵及非OEM替换配件制造商（YSM Pumps）"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "佳得乐",
+  "alternateName": [
+    "Gatorade Company",
+    "Inc.",
+    "The Gatorade Company",
+    "Inc."
+  ],
+  "url": "https://gatorade.com/",
+  "description": "manufacturer of sports-themed beverage and food products"
+}

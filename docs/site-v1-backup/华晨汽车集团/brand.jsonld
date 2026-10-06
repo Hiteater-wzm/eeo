@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "华晨汽车集团",
+  "alternateName": [
+    "华晨汽车集团控股有限公司",
+    "華晨",
+    "華晨汽車"
+  ],
+  "url": "http://www.brilliance-auto.com",
+  "description": "Chinese state-owned automotive manufacturing company and parent of Brilliance Auto"
+}

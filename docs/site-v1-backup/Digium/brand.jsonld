@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Digium",
+  "alternateName": [
+    "Digium",
+    "Inc."
+  ],
+  "url": "https://www.digium.com",
+  "description": "American communications technology company"
+}

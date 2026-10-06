@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pfizer",
+  "alternateName": [
+    "辉瑞",
+    "辉瑞制药"
+  ],
+  "url": "https://www.pfizer.com",
+  "description": "美国制药公司，总部位于纽约，产品涵盖肿瘤、疫苗、内科与抗感染等领域，mRNA新冠疫苗与相关疗法为其近年主要产品线。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

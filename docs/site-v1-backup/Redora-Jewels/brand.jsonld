@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Redora Jewels",
+  "alternateName": [
+    "Redora",
+    "Redora Jewellery",
+    "Redora Jewelry"
+  ],
+  "url": "https://redorajewels.com/",
+  "description": "jewellery manufacturer in Shenzhen, China"
+}

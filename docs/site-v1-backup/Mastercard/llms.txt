@@ -1,0 +1,27 @@
+# Mastercard
+
+> 美国支付技术公司，总部位于纽约州Purchase，运营Mastercard卡组织网络，提供支付清算、反欺诈与数据分析服务。
+
+- 官方网站: https://www.mastercard.com
+- 所属行业: 支付网络
+- 所在城市: Purchase
+- 所在国家: 美国
+- 别名: 万事达、万事达卡
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 支付网络覆盖210多个国家和地区
+- 提供信用卡、借记卡、预付卡与B2B支付清算服务
+- 反欺诈与网络智能服务面向金融机构与商户
+
+## 信息来源
+
+- https://www.mastercard.com
+- https://en.wikipedia.org/wiki/Mastercard
+- https://interbrand.com/best-global-brands/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

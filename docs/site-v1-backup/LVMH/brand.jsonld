@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LVMH",
+  "alternateName": [
+    "路威酩轩",
+    "Moet Hennessy Louis Vuitton"
+  ],
+  "url": "https://www.lvmh.com",
+  "description": "法国奢侈品集团,业务涵盖时装皮具、香水化妆品、腕表珠宝与精品零售,旗下品牌包括路易威登、迪奥、纪梵希、丝芙兰,以及酩悦香槟与轩尼诗等,1987年由路易威登与酩悦轩尼诗合并成立。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "巴黎",
+    "addressCountry": "法国"
+  }
+}

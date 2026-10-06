@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Distribution Engine",
+  "alternateName": [
+    "NC2",
+    "NC Squared",
+    "NC Squared Limited"
+  ],
+  "url": "https://nc-squared.com",
+  "description": "Salesforce ISV partner building native lead routing and meeting scheduling apps, Distribution Engine and Booking Engine,"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Harrassowitz",
+  "alternateName": [
+    "Harrassowitz Company",
+    "harrassowitz.de",
+    "Otto Harrassowitz",
+    "Otto Harrassowitz GmbH & Co. KG"
+  ],
+  "url": "https://www.harrassowitz.de/",
+  "description": "firm providing acquisitions and collection development support services to academic and research libraries"
+}

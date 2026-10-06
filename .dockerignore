@@ -1,0 +1,19 @@
+# Keep the build context small: only datasets/ tools/ and LICENSE enter the image.
+.git
+.github
+action
+extension
+mcp
+public
+web
+examples
+docs
+platform
+standards
+jobs
+watch
+site
+schemas
+config.json
+*.log
+eeo-report.json

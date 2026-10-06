@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ingame",
+  "alternateName": "Ingame GmbH",
+  "url": "https://www.ingame.de/",
+  "description": "A German-language gaming news portal specialising in the latest video game news, streaming content and board games."
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wismec",
+  "alternateName": [
+    "Dongguan Wismec Electronics Co.",
+    "LTD.",
+    "Wismec Electronics Co. LTD"
+  ],
+  "url": "https://www.wismec.com/",
+  "description": "Chinese manufacturer of electronic cigarettes"
+}

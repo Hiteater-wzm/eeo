@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "neuroflash",
+  "alternateName": "neuroflash GmbH",
+  "url": "http://neuroflash.com/",
+  "description": "German AI company providing tools for AI content generation, synthetic respondents, and digital twin-based market resear"
+}

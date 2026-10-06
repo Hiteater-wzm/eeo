@@ -1,0 +1,20 @@
+# Aerion 航空航天工业
+
+别名：Aerion Corporation
+
+> defunct American aircraft manufacturer
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 航空航天工业
+- 官方网站: [http://www.aerionsupersonic.com/](http://www.aerionsupersonic.com/)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q381134](https://www.wikidata.org/wiki/Q381134)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

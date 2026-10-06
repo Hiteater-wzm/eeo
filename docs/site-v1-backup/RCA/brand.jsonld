@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RCA",
+  "alternateName": [
+    "RCA公司",
+    "美國收音機公司",
+    "美國無線電公司"
+  ],
+  "url": "http://www.rca.com",
+  "description": "American electronics company (1919–1988)"
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Advanced Overwatch",
+  "alternateName": [
+    "AO",
+    "Advanced Overwatch Limited",
+    "Advanced Overwatch Ltd",
+    "advancedoverwatch.com"
+  ],
+  "url": "https://advancedoverwatch.com/",
+  "description": "British electronic security and fire safety company in Coleraine, Northern Ireland. Installs, monitors, maintains CCTV,"
+}

@@ -1,0 +1,27 @@
+# Stryker
+
+> 美国医疗器械公司，总部位于密歇根州Kalamazoo，产品涵盖骨科植入物、手术设备与神经技术。
+
+- 官方网站: https://www.stryker.com
+- 所属行业: 医疗器械
+- 所在城市: Kalamazoo
+- 所在国家: 美国
+- 别名: 史赛克
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 骨科（关节置换与创伤）产品线
+- 手术设备与内窥镜系统
+- 神经介入与神经调控业务板块
+
+## 信息来源
+
+- https://www.stryker.com
+- https://en.wikipedia.org/wiki/Stryker_Corporation
+- https://www.massdevice.com/largest-medical-device-companies-2025
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

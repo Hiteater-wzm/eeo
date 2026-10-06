@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EEO AUDIT 品牌目录 — 1000 个品牌信息卡</title>
+<meta name="description" content="EEO 品牌目录：收录 1000 个品牌的信息卡，支持中英文搜索、行业门类浏览、国家筛选与 GitHub PR 官方认领。">
+<meta property="og:title" content="EEO AUDIT 品牌目录">
+<meta property="og:description" content="1000 个品牌信息卡 · 搜索 · 筛选 · 官方认领">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E293B'/%3E%3Ctext x='16' y='21.5' font-family='Segoe UI,Arial' font-size='12' font-weight='700' fill='%23fff' text-anchor='middle'%3EEEO%3C/text%3E%3C/svg%3E">
+<style>
+/* ============ 设计令牌 ============ */
+:root{
+  --bg:#F8FAFC; --card:#FFFFFF; --border:#E2E8F0; --border-strong:#CBD5E1;
+  --text:#1E293B; --text-strong:#0F172A; --muted:#64748B; --muted-2:#94A3B8;
+  --accent:#2563EB; --accent-hover:#1D4ED8; --accent-soft:#EFF6FF;
+  --green:#059669; --green-soft:#ECFDF5;
+  --amber:#B45309; --amber-soft:#FFFBEB;
+  --radius:8px; --radius-lg:12px;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.05);
+  --shadow-md:0 4px 12px rgba(15,23,42,.08);
+  --shadow-lg:0 16px 40px rgba(15,23,42,.16);
+  --nav-h:60px; --side-w:236px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-hover)}
+button{font-family:inherit;cursor:pointer}
+img,svg{vertical-align:middle}
+::selection{background:#DBEAFE}
+body.no-scroll{overflow:hidden}
+
+/* ============ 顶部导航 ============ */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1400px;margin:0 auto;height:var(--nav-h);display:flex;align-items:center;gap:16px;padding:0 20px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--text-strong);flex-shrink:0}
+.logo:hover{color:var(--text-strong)}
+.logo-mark{width:34px;height:34px;border-radius:8px;background:var(--text-strong);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;letter-spacing:.5px}
+.logo-text{display:flex;flex-direction:column;line-height:1.15;font-weight:700;font-size:15px}
+.logo-text small{font-weight:400;font-size:11px;color:var(--muted)}
+.nav-search{flex:1;display:flex;align-items:center;max-width:520px;margin:0 auto;position:relative}
+.nav-search .ico{position:absolute;left:12px;color:var(--muted-2);pointer-events:none}
+.nav-search input{width:100%;height:38px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;padding:0 34px 0 36px;font-size:14px;color:var(--text);outline:none;transition:border-color .15s,box-shadow .15s}
+.nav-search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.nav-search .clear{position:absolute;right:6px;border:none;background:none;color:var(--muted-2);width:26px;height:26px;border-radius:6px;display:none;align-items:center;justify-content:center}
+.nav-search .clear:hover{background:var(--bg);color:var(--muted)}
+.nav-search.has-q .clear{display:flex}
+.nav-actions{display:flex;gap:8px;flex-shrink:0}
+.menu-btn{display:none;border:1px solid var(--border);background:#fff;width:38px;height:38px;border-radius:8px;align-items:center;justify-content:center;color:var(--muted)}
+.menu-btn:hover{background:var(--bg)}
+
+/* 按钮 */
+.btn{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 14px;border-radius:8px;font-size:13px;font-weight:600;border:1px solid transparent;transition:all .15s;white-space:nowrap}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{background:var(--accent-hover);color:#fff}
+.btn.ghost{background:#fff;border-color:var(--border-strong);color:var(--text)}
+.btn.ghost:hover{border-color:var(--muted-2);background:var(--bg)}
+.btn.sm{height:32px;padding:0 10px;font-size:12px}
+
+/* ============ 布局 ============ */
+.layout{max-width:1400px;margin:0 auto;display:flex;align-items:flex-start;padding:0 20px;flex:1 0 auto;width:100%}
+.sidebar{width:var(--side-w);flex-shrink:0;position:sticky;top:var(--nav-h);max-height:calc(100vh - var(--nav-h));overflow-y:auto;padding:20px 16px 32px 0}
+.main{flex:1;min-width:0;padding:20px 0 48px 28px}
+.side-title{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--muted-2);text-transform:uppercase;padding:4px 10px 8px}
+.side-nav{display:flex;flex-direction:column;gap:1px}
+.side-link{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 10px;border-radius:8px;color:var(--text);font-size:13.5px;border:none;background:none;text-align:left;width:100%;transition:background .12s}
+.side-link:hover{background:#F1F5F9}
+.side-link.active{background:var(--accent-soft);color:var(--accent-hover);font-weight:600}
+.side-link .cnt{font-size:11.5px;color:var(--muted-2);background:#F1F5F9;border-radius:99px;padding:1px 8px;flex-shrink:0}
+.side-link.active .cnt{background:#DBEAFE;color:var(--accent-hover)}
+.drawer-bg{display:none}
+
+/* ============ 页头 / 筛选栏 ============ */
+.page-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.page-head h1{font-size:22px;font-weight:700;color:var(--text-strong)}
+.page-sub{font-size:13px;color:var(--muted);margin-bottom:14px}
+.filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:10px;margin-bottom:18px;box-shadow:var(--shadow-sm)}
+.filters select{height:34px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text);font-size:13px;padding:0 8px;outline:none;max-width:180px}
+.filters select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.result-info{margin-left:auto;font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:10px}
+.link-btn{border:none;background:none;color:var(--accent);font-size:12.5px;padding:4px 6px;border-radius:6px}
+.link-btn:hover{background:var(--accent-soft)}
+
+/* ============ 卡片网格 ============ */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 14px 12px;display:flex;flex-direction:column;gap:8px;cursor:pointer;transition:box-shadow .15s,transform .15s,border-color .15s;box-shadow:var(--shadow-sm);outline:none}
+.card:hover,.card:focus-visible{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--border-strong)}
+.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.card-name{font-size:16px;font-weight:700;color:var(--text-strong);line-height:1.35;word-break:break-word}
+.tag{display:inline-block;font-size:12px;border-radius:6px;padding:1px 8px;line-height:1.6;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tag-ind{background:var(--accent-soft);color:#1D4ED8}
+.card-loc{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);flex-wrap:wrap;min-height:18px}
+.cc{display:inline-flex;align-items:center;font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--muted);background:#F1F5F9;border:1px solid var(--border);border-radius:5px;padding:0 5px;line-height:17px}
+.card-desc{font-size:13.5px;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.55}
+.card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:6px;border-top:1px dashed var(--border)}
+.site-link{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;color:var(--accent);padding:3px 6px;border-radius:6px}
+.site-link:hover{background:var(--accent-soft)}
+.go-detail{font-size:12px;color:var(--muted-2)}
+
+/* 徽章 */
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;border-radius:99px;padding:2px 9px;flex-shrink:0;line-height:1.5}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.badge.unclaimed{background:#F1F5F9;color:#64748B}
+.badge.claimed{background:var(--green-soft);color:var(--green)}
+.badge.claiming{background:var(--amber-soft);color:var(--amber)}
+
+/* ============ 分组展示 ============ */
+.group{margin-bottom:26px}
+.group-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.group-head h3{font-size:15px;font-weight:700;color:var(--text-strong)}
+.group-head .cnt{font-size:12px;color:var(--muted);background:#F1F5F9;padding:1px 9px;border-radius:99px}
+
+/* ============ 分页 ============ */
+.pager{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:26px;flex-wrap:wrap}
+.pager button{min-width:34px;height:34px;border:1px solid var(--border);background:#fff;border-radius:8px;font-size:13px;color:var(--text);display:inline-flex;align-items:center;justify-content:center;padding:0 8px}
+.pager button:hover:not(:disabled):not(.active){border-color:var(--accent);color:var(--accent)}
+.pager button.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.pager button:disabled{opacity:.4;cursor:default}
+.pager .dots{color:var(--muted-2);padding:0 2px}
+.pager-info{width:100%;text-align:center;font-size:12px;color:var(--muted-2);margin-top:6px}
+
+/* ============ 首页 Hero ============ */
+.hero{text-align:center;padding:52px 16px 40px;max-width:860px;margin:0 auto}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--accent-hover);background:var(--accent-soft);border:1px solid #DBEAFE;border-radius:99px;padding:4px 14px;margin-bottom:18px}
+.hero h1{font-size:clamp(28px,4.5vw,42px);font-weight:800;color:var(--text-strong);letter-spacing:-.01em;margin-bottom:6px}
+.hero-num{font-size:clamp(56px,9vw,88px);font-weight:800;color:var(--text-strong);line-height:1.05;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.hero-num-label{font-size:15px;color:var(--muted);margin:2px 0 24px}
+.hero-search{display:flex;align-items:center;position:relative;max-width:620px;margin:0 auto 12px}
+.hero-search .ico{position:absolute;left:16px;color:var(--muted-2);pointer-events:none}
+.hero-search input{width:100%;height:50px;border:1.5px solid var(--border-strong);border-radius:12px;background:#fff;padding:0 44px 0 46px;font-size:15.5px;color:var(--text);outline:none;box-shadow:var(--shadow-sm);transition:border-color .15s,box-shadow .15s}
+.hero-search input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+.hero-search .clear{position:absolute;right:8px;border:none;background:none;color:var(--muted-2);width:32px;height:32px;border-radius:8px;display:none;align-items:center;justify-content:center}
+.hero-search .clear:hover{background:var(--bg)}
+.hero-search.has-q .clear{display:flex}
+.hero-hint{font-size:13px;color:var(--muted-2);margin-bottom:30px}
+.hero-stats{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.hero-stats b{color:var(--text-strong);font-size:15px;font-weight:700;margin-right:4px}
+
+.home-section{margin-top:40px}
+.home-section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.home-section-head h2{font-size:18px;font-weight:700;color:var(--text-strong)}
+.home-section-head p{font-size:13px;color:var(--muted);margin-top:2px}
+.cat-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat-tile{display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;color:var(--text);transition:all .15s;box-shadow:var(--shadow-sm)}
+.cat-tile:hover{border-color:var(--accent);box-shadow:var(--shadow-md);transform:translateY(-2px);color:var(--text)}
+.cat-tile .t{font-size:14px;font-weight:600}
+.cat-tile .n{font-size:12px;color:var(--muted);flex-shrink:0}
+
+/* ============ 弹窗 ============ */
+.modal-root{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal-root[hidden]{display:none}
+.modal-mask{position:absolute;inset:0;background:rgba(15,23,42,.55);animation:fadeIn .15s ease}
+.modal-card{position:relative;background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:100%;max-width:620px;max-height:min(86vh,780px);display:flex;flex-direction:column;animation:pop .18s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:20px 22px 0}
+.modal-head h2{font-size:21px;font-weight:800;color:var(--text-strong);line-height:1.3;word-break:break-word}
+.modal-close{border:none;background:var(--bg);color:var(--muted);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.modal-close:hover{background:#E2E8F0;color:var(--text)}
+.modal-body{padding:14px 22px 22px;overflow-y:auto}
+.alias-row{display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.alias-row .lbl{font-size:12px;color:var(--muted-2);padding-top:2px;flex-shrink:0}
+.chip{display:inline-block;font-size:12px;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:99px;padding:1px 10px}
+.meta-grid{display:grid;grid-template-columns:88px 1fr;gap:7px 12px;font-size:13.5px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:14px}
+.meta-grid dt{color:var(--muted-2);font-size:12.5px;padding-top:1px}
+.meta-grid dd{color:var(--text);word-break:break-word}
+.modal-desc{font-size:14px;line-height:1.75;margin-bottom:14px}
+.sec-title{font-size:13px;font-weight:700;color:var(--text-strong);margin:16px 0 8px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:"";flex:1;height:1px;background:var(--border)}
+.adv-list{list-style:none;display:flex;flex-direction:column;gap:7px}
+.adv-list li{position:relative;padding-left:16px;font-size:13.5px;line-height:1.6}
+.adv-list li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:2px;background:var(--accent)}
+.src-list{display:flex;flex-direction:column;gap:6px}
+.src-list a{display:inline-flex;align-items:center;gap:6px;font-size:13px;word-break:break-all}
+.modal-foot{display:flex;gap:10px;padding:0 22px 22px;flex-wrap:wrap}
+.modal-foot .btn{height:40px;padding:0 18px}
+
+/* ============ 其他 ============ */
+.empty{text-align:center;padding:70px 20px;color:var(--muted)}
+.empty h3{font-size:16px;color:var(--text-strong);margin-bottom:6px}
+.empty p{font-size:13.5px;margin-bottom:16px}
+.loading{padding:80px 20px;text-align:center;color:var(--muted)}
+.loading .spin{width:28px;height:28px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;margin:0 auto 14px;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.skel-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-width:1000px;margin:0 auto}
+.skel{height:170px;border-radius:var(--radius);background:linear-gradient(100deg,#F1F5F9 40%,#E2E8F0 50%,#F1F5F9 60%);background-size:200% 100%;animation:shimmer 1.2s infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.footer{border-top:1px solid var(--border);background:#fff;margin-top:20px}
+.footer-inner{max-width:1400px;margin:0 auto;padding:26px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+#resultsTop{scroll-margin-top:calc(var(--nav-h) + 12px)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1099px){
+  .grid,.skel-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cat-tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (max-width:1023px){
+  .menu-btn{display:flex}
+  .sidebar{position:fixed;left:0;top:0;bottom:0;width:280px;max-height:none;z-index:120;background:#fff;border-right:1px solid var(--border);padding:18px 14px;transform:translateX(-105%);transition:transform .2s ease;box-shadow:var(--shadow-lg)}
+  .sidebar.open{transform:none}
+  .drawer-bg{display:block;position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:110;opacity:0;pointer-events:none;transition:opacity .2s}
+  .drawer-bg.show{opacity:1;pointer-events:auto}
+  .main{padding-left:0}
+}
+@media (max-width:719px){
+  .grid,.skel-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .cat-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav-inner{gap:10px;padding:0 12px}
+  .logo-text{display:none}
+  .nav-actions .btn.ghost span{display:none}
+  .nav-actions .btn.ghost{width:38px;padding:0;justify-content:center}
+  .nav-actions .btn.primary{padding:0 10px;font-size:12.5px}
+  .nav-search input{padding-right:12px}
+  .nav-search .clear{display:none !important}
+  .hero{padding:34px 8px 28px}
+  .hero-stats{gap:14px;font-size:12px}
+  .card{padding:12px 12px 10px}
+  .card-name{font-size:15px}
+  .card-desc{-webkit-line-clamp:2;font-size:12.5px}
+  .go-detail{display:none}
+  .filters{gap:6px;padding:8px}
+  .filters select{max-width:calc(50% - 4px);flex:1}
+  .result-info{width:100%;margin-left:0}
+  .modal-root{padding:10px}
+  .modal-head{padding:16px 16px 0}
+  .modal-body{padding:12px 16px 16px}
+  .modal-foot{padding:0 16px 16px}
+}
+@media (max-width:400px){
+  .card-desc{display:none}
+}
+</style>
+</head>
+<body>
+<noscript><div style="padding:40px;text-align:center;font-family:sans-serif">EEO 品牌目录需要启用 JavaScript 才能浏览。</div></noscript>
+
+<header class="nav">
+  <div class="nav-inner">
+    <button class="menu-btn" id="menuBtn" aria-label="打开行业分类菜单" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="logo" href="#/" aria-label="EEO AUDIT 品牌目录 首页">
+      <span class="logo-mark">EEO</span>
+      <span class="logo-text">EEO AUDIT<small>品牌目录</small></span>
+    </a>
+    <div class="nav-search" id="navSearchWrap">
+      <span class="ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+      <input id="navQ" type="search" placeholder="搜索品牌 / 行业 / 城市" autocomplete="off" aria-label="搜索品牌">
+      <button class="clear" id="navQClear" aria-label="清空搜索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="nav-actions">
+      <a class="btn ghost" href="https://github.com/Hiteater-wzm/eeo" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a class="btn primary" href="https://github.com/Hiteater-wzm/eeo/blob/main/platform/README.md" target="_blank" rel="noopener noreferrer">认领品牌</a>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="drawer-bg" id="drawerBg"></div>
+  <aside class="sidebar" id="sidebar" aria-label="行业分类导航"></aside>
+  <main class="main" id="main">
+    <div class="loading" id="loading">
+      <div class="spin"></div>
+      <div>正在加载品牌数据……</div>
+      <div class="skel-grid" style="margin-top:26px">
+        <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner" id="footer">
+    <span>EEO AUDIT · 品牌目录 v2 — 数据公开，认领记录全程可查</span>
+    <span class="footer-links">
+      <a href="https://github.com/Hiteater-wzm/eeo" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+      <a href="https://github.com/Hiteater-wzm/eeo/blob/main/platform/README.md" target="_blank" rel="noopener noreferrer">认领指南</a>
+      <a href="https://github.com/Hiteater-wzm/eeo/blob/main/datasets/brands-1k.json" target="_blank" rel="noopener noreferrer">数据集</a>
+    </span>
+  </div>
+</footer>
+
+<div class="modal-root" id="modalRoot" hidden>
+  <div class="modal-mask" id="modalMask"></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modalCard"></div>
+</div>
+
+<script>
+'use strict';
+/* ================================================================
+   EEO 品牌目录 v2 — 零依赖单文件 SPA
+   数据：./brands-1k.json（备选 ../../datasets/ 与 raw.githubusercontent）
+   ================================================================ */
+
+/* ---------- 繁体转简体（行业字段含繁体，用于归类与搜索） ---------- */
+var T2S = {'業':'业','產':'产','醫':'医','藥':'药','車':'车','電':'电','視':'视','娛':'娱','樂':'乐','銀':'银','務':'务','裝':'装','紡':'纺','織':'织','學':'学','運':'运','輸':'输','設':'设','計':'计','機':'机','製':'制','鋼':'钢','鐵':'铁','術':'术','廣':'广','際':'际','貿':'贸','險':'险','儀':'仪','網':'网','訊':'讯','風':'风','雲':'云','礦':'矿','碼':'码','顧':'顾','聯':'联','錶':'表','鐘':'钟','東':'东','灣':'湾','濟':'济','烏':'乌','礎':'础','絲':'丝','級':'级','聰':'聪','軟':'软','體':'体','眾':'众','攝':'摄','時':'时','飯':'饭','動':'动','療':'疗','話':'话','餅':'饼','統':'统','鋁':'铝','響':'响','貝':'贝','國':'国','壓':'压','縮':'缩','環':'环','藝':'艺','衛':'卫','淨':'净','繪':'绘','畫':'画','圖':'图','書':'书','館':'馆','創':'创','氣':'气','輪':'轮','鎖':'锁','鑄':'铸','鍛':'锻','艦':'舰','煙':'烟','紙':'纸','漿':'浆','纖':'纤','維':'维','採':'采','燈':'灯','爐':'炉','橋':'桥','樑':'梁','閥':'阀','軸':'轴','齒':'齿','鏈':'链','農':'农','漁':'渔','豬':'猪','雞':'鸡','鴨':'鸭','糧':'粮','遊':'游','戲':'戏','導':'导','場':'场','櫃':'柜','頭':'头','資':'资','發':'发','約':'约','國':'国','葉':'叶','萬':'万','與':'与','員':'员','優':'优','會':'会','傳':'传','練':'练','馬':'马','龍':'龙','豐':'丰'};
+function t2s(s){ if(!s) return ''; var out=''; for(var i=0;i<s.length;i++){ var c=s[i]; out += (T2S[c]||c); } return out; }
+
+/* ---------- 20 个行业门类（有序关键词规则，先命中先归类） ---------- */
+var CATS = ['农林牧渔','能源与采矿','食品饮料','汽车与出行','消费电子与半导体','医疗健康','软件与信息服务','人工智能','互联网','电信','金融','建筑与房地产','批发与零售','交通与物流','住宿与餐饮','文娱与传媒','专业服务','消费品与家居','装备制造','综合与其他'];
+var RULES = [
+ ['装备制造','航空航天'],['装备制造','agricultural machinery'],
+ ['文娱与传媒','电子游戏'],['文娱与传媒','游乐'],['文娱与传媒','電子遊戲'],
+ ['消费电子与半导体','半导体'],['消费电子与半导体','芯片'],['消费电子与半导体','消费电子'],['消费电子与半导体','移动电话'],['消费电子与半导体','手机'],['消费电子与半导体','显示'],['消费电子与半导体','音响'],['消费电子与半导体','监控'],['消费电子与半导体','计算机硬件'],['消费电子与半导体','electronics'],['消费电子与半导体','semiconductor'],['消费电子与半导体','电子'],
+ ['农林牧渔','农业'],['农林牧渔','农林'],['农林牧渔','畜牧'],['农林牧渔','渔业'],['农林牧渔','林业'],['农林牧渔','种植'],['农林牧渔','agricultur'],
+ ['能源与采矿','石油'],['能源与采矿','天然气'],['能源与采矿','油气'],['能源与采矿','煤炭'],['能源与采矿','煤矿'],['能源与采矿','发电'],['能源与采矿','电力'],['能源与采矿','电网'],['能源与采矿','太阳能'],['能源与采矿','光伏'],['能源与采矿','风电'],['能源与采矿','风能'],['能源与采矿','wind'],['能源与采矿','储能'],['能源与采矿','电池'],['能源与采矿','能源'],['能源与采矿','矿业'],['能源与采矿','采矿'],['能源与采矿','矿'],['能源与采矿','mining'],['能源与采矿','energy'],
+ ['食品饮料','食品'],['食品饮料','饮料'],['食品饮料','乳制品'],['食品饮料','白酒'],['食品饮料','啤酒'],['食品饮料','酿酒'],['食品饮料','酒业'],['食品饮料','烈酒'],['食品饮料','零食'],['食品饮料','糖果'],['食品饮料','巧克力'],['食品饮料','冰淇淋'],['食品饮料','饮品'],['食品饮料','膳食补充剂'],['食品饮料','保健'],['食品饮料','烘焙'],['食品饮料','茶叶'],['食品饮料','food'],['食品饮料','beverage'],['食品饮料','dairy'],
+ ['汽车与出行','汽车'],['汽车与出行','整车'],['汽车与出行','新能源汽车'],['汽车与出行','摩托车'],['汽车与出行','两轮车'],['汽车与出行','跑车'],['汽车与出行','automotive'],['汽车与出行','motorcycle'],['汽车与出行','vehicle'],['汽车与出行','车'],
+ ['医疗健康','医药'],['医疗健康','制药'],['医疗健康','医疗'],['医疗健康','医学'],['医疗健康','影像'],['医疗健康','生物技术'],['医疗健康','生物制药'],['医疗健康','疫苗'],['医疗健康','药'],['医疗健康','健康'],['医疗健康','医院'],['医疗健康','health'],['医疗健康','medical'],['医疗健康','biotech'],['医疗健康','pharma'],
+ ['软件与信息服务','软件'],['软件与信息服务','信息技术'],['软件与信息服务','SaaS'],['软件与信息服务','云计算'],['软件与信息服务','网络安全'],['软件与信息服务','计算机安全'],['软件与信息服务','数据'],['软件与信息服务','资讯'],['软件与信息服务','科技'],['软件与信息服务','技术'],['软件与信息服务','software'],['软件与信息服务','information'],
+ ['人工智能','人工智能'],['人工智能','artificial intelligence'],
+ ['互联网','互联网'],['互联网','电子商务'],['互联网','电商'],['互联网','internet'],['互联网','在线'],
+ ['电信','电信'],['电信','通信'],['电信','telecom'],
+ ['金融','银行'],['金融','保险'],['金融','金融'],['金融','证券'],['金融','资产管理'],['金融','支付'],['金融','投资'],['金融','基金'],['金融','财富'],['金融','资本'],['金融','信贷'],['金融','bank'],['金融','insur'],['金融','financ'],
+ ['建筑与房地产','建筑'],['建筑与房地产','房地产'],['建筑与房地产','地产'],['建筑与房地产','建材'],['建筑与房地产','基础设施'],['建筑与房地产','construction'],['建筑与房地产','real estate'],
+ ['批发与零售','零售'],['批发与零售','便利店'],['批发与零售','超市'],['批发与零售','卖场'],['批发与零售','百货'],['批发与零售','快时尚'],['批发与零售','贸易'],['批发与零售','批发'],['批发与零售','retail'],
+ ['交通与物流','物流'],['交通与物流','快递'],['交通与物流','运输'],['交通与物流','航空'],['交通与物流','航运'],['交通与物流','港口'],['交通与物流','码头'],['交通与物流','货柜'],['交通与物流','铁路'],['交通与物流','交通'],['交通与物流','logistics'],['交通与物流','transport'],['交通与物流','shipping'],
+ ['住宿与餐饮','餐饮'],['住宿与餐饮','酒店'],['住宿与餐饮','接待'],['住宿与餐饮','咖啡'],['住宿与餐饮','茶饮'],['住宿与餐饮','快餐'],['住宿与餐饮','火锅'],['住宿与餐饮','饼店'],['住宿与餐饮','饭店'],['住宿与餐饮','美食'],['住宿与餐饮','住宿'],['住宿与餐饮','hospitality'],['住宿与餐饮','hotel'],['住宿与餐饮','restaurant'],['住宿与餐饮','fast food'],
+ ['文娱与传媒','游戏'],['文娱与传媒','娱乐'],['文娱与传媒','媒体'],['文娱与传媒','电影'],['文娱与传媒','电视'],['文娱与传媒','唱片'],['文娱与传媒','出版'],['文娱与传媒','摔角'],['文娱与传媒','摄影'],['文娱与传媒','绘画'],['文娱与传媒','音乐'],['文娱与传媒','乐器'],['文娱与传媒','玩具'],['文娱与传媒','旅游'],['文娱与传媒','体育'],['文娱与传媒','休闲'],['文娱与传媒','演艺'],['文娱与传媒','广播'],['文娱与传媒','lutherie'],['文娱与传媒','media'],['文娱与传媒','film'],['文娱与传媒','entertain'],['文娱与传媒','publishing'],['文娱与传媒','music'],
+ ['专业服务','咨询'],['专业服务','consulting'],['专业服务','广告'],['专业服务','营销'],['专业服务','法律'],['专业服务','设计'],['专业服务','人力'],['专业服务','翻译'],['专业服务','教育'],['专业服务','培训'],['专业服务','检测'],['专业服务','认证'],['专业服务','会展'],['专业服务','event'],['专业服务','security'],['专业服务','agency'],['专业服务','association'],['专业服务','regulatory'],['专业服务','hairdressing'],['专业服务','library'],['专业服务','服务'],
+ ['消费品与家居','纺织'],['消费品与家居','服装'],['消费品与家居','服饰'],['消费品与家居','家居'],['消费品与家居','家具'],['消费品与家居','家电'],['消费品与家居','家用电器'],['消费品与家居','美妆'],['消费品与家居','护肤'],['消费品与家居','化妆品'],['消费品与家居','珠宝'],['消费品与家居','首饰'],['消费品与家居','日化'],['消费品与家居','洗护'],['消费品与家居','奢侈品'],['消费品与家居','时尚'],['消费品与家居','手表'],['消费品与家居','钟表'],['消费品与家居','眼镜'],['消费品与家居','文具'],['消费品与家居','运动'],['消费品与家居','羽绒服'],['消费品与家居','鞋'],['消费品与家居','照明'],['消费品与家居','个护'],['消费品与家居','window covering'],['消费品与家居','fashion'],['消费品与家居','luxury'],['消费品与家居','cosmetic'],['消费品与家居','furniture'],['消费品与家居','jewelry'],['消费品与家居','watch'],['消费品与家居','sporting goods'],['消费品与家居','razor'],['消费品与家居','perfume'],
+ ['装备制造','制造'],['装备制造','机械'],['装备制造','化工'],['装备制造','化学'],['装备制造','材料'],['装备制造','钢铁'],['装备制造','冶金'],['装备制造','塑料'],['装备制造','橡胶'],['装备制造','包装'],['装备制造','印刷'],['装备制造','防务'],['装备制造','军火'],['装备制造','国防'],['装备制造','机器人'],['装备制造','仪器'],['装备制造','色谱'],['装备制造','水泥'],['装备制造','玻璃'],['装备制造','电梯'],['装备制造','轴承'],['装备制造','暖通'],['装备制造','电气'],['装备制造','自动化'],['装备制造','发动机'],['装备制造','光学'],['装备制造','铝业'],['装备制造','涂料'],['装备制造','吹叶机'],['装备制造','工程'],['装备制造','工业'],['装备制造','制成品'],['装备制造','manufactur'],['装备制造','engineering'],['装备制造','recycling'],['装备制造','metal'],['装备制造','cement'],['装备制造','packaging'],['装备制造','printing'],['装备制造','bearing'],['装备制造','bicycle']
+];
+function catOf(ind){
+  var s = t2s(ind||''), low = s.toLowerCase();
+  for(var r=0;r<RULES.length;r++){
+    var kw = RULES[r][1];
+    if(s.indexOf(kw)>=0 || low.indexOf(kw.toLowerCase())>=0) return RULES[r][0];
+  }
+  return '综合与其他';
+}
+
+/* ---------- 常量 ---------- */
+var COUNTRY_CODE = {'中国':'CN','美国':'US','日本':'JP','德国':'DE','法国':'FR','英国':'GB','瑞士':'CH','荷兰':'NL','韩国':'KR','意大利':'IT','西班牙':'ES','瑞典':'SE','加拿大':'CA','新加坡':'SG','丹麦':'DK','比利时':'BE','奥地利':'AT','印度':'IN','爱尔兰':'IE','挪威':'NO','墨西哥':'MX'};
+var CLAIM_VIEW = {
+  unclaimed:{label:'待认领',cls:'unclaimed'},
+  claiming:{label:'认领核验中',cls:'claiming'},
+  claimed:{label:'已认领',cls:'claimed'}
+};
+var CONF_VIEW = {high:'高',medium:'中',low:'低'};
+var GITHUB_REPO = 'https://github.com/Hiteater-wzm/eeo';
+var CLAIM_GUIDE = GITHUB_REPO + '/blob/main/platform/README.md';
+var PER_PAGE = 24;
+var DATA_SOURCES = [
+  'brands-1k.json',
+  '../../datasets/brands-1k.json',
+  'https://raw.githubusercontent.com/Hiteater-wzm/eeo/main/datasets/brands-1k.json'
+];
+var collator = new Intl.Collator('zh-Hans-CN',{numeric:true});
+
+/* ---------- 状态 ---------- */
+var BRANDS = [];
+var CAT_COUNTS = {};
+var COUNTRIES = [];            /* [{name,label,count}] 按数量降序 */
+var state = { view:'home', cat:null, q:'', country:'__all__', claim:'all', sort:'default', page:1, modalId:-1 };
+var randomPicks = [];
+var lastFocus = null;
+
+/* ---------- 工具 ---------- */
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function debounce(fn,ms){ var t; return function(){ var a=arguments,c=this; clearTimeout(t); t=setTimeout(function(){ fn.apply(c,a); },ms); }; }
+function firstSentence(s){ var m=String(s||'').split(/[。！？!?]/)[0]||''; return m.length>90?m.slice(0,90)+'…':m; }
+function hostOf(u){ try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return u; } }
+function claimView(b){ return CLAIM_VIEW[(b.claim&&b.claim.status)||'unclaimed'] || CLAIM_VIEW.unclaimed; }
+
+/* ---------- 数据加载 ---------- */
+function loadBrands(){
+  var i = 0;
+  function tryNext(){
+    if(i >= DATA_SOURCES.length){ renderLoadError(); return; }
+    var url = DATA_SOURCES[i++];
+    fetch(url, {cache:'no-cache'}).then(function(r){
+      if(!r.ok) throw 0; return r.json();
+    }).then(function(j){
+      if(!Array.isArray(j) || !j.length) throw 0;
+      init(j);
+    }).catch(tryNext);
+  }
+  tryNext();
+}
+function renderLoadError(){
+  $('main').innerHTML = '<div class="empty"><h3>品牌数据加载失败</h3><p>请检查网络后重试，或直接访问 <a href="'+esc(DATA_SOURCES[2])+'" target="_blank" rel="noopener noreferrer">GitHub 数据集</a></p><button class="btn primary" onclick="location.reload()">重新加载</button></div>';
+}
+
+/* ---------- 数据初始化 ---------- */
+function init(raw){
+  BRANDS = raw.map(function(b,idx){
+    var ind = String(b.industry||'');
+    var sub = t2s(ind);
+    var hay = t2s([b.name||''].concat(b.aliases||[]).concat([ind, sub, b.city||'', b.country||'']).join('\n')).toLowerCase();
+    return {
+      id:idx, name:String(b.name||''), aliases:(b.aliases||[]).map(String),
+      website:String(b.website||'').trim(), industry:ind, sub:sub,
+      city:String(b.city||'').trim(), country:String(b.country||'').trim(),
+      description:String(b.description||''), advantages:(b.advantages||[]).map(String),
+      traits:b.traits||null, faq:b.faq_answers||null,
+      claim:b.claim||{status:'unclaimed'}, sources:(b.sources||[]).map(String),
+      confidence:String(b.confidence||''), founded:String(b.founded==null?'':b.founded).trim(),
+      wikidata:String(b.wikidata||'').trim(), cat:catOf(ind), hay:hay
+    };
+  });
+  CAT_COUNTS = {};
+  CATS.forEach(function(c){ CAT_COUNTS[c]=0; });
+  var cMap = {};
+  BRANDS.forEach(function(b){
+    CAT_COUNTS[b.cat]++;
+    var k = b.country || '__none__';
+    cMap[k] = (cMap[k]||0)+1;
+  });
+  COUNTRIES = Object.keys(cMap).map(function(k){
+    return { name:k, count:cMap[k] };
+  }).sort(function(a,b){ return b.count-a.count; });
+  pickRandom();
+  applyHash();
+  if(window.innerWidth >= 720 && state.view==='home' && !$('navQ').value){ $('navQ').focus(); }
+}
+
+/* ---------- 路由 ---------- */
+function applyHash(){
+  var h = location.hash.replace(/^#\/?/,'');
+  if(h.indexOf('cat/')===0){
+    var c = decodeURIComponent(h.slice(4));
+    state.view = 'cat';
+    state.cat = CATS.indexOf(c)>=0 ? c : null;
+    if(!state.cat) state.view='browse';
+    state.page = 1;
+  } else if(h==='browse'){
+    state.view='browse'; state.cat=null; state.page=1;
+  } else {
+    state.view='home'; state.cat=null;
+  }
+  renderAll();
+}
+function goHash(h){ if(location.hash===h){ applyHash(); } else { location.hash=h; } }
+
+/* ---------- 过滤 ---------- */
+function filteredBrands(){
+  var list = BRANDS;
+  if(state.cat) list = list.filter(function(b){ return b.cat===state.cat; });
+  var q = t2s(state.q.trim()).toLowerCase();
+  if(q) list = list.filter(function(b){ return b.hay.indexOf(q)>=0; });
+  if(state.country==='__none__') list = list.filter(function(b){ return !b.country; });
+  else if(state.country!=='__all__') list = list.filter(function(b){ return b.country===state.country; });
+  if(state.claim!=='all') list = list.filter(function(b){ return ((b.claim&&b.claim.status)||'unclaimed')===state.claim; });
+  if(state.sort==='name') list = list.slice().sort(function(a,b){ return collator.compare(a.name,b.name); });
+  else if(state.sort==='industry') list = list.slice().sort(function(a,b){ return collator.compare(a.sub,b.sub)||collator.compare(a.name,b.name); });
+  return list;
+}
+function anyFilterActive(){
+  return !!(state.q.trim() || state.country!=='__all__' || state.claim!=='all' || state.sort!=='default');
+}
+function clearFilters(){
+  state.q=''; state.country='__all__'; state.claim='all'; state.sort='default'; state.page=1;
+  $('navQ').value=''; syncSearchUI();
+  renderMain();
+}
+
+/* ---------- 渲染：侧边栏 ---------- */
+function renderSidebar(){
+  var html = '<div class="side-title">行业门类</div><nav class="side-nav">'
+    + '<button class="side-link'+(state.view==='browse'&&!state.cat?' active':'')+'" data-cat="">全部品牌<span class="cnt">'+BRANDS.length.toLocaleString()+'</span></button>';
+  CATS.forEach(function(c){
+    html += '<button class="side-link'+(state.cat===c?' active':'')+'" data-cat="'+esc(c)+'">'+esc(c)+'<span class="cnt">'+CAT_COUNTS[c]+'</span></button>';
+  });
+  html += '</nav>';
+  $('sidebar').innerHTML = html;
+}
+
+/* ---------- 渲染：卡片 ---------- */
+function cardHtml(b){
+  var cv = claimView(b);
+  var loc = '';
+  if(b.city && b.country) loc = '<span>'+esc(b.city)+'</span><span class="cc" title="'+esc(b.country)+'">'+esc(COUNTRY_CODE[b.country]||b.country)+'</span>';
+  else if(b.city) loc = '<span>'+esc(b.city)+'</span>';
+  else if(b.country) loc = '<span class="cc" title="'+esc(b.country)+'">'+esc(COUNTRY_CODE[b.country]||b.country)+'</span><span>'+esc(b.country)+'</span>';
+  else loc = '<span>地区未标注</span>';
+  var site = b.website ? '<a class="site-link" href="'+esc(b.website)+'" target="_blank" rel="noopener noreferrer" data-stop>官网<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>' : '<span></span>';
+  var desc = firstSentence(b.description);
+  return '<article class="card" data-open="'+b.id+'" tabindex="0" role="button" aria-label="查看 '+esc(b.name)+' 详情">'
+    + '<div class="card-top"><h3 class="card-name">'+esc(b.name)+'</h3><span class="badge '+cv.cls+'">'+cv.label+'</span></div>'
+    + (b.industry?'<div><span class="tag tag-ind" title="'+esc(b.industry)+'">'+esc(b.industry)+'</span></div>':'')
+    + '<div class="card-loc">'+loc+'</div>'
+    + (desc?'<p class="card-desc">'+esc(desc)+'</p>':'')
+    + '<div class="card-foot">'+site+'<span class="go-detail">查看详情</span></div>'
+    + '</article>';
+}
+
+/* ---------- 渲染：筛选栏 ---------- */
+function filterBarHtml(total){
+  var countryOpts = '<option value="__all__">全部国家/地区</option>';
+  COUNTRIES.forEach(function(c){
+    var v = c.name, lbl = c.name==='__none__' ? '未标注' : c.name;
+    countryOpts += '<option value="'+esc(v)+'"'+(state.country===v?' selected':'')+'>'+esc(lbl)+'（'+c.count+'）</option>';
+  });
+  var catOpts = '<option value="">全部门类</option>';
+  CATS.forEach(function(c){ catOpts += '<option value="'+esc(c)+'"'+(state.cat===c?' selected':'')+'>'+esc(c)+'</option>'; });
+  var claimOpts = [['all','认领状态'],['unclaimed','待认领'],['claiming','认领核验中'],['claimed','已认领']].map(function(o){
+    return '<option value="'+o[0]+'"'+(state.claim===o[0]?' selected':'')+'>'+o[1]+'</option>';
+  }).join('');
+  var sortOpts = [['default','排序：默认'],['name','排序：名称'],['industry','排序：行业']].map(function(o){
+    return '<option value="'+o[0]+'"'+(state.sort===o[0]?' selected':'')+'>'+o[1]+'</option>';
+  }).join('');
+  return '<div class="filters" id="resultsTop">'
+    + '<select id="fCat" aria-label="行业门类筛选">'+catOpts+'</select>'
+    + '<select id="fCountry" aria-label="国家筛选">'+countryOpts+'</select>'
+    + '<select id="fClaim" aria-label="认领状态筛选">'+claimOpts+'</select>'
+    + '<select id="fSort" aria-label="排序">'+sortOpts+'</select>'
+    + '<span class="result-info">共 <b>'+total.toLocaleString()+'</b> 个品牌'+(anyFilterActive()?' · <button class="link-btn" data-action="clear-filters">清除筛选</button>':'')+'</span>'
+    + '</div>';
+}
+
+/* ---------- 渲染：分页 ---------- */
+function pagerHtml(page,pages){
+  if(pages<=1) return '';
+  var btn = function(p,label,dis,active){
+    return '<button data-page="'+p+'"'+(dis?' disabled':'')+(active?' class="active"':'')+(label?' aria-label="第'+p+'页"':'')+'>'+(label||p)+'</button>';
+  };
+  var items = [];
+  items.push(btn(page-1,'‹',page<=1));
+  var win = [];
+  for(var p=1;p<=pages;p++){
+    if(p===1||p===pages||Math.abs(p-page)<=2) win.push(p);
+  }
+  var prev = 0;
+  win.forEach(function(p){
+    if(p-prev>1) items.push('<span class="dots">…</span>');
+    items.push(btn(p,'',false,p===page));
+    prev = p;
+  });
+  items.push(btn(page+1,'›',page>=pages));
+  return '<nav class="pager" aria-label="分页">'+items.join('')
+    + '<div class="pager-info">第 '+page+' / '+pages+' 页 · 每页 '+PER_PAGE+' 条</div></nav>';
+}
+
+/* ---------- 渲染：主区域 ---------- */
+function renderMain(){
+  if(state.view==='home'){ renderHome(); return; }
+  var list = filteredBrands();
+  var head = '';
+  if(state.view==='cat' && state.cat){
+    var subSet = {};
+    list.forEach(function(b){ subSet[b.sub||'未分类']=1; });
+    head = '<div class="page-head"><h1>'+esc(state.cat)+'</h1></div>'
+      + '<p class="page-sub">'+list.length.toLocaleString()+' 个品牌 · '+(Object.keys(subSet).length)+' 个子行业 · 门类内可直接搜索</p>';
+  } else {
+    head = '<div class="page-head"><h1>全部品牌</h1></div>';
+  }
+
+  if(!list.length){
+    $('main').innerHTML = head + filterBarHtml(0)
+      + '<div class="empty"><h3>没有找到匹配的品牌</h3><p>换个关键词，或放宽筛选条件试试</p><button class="btn ghost" data-action="clear-filters">清除全部筛选</button></div>';
+    return;
+  }
+
+  if(state.view==='cat'){
+    /* 门类视图：按子行业分组展示 */
+    var groups = {};
+    list.forEach(function(b){ var k=b.sub||'未分类'; (groups[k]=groups[k]||[]).push(b); });
+    var keys = Object.keys(groups).sort(function(a,b){
+      return groups[b].length-groups[a].length || collator.compare(a,b);
+    });
+    var body = keys.map(function(k){
+      var bs = groups[k];
+      if(state.sort==='name') bs = bs.slice().sort(function(a,b){ return collator.compare(a.name,b.name); });
+      return '<section class="group"><div class="group-head"><h3>'+esc(k)+'</h3><span class="cnt">'+bs.length+' 个品牌</span></div>'
+        + '<div class="grid">'+bs.map(cardHtml).join('')+'</div></section>';
+    }).join('');
+    $('main').innerHTML = head + filterBarHtml(list.length) + body;
+  } else {
+    /* 列表视图：分页网格 */
+    var pages = Math.ceil(list.length/PER_PAGE);
+    if(state.page>pages) state.page=pages;
+    var slice = list.slice((state.page-1)*PER_PAGE, state.page*PER_PAGE);
+    $('main').innerHTML = head + filterBarHtml(list.length)
+      + '<div class="grid">'+slice.map(cardHtml).join('')+'</div>'
+      + pagerHtml(state.page,pages);
+  }
+}
+
+/* ---------- 渲染：首页 ---------- */
+function pickRandom(){
+  var pool = BRANDS.slice();
+  randomPicks = [];
+  for(var i=0;i<3 && pool.length;i++){
+    randomPicks.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);
+  }
+}
+function renderHome(){
+  var nCountries = COUNTRIES.filter(function(c){ return c.name!=='__none__'; }).length;
+  var hot = CATS.filter(function(c){ return c!=='综合与其他'; })
+    .sort(function(a,b){ return CAT_COUNTS[b]-CAT_COUNTS[a]; }).slice(0,8);
+  var tiles = hot.map(function(c){
+    return '<a class="cat-tile" href="#/cat/'+encodeURIComponent(c)+'"><span class="t">'+esc(c)+'</span><span class="n">'+CAT_COUNTS[c]+' 个品牌</span></a>';
+  }).join('');
+  var cards = randomPicks.map(cardHtml).join('');
+  $('main').innerHTML =
+    '<section class="hero">'
+    + '<span class="hero-eyebrow">EEO 开放品牌库 · GitHub PR 官方认领</span>'
+    + '<h1>品牌目录</h1>'
+    + '<div class="hero-num" id="heroNum">0</div>'
+    + '<div class="hero-num-label">个品牌信息卡，持续收录</div>'
+    + '<div class="hero-search" id="heroSearchWrap">'
+    +   '<span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>'
+    +   '<input id="heroQ" type="search" placeholder="输入品牌名、行业或城市，支持中英文" autocomplete="off" aria-label="搜索品牌">'
+    +   '<button class="clear" id="heroQClear" aria-label="清空搜索"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>'
+    + '</div>'
+    + '<p class="hero-hint">收录即公开，认领需官网核验 — 每一条认领记录都是一条公开可查的 PR</p>'
+    + '<div class="hero-stats"><span><b>'+nCountries+'</b>个国家/地区</span><span><b>'+CATS.length+'</b>个行业门类</span><span><b>100%</b>数据公开</span></div>'
+    + '</section>'
+    + '<section class="home-section"><div class="home-section-head"><div><h2>热门行业</h2><p>按收录数量排序的门类快捷入口</p></div></div><div class="cat-tiles">'+tiles+'</div></section>'
+    + '<section class="home-section"><div class="home-section-head"><div><h2>品牌速览</h2><p>随机展示三个品牌，点击卡片查看完整信息卡</p></div><button class="btn ghost sm" data-action="refresh-random"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6"/></svg>换一批</button></div><div class="grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">'+cards+'</div></section>';
+
+  /* 数字滚动动画 */
+  var el = $('heroNum'), target = BRANDS.length, t0 = null;
+  function stepFn(t){
+    if(!t0) t0 = t;
+    var p = Math.min(1,(t-t0)/1200), e = 1-Math.pow(1-p,3);
+    el.textContent = Math.round(target*e).toLocaleString();
+    if(p<1) requestAnimationFrame(stepFn);
+  }
+  requestAnimationFrame(stepFn);
+  /* 兜底：后台标签页 rAF 暂停时，定时器保证终值落地 */
+  setTimeout(function(){ el.textContent = target.toLocaleString(); }, 1400);
+
+  /* 首页搜索框 */
+  var heroQ = $('heroQ');
+  heroQ.value = state.q;
+  heroQ.addEventListener('input', debounce(function(){
+    setSearch(heroQ.value, heroQ);
+  },300));
+  heroQ.addEventListener('keydown', function(e){ if(e.key==='Enter') setSearch(heroQ.value, heroQ); });
+  $('heroQClear').addEventListener('click', function(){ setSearch('', heroQ); heroQ.focus(); });
+  syncHeroClear();
+}
+function syncHeroClear(){
+  var w = $('heroSearchWrap');
+  if(w) w.className = 'hero-search' + (state.q ? ' has-q' : '');
+}
+
+/* ---------- 搜索 ---------- */
+function setSearch(q, fromEl){
+  state.q = q; state.page = 1;
+  $('navQ').value = q;
+  if(state.view==='home'){
+    goHash('#/browse');
+    /* 视图切换后主搜索框接管焦点 */
+    var nq = $('navQ'); nq.focus(); nq.setSelectionRange(nq.value.length,nq.value.length);
+  } else {
+    renderMain();
+  }
+  renderSidebar();
+  syncSearchUI();
+}
+function syncSearchUI(){
+  $('navSearchWrap').className = 'nav-search' + (state.q ? ' has-q' : '');
+  syncHeroClear();
+}
+
+/* ---------- 弹窗 ---------- */
+function openModal(id){
+  var b = BRANDS[id]; if(!b) return;
+  state.modalId = id;
+  lastFocus = document.activeElement;
+  var cv = claimView(b);
+  var rows = '';
+  function row(k,v){ return '<dt>'+k+'</dt><dd>'+v+'</dd>'; }
+  if(b.industry) rows += row('行业','<span class="tag tag-ind">'+esc(b.industry)+'</span>');
+  rows += row('门类','<span class="chip">'+esc(b.cat)+'</span>');
+  rows += row('城市', b.city?esc(b.city):'<span style="color:var(--muted-2)">未标注</span>');
+  if(b.country){
+    var cc = COUNTRY_CODE[b.country];
+    rows += row('国家/地区', (cc?'<span class="cc" style="margin-right:6px">'+esc(cc)+'</span>':'')+esc(b.country));
+  }
+  if(b.founded) rows += row('成立时间', esc(b.founded));
+  if(b.confidence) rows += row('信息可信度', esc(CONF_VIEW[b.confidence]||b.confidence));
+  var claimCell = '<span class="badge '+cv.cls+'">'+cv.label+'</span>';
+  if(b.claim&&b.claim.status==='claimed'&&b.claim.claimed_at) claimCell += '<span style="margin-left:8px;color:var(--muted);font-size:12px">'+esc(String(b.claim.claimed_at).slice(0,10))+'</span>';
+  if(b.claim&&b.claim.status==='claiming'&&b.claim.domain) claimCell += '<span style="margin-left:8px;color:var(--muted);font-size:12px">核验域名：'+esc(b.claim.domain)+'</span>';
+  rows += row('认领状态', claimCell);
+  if(b.website) rows += row('官网','<a href="'+esc(b.website)+'" target="_blank" rel="noopener noreferrer">'+esc(hostOf(b.website))+'</a>');
+  if(b.wikidata) rows += row('Wikidata','<a href="https://www.wikidata.org/wiki/'+esc(b.wikidata)+'" target="_blank" rel="noopener noreferrer">'+esc(b.wikidata)+'</a>');
+
+  var aliases = b.aliases.length ? b.aliases.map(function(a){ return '<span class="chip">'+esc(a)+'</span>'; }).join(' ') : '<span style="color:var(--muted-2);font-size:12px">无</span>';
+
+  var body = '<div class="alias-row"><span class="lbl">别名</span>'+aliases+'</div>'
+    + '<dl class="meta-grid">'+rows+'</dl>'
+    + (b.description?'<p class="modal-desc">'+esc(b.description)+'</p>':'');
+  if(b.advantages && b.advantages.length){
+    body += '<div class="sec-title">核心优势</div><ul class="adv-list">'
+      + b.advantages.map(function(a){ return '<li>'+esc(a)+'</li>'; }).join('')+'</ul>';
+  }
+  if(b.traits && b.traits.length){
+    var tArr = b.traits.map(function(t){
+      return typeof t==='string' ? t : (t.label||t.id||'');
+    }).filter(Boolean);
+    if(tArr.length) body += '<div class="sec-title">行业特质</div><div class="alias-row" style="margin:0">'+tArr.map(function(t){ return '<span class="chip">'+esc(t)+'</span>'; }).join('')+'</div>';
+  }
+  if(b.faq && b.faq.length){
+    body += '<div class="sec-title">常见问答</div><ul class="adv-list">'
+      + b.faq.map(function(f){
+          var q = f.q||f.question||'', a = f.a||f.answer||'';
+          return '<li><b>'+esc(q)+'</b><br>'+esc(a)+'</li>';
+        }).join('')+'</ul>';
+  }
+  if(b.sources && b.sources.length){
+    body += '<div class="sec-title">数据来源</div><div class="src-list">'
+      + b.sources.map(function(s){ return '<a href="'+esc(s)+'" target="_blank" rel="noopener noreferrer"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>'+esc(hostOf(s))+'</a>'; }).join('')+'</div>';
+  }
+  var foot = (b.website?'<a class="btn primary" href="'+esc(b.website)+'" target="_blank" rel="noopener noreferrer">访问官网</a>':'')
+    + '<a class="btn ghost" href="'+CLAIM_GUIDE+'" target="_blank" rel="noopener noreferrer">认领此品牌</a>'
+    + '<span style="flex:1"></span><span style="align-self:center;font-size:12px;color:var(--muted-2)">认领：在 GitHub 提 PR，经官网文件核验后生效</span>';
+
+  $('modalCard').innerHTML =
+    '<div class="modal-head"><h2 id="modalTitle">'+esc(b.name)+'</h2>'
+    + '<button class="modal-close" id="modalClose" aria-label="关闭"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>'
+    + '<div class="modal-body">'+body+'</div>'
+    + '<div class="modal-foot">'+foot+'</div>';
+  $('modalRoot').hidden = false;
+  document.body.classList.add('no-scroll');
+  $('modalClose').addEventListener('click', closeModal);
+  $('modalClose').focus();
+}
+function closeModal(){
+  $('modalRoot').hidden = true;
+  document.body.classList.remove('no-scroll');
+  state.modalId = -1;
+  if(lastFocus && lastFocus.focus) lastFocus.focus();
+}
+
+/* ---------- 抽屉（移动端侧边栏） ---------- */
+function setDrawer(open){
+  $('sidebar').classList.toggle('open', open);
+  $('drawerBg').classList.toggle('show', open);
+  $('menuBtn').setAttribute('aria-expanded', open?'true':'false');
+  document.body.classList.toggle('no-scroll', open);
+}
+
+/* ---------- 总渲染 ---------- */
+function renderAll(){
+  renderSidebar();
+  renderMain();
+  syncSearchUI();
+  if(window.innerWidth>=1024) setDrawer(false);
+}
+
+/* ---------- 事件绑定 ---------- */
+document.addEventListener('click', function(e){
+  /* 官网等站内阻冒泡链接 */
+  var stop = e.target.closest('[data-stop]');
+  if(stop){ e.stopPropagation(); return; }
+
+  var card = e.target.closest('[data-open]');
+  if(card){ openModal(parseInt(card.getAttribute('data-open'),10)); return; }
+
+  var side = e.target.closest('.side-link');
+  if(side){
+    var c = side.getAttribute('data-cat');
+    setDrawer(false);
+    goHash(c ? '#/cat/'+encodeURIComponent(c) : '#/browse');
+    return;
+  }
+
+  var act = e.target.closest('[data-action]');
+  if(act){
+    var a = act.getAttribute('data-action');
+    if(a==='clear-filters') clearFilters();
+    else if(a==='refresh-random'){ pickRandom(); renderMain(); }
+    return;
+  }
+
+  var pg = e.target.closest('[data-page]');
+  if(pg && !pg.disabled){
+    state.page = parseInt(pg.getAttribute('data-page'),10);
+    renderMain();
+    var top = $('resultsTop'); if(top) top.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+});
+/* 键盘：卡片回车打开 */
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape'){
+    if(!$('modalRoot').hidden) closeModal();
+    else if($('sidebar').classList.contains('open')) setDrawer(false);
+    return;
+  }
+  if((e.key==='Enter'||e.key===' ') && document.activeElement && document.activeElement.classList &&
+     document.activeElement.classList.contains('card') && e.target===document.activeElement){
+    e.preventDefault();
+    openModal(parseInt(document.activeElement.getAttribute('data-open'),10));
+  }
+});
+$('modalMask').addEventListener('click', closeModal);
+$('drawerBg').addEventListener('click', function(){ setDrawer(false); });
+$('menuBtn').addEventListener('click', function(){ setDrawer(!$('sidebar').classList.contains('open')); });
+
+/* 顶部搜索 */
+var navQ = $('navQ');
+navQ.addEventListener('input', debounce(function(){ setSearch(navQ.value, navQ); },300));
+navQ.addEventListener('keydown', function(e){ if(e.key==='Enter') setSearch(navQ.value, navQ); });
+$('navQClear').addEventListener('click', function(){ setSearch('', navQ); navQ.focus(); });
+
+/* 筛选器（事件委托，主区域每次重绘） */
+$('main').addEventListener('change', function(e){
+  var t = e.target;
+  if(t.id==='fCat'){
+    state.page=1;
+    goHash(t.value ? '#/cat/'+encodeURIComponent(t.value) : '#/browse');
+  } else if(t.id==='fCountry'){ state.country=t.value; state.page=1; renderMain(); }
+  else if(t.id==='fClaim'){ state.claim=t.value; state.page=1; renderMain(); }
+  else if(t.id==='fSort'){ state.sort=t.value; state.page=1; renderMain(); }
+});
+
+window.addEventListener('hashchange', applyHash);
+
+/* ---------- 启动 ---------- */
+loadBrands();
+</script>
+</body>
+</html>

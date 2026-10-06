@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Adrian Alan",
+  "alternateName": [
+    "Adrian Alan Fine Art",
+    "Adrian Alan Ltd"
+  ],
+  "url": "https://www.adrianalan.com",
+  "description": "British antique dealer specialising in 19th-century European furniture and works of art"
+}

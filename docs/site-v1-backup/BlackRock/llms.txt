@@ -1,0 +1,27 @@
+# BlackRock
+
+> 美国资产管理公司，管理资产规模超过10万亿美元，旗下运营iShares ETF系列与Aladdin投资管理技术平台。
+
+- 官方网站: https://www.blackrock.com
+- 所属行业: 资产管理
+- 所在城市: New York
+- 所在国家: 美国
+- 别名: 贝莱德、黑岩
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- iShares为全球规模居前的ETF产品系列
+- Aladdin平台为机构提供组合与风险管理技术
+- 产品线覆盖股票、固收、多资产与另类投资
+
+## 信息来源
+
+- https://www.blackrock.com
+- https://en.wikipedia.org/wiki/BlackRock
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

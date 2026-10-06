@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EBizCharge",
+  "alternateName": [
+    "Century Business Solutions",
+    "Ebiz",
+    "EBiz Charge",
+    "EBizCharge Gateway"
+  ],
+  "url": "https://ebizcharge.com/",
+  "description": "EBizCharge is a payment processing integration company providing embedded B2B payment processing solutions for business"
+}

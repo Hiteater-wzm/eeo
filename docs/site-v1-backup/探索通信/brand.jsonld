@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "探索通信",
+  "alternateName": [
+    "Discovery",
+    "Discovery Communications"
+  ],
+  "url": "https://www.discovery.com/",
+  "description": "American multinational television company"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "9gag",
+  "alternateName": [
+    "9gag",
+    "9Gag"
+  ],
+  "url": "https://9gag.com/",
+  "description": "Social media website where users upload and share user-generated images and videos"
+}

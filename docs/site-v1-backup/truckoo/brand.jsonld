@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "truckoo",
+  "alternateName": [
+    "Truckoo",
+    "truckoo GmbH"
+  ],
+  "url": "https://truckoo.com/",
+  "description": "German company operating an online marketplace and remarketing platform for used commercial vehicles"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pelago by Singapore Airlines",
+  "alternateName": [
+    "Pelago",
+    "pelago.com"
+  ],
+  "url": "https://www.pelago.com/",
+  "description": "From exploring icons to seeing the unseen to travel essentials, we connect you with travel ideas to expand your life."
+}

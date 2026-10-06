@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "西門子金融服務",
+  "alternateName": [
+    "Siemens Financial Services GmbH",
+    "Siemens SFS"
+  ],
+  "url": "http://www.siemens.de/finance",
+  "description": "The Financial Services division of Siemens (SFS) offers international financing solutions in the business-to-business ar"
+}

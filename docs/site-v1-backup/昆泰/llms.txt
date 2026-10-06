@@ -1,0 +1,17 @@
+# 昆泰
+
+> American multinational company serving the combined industries of health information technology and clinical research
+
+- 官方网站: https://www.iqvia.com/
+- 所属行业: 醫藥產業
+- 别名: OneKey、Quintiles、IQVIA Inc.     (Parsippany、NJ)、Quintiles and IMS Health
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q305473
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

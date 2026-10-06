@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "REDCATT",
+  "alternateName": [
+    "REDCATT",
+    "Dongguan Redcatt Electrical Technology"
+  ],
+  "url": "https://www.redcatt.net",
+  "description": "Manufacturer of professional loudspeaker drivers"
+}

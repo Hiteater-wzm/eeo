@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stratajet",
+  "alternateName": [
+    "Oxcis Aviation Ltd",
+    "StrataFBO",
+    "StrataFleet",
+    "Stratajet Private Jet Hire"
+  ],
+  "url": "https://www.stratajet.com/",
+  "description": "Private aviation company. Stratajet provides a real-time private jet booking platform to give its passengers total contr"
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Made by Dave",
+  "alternateName": [
+    "Made by Dave Group",
+    "Made by Dave Group Ltd",
+    "madebydave.org"
+  ],
+  "url": "https://madebydave.org",
+  "description": "Specialist Squarespace web design studio based in Hertfordshire, UK, founded by Dave Hawkins in 2014"
+}

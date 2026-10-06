@@ -1,0 +1,17 @@
+# 莫帕爾
+
+> American car parts, service, and customer care company
+
+- 官方网站: https://www.mopar.com/
+- 所属行业: 汽車零件供應商
+- 别名: PDCD、Plymouth、Dodge、Chrysler、and DeSoto
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q304444
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

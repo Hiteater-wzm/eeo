@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "爱科",
+  "alternateName": [
+    "AGCO Allis",
+    "AGCO CORP",
+    "AGCO Corp.",
+    "Agco Corporation",
+    "AGCO Corporation"
+  ],
+  "url": "http://www.agcocorp.com/",
+  "description": "American agricultural machinery manufacturer"
+}

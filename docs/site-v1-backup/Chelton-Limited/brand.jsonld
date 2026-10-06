@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Chelton Limited",
+  "alternateName": "Chelton",
+  "url": "https://www.chelton.com",
+  "description": "British aerospace and defense technology company specializing in antennas and avionics"
+}

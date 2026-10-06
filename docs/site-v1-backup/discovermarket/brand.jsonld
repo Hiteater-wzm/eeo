@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "discovermarket",
+  "alternateName": [
+    "discoveric marketplace AG",
+    "discovermarket Asia Pte. Ltd."
+  ],
+  "url": "https://discovermarket.com",
+  "description": "discovermarket is the embedded insurance technology platform for the insurance industry, powering protection services to"
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "片仔癀",
+  "alternateName": [
+    "Pien Tze Huang",
+    "漳州片仔癀药业股份有限公司"
+  ],
+  "url": "https://www.pzhchina.com",
+  "description": "1956年建厂的国有控股医药上市公司（600436.SH），核心产品片仔癀为国家一级中药保护品种，总部位于福建漳州。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "漳州",
+    "addressCountry": "中国"
+  }
+}

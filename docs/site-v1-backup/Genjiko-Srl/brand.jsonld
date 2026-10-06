@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Genjiko S.r.l.",
+  "alternateName": [
+    "Genjiko Studio",
+    "Genjiko Studios",
+    "genjiko.eu",
+    "Genjiko.eu"
+  ],
+  "url": "https://genjiko.eu",
+  "description": "Italian ecosystem integrating e-commerce, publishing, multimedia productions and cultural projects dedicated to well-bei"
+}

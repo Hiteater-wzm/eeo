@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Honu Handmade Jewellery",
+  "alternateName": [
+    "Honu",
+    "Honu Bijoux"
+  ],
+  "url": "https://honu-bijoux.com",
+  "description": "Art Jewellery in Solid Silver and Palladium White Gold. Pieces sculpted from solid, forged and shaped by Isabelle Bénato"
+}

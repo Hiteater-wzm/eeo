@@ -1,0 +1,20 @@
+# Siecom IT-Systemhaus GmbH 信息技术
+
+别名：SIECOM、Siecom Computer & Software GmbH
+
+> German IT services company based in Dresden, operator of the online letter mailing service easyNova
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 信息技术
+- 官方网站: [https://www.siecom.de](https://www.siecom.de)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q140185983](https://www.wikidata.org/wiki/Q140185983)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

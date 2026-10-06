@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DroR",
+  "alternateName": "DroR Corporation",
+  "url": "https://dror.co.jp/",
+  "description": "Japanese organizational development and consulting company based in Shibuya, Tokyo"
+}

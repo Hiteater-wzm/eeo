@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Safecall",
+  "alternateName": [
+    "Safecall Ltd",
+    "Safecall Limited",
+    "SafeCall (Safecall Ltd)",
+    "Safecall (UK)",
+    "Safecall Investigation Services"
+  ],
+  "url": "https://www.safecall.co.uk",
+  "description": "Safecall is a UK-based independent whistleblowing company providing confidential reporting, investigations & training wo"
+}

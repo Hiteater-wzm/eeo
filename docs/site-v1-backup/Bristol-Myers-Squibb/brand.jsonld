@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bristol Myers Squibb",
+  "alternateName": [
+    "百时美施贵宝",
+    "BMS"
+  ],
+  "url": "https://www.bms.com",
+  "description": "美国生物制药公司，总部位于纽约，产品覆盖肿瘤、血液病、心血管与免疫领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

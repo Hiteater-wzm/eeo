@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Genki",
+  "alternateName": [
+    "Genki UG",
+    "Stay Genki",
+    "Genki Insurance",
+    "genki.world"
+  ],
+  "url": "https://genki.world",
+  "description": "international health insurance agent for digital nomads, expats and long-term travelers, based in Cologne, Germany"
+}

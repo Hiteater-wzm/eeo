@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PayPal",
+  "alternateName": "贝宝",
+  "url": "https://www.paypal.com",
+  "description": "美国在线支付公司，旗下运营PayPal、Venmo、Xoom等支付产品，提供数字钱包、跨境支付与商户收单服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Jose",
+    "addressCountry": "美国"
+  }
+}

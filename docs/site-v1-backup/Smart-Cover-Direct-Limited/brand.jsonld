@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Smart Cover Direct Limited",
+  "alternateName": [
+    "Smart Cover",
+    "Smart Cover Insurance Services",
+    "smart-cover.co.uk"
+  ],
+  "url": "https://smart-cover.co.uk",
+  "description": "UK-based home emergency and appliance insurance intermediary, authorised by the Financial Conduct Authority"
+}

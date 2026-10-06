@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Amgen",
+  "alternateName": "安进",
+  "url": "https://www.amgen.com",
+  "description": "美国生物技术公司，总部位于加州Thousand Oaks，以重组蛋白与抗体药物为主，产品涵盖骨骼健康、肿瘤与炎症领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Thousand Oaks",
+    "addressCountry": "美国"
+  }
+}

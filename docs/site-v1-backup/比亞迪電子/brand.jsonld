@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "比亞迪電子",
+  "alternateName": [
+    "比亞迪電子(國際)有限公司",
+    "比亞迪電子國際"
+  ],
+  "url": "https://electronics.byd.com/",
+  "description": "subsidiary of BYD Company that makes and assembles handset components and mobile phones"
+}

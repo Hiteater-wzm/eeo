@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Technische Kunststoffe Hennecke GmbH",
+  "alternateName": "TKH",
+  "url": "https://www.hplast.de/",
+  "description": "German plastics processing company based in Kirchhundem, North Rhine-Westphalia, Germany"
+}

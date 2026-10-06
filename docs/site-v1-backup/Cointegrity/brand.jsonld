@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cointegrity",
+  "alternateName": "Cointegrity AS",
+  "url": "https://cointegrity.io",
+  "description": "Venture studio building institutional digital asset infrastructure and operating compliance-focused on-chain products"
+}

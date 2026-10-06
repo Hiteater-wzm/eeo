@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cummins",
+  "alternateName": "康明斯",
+  "url": "https://www.cummins.com",
+  "description": "美国动力系统制造商，总部位于印第安纳州Columbus，产品涵盖柴油与天然气发动机、滤清系统与发电设备，并拓展电解制氢与电动动力。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Columbus",
+    "addressCountry": "美国"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gstales",
+  "alternateName": [
+    "Starry Night Story",
+    "Xingxia Story"
+  ],
+  "url": "https://gstales.com/",
+  "description": "a website operated by Shanghai Qimao Cultural Communication Co., Ltd., that provides one-stop, customized corporate team"
+}

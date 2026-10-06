@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GE Vernova",
+  "alternateName": [
+    "GE维诺瓦",
+    "GE能源"
+  ],
+  "url": "https://www.gevernova.com",
+  "description": "美国能源技术公司，2024年从通用电气分拆独立上市，总部位于马萨诸塞州Cambridge，业务涵盖燃气与风电发电设备、电网与电气化产品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cambridge",
+    "addressCountry": "美国"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "西友",
+  "alternateName": [
+    "西友株式會社",
+    "西友百貨"
+  ],
+  "url": "https://www.seiyu.co.jp/",
+  "description": "Japanese group of supermarkets, shopping centers, and department stores owned by Walmart"
+}

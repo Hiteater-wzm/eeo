@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "柯爾曼",
+  "alternateName": [
+    "科勒曼",
+    "科尔曼公司"
+  ],
+  "url": "https://www.coleman.com/",
+  "description": "brand of outdoor recreation products, especially camping gear"
+}

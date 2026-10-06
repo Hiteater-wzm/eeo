@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Schneider Electric",
+  "alternateName": "施耐德电气",
+  "url": "https://www.se.com",
+  "description": "法国电气管理与自动化公司，总部位于Rueil-Malmaison，产品涵盖配电设备、工业自动化与楼宇管理系统。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rueil-Malmaison",
+    "addressCountry": "法国"
+  }
+}

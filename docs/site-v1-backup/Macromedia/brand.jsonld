@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Macromedia",
+  "alternateName": [
+    "宏媒体公司",
+    "美国宏媒体公司"
+  ],
+  "url": "http://www.macromedia.com/",
+  "description": "former American graphics and web development software company"
+}

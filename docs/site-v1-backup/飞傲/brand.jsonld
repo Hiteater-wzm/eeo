@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "飞傲",
+  "alternateName": [
+    "FiiO Electronics Technology",
+    "FiiO HiFi Audio",
+    "Fiioaudio",
+    "FiiO Audio",
+    "FiiO HiFi"
+  ],
+  "url": "https://www.fiio.com/",
+  "description": "audio electronics manufacturer from China"
+}

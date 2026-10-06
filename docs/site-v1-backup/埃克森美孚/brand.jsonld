@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "埃克森美孚",
+  "alternateName": [
+    "埃克森美孚石油",
+    "美孚化学公司",
+    "艾克森",
+    "艾克森石油"
+  ],
+  "url": "https://corporate.exxonmobil.com/",
+  "description": "American multinational oil and gas corporation"
+}

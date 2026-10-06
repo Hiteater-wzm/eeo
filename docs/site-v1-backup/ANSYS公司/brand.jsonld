@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ANSYS公司",
+  "alternateName": [
+    "ANSYS",
+    "Ansoft",
+    "Ansoft Corporation",
+    "ANSYS Inc.",
+    "ANSYS"
+  ],
+  "url": "http://www.Ansys.com",
+  "description": "American engineering simulation software developer"
+}

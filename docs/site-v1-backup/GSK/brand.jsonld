@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GSK",
+  "alternateName": [
+    "葛兰素史克",
+    "GlaxoSmithKline"
+  ],
+  "url": "https://www.gsk.com",
+  "description": "英国制药公司，总部位于伦敦，业务聚焦疫苗、特药与普通药品，2022年完成消费者保健业务分拆（Haleon）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "英国"
+  }
+}

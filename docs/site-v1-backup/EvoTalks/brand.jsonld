@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EvoTalks",
+  "alternateName": [
+    "Evo Soluções de Comunicação Digital",
+    "Evo Talks",
+    "Evotalks"
+  ],
+  "url": "https://www.evotalks.com.br",
+  "description": "Brazilian omnichannel customer service software integrating WhatsApp (official API), Instagram, Facebook and telephony,"
+}

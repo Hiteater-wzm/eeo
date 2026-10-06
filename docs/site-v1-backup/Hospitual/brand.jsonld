@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hospitual",
+  "alternateName": [
+    "Hospitual Health",
+    "HOSPITUAL LIMITED",
+    "Hospitual Platform"
+  ],
+  "url": "https://hospitual.com",
+  "description": "Digital healthcare platform providing telemedicine, teleradiology and specialist second-opinion services worldwide"
+}

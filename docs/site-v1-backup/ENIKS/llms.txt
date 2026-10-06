@@ -1,0 +1,17 @@
+# ENIKS
+
+> company develop of drones, autonomous radio navigation systems and gyrostabilized optical systems, located in Kazan
+
+- 官方网站: http://enics.aero/
+- 所属行业: 航空產業
+- 别名: JSC Eniks、Закрытое Акционерное Общество «ЭНИКС»、ЗАО «ЭНИКС»
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q4529452
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

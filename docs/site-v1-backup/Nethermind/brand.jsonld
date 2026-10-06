@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nethermind",
+  "alternateName": [
+    "Nethermind",
+    "Nethermind Research",
+    "Nethermind.io",
+    "Nethermind Tech"
+  ],
+  "url": "https://nethermind.io",
+  "description": "Blockchain research and software engineering company working across Ethereum clients, rollup infrastructure, cryptograph"
+}

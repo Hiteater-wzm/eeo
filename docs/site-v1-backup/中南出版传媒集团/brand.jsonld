@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中南出版传媒集团",
+  "alternateName": [
+    "中南传媒",
+    "中南出版传媒集团股份有限公司"
+  ],
+  "url": "http://www.zncmjt.com/",
+  "description": "a publishing company based in Changsha, China"
+}

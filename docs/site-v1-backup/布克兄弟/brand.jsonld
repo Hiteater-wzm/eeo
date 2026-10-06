@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "布克兄弟",
+  "alternateName": "Brooks Brothers",
+  "url": "https://www.brooksbrothers.com/",
+  "description": "the oldest men's clothier in the United States"
+}

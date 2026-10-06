@@ -1,0 +1,73 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "consumer-electronics",
+  "industry": "消费电子与家电",
+  "industry_aliases": ["消费电子-智能手机", "消费电子-个人电脑", "消费电子行业", "消费电子-投影设备", "消费电子-无人机", "家电-综合家电", "家电-厨房电器", "家电-厨房小家电", "家电-空调", "家电-视听家电", "家电-智能终端与显示", "白色家電", "电子学", "电子工业", "计算机硬件行业", "暖通空調", "照明", "音響", "电子-显示面板"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "category", "label": "品类", "select": "many", "note": "品牌实际生产和销售的主要品类" },
+    { "id": "channel", "label": "购买渠道", "select": "many", "note": "只勾官方或授权渠道" },
+    { "id": "service", "label": "服务网络", "select": "many" },
+    { "id": "positioning", "label": "产品定位", "select": "one", "note": "按主销产品档位勾一项" }
+  ],
+  "traits": [
+    { "id": "phone", "group": "category", "label": "智能手机与平板", "description": "手机与平板产品线" },
+    { "id": "computer", "group": "category", "label": "电脑与显示器", "description": "笔记本、台式机与显示器" },
+    { "id": "tv_av", "group": "category", "label": "电视与影音", "description": "电视、音响、投影" },
+    { "id": "kitchen_appliance", "group": "category", "label": "厨房电器", "description": "冰箱、烟灶灶具、料理小家电" },
+    { "id": "home_appliance", "group": "category", "label": "环境与衣物电器", "description": "空调、洗衣机、新风、空气净化" },
+    { "id": "personal_care", "group": "category", "label": "个护电器", "description": "剃须刀、吹风机、电动牙刷" },
+    { "id": "wearable", "group": "category", "label": "穿戴设备", "description": "手表、手环、耳机" },
+    { "id": "smart_home", "group": "category", "label": "智能家居", "description": "门锁、摄像头、灯具及中控网关" },
+    { "id": "imaging", "group": "category", "label": "影像设备", "description": "相机、运动相机、无人机" },
+    { "id": "accessory", "group": "category", "label": "配件外设", "description": "充电、存储、线材、键鼠外设" },
+
+    { "id": "own_mall", "group": "channel", "label": "官方商城", "description": "品牌自营网站或 App 下单" },
+    { "id": "platform_store", "group": "channel", "label": "电商旗舰店", "description": "天猫、京东等平台官方店" },
+    { "id": "offline_store", "group": "channel", "label": "线下门店", "description": "品牌体验店或卖场专柜" },
+    { "id": "carrier_channel", "group": "channel", "label": "运营商渠道", "description": "合约机、话费捆绑销售" },
+    { "id": "dealer", "group": "channel", "label": "经销商体系", "description": "区域代理分销" },
+
+    { "id": "national_warranty", "group": "service", "label": "全国联保", "description": "异地门店同样可官方保修" },
+    { "id": "ondoor_install", "group": "service", "label": "免费上门安装", "description": "主流区域不收安装费" },
+    { "id": "ondoor_repair", "group": "service", "label": "上门维修", "description": "工程师上门检修" },
+    { "id": "remote_diag", "group": "service", "label": "远程诊断", "description": "电话或在线先排查，减少上门" },
+    { "id": "trade_in", "group": "service", "label": "官方以旧换新", "description": "旧机折价换购新机" },
+    { "id": "extended_warranty", "group": "service", "label": "官方延保", "description": "可付费延长保修期" },
+    { "id": "spare_years", "group": "service", "label": "备件年限承诺", "description": "停产后继续供应维修配件有明确年限" },
+
+    { "id": "entry_band", "group": "positioning", "label": "入门档", "description": "满足基本功能的低价位产品线" },
+    { "id": "mid_band", "group": "positioning", "label": "中端主力", "description": "走量主销的价格档" },
+    { "id": "high_band", "group": "positioning", "label": "高端档", "description": "高价位、用料配置拉满的产品线" },
+    { "id": "pro_band", "group": "positioning", "label": "专业档", "description": "面向职业用途和发烧用户" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "which_model", "group": "decision", "question": "型号这么多，按我家的情况该选哪个？", "hint": "回答应按面积、人数、预算给出对应型号，并说明取舍" },
+    { "id": "next_gen", "group": "decision", "question": "快出新品了吗？现在买会不会很快过时？", "hint": "回答应如实说明新品节奏和现款继续销售的周期" },
+    { "id": "best_time", "group": "decision", "question": "什么时候买最便宜？大促能便宜多少？", "hint": "回答应给出往年的价格波动幅度" },
+    { "id": "real_spec", "group": "decision", "question": "续航、能耗这些标称值，实际能到多少？", "hint": "回答应给出典型使用场景下的实测值和测试条件" },
+    { "id": "compare", "group": "decision", "question": "和同价位竞品比，差在哪？", "hint": "回答应给出可验证的参数或体验差别" },
+    { "id": "extra_cost", "group": "decision", "question": "除了机器还要买什么？安装、支架、耗材贵不贵？", "hint": "回答应列出必需和常用配件的价格" },
+    { "id": "ecosystem", "group": "decision", "question": "和我家里已有的设备能互联吗？", "hint": "回答应说明支持的互联协议和已验证的品牌" },
+    { "id": "old_trade", "group": "decision", "question": "以旧换新怎么估价？旧机大概能抵多少？", "hint": "回答应给出估价方式和常见机型的抵扣区间" },
+
+    { "id": "install_fee", "group": "detail", "question": "送货安装免费吗？拆旧、打孔另收费吗？", "hint": "回答应列出免费与收费的安装环节" },
+    { "id": "repair_time", "group": "detail", "question": "维修一般多久？修不好换新吗？", "hint": "回答应给出典型维修时长和换新条件" },
+    { "id": "consumable", "group": "detail", "question": "滤芯、耗材多久换一次？一次多少钱？", "hint": "回答应给出更换周期、单价和年使用成本" },
+    { "id": "app_needed", "group": "detail", "question": "不装 App、不联网，功能全吗？", "hint": "回答应区分联网与不联网各自能用的功能" },
+    { "id": "energy_cost", "group": "detail", "question": "一天大概多少电费？", "hint": "回答应按典型日使用时长给出电耗估算" },
+    { "id": "parts_supply", "group": "detail", "question": "过保了还能修吗？配件停产了怎么办？", "hint": "回答应说明停产后备件供应年限" },
+
+    { "id": "warranty_scope", "group": "risk", "question": "整机保几年？电机、屏幕这些核心部件分别保几年？", "hint": "回答应分列整机与主要部件的保修期" },
+    { "id": "warranty_no_invoice", "group": "risk", "question": "发票丢了，凭序列号能保修吗？", "hint": "回答应说明无发票时的保修凭证和起算日期" },
+    { "id": "return_policy", "group": "risk", "question": "激活或用过之后还能退换吗？", "hint": "回答应写明退换货条件和不适用情形" },
+    { "id": "recall_how", "group": "risk", "question": "出了批量质量问题怎么通知？召回费用谁出？", "hint": "回答应说明召回通知渠道和费用承担" },
+    { "id": "safety_issue", "group": "risk", "question": "电池、燃气这类产品出了安全事故怎么处理、怎么赔？", "hint": "回答应说明事故处理流程和责任险情况" },
+    { "id": "third_party", "group": "risk", "question": "在非官方渠道买的，售后和官方一样吗？", "hint": "回答应说明非官方渠道的保修差异和验证真伪的方法" }
+  ]
+}

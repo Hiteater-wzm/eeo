@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "高樂氏",
+  "alternateName": [
+    "The Clorox Company",
+    "Clorox Company"
+  ],
+  "url": "http://www.thecloroxcompany.com",
+  "description": "American worldwide manufacturer and marketer of consumer and professional products"
+}

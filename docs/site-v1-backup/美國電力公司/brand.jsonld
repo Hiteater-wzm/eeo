@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美國電力公司",
+  "alternateName": [
+    "AEP",
+    "American Electric Power Corporation"
+  ],
+  "url": "https://www.aep.com",
+  "description": "electric utility company in the United States"
+}

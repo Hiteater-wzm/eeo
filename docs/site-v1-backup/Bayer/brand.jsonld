@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bayer",
+  "alternateName": [
+    "拜耳",
+    "Bayer AG"
+  ],
+  "url": "https://www.bayer.com",
+  "description": "德国生命科学集团，总部位于勒沃库森，业务分为制药、健康消费品与作物科学三大板块。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Leverkusen",
+    "addressCountry": "德国"
+  }
+}

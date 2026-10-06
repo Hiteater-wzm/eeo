@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "阿里巴巴",
+  "alternateName": [
+    "Alibaba",
+    "阿里"
+  ],
+  "url": "https://www.alibabagroup.com",
+  "description": "1999年成立于杭州，经营淘宝、天猫等电子商务平台以及云计算（阿里云）、物流（菜鸟）和本地生活服务，于香港及纽约两地上市。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "杭州",
+    "addressCountry": "中国"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GE Aerospace",
+  "alternateName": [
+    "GE航空",
+    "通用电气航空航天",
+    "GE"
+  ],
+  "url": "https://www.geaerospace.com",
+  "description": "美国航空发动机公司，2024年从通用电气分拆独立上市，总部位于俄亥俄州Evendale，为商用与军用飞机提供喷气发动机及维修服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Evendale",
+    "addressCountry": "美国"
+  }
+}

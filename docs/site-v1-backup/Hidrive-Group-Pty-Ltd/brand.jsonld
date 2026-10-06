@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hidrive Group Pty Ltd",
+  "alternateName": [
+    "Hidrive",
+    "Hidrive Group",
+    "Hidrive Group Pty Ltd",
+    "Hidrive Service Bodies"
+  ],
+  "url": "https://hidrive.com.au",
+  "description": "Hidrive is Australia's only service body manufacturer with a company-owned national install network delivering ISO9001 q"
+}

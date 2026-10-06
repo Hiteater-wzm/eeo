@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bath & Body Works",
+  "alternateName": [
+    "Bath & Body Works",
+    "LLC.",
+    "Bath&Body Works",
+    "Bath and Body Works"
+  ],
+  "url": "https://www.bathandbodyworks.com",
+  "description": "American retailer under the L Brands (formerly Limited Brands) umbrella, along with Victoria's Secret"
+}

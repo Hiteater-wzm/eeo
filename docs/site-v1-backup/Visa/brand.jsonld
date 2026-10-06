@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Visa",
+  "alternateName": [
+    "维萨",
+    "Visa卡"
+  ],
+  "url": "https://www.visa.com",
+  "description": "美国支付技术公司，运营全球银行卡交易清算网络VisaNet，为信贷卡、借记卡、预付卡与商业支付提供处理服务；法定总部位于旧金山，主要运营中心位于加州Foster City。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressCountry": "美国"
+  }
+}

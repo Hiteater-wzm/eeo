@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hourican Associates",
+  "alternateName": [
+    "Hourican Associates",
+    "Hourican Associates Ltd",
+    "Hourican & Associates"
+  ],
+  "url": "https://www.houricanassociates.com/",
+  "description": "UK company specialising in party wall surveying, notices, condition surveys and awards."
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CF Industries",
+  "alternateName": [
+    "CF Fertilisers",
+    "CF Industries Holdings",
+    "CF Industries Holdings",
+    "Inc."
+  ],
+  "url": "https://www.cfindustries.com/",
+  "description": "North American manufacturer and distributor of agricultural fertilizers"
+}

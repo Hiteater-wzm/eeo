@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "棒谷",
+  "alternateName": [
+    "Banggood",
+    "棒谷科技"
+  ],
+  "url": "https://www.banggood.com/",
+  "description": "International online retail platform from China"
+}

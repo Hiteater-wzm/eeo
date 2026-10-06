@@ -1,0 +1,38 @@
+name: EEO self audit
+
+# Dogfood: the project audits its own brand. How visible is "EEO Audit"
+# to the engines it tests? Reruns monthly, report kept as an artifact.
+
+on:
+  schedule:
+    - cron: '0 3 1 * *'  # 03:00 UTC on day 1 (11:00 Beijing)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Audit the EEO Audit brand
+        id: eeo
+        uses: ./action
+        with:
+          brand: EEO Audit
+          industry: AI 可见性检测开源工具
+          depth: quick
+          engines: deepseek,glm
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEPSEEK_API_KEY }}
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: eeo-report
+          path: eeo-report.json
+          if-no-files-found: warn

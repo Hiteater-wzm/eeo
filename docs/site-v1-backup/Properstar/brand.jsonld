@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Properstar",
+  "alternateName": "Listglobally",
+  "url": "https://www.properstar.ch",
+  "description": "Global real estate platform and aggregator, based in Switzerland, that lets users and professionals search property list"
+}

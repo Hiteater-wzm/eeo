@@ -1,0 +1,27 @@
+# Airbus
+
+> 欧洲飞机制造商，注册地为荷兰莱顿，运营总部位于法国图卢兹，产品涵盖商用客机（A320与A350系列）、直升机与防务航天系统。
+
+- 官方网站: https://www.airbus.com
+- 所属行业: 商用飞机与防务航天
+- 所在城市: Toulouse
+- 所在国家: 法国
+- 别名: 空中客车、空客、Airbus SE
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- A320系列单通道客机产品线
+- 直升机（Airbus Helicopters）业务板块
+- 防务航天（卫星与军用运输机）业务
+
+## 信息来源
+
+- https://www.airbus.com
+- https://en.wikipedia.org/wiki/Airbus
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

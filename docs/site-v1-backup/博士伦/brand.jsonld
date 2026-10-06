@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "博士伦",
+  "alternateName": [
+    "Bausch & Lomb Optical Co.",
+    "Bausch and Lomb Optical Company"
+  ],
+  "url": "https://www.bausch.com/",
+  "description": "North American optical and pharmaceutical company"
+}

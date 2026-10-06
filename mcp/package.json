@@ -1,0 +1,12 @@
+{
+  "name": "eeo-audit-mcp",
+  "version": "1.0.0",
+  "description": "EEO brand AI-visibility audit as stdio MCP tools for Claude Desktop, Cursor, Windsurf. Zero dependencies, Node 18+.",
+  "license": "Apache-2.0",
+  "bin": {
+    "eeo-audit-mcp": "server.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

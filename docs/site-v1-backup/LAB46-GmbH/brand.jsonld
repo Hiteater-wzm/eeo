@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LAB46 GmbH",
+  "alternateName": [
+    "“LAB46.de”",
+    "“lab46.de”"
+  ],
+  "url": "https://lab46.de",
+  "description": "German company developing health and beauty supplements with a focus on LGBTQ+ men, based in Berlin"
+}

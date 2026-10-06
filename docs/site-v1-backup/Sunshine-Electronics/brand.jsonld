@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sunshine Electronics",
+  "alternateName": [
+    "Changzhou Sunshine Electronics",
+    "Sunshine Adapter",
+    "Sunshine Electronics (Vietnam) Co.",
+    "Ltd.",
+    "Sunshine Electronics Co."
+  ],
+  "url": "https://sunshineadapter.com/",
+  "description": "Chinese-Vietnamese power adapter and cable OEM manufacturer"
+}

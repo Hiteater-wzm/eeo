@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rusin Display",
+  "alternateName": "RusinDisplay",
+  "url": "https://www.rusindisplay.com",
+  "description": "Commercial display manufacturer based in Shenzhen, China"
+}

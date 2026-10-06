@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "McDonald's",
+  "alternateName": [
+    "麦当劳",
+    "金拱门(中国运营主体)"
+  ],
+  "url": "https://www.mcdonalds.com",
+  "description": "全球汉堡快餐连锁运营商,以特许经营模式为主,主要产品包括巨无霸、麦乐鸡等。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "芝加哥",
+    "addressCountry": "美国"
+  }
+}

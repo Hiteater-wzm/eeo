@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Josys",
+  "alternateName": [
+    "Josys Inc.",
+    "Josys International Pte. Ltd."
+  ],
+  "url": "https://josys.com",
+  "description": "SaaS management and identity governance platform company, incorporated in Singapore, headquartered in Tokyo"
+}

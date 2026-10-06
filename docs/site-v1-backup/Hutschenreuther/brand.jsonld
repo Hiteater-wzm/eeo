@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hutschenreuther",
+  "alternateName": "Hutschenreuther family",
+  "url": "http://www.hutschenreuther.com",
+  "description": "family that established the production of porcelain in Northern Bavaria, starting in 1814"
+}

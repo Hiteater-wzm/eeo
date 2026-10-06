@@ -1,0 +1,26 @@
+# Volkswagen Group
+
+> 德国汽车集团,旗下品牌包括大众、奥迪、斯柯达、西雅特、保时捷与兰博基尼等,1937年成立。
+
+- 官方网站: https://www.volkswagen-group.com
+- 所属行业: 汽车集团
+- 所在城市: 沃尔夫斯堡
+- 所在国家: 德国
+- 别名: 大众汽车、大众集团
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 按销量计为全球规模最大的汽车集团之一
+- 在法兰克福证券交易所上市
+
+## 信息来源
+
+- https://www.volkswagen-group.com
+- https://en.wikipedia.org/wiki/Volkswagen_Group
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

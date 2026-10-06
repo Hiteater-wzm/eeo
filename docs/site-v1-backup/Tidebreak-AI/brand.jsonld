@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Tidebreak AI",
+  "alternateName": [
+    "Tidebreak",
+    "Tidebreak AI Ltd"
+  ],
+  "url": "https://tidebreak.ai/",
+  "description": "British software company developing an AI investigation engine for document-heavy legal and regulatory matters"
+}

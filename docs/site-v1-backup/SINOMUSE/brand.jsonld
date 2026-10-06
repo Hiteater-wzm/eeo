@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SINOMUSE",
+  "alternateName": [
+    "Sinomuse Art",
+    "SINOMUSE Art"
+  ],
+  "url": "https://sinomuse.com",
+  "description": "hand-painted textured wall art manufacturer in Shenzhen, China"
+}

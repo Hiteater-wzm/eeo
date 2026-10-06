@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "雷多斯",
+  "alternateName": [
+    "SAIC",
+    "Science Applications International Corporation"
+  ],
+  "url": "http://www.leidos.com",
+  "description": "defense, aviation, information technology, and biomedical research company based in Reston, Virginia, United States"
+}

@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deere & Company",
+  "alternateName": [
+    "John Deere",
+    "约翰迪尔",
+    "迪尔公司"
+  ],
+  "url": "https://www.deere.com",
+  "description": "美国农业与工程机械制造商，总部位于伊利诺伊州Moline，产品涵盖拖拉机、联合收割机与精准农业系统。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moline",
+    "addressCountry": "美国"
+  }
+}

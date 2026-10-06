@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Technomate",
+  "alternateName": "Technomate Ltd.",
+  "url": "http://www.technomate.com",
+  "description": "international satellite and terrestrial television equipment manufacturer based in London"
+}

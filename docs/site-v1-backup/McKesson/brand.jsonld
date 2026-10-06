@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "McKesson",
+  "alternateName": "麦克森",
+  "url": "https://www.mckesson.com",
+  "description": "美国医药流通与健康服务公司，总部位于得克萨斯州Irving，主营药品与医疗用品分销。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Irving",
+    "addressCountry": "美国"
+  }
+}

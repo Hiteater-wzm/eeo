@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Auto-Intern GmbH",
+  "alternateName": [
+    "Auto Intern",
+    "AUTO INTERN"
+  ],
+  "url": "https://www.auto-intern.de/",
+  "description": "German company for automotive diagnostic hardware and embedded measurement systems, based in Bochum"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RapidDirect",
+  "alternateName": [
+    "Rapid Direct; RapidDirect Co.",
+    "Ltd"
+  ],
+  "url": "https://www.rapiddirect.com",
+  "description": "Chinese on-demand custom manufacturing company"
+}

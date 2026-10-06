@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "尼曼",
+  "alternateName": [
+    "Neiman Marcus",
+    "Inc.",
+    "Neiman-Marcus",
+    "Neimans"
+  ],
+  "url": "https://www.neimanmarcus.com/",
+  "description": "American luxury specialty department store"
+}

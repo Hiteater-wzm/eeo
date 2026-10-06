@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Notus Regalia",
+  "alternateName": [
+    "NR",
+    "Notus"
+  ],
+  "url": "https://www.notusregalia.tech",
+  "description": "Holding company building critical systems technology across Defense, Healthcare, Civic Infrastructure, Energy, and Enter"
+}

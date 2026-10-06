@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "百济神州",
+  "alternateName": [
+    "BeiGene",
+    "百济神州有限公司"
+  ],
+  "url": "https://www.beigene.com.cn",
+  "description": "2010年成立于北京的全球性生物科技公司，以百悦泽等抗肿瘤药物为主要产品，在美国纳斯达克、香港与上海三地上市。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

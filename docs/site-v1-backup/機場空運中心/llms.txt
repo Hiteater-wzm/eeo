@@ -1,0 +1,17 @@
+# 機場空運中心
+
+> warehousing and office facility in Hong Kong International Airport
+
+- 官方网站: http://www.affc.com.hk/
+- 所属行业: 航空
+- 别名: AFF
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q4698914
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

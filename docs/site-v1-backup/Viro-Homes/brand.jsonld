@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Viro Homes",
+  "alternateName": [
+    "Solidhouse Builders & Construction",
+    "VIRO",
+    "VIRO - Solidhouse Builders & Construction",
+    "Viro Furnitures",
+    "Viro Homes"
+  ],
+  "url": "https://virohomes.com",
+  "description": "A design-build-furnish modular home company delivering architecturally beautiful, fully furnished living spaces in just"
+}

@@ -1,0 +1,40 @@
+name: 'EEO Brand Visibility Audit'
+description: 'Measure how visible your brand is inside AI answers. Generates real buyer questions, asks LLM engines, and outputs a graded visibility report.'
+author: 'EEO Audit'
+
+branding:
+  icon: 'search'
+  color: 'blue'
+
+inputs:
+  brand:
+    description: 'Brand name to audit (any language; questions are generated in Chinese)'
+    required: true
+  industry:
+    description: 'Industry or product category, used when generating buyer questions'
+    required: false
+    default: ''
+  depth:
+    description: 'Audit depth: quick (12 questions), standard (30), deep (48)'
+    required: false
+    default: 'quick'
+  engines:
+    description: 'Comma-separated engine ids from the built-in catalog: deepseek, glm'
+    required: false
+    default: 'deepseek,glm'
+
+outputs:
+  grade:
+    description: 'Overall grade: S, A, B, C, D, or ERROR when the audit did not complete'
+  overall:
+    description: 'Overall visibility score, 0-100'
+  aware_rate:
+    description: 'Share of direct brand questions answered with substance, 0-100'
+  mention_rate:
+    description: 'How often the brand appears in category questions, 0-100'
+  report_json:
+    description: 'Full audit report as JSON (inputs, scores, every question and answer)'
+
+runs:
+  using: 'node20'
+  main: 'index.js'

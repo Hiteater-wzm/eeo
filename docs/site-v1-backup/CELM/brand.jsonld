@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CELM",
+  "alternateName": "CELM Inc.",
+  "url": "https://www.celm.co.jp/",
+  "description": "Japanese human resource and organizational development consulting company based in Shibuya, Tokyo"
+}

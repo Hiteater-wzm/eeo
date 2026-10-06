@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Li Auto",
+  "alternateName": [
+    "理想",
+    "理想汽车"
+  ],
+  "url": "https://www.lixiang.com",
+  "description": "中国新能源汽车制造商,2015年成立,以增程式电动车起步,产品包括理想L系列SUV与MEGA MPV。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "北京",
+    "addressCountry": "中国"
+  }
+}

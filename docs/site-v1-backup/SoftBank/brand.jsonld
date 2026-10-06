@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SoftBank",
+  "alternateName": [
+    "软银",
+    "软银集团",
+    "SoftBank Group"
+  ],
+  "url": "https://www.softbank.jp",
+  "description": "日本电信与科技投资集团，总部位于东京，旗下软银公司经营日本移动通信业务，愿景基金为其科技投资板块。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "日本"
+  }
+}

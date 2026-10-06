@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stepup Communications",
+  "alternateName": [
+    "Step-up",
+    "Stepup Communications Co.",
+    "LTD.",
+    "ステップアップ"
+  ],
+  "url": "https://step-up.co.jp",
+  "description": "Japanese company based in Yamagata City, specializing in web development, AI implementation, and educational services. F"
+}

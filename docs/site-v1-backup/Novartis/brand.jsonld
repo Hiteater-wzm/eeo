@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novartis",
+  "alternateName": "诺华",
+  "url": "https://www.novartis.com",
+  "description": "瑞士制药公司，总部位于巴塞尔，聚焦创新药（心血管、免疫、神经科学与肿瘤），2019年分拆眼科业务（Alcon）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Basel",
+    "addressCountry": "瑞士"
+  }
+}

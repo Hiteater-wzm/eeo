@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ExxonMobil",
+  "alternateName": [
+    "埃克森美孚",
+    "Exxon",
+    "Mobil",
+    "美孚"
+  ],
+  "url": "https://corporate.exxonmobil.com",
+  "description": "美国能源公司，总部位于得克萨斯州Spring，为上下游一体化的油气生产商，业务涵盖勘探生产、炼化与化工。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Spring",
+    "addressCountry": "美国"
+  }
+}

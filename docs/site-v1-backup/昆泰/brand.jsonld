@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "昆泰",
+  "alternateName": [
+    "OneKey",
+    "Quintiles",
+    "IQVIA Inc.     (Parsippany",
+    "NJ)",
+    "Quintiles and IMS Health"
+  ],
+  "url": "https://www.iqvia.com/",
+  "description": "American multinational company serving the combined industries of health information technology and clinical research"
+}

@@ -1,0 +1,1004 @@
+# EEO 品牌信息目录
+
+> 共 1000 个品牌的官方信息站，依据 EEO 品牌信息规范（eeo.brand.v1）生成。每个品牌同时提供网页版与 Markdown 版。
+
+- [腾讯](腾讯/)（[md](腾讯/腾讯.md)）: 互联网-综合互联网服务　深圳
+- [阿里巴巴](阿里巴巴/)（[md](阿里巴巴/阿里巴巴.md)）: 互联网-电子商务　杭州
+- [字节跳动](字节跳动/)（[md](字节跳动/字节跳动.md)）: 互联网-内容与社交平台　北京
+- [百度](百度/)（[md](百度/百度.md)）: 互联网-搜索引擎　北京
+- [京东](京东/)（[md](京东/京东.md)）: 互联网-电子商务　北京
+- [美团](美团/)（[md](美团/美团.md)）: 互联网-本地生活服务　北京
+- [拼多多](拼多多/)（[md](拼多多/拼多多.md)）: 互联网-电子商务　上海
+- [网易](网易/)（[md](网易/网易.md)）: 互联网-游戏与内容　杭州
+- [快手](快手/)（[md](快手/快手.md)）: 互联网-短视频　北京
+- [携程集团](携程集团/)（[md](携程集团/携程集团.md)）: 互联网-在线旅游　上海
+- [哔哩哔哩](哔哩哔哩/)（[md](哔哩哔哩/哔哩哔哩.md)）: 互联网-视频社区　上海
+- [微博](微博/)（[md](微博/微博.md)）: 互联网-社交媒体　北京
+- [滴滴出行](滴滴出行/)（[md](滴滴出行/滴滴出行.md)）: 互联网-出行平台　北京
+- [58同城](58同城/)（[md](58同城/58同城.md)）: 互联网-生活服务信息　北京
+- [科大讯飞](科大讯飞/)（[md](科大讯飞/科大讯飞.md)）: 人工智能-智能语音　合肥
+- [京东方](京东方/)（[md](京东方/京东方.md)）: 电子-显示面板　北京
+- [中兴通讯](中兴通讯/)（[md](中兴通讯/中兴通讯.md)）: 通信设备　深圳
+- [三六零](三六零/)（[md](三六零/三六零.md)）: 互联网-网络安全　北京
+- [华为](华为/)（[md](华为/华为.md)）: 消费电子-通信设备与智能终端　深圳
+- [小米](小米/)（[md](小米/小米.md)）: 消费电子-智能手机与IoT　北京
+- [OPPO](OPPO/)（[md](OPPO/OPPO.md)）: 消费电子-智能手机　东莞
+- [vivo](vivo/)（[md](vivo/vivo.md)）: 消费电子-智能手机　东莞
+- [荣耀](荣耀/)（[md](荣耀/荣耀.md)）: 消费电子-智能手机　深圳
+- [联想](联想/)（[md](联想/联想.md)）: 消费电子-个人电脑　北京
+- [TCL](TCL/)（[md](TCL/TCL.md)）: 家电-智能终端与显示　惠州
+- [海信](海信/)（[md](海信/海信.md)）: 家电-视听家电　青岛
+- [海尔](海尔/)（[md](海尔/海尔.md)）: 家电-综合家电　青岛
+- [美的](美的/)（[md](美的/美的.md)）: 家电-综合家电　佛山
+- [格力](格力/)（[md](格力/格力.md)）: 家电-空调　珠海
+- [方太](方太/)（[md](方太/方太.md)）: 家电-厨房电器　宁波
+- [老板电器](老板电器/)（[md](老板电器/老板电器.md)）: 家电-厨房电器　杭州
+- [苏泊尔](苏泊尔/)（[md](苏泊尔/苏泊尔.md)）: 家电-炊具与小家电　杭州
+- [九阳](九阳/)（[md](九阳/九阳.md)）: 家电-厨房小家电　济南
+- [大疆](大疆/)（[md](大疆/大疆.md)）: 消费电子-无人机　深圳
+- [科沃斯](科沃斯/)（[md](科沃斯/科沃斯.md)）: 智能家居-服务机器人　苏州
+- [石头科技](石头科技/)（[md](石头科技/石头科技.md)）: 智能家居-清洁机器人　北京
+- [追觅科技](追觅科技/)（[md](追觅科技/追觅科技.md)）: 智能家居-清洁电器　苏州
+- [极米科技](极米科技/)（[md](极米科技/极米科技.md)）: 消费电子-投影设备　成都
+- [贵州茅台](贵州茅台/)（[md](贵州茅台/贵州茅台.md)）: 食品饮料-白酒　仁怀
+- [五粮液](五粮液/)（[md](五粮液/五粮液.md)）: 食品饮料-白酒　宜宾
+- [伊利](伊利/)（[md](伊利/伊利.md)）: 食品-乳制品　呼和浩特
+- [蒙牛](蒙牛/)（[md](蒙牛/蒙牛.md)）: 食品-乳制品　呼和浩特
+- [农夫山泉](农夫山泉/)（[md](农夫山泉/农夫山泉.md)）: 食品饮料-包装饮用水　杭州
+- [海天味业](海天味业/)（[md](海天味业/海天味业.md)）: 食品-调味品　佛山
+- [双汇](双汇/)（[md](双汇/双汇.md)）: 食品-肉制品　漯河
+- [卫龙](卫龙/)（[md](卫龙/卫龙.md)）: 食品-辣味休闲食品　漯河
+- [三只松鼠](三只松鼠/)（[md](三只松鼠/三只松鼠.md)）: 食品-休闲零食　芜湖
+- [良品铺子](良品铺子/)（[md](良品铺子/良品铺子.md)）: 食品-休闲零食　武汉
+- [东鹏饮料](东鹏饮料/)（[md](东鹏饮料/东鹏饮料.md)）: 食品饮料-能量饮料　深圳
+- [元气森林](元气森林/)（[md](元气森林/元气森林.md)）: 食品饮料-无糖饮品　北京
+- [青岛啤酒](青岛啤酒/)（[md](青岛啤酒/青岛啤酒.md)）: 食品饮料-啤酒　青岛
+- [海底捞](海底捞/)（[md](海底捞/海底捞.md)）: 餐饮-火锅连锁　北京
+- [西贝](西贝/)（[md](西贝/西贝.md)）: 餐饮-西北菜连锁　北京
+- [全聚德](全聚德/)（[md](全聚德/全聚德.md)）: 餐饮-烤鸭　北京
+- [蜜雪冰城](蜜雪冰城/)（[md](蜜雪冰城/蜜雪冰城.md)）: 餐饮-茶饮与冰淇淋连锁　郑州
+- [古茗](古茗/)（[md](古茗/古茗.md)）: 餐饮-新式茶饮　杭州
+- [茶百道](茶百道/)（[md](茶百道/茶百道.md)）: 餐饮-新式茶饮　成都
+- [霸王茶姬](霸王茶姬/)（[md](霸王茶姬/霸王茶姬.md)）: 餐饮-新式茶饮　上海
+- [喜茶](喜茶/)（[md](喜茶/喜茶.md)）: 餐饮-新式茶饮　深圳
+- [奈雪的茶](奈雪的茶/)（[md](奈雪的茶/奈雪的茶.md)）: 餐饮-新式茶饮　深圳
+- [绝味食品](绝味食品/)（[md](绝味食品/绝味食品.md)）: 餐饮-卤味熟食　长沙
+- [周黑鸭](周黑鸭/)（[md](周黑鸭/周黑鸭.md)）: 餐饮-卤味熟食　武汉
+- [名创优品](名创优品/)（[md](名创优品/名创优品.md)）: 零售-生活方式产品零售　广州
+- [胖东来](胖东来/)（[md](胖东来/胖东来.md)）: 零售-区域商超　许昌
+- [盒马](盒马/)（[md](盒马/盒马.md)）: 零售-新零售商超　上海
+- [永辉超市](永辉超市/)（[md](永辉超市/永辉超市.md)）: 零售-超市　福州
+- [大润发](大润发/)（[md](大润发/大润发.md)）: 零售-大型超市　上海
+- [美宜佳](美宜佳/)（[md](美宜佳/美宜佳.md)）: 零售-便利店　东莞
+- [老凤祥](老凤祥/)（[md](老凤祥/老凤祥.md)）: 零售-黄金珠宝　上海
+- [周大福](周大福/)（[md](周大福/周大福.md)）: 零售-黄金珠宝　香港
+- [山姆会员商店](山姆会员商店/)（[md](山姆会员商店/山姆会员商店.md)）: 零售-仓储会员店　深圳
+- [泡泡玛特](泡泡玛特/)（[md](泡泡玛特/泡泡玛特.md)）: 零售-潮流玩具　北京
+- [安踏](安踏/)（[md](安踏/安踏.md)）: 服装-运动服饰　晋江
+- [李宁](李宁/)（[md](李宁/李宁.md)）: 服装-运动服饰　北京
+- [波司登](波司登/)（[md](波司登/波司登.md)）: 服装-羽绒服　常熟
+- [优衣库](优衣库/)（[md](优衣库/优衣库.md)）: 服装-休闲服饰　上海
+- [海澜之家](海澜之家/)（[md](海澜之家/海澜之家.md)）: 服装-男装　江阴
+- [特步](特步/)（[md](特步/特步.md)）: 服装-运动服饰　厦门
+- [361度](361度/)（[md](361度/361度.md)）: 服装-运动服饰　厦门
+- [鸿星尔克](鸿星尔克/)（[md](鸿星尔克/鸿星尔克.md)）: 服装-运动服饰　厦门
+- [太平鸟](太平鸟/)（[md](太平鸟/太平鸟.md)）: 服装-大众时尚服饰　宁波
+- [鄂尔多斯](鄂尔多斯/)（[md](鄂尔多斯/鄂尔多斯.md)）: 服装-羊绒服饰　鄂尔多斯
+- [雅戈尔](雅戈尔/)（[md](雅戈尔/雅戈尔.md)）: 服装-男装　宁波
+- [吉利汽车](吉利汽车/)（[md](吉利汽车/吉利汽车.md)）: 汽车-整车制造　杭州
+- [长城汽车](长城汽车/)（[md](长城汽车/长城汽车.md)）: 汽车-整车制造　保定
+- [奇瑞汽车](奇瑞汽车/)（[md](奇瑞汽车/奇瑞汽车.md)）: 汽车-整车制造　芜湖
+- [蔚来](蔚来/)（[md](蔚来/蔚来.md)）: 汽车-新能源汽车　上海
+- [小鹏汽车](小鹏汽车/)（[md](小鹏汽车/小鹏汽车.md)）: 汽车-新能源汽车　广州
+- [理想汽车](理想汽车/)（[md](理想汽车/理想汽车.md)）: 汽车-新能源汽车　北京
+- [零跑汽车](零跑汽车/)（[md](零跑汽车/零跑汽车.md)）: 汽车-新能源汽车　杭州
+- [问界](问界/)（[md](问界/问界.md)）: 汽车-新能源汽车　重庆
+- [长安汽车](长安汽车/)（[md](长安汽车/长安汽车.md)）: 汽车-整车制造　重庆
+- [中国一汽](中国一汽/)（[md](中国一汽/中国一汽.md)）: 汽车-整车制造　长春
+- [上汽集团](上汽集团/)（[md](上汽集团/上汽集团.md)）: 汽车-整车制造　上海
+- [上汽通用五菱](上汽通用五菱/)（[md](上汽通用五菱/上汽通用五菱.md)）: 汽车-微型车与新能源　柳州
+- [宇通客车](宇通客车/)（[md](宇通客车/宇通客车.md)）: 汽车-客车　郑州
+- [红星美凯龙](红星美凯龙/)（[md](红星美凯龙/红星美凯龙.md)）: 家居-家居卖场　上海
+- [居然之家](居然之家/)（[md](居然之家/居然之家.md)）: 家居-家居卖场　北京
+- [欧派家居](欧派家居/)（[md](欧派家居/欧派家居.md)）: 家居-全屋定制　广州
+- [索菲亚](索菲亚/)（[md](索菲亚/索菲亚.md)）: 家居-全屋定制　广州
+- [尚品宅配](尚品宅配/)（[md](尚品宅配/尚品宅配.md)）: 家居-全屋定制　广州
+- [顾家家居](顾家家居/)（[md](顾家家居/顾家家居.md)）: 家居-软体家具　杭州
+- [全友家居](全友家居/)（[md](全友家居/全友家居.md)）: 家居-综合家具　成都
+- [慕思](慕思/)（[md](慕思/慕思.md)）: 家居-寝具　东莞
+- [林氏家居](林氏家居/)（[md](林氏家居/林氏家居.md)）: 家居-互联网家具零售　佛山
+- [三棵树](三棵树/)（[md](三棵树/三棵树.md)）: 家居-涂料　莆田
+- [东方雨虹](东方雨虹/)（[md](东方雨虹/东方雨虹.md)）: 家居-防水材料　北京
+- [恒瑞医药](恒瑞医药/)（[md](恒瑞医药/恒瑞医药.md)）: 医药-创新药　连云港
+- [百济神州](百济神州/)（[md](百济神州/百济神州.md)）: 医药-肿瘤创新药　北京
+- [同仁堂](同仁堂/)（[md](同仁堂/同仁堂.md)）: 医药-中药　北京
+- [云南白药](云南白药/)（[md](云南白药/云南白药.md)）: 医药-中药　昆明
+- [片仔癀](片仔癀/)（[md](片仔癀/片仔癀.md)）: 医药-中药　漳州
+- [爱尔眼科](爱尔眼科/)（[md](爱尔眼科/爱尔眼科.md)）: 医疗服务-眼科　长沙
+- [通策医疗](通策医疗/)（[md](通策医疗/通策医疗.md)）: 医疗服务-口腔　杭州
+- [金域医学](金域医学/)（[md](金域医学/金域医学.md)）: 医疗服务-医学检验　广州
+- [微创医疗](微创医疗/)（[md](微创医疗/微创医疗.md)）: 医疗器械-介入器械　上海
+- [工商银行](工商银行/)（[md](工商银行/工商银行.md)）: 金融-银行　北京
+- [建设银行](建设银行/)（[md](建设银行/建设银行.md)）: 金融-银行　北京
+- [农业银行](农业银行/)（[md](农业银行/农业银行.md)）: 金融-银行　北京
+- [中国人保](中国人保/)（[md](中国人保/中国人保.md)）: 金融-保险　北京
+- [泰康保险](泰康保险/)（[md](泰康保险/泰康保险.md)）: 金融-保险　北京
+- [华泰证券](华泰证券/)（[md](华泰证券/华泰证券.md)）: 金融-证券　南京
+- [东方财富](东方财富/)（[md](东方财富/东方财富.md)）: 金融-互联网金融服务　上海
+- [中国银联](中国银联/)（[md](中国银联/中国银联.md)）: 金融-支付清算　上海
+- [微众银行](微众银行/)（[md](微众银行/微众银行.md)）: 金融-互联网银行　深圳
+- [链家](链家/)（[md](链家/链家.md)）: 生活服务-房产经纪　北京
+- [贝壳](贝壳/)（[md](贝壳/贝壳.md)）: 生活服务-居住服务平台　北京
+- [顺丰速运](顺丰速运/)（[md](顺丰速运/顺丰速运.md)）: 物流-快递　深圳
+- [京东物流](京东物流/)（[md](京东物流/京东物流.md)）: 物流-供应链物流　北京
+- [中通快递](中通快递/)（[md](中通快递/中通快递.md)）: 物流-快递　上海
+- [圆通速递](圆通速递/)（[md](圆通速递/圆通速递.md)）: 物流-快递　杭州
+- [申通快递](申通快递/)（[md](申通快递/申通快递.md)）: 物流-快递　上海
+- [德邦快递](德邦快递/)（[md](德邦快递/德邦快递.md)）: 物流-快运与快递　上海
+- [货拉拉](货拉拉/)（[md](货拉拉/货拉拉.md)）: 物流-同城货运　深圳
+- [华住集团](华住集团/)（[md](华住集团/华住集团.md)）: 酒店-连锁酒店　上海
+- [锦江酒店](锦江酒店/)（[md](锦江酒店/锦江酒店.md)）: 酒店-连锁酒店　上海
+- [亚朵](亚朵/)（[md](亚朵/亚朵.md)）: 酒店-中高端连锁酒店　上海
+- [雅迪](雅迪/)（[md](雅迪/雅迪.md)）: 出行-电动两轮车　无锡
+- [爱玛](爱玛/)（[md](爱玛/爱玛.md)）: 出行-电动两轮车　天津
+- [Coca-Cola](Coca-Cola/)（[md](Coca-Cola/Coca-Cola.md)）: 软饮料　亚特兰大
+- [PepsiCo](PepsiCo/)（[md](PepsiCo/PepsiCo.md)）: 食品与饮料　帕切斯(纽约州)
+- [Nestle](Nestle/)（[md](Nestle/Nestle.md)）: 食品饮料(多品类)　沃韦
+- [Unilever](Unilever/)（[md](Unilever/Unilever.md)）: 快消品(食品与日化)　伦敦
+- [Danone](Danone/)（[md](Danone/Danone.md)）: 乳制品与健康食品　巴黎
+- [Mondelez International](Mondelez-International/)（[md](Mondelez-International/Mondelez-International.md)）: 休闲食品　芝加哥
+- [Kraft Heinz](Kraft-Heinz/)（[md](Kraft-Heinz/Kraft-Heinz.md)）: 包装食品　芝加哥
+- [General Mills](General-Mills/)（[md](General-Mills/General-Mills.md)）: 谷物与包装食品　明尼阿波利斯
+- [Kellanova](Kellanova/)（[md](Kellanova/Kellanova.md)）: 谷物食品与零食　巴特尔克里克(密歇根州)
+- [Hershey](Hershey/)（[md](Hershey/Hershey.md)）: 糖果巧克力　好时(宾夕法尼亚州)
+- [Ferrero](Ferrero/)（[md](Ferrero/Ferrero.md)）: 巧克力糖果　阿尔巴(皮埃蒙特)
+- [Mars](Mars/)（[md](Mars/Mars.md)）: 糖果与宠物食品　麦克莱恩(弗吉尼亚州)
+- [McDonald's](McDonalds/)（[md](McDonalds/McDonalds.md)）: 快餐连锁　芝加哥
+- [Yum! Brands](Yum-Brands/)（[md](Yum-Brands/Yum-Brands.md)）: 餐饮连锁　路易斯维尔(肯塔基州)
+- [Yum China](Yum-China/)（[md](Yum-China/Yum-China.md)）: 餐饮连锁　上海
+- [Starbucks](Starbucks/)（[md](Starbucks/Starbucks.md)）: 咖啡连锁　西雅图
+- [Luckin Coffee](Luckin-Coffee/)（[md](Luckin-Coffee/Luckin-Coffee.md)）: 咖啡连锁　厦门
+- [Haidilao](Haidilao/)（[md](Haidilao/Haidilao.md)）: 火锅连锁　北京
+- [Nongfu Spring](Nongfu-Spring/)（[md](Nongfu-Spring/Nongfu-Spring.md)）: 包装饮用水与饮料　杭州
+- [Mixue](Mixue/)（[md](Mixue/Mixue.md)）: 现制饮品与冰淇淋连锁　郑州
+- [Wahaha](Wahaha/)（[md](Wahaha/Wahaha.md)）: 饮料食品　杭州
+- [Master Kong](Master-Kong/)（[md](Master-Kong/Master-Kong.md)）: 方便食品与饮料　天津
+- [Yili](Yili/)（[md](Yili/Yili.md)）: 乳制品　呼和浩特
+- [Mengniu](Mengniu/)（[md](Mengniu/Mengniu.md)）: 乳制品　呼和浩特
+- [Kweichow Moutai](Kweichow-Moutai/)（[md](Kweichow-Moutai/Kweichow-Moutai.md)）: 白酒　茅台镇(贵州省仁怀市)
+- [Wuliangye](Wuliangye/)（[md](Wuliangye/Wuliangye.md)）: 白酒　宜宾(四川省)
+- [Tsingtao Brewery](Tsingtao-Brewery/)（[md](Tsingtao-Brewery/Tsingtao-Brewery.md)）: 啤酒　青岛
+- [Heineken](Heineken/)（[md](Heineken/Heineken.md)）: 啤酒　阿姆斯特丹
+- [AB InBev](AB-InBev/)（[md](AB-InBev/AB-InBev.md)）: 啤酒　鲁汶
+- [Red Bull](Red-Bull/)（[md](Red-Bull/Red-Bull.md)）: 能量饮料　富施尔湖畔(Fuschl am See)
+- [Diageo](Diageo/)（[md](Diageo/Diageo.md)）: 烈酒　伦敦
+- [Suntory](Suntory/)（[md](Suntory/Suntory.md)）: 酒类与饮料　大阪
+- [Nissin Foods](Nissin-Foods/)（[md](Nissin-Foods/Nissin-Foods.md)）: 方便食品　大阪
+- [Keurig Dr Pepper](Keurig-Dr-Pepper/)（[md](Keurig-Dr-Pepper/Keurig-Dr-Pepper.md)）: 饮料与咖啡　伯灵顿(马萨诸塞州)
+- [P&G](PG/)（[md](PG/PG.md)）: 日化多品类　辛辛那提
+- [L'Oreal](LOreal/)（[md](LOreal/LOreal.md)）: 美妆护肤　巴黎
+- [Estee Lauder Companies](Estee-Lauder-Companies/)（[md](Estee-Lauder-Companies/Estee-Lauder-Companies.md)）: 美妆护肤　纽约
+- [Shiseido](Shiseido/)（[md](Shiseido/Shiseido.md)）: 美妆护肤　东京
+- [Beiersdorf](Beiersdorf/)（[md](Beiersdorf/Beiersdorf.md)）: 护肤与个人护理　汉堡
+- [Henkel](Henkel/)（[md](Henkel/Henkel.md)）: 洗护与粘合剂　杜塞尔多夫
+- [Kao](Kao/)（[md](Kao/Kao.md)）: 日化多品类　东京
+- [Colgate-Palmolive](Colgate-Palmolive/)（[md](Colgate-Palmolive/Colgate-Palmolive.md)）: 口腔与家居护理　纽约
+- [Kenvue](Kenvue/)（[md](Kenvue/Kenvue.md)）: 消费健康　萨米特(新泽西州)
+- [Coty](Coty/)（[md](Coty/Coty.md)）: 香水与美妆　纽约
+- [LVMH](LVMH/)（[md](LVMH/LVMH.md)）: 奢侈品(含美妆与酒类)　巴黎
+- [Hermes](Hermes/)（[md](Hermes/Hermes.md)）: 奢侈品　巴黎
+- [Amorepacific](Amorepacific/)（[md](Amorepacific/Amorepacific.md)）: 美妆护肤　首尔
+- [Shanghai Jahwa](Shanghai-Jahwa/)（[md](Shanghai-Jahwa/Shanghai-Jahwa.md)）: 日化美妆　上海
+- [Proya](Proya/)（[md](Proya/Proya.md)）: 美妆护肤　杭州
+- [Botanee](Botanee/)（[md](Botanee/Botanee.md)）: 功效护肤　昆明
+- [Bloomage Biotech](Bloomage-Biotech/)（[md](Bloomage-Biotech/Bloomage-Biotech.md)）: 生物材料与护肤　济南
+- [Walmart](Walmart/)（[md](Walmart/Walmart.md)）: 综合零售　本顿维尔(阿肯色州)
+- [Costco](Costco/)（[md](Costco/Costco.md)）: 会员制仓储零售　伊萨夸(华盛顿州)
+- [Target](Target/)（[md](Target/Target.md)）: 综合零售　明尼阿波利斯
+- [Home Depot](Home-Depot/)（[md](Home-Depot/Home-Depot.md)）: 家居建材零售　亚特兰大
+- [IKEA](IKEA/)（[md](IKEA/IKEA.md)）: 家居零售　莱顿
+- [Zara](Zara/)（[md](Zara/Zara.md)）: 快时尚　阿尔泰霍(拉科鲁尼亚省)
+- [H&M](HM/)（[md](HM/HM.md)）: 快时尚　斯德哥尔摩
+- [Uniqlo](Uniqlo/)（[md](Uniqlo/Uniqlo.md)）: 服装零售　宇部(山口县)
+- [Muji](Muji/)（[md](Muji/Muji.md)）: 生活杂货零售　东京
+- [7-Eleven](7-Eleven/)（[md](7-Eleven/7-Eleven.md)）: 便利店　东京
+- [Lawson](Lawson/)（[md](Lawson/Lawson.md)）: 便利店　东京
+- [FamilyMart](FamilyMart/)（[md](FamilyMart/FamilyMart.md)）: 便利店　东京
+- [Circle K](Circle-K/)（[md](Circle-K/Circle-K.md)）: 便利店　拉瓦尔(魁北克省)
+- [Carrefour](Carrefour/)（[md](Carrefour/Carrefour.md)）: 大卖场与超市　马西(巴黎大区)
+- [Aldi](Aldi/)（[md](Aldi/Aldi.md)）: 折扣超市　埃森
+- [Lidl](Lidl/)（[md](Lidl/Lidl.md)）: 折扣超市　内卡苏尔姆
+- [Walgreens](Walgreens/)（[md](Walgreens/Walgreens.md)）: 药妆零售　迪尔菲尔德(伊利诺伊州)
+- [Watsons](Watsons/)（[md](Watsons/Watsons.md)）: 健康美妆零售　香港
+- [Miniso](Miniso/)（[md](Miniso/Miniso.md)）: 生活精品零售　广州
+- [Pop Mart](Pop-Mart/)（[md](Pop-Mart/Pop-Mart.md)）: 潮玩零售　北京
+- [Decathlon](Decathlon/)（[md](Decathlon/Decathlon.md)）: 体育用品零售　里尔
+- [Nike](Nike/)（[md](Nike/Nike.md)）: 运动鞋服　比弗顿(俄勒冈州)
+- [Adidas](Adidas/)（[md](Adidas/Adidas.md)）: 运动鞋服　赫尔佐根奥拉赫
+- [Puma](Puma/)（[md](Puma/Puma.md)）: 运动鞋服　赫尔佐根奥拉赫
+- [New Balance](New-Balance/)（[md](New-Balance/New-Balance.md)）: 运动鞋服　波士顿
+- [Under Armour](Under-Armour/)（[md](Under-Armour/Under-Armour.md)）: 运动鞋服　巴尔的摩
+- [Lululemon](Lululemon/)（[md](Lululemon/Lululemon.md)）: 运动服饰　温哥华
+- [Skechers](Skechers/)（[md](Skechers/Skechers.md)）: 休闲与运动鞋　曼哈顿海滩(加利福尼亚州)
+- [Columbia Sportswear](Columbia-Sportswear/)（[md](Columbia-Sportswear/Columbia-Sportswear.md)）: 户外服装　波特兰(俄勒冈州)
+- [Gap](Gap/)（[md](Gap/Gap.md)）: 休闲服饰　旧金山
+- [Levi Strauss & Co](Levi-Strauss-Co/)（[md](Levi-Strauss-Co/Levi-Strauss-Co.md)）: 牛仔服饰　旧金山
+- [Anta](Anta/)（[md](Anta/Anta.md)）: 运动鞋服　晋江(福建省)
+- [Li-Ning](Li-Ning/)（[md](Li-Ning/Li-Ning.md)）: 运动鞋服　北京
+- [Xtep](Xtep/)（[md](Xtep/Xtep.md)）: 运动鞋服　厦门
+- [361 Degrees](361-Degrees/)（[md](361-Degrees/361-Degrees.md)）: 运动鞋服　晋江(福建省)
+- [Bosideng](Bosideng/)（[md](Bosideng/Bosideng.md)）: 羽绒服　常熟(江苏省)
+- [Heilan Home](Heilan-Home/)（[md](Heilan-Home/Heilan-Home.md)）: 男装零售　江阴(江苏省)
+- [SHEIN](SHEIN/)（[md](SHEIN/SHEIN.md)）: 跨境时尚电商　新加坡
+- [Toyota](Toyota/)（[md](Toyota/Toyota.md)）: 汽车制造　丰田市(爱知县)
+- [Honda](Honda/)（[md](Honda/Honda.md)）: 汽车与摩托车　东京
+- [Nissan](Nissan/)（[md](Nissan/Nissan.md)）: 汽车制造　横滨
+- [Volkswagen Group](Volkswagen-Group/)（[md](Volkswagen-Group/Volkswagen-Group.md)）: 汽车集团　沃尔夫斯堡
+- [Mercedes-Benz Group](Mercedes-Benz-Group/)（[md](Mercedes-Benz-Group/Mercedes-Benz-Group.md)）: 汽车制造　斯图加特
+- [BMW Group](BMW-Group/)（[md](BMW-Group/BMW-Group.md)）: 汽车制造　慕尼黑
+- [Audi](Audi/)（[md](Audi/Audi.md)）: 汽车制造　因戈尔施塔特
+- [Porsche](Porsche/)（[md](Porsche/Porsche.md)）: 跑车制造　斯图加特
+- [Tesla](Tesla/)（[md](Tesla/Tesla.md)）: 电动汽车　奥斯汀(得克萨斯州)
+- [General Motors](General-Motors/)（[md](General-Motors/General-Motors.md)）: 汽车制造　底特律
+- [Ford](Ford/)（[md](Ford/Ford.md)）: 汽车制造　迪尔伯恩(密歇根州)
+- [Stellantis](Stellantis/)（[md](Stellantis/Stellantis.md)）: 汽车集团　阿姆斯特丹
+- [Hyundai Motor](Hyundai-Motor/)（[md](Hyundai-Motor/Hyundai-Motor.md)）: 汽车制造　首尔
+- [Kia](Kia/)（[md](Kia/Kia.md)）: 汽车制造　首尔
+- [Volvo Cars](Volvo-Cars/)（[md](Volvo-Cars/Volvo-Cars.md)）: 汽车制造　哥德堡
+- [Ferrari](Ferrari/)（[md](Ferrari/Ferrari.md)）: 跑车制造　马拉内洛
+- [BYD](BYD/)（[md](BYD/BYD.md)）: 新能源汽车与电池　深圳
+- [Geely](Geely/)（[md](Geely/Geely.md)）: 汽车制造　杭州
+- [Chery](Chery/)（[md](Chery/Chery.md)）: 汽车制造　芜湖(安徽省)
+- [Great Wall Motor](Great-Wall-Motor/)（[md](Great-Wall-Motor/Great-Wall-Motor.md)）: 汽车制造　保定(河北省)
+- [Changan Automobile](Changan-Automobile/)（[md](Changan-Automobile/Changan-Automobile.md)）: 汽车制造　重庆
+- [SAIC Motor](SAIC-Motor/)（[md](SAIC-Motor/SAIC-Motor.md)）: 汽车集团　上海
+- [FAW Group](FAW-Group/)（[md](FAW-Group/FAW-Group.md)）: 汽车制造　长春(吉林省)
+- [NIO](NIO/)（[md](NIO/NIO.md)）: 电动汽车　上海
+- [XPeng](XPeng/)（[md](XPeng/XPeng.md)）: 电动汽车　广州
+- [Li Auto](Li-Auto/)（[md](Li-Auto/Li-Auto.md)）: 电动汽车　北京
+- [Xiaomi EV](Xiaomi-EV/)（[md](Xiaomi-EV/Xiaomi-EV.md)）: 电动汽车　北京
+- [Rivian](Rivian/)（[md](Rivian/Rivian.md)）: 电动汽车　尔湾(加利福尼亚州)
+- [Tata Motors](Tata-Motors/)（[md](Tata-Motors/Tata-Motors.md)）: 汽车制造　孟买
+- [JPMorgan Chase](JPMorgan-Chase/)（[md](JPMorgan-Chase/JPMorgan-Chase.md)）: 多元化银行　New York
+- [Bank of America](Bank-of-America/)（[md](Bank-of-America/Bank-of-America.md)）: 多元化银行　Charlotte
+- [Citigroup](Citigroup/)（[md](Citigroup/Citigroup.md)）: 多元化银行　New York
+- [Wells Fargo](Wells-Fargo/)（[md](Wells-Fargo/Wells-Fargo.md)）: 商业银行　San Francisco
+- [Goldman Sachs](Goldman-Sachs/)（[md](Goldman-Sachs/Goldman-Sachs.md)）: 投资银行　New York
+- [Morgan Stanley](Morgan-Stanley/)（[md](Morgan-Stanley/Morgan-Stanley.md)）: 财富管理与投资银行　New York
+- [Visa](Visa/)（[md](Visa/Visa.md)）: 支付网络　San Francisco
+- [Mastercard](Mastercard/)（[md](Mastercard/Mastercard.md)）: 支付网络　Purchase
+- [PayPal](PayPal/)（[md](PayPal/PayPal.md)）: 在线支付　San Jose
+- [American Express](American-Express/)（[md](American-Express/American-Express.md)）: 支付与信用卡　New York
+- [BlackRock](BlackRock/)（[md](BlackRock/BlackRock.md)）: 资产管理　New York
+- [Berkshire Hathaway](Berkshire-Hathaway/)（[md](Berkshire-Hathaway/Berkshire-Hathaway.md)）: 保险与综合投资控股　Omaha
+- [Vanguard](Vanguard/)（[md](Vanguard/Vanguard.md)）: 资产管理　Malvern
+- [Fidelity Investments](Fidelity-Investments/)（[md](Fidelity-Investments/Fidelity-Investments.md)）: 资产管理与经纪　Boston
+- [HSBC](HSBC/)（[md](HSBC/HSBC.md)）: 多元化银行　London
+- [Barclays](Barclays/)（[md](Barclays/Barclays.md)）: 多元化银行　London
+- [Deutsche Bank](Deutsche-Bank/)（[md](Deutsche-Bank/Deutsche-Bank.md)）: 投资银行与商业银行　Frankfurt
+- [Allianz](Allianz/)（[md](Allianz/Allianz.md)）: 保险　Munich
+- [AXA](AXA/)（[md](AXA/AXA.md)）: 保险　Paris
+- [UBS](UBS/)（[md](UBS/UBS.md)）: 财富管理与投资银行　Zurich
+- [Santander](Santander/)（[md](Santander/Santander.md)）: 商业银行　Madrid
+- [BNP Paribas](BNP-Paribas/)（[md](BNP-Paribas/BNP-Paribas.md)）: 多元化银行　Paris
+- [MUFG](MUFG/)（[md](MUFG/MUFG.md)）: 商业银行　Tokyo
+- [Sumitomo Mitsui Financial Group](Sumitomo-Mitsui-Financial-Group/)（[md](Sumitomo-Mitsui-Financial-Group/Sumitomo-Mitsui-Financial-Group.md)）: 商业银行　Tokyo
+- [中国工商银行](中国工商银行/)（[md](中国工商银行/中国工商银行.md)）: 商业银行　北京
+- [中国建设银行](中国建设银行/)（[md](中国建设银行/中国建设银行.md)）: 商业银行　北京
+- [中国农业银行](中国农业银行/)（[md](中国农业银行/中国农业银行.md)）: 商业银行　北京
+- [中国银行](中国银行/)（[md](中国银行/中国银行.md)）: 商业银行　北京
+- [招商银行](招商银行/)（[md](招商银行/招商银行.md)）: 商业银行　深圳
+- [中国平安](中国平安/)（[md](中国平安/中国平安.md)）: 保险与综合金融　深圳
+- [蚂蚁集团](蚂蚁集团/)（[md](蚂蚁集团/蚂蚁集团.md)）: 金融科技与数字支付　杭州
+- [中国人寿](中国人寿/)（[md](中国人寿/中国人寿.md)）: 人寿保险　北京
+- [友邦保险](友邦保险/)（[md](友邦保险/友邦保险.md)）: 人寿保险　香港
+- [Johnson & Johnson](Johnson-Johnson/)（[md](Johnson-Johnson/Johnson-Johnson.md)）: 制药与医疗器械　New Brunswick
+- [Pfizer](Pfizer/)（[md](Pfizer/Pfizer.md)）: 制药　New York
+- [Merck & Co](Merck-Co/)（[md](Merck-Co/Merck-Co.md)）: 制药　Rahway
+- [AbbVie](AbbVie/)（[md](AbbVie/AbbVie.md)）: 生物制药　North Chicago
+- [Eli Lilly](Eli-Lilly/)（[md](Eli-Lilly/Eli-Lilly.md)）: 制药　Indianapolis
+- [Bristol Myers Squibb](Bristol-Myers-Squibb/)（[md](Bristol-Myers-Squibb/Bristol-Myers-Squibb.md)）: 生物制药　New York
+- [Amgen](Amgen/)（[md](Amgen/Amgen.md)）: 生物技术　Thousand Oaks
+- [Gilead Sciences](Gilead-Sciences/)（[md](Gilead-Sciences/Gilead-Sciences.md)）: 生物制药　Foster City
+- [Moderna](Moderna/)（[md](Moderna/Moderna.md)）: 生物技术　Cambridge
+- [Regeneron](Regeneron/)（[md](Regeneron/Regeneron.md)）: 生物技术　Tarrytown
+- [GSK](GSK/)（[md](GSK/GSK.md)）: 制药与疫苗　London
+- [AstraZeneca](AstraZeneca/)（[md](AstraZeneca/AstraZeneca.md)）: 制药　Cambridge
+- [Roche](Roche/)（[md](Roche/Roche.md)）: 制药与诊断　Basel
+- [Novartis](Novartis/)（[md](Novartis/Novartis.md)）: 制药　Basel
+- [Sanofi](Sanofi/)（[md](Sanofi/Sanofi.md)）: 制药与疫苗　Paris
+- [Bayer](Bayer/)（[md](Bayer/Bayer.md)）: 制药与健康农业科学　Leverkusen
+- [Novo Nordisk](Novo-Nordisk/)（[md](Novo-Nordisk/Novo-Nordisk.md)）: 制药　Bagsvaerd
+- [Takeda](Takeda/)（[md](Takeda/Takeda.md)）: 制药　Tokyo
+- [Medtronic](Medtronic/)（[md](Medtronic/Medtronic.md)）: 医疗器械　Dublin
+- [Abbott](Abbott/)（[md](Abbott/Abbott.md)）: 医疗器械与诊断　Abbott Park
+- [Stryker](Stryker/)（[md](Stryker/Stryker.md)）: 医疗器械　Kalamazoo
+- [Boston Scientific](Boston-Scientific/)（[md](Boston-Scientific/Boston-Scientific.md)）: 介入医疗器械　Marlborough
+- [GE HealthCare](GE-HealthCare/)（[md](GE-HealthCare/GE-HealthCare.md)）: 医学影像与诊断设备　Chicago
+- [Siemens Healthineers](Siemens-Healthineers/)（[md](Siemens-Healthineers/Siemens-Healthineers.md)）: 医学影像与诊断设备　Erlangen
+- [Philips](Philips/)（[md](Philips/Philips.md)）: 健康科技与影像设备　Amsterdam
+- [UnitedHealth Group](UnitedHealth-Group/)（[md](UnitedHealth-Group/UnitedHealth-Group.md)）: 健康保险与医疗服务　Minnetonka
+- [CVS Health](CVS-Health/)（[md](CVS-Health/CVS-Health.md)）: 零售药房与健康服务　Woonsocket
+- [McKesson](McKesson/)（[md](McKesson/McKesson.md)）: 医药流通　Irving
+- [迈瑞医疗](迈瑞医疗/)（[md](迈瑞医疗/迈瑞医疗.md)）: 医疗器械　深圳
+- [药明康德](药明康德/)（[md](药明康德/药明康德.md)）: 医药研发生产外包　上海
+- [联影医疗](联影医疗/)（[md](联影医疗/联影医疗.md)）: 医学影像设备　上海
+- [GE Aerospace](GE-Aerospace/)（[md](GE-Aerospace/GE-Aerospace.md)）: 航空发动机　Evendale
+- [GE Vernova](GE-Vernova/)（[md](GE-Vernova/GE-Vernova.md)）: 电力与能源设备　Cambridge
+- [Siemens](Siemens/)（[md](Siemens/Siemens.md)）: 工业自动化与电气　Munich
+- [Siemens Energy](Siemens-Energy/)（[md](Siemens-Energy/Siemens-Energy.md)）: 能源技术与电网设备　Munich
+- [ABB](ABB/)（[md](ABB/ABB.md)）: 电气与自动化　Zurich
+- [Schneider Electric](Schneider-Electric/)（[md](Schneider-Electric/Schneider-Electric.md)）: 电气管理与自动化　Rueil-Malmaison
+- [Honeywell](Honeywell/)（[md](Honeywell/Honeywell.md)）: 工业自动化与航空航天　Charlotte
+- [3M](3M/)（[md](3M/3M.md)）: 多元化工业材料　St. Paul
+- [Caterpillar](Caterpillar/)（[md](Caterpillar/Caterpillar.md)）: 工程机械与动力系统　Irving
+- [Deere & Company](Deere-Company/)（[md](Deere-Company/Deere-Company.md)）: 农业与工程机械　Moline
+- [Boeing](Boeing/)（[md](Boeing/Boeing.md)）: 商用飞机与防务　Arlington
+- [Airbus](Airbus/)（[md](Airbus/Airbus.md)）: 商用飞机与防务航天　Toulouse
+- [Lockheed Martin](Lockheed-Martin/)（[md](Lockheed-Martin/Lockheed-Martin.md)）: 航天与防务　Bethesda
+- [RTX](RTX/)（[md](RTX/RTX.md)）: 航天与防务　Arlington
+- [Rolls-Royce](Rolls-Royce/)（[md](Rolls-Royce/Rolls-Royce.md)）: 航空发动机与动力系统　London
+- [Cummins](Cummins/)（[md](Cummins/Cummins.md)）: 发动机与动力系统　Columbus
+- [Shell](Shell/)（[md](Shell/Shell.md)）: 石油天然气一体化　London
+- [BP](BP/)（[md](BP/BP.md)）: 石油天然气一体化　London
+- [ExxonMobil](ExxonMobil/)（[md](ExxonMobil/ExxonMobil.md)）: 石油天然气一体化　Spring
+- [Chevron](Chevron/)（[md](Chevron/Chevron.md)）: 石油天然气一体化　Houston
+- [TotalEnergies](TotalEnergies/)（[md](TotalEnergies/TotalEnergies.md)）: 石油天然气与电力一体化　Courbevoie
+- [Equinor](Equinor/)（[md](Equinor/Equinor.md)）: 石油天然气与海上风电　Stavanger
+- [Eni](Eni/)（[md](Eni/Eni.md)）: 石油天然气一体化　Rome
+- [SLB](SLB/)（[md](SLB/SLB.md)）: 油田服务　Houston
+- [中国石化](中国石化/)（[md](中国石化/中国石化.md)）: 油气炼化与销售　北京
+- [中国石油](中国石油/)（[md](中国石油/中国石油.md)）: 石油天然气一体化　北京
+- [中国海油](中国海油/)（[md](中国海油/中国海油.md)）: 海上油气勘探开发　北京
+- [国家电网](国家电网/)（[md](国家电网/国家电网.md)）: 电网运营　北京
+- [宁德时代](宁德时代/)（[md](宁德时代/宁德时代.md)）: 动力电池制造　宁德
+- [比亚迪](比亚迪/)（[md](比亚迪/比亚迪.md)）: 电池与新能源整车制造　深圳
+- [隆基绿能](隆基绿能/)（[md](隆基绿能/隆基绿能.md)）: 光伏制造　西安
+- [金风科技](金风科技/)（[md](金风科技/金风科技.md)）: 风电设备　北京
+- [Vestas](Vestas/)（[md](Vestas/Vestas.md)）: 风电设备　Aarhus
+- [Air Liquide](Air-Liquide/)（[md](Air-Liquide/Air-Liquide.md)）: 工业气体　Paris
+- [中国中车](中国中车/)（[md](中国中车/中国中车.md)）: 轨道交通装备　北京
+- [AT&T](ATT/)（[md](ATT/ATT.md)）: 电信运营商　Dallas
+- [Verizon](Verizon/)（[md](Verizon/Verizon.md)）: 电信运营商　New York
+- [T-Mobile US](T-Mobile-US/)（[md](T-Mobile-US/T-Mobile-US.md)）: 电信运营商　Bellevue
+- [Comcast](Comcast/)（[md](Comcast/Comcast.md)）: 有线电视与电信服务　Philadelphia
+- [Vodafone](Vodafone/)（[md](Vodafone/Vodafone.md)）: 电信运营商　Newbury
+- [Deutsche Telekom](Deutsche-Telekom/)（[md](Deutsche-Telekom/Deutsche-Telekom.md)）: 电信运营商　Bonn
+- [Orange](Orange/)（[md](Orange/Orange.md)）: 电信运营商　Issy-les-Moulineaux
+- [Telefónica](Telefnica/)（[md](Telefnica/Telefnica.md)）: 电信运营商　Madrid
+- [América Móvil](Amrica-Mvil/)（[md](Amrica-Mvil/Amrica-Mvil.md)）: 电信运营商　Mexico City
+- [NTT](NTT/)（[md](NTT/NTT.md)）: 电信运营商　Tokyo
+- [SoftBank](SoftBank/)（[md](SoftBank/SoftBank.md)）: 电信运营商与科技投资　Tokyo
+- [中国移动](中国移动/)（[md](中国移动/中国移动.md)）: 电信运营商　北京
+- [中国电信](中国电信/)（[md](中国电信/中国电信.md)）: 电信运营商　北京
+- [中国联通](中国联通/)（[md](中国联通/中国联通.md)）: 电信运营商　北京
+- [SK Telecom](SK-Telecom/)（[md](SK-Telecom/SK-Telecom.md)）: 电信运营商　Seoul
+- [Singtel](Singtel/)（[md](Singtel/Singtel.md)）: 电信运营商　Singapore
+- [7天酒店](7天酒店/)（[md](7天酒店/7天酒店.md)）: 飯店
+- [9gag](9gag/)（[md](9gag/9gag.md)）: 社交媒體
+- [Aikerui Cleaning Technology Co., Ltd.](Aikerui-Cleaning-Technology-Co-Ltd/)（[md](Aikerui-Cleaning-Technology-Co-Ltd/Aikerui-Cleaning-Technology-Co-Ltd.md)）: S.A.
+- [AIM Plastic Co., Limited](AIM-Plastic-Co-Limited/)（[md](AIM-Plastic-Co-Limited/AIM-Plastic-Co-Limited.md)）: 塑料工業
+- [Aukey](Aukey/)（[md](Aukey/Aukey.md)）: 消费电子行业
+- [Baishun Medical Group](Baishun-Medical-Group/)（[md](Baishun-Medical-Group/Baishun-Medical-Group.md)）: 醫療器材
+- [BELI Technologies](BELI-Technologies/)（[md](BELI-Technologies/BELI-Technologies.md)）: 電子專業製造服務
+- [Biortus Biosciences Co., Ltd.](Biortus-Biosciences-Co-Ltd/)（[md](Biortus-Biosciences-Co-Ltd/Biortus-Biosciences-Co-Ltd.md)）: 醫藥產業
+- [CIRCLE Entertainment](CIRCLE-Entertainment/)（[md](CIRCLE-Entertainment/CIRCLE-Entertainment.md)）: 電子遊戲產業
+- [Eliian](Eliian/)（[md](Eliian/Eliian.md)）: 運動服
+- [Fuzz Sofa Studio](Fuzz-Sofa-Studio/)（[md](Fuzz-Sofa-Studio/Fuzz-Sofa-Studio.md)）: furniture industry
+- [Geely Ming Industrial](Geely-Ming-Industrial/)（[md](Geely-Ming-Industrial/Geely-Ming-Industrial.md)）: 摩托車
+- [Gstales](Gstales/)（[md](Gstales/Gstales.md)）: 企業服務
+- [Guangdong Kepu Technology Co., Ltd.](Guangdong-Kepu-Technology-Co-Ltd/)（[md](Guangdong-Kepu-Technology-Co-Ltd/Guangdong-Kepu-Technology-Co-Ltd.md)）: 制造业
+- [Guangzhou Shunxing Hengchang Trading Co., Ltd.](Guangzhou-Shunxing-Hengchang-Trading-Co-Ltd/)（[md](Guangzhou-Shunxing-Hengchang-Trading-Co-Ltd/Guangzhou-Shunxing-Hengchang-Trading-Co-Ltd.md)）: 汽車工業
+- [HCH Bearing Group](HCH-Bearing-Group/)（[md](HCH-Bearing-Group/HCH-Bearing-Group.md)）: Ball and Roller Bearing Manufacturing
+- [Hengrui Biotechnology](Hengrui-Biotechnology/)（[md](Hengrui-Biotechnology/Hengrui-Biotechnology.md)）: 膳食补充剂
+- [HiChip Technology Limited](HiChip-Technology-Limited/)（[md](HiChip-Technology-Limited/HiChip-Technology-Limited.md)）: 微电子学
+- [Hiclawcrane](Hiclawcrane/)（[md](Hiclawcrane/Hiclawcrane.md)）: 電子遊樂場
+- [HOMTOM](HOMTOM/)（[md](HOMTOM/HOMTOM.md)）: 移動電話
+- [Hubei Wunuo Technology Co., Ltd.](Hubei-Wunuo-Technology-Co-Ltd/)（[md](Hubei-Wunuo-Technology-Co-Ltd/Hubei-Wunuo-Technology-Co-Ltd.md)）: 暖通空調
+- [Jiangsu Highstar Battery Manufacturing Co.,Ltd](Jiangsu-Highstar-Battery-Manufacturing-CoLtd/)（[md](Jiangsu-Highstar-Battery-Manufacturing-CoLtd/Jiangsu-Highstar-Battery-Manufacturing-CoLtd.md)）: 电池产业
+- [Jiaxing Legom Technology](Jiaxing-Legom-Technology/)（[md](Jiaxing-Legom-Technology/Jiaxing-Legom-Technology.md)）: 暖通空調
+- [LINKO DTF Printer](LINKO-DTF-Printer/)（[md](LINKO-DTF-Printer/LINKO-DTF-Printer.md)）: printing industry
+- [LS Manufacturing Ltd.](LS-Manufacturing-Ltd/)（[md](LS-Manufacturing-Ltd/LS-Manufacturing-Ltd.md)）: 制造业
+- [PencilsChina](PencilsChina/)（[md](PencilsChina/PencilsChina.md)）: 制造业
+- [PrintPlast](PrintPlast/)（[md](PrintPlast/PrintPlast.md)）: 制造业
+- [Pylon Technologies Co., Ltd.](Pylon-Technologies-Co-Ltd/)（[md](Pylon-Technologies-Co-Ltd/Pylon-Technologies-Co-Ltd.md)）: 储能技术
+- [Rackora](Rackora/)（[md](Rackora/Rackora.md)）: furniture industry
+- [RapidDirect](RapidDirect/)（[md](RapidDirect/RapidDirect.md)）: 制造业
+- [Rayming PCB](Rayming-PCB/)（[md](Rayming-PCB/Rayming-PCB.md)）: 制造业
+- [REDCATT](REDCATT/)（[md](REDCATT/REDCATT.md)）: 电子工业
+- [Redora Jewels](Redora-Jewels/)（[md](Redora-Jewels/Redora-Jewels.md)）: 珠宝艺术
+- [Rene.E Laboratory](ReneE-Laboratory/)（[md](ReneE-Laboratory/ReneE-Laboratory.md)）: 软件开发
+- [Riitek](Riitek/)（[md](Riitek/Riitek.md)）: 消费电子行业
+- [Rusin Display](Rusin-Display/)（[md](Rusin-Display/Rusin-Display.md)）: 显示技术
+- [SENSOIRE](SENSOIRE/)（[md](SENSOIRE/SENSOIRE.md)）: 电子商务
+- [Shanghai HM Miracle Soda](Shanghai-HM-Miracle-Soda/)（[md](Shanghai-HM-Miracle-Soda/Shanghai-HM-Miracle-Soda.md)）: 制造业
+- [Shanghai Newtrend Electric](Shanghai-Newtrend-Electric/)（[md](Shanghai-Newtrend-Electric/Shanghai-Newtrend-Electric.md)）: 制造业
+- [Shenzhen Gainer Electrical Appliances Co., Ltd.](Shenzhen-Gainer-Electrical-Appliances-Co-Ltd/)（[md](Shenzhen-Gainer-Electrical-Appliances-Co-Ltd/Shenzhen-Gainer-Electrical-Appliances-Co-Ltd.md)）: 家用电器
+- [SINOMUSE](SINOMUSE/)（[md](SINOMUSE/SINOMUSE.md)）: Samuel Swinfin Burdett
+- [Sinotece](Sinotece/)（[md](Sinotece/Sinotece.md)）: cement industry
+- [SM控股](SM控股/)（[md](SM控股/SM控股.md)）: 零售
+- [Sunshine Electronics](Sunshine-Electronics/)（[md](Sunshine-Electronics/Sunshine-Electronics.md)）: electronics manufacturer
+- [SVOLT Energy Technology Co., Ltd.](SVOLT-Energy-Technology-Co-Ltd/)（[md](SVOLT-Energy-Technology-Co-Ltd/SVOLT-Energy-Technology-Co-Ltd.md)）: 电池产业
+- [Toseven Motors](Toseven-Motors/)（[md](Toseven-Motors/Toseven-Motors.md)）: 自行车工业
+- [Union Home](Union-Home/)（[md](Union-Home/Union-Home.md)）: 统筹
+- [Velza Global](Velza-Global/)（[md](Velza-Global/Velza-Global.md)）: 饮料产业
+- [Walundi](Walundi/)（[md](Walundi/Walundi.md)）: 服裝業
+- [WeHotel](WeHotel/)（[md](WeHotel/WeHotel.md)）: 接待业
+- [Wismec](Wismec/)（[md](Wismec/Wismec.md)）: 电子工业
+- [Yaqi Brush](Yaqi-Brush/)（[md](Yaqi-Brush/Yaqi-Brush.md)）: 制造业
+- [Yuan Packaging](Yuan-Packaging/)（[md](Yuan-Packaging/Yuan-Packaging.md)）: packaging industry
+- [Zhejiang Balford Mechatronics Co., Ltd.](Zhejiang-Balford-Mechatronics-Co-Ltd/)（[md](Zhejiang-Balford-Mechatronics-Co-Ltd/Zhejiang-Balford-Mechatronics-Co-Ltd.md)）: 制造业
+- [Zhejiang Xintongda Special Steel Manufacturing Co., Ltd.](Zhejiang-Xintongda-Special-Steel-Manufacturing-Co-Ltd/)（[md](Zhejiang-Xintongda-Special-Steel-Manufacturing-Co-Ltd/Zhejiang-Xintongda-Special-Steel-Manufacturing-Co-Ltd.md)）: 钢铁冶金学
+- [Zhengzhou Sungood New Material Technology](Zhengzhou-Sungood-New-Material-Technology/)（[md](Zhengzhou-Sungood-New-Material-Technology/Zhengzhou-Sungood-New-Material-Technology.md)）: 制造业
+- [ZWO Astrophotography](ZWO-Astrophotography/)（[md](ZWO-Astrophotography/ZWO-Astrophotography.md)）: 光学
+- [东风汽车股份有限公司](东风汽车股份有限公司/)（[md](东风汽车股份有限公司/东风汽车股份有限公司.md)）: 汽車工業
+- [中南出版传媒集团](中南出版传媒集团/)（[md](中南出版传媒集团/中南出版传媒集团.md)）: 出版
+- [中国中投证券有限责任公司](中国中投证券有限责任公司/)（[md](中国中投证券有限责任公司/中国中投证券有限责任公司.md)）: 金融服務
+- [中國信達](中國信達/)（[md](中國信達/中國信達.md)）: 金融服務
+- [中國忠旺](中國忠旺/)（[md](中國忠旺/中國忠旺.md)）: 铝业
+- [中國重汽（香港）](中國重汽香港/)（[md](中國重汽香港/中國重汽香港.md)）: 汽車工業
+- [中科曙光](中科曙光/)（[md](中科曙光/中科曙光.md)）: 信息技术
+- [中联重科](中联重科/)（[md](中联重科/中联重科.md)）: 機械工業
+- [中航飛機股份有限公司](中航飛機股份有限公司/)（[md](中航飛機股份有限公司/中航飛機股份有限公司.md)）: 军火工业
+- [中遠海運國際 (香港)](中遠海運國際-香港/)（[md](中遠海運國際-香港/中遠海運國際-香港.md)）: 涂料
+- [中遠海運港口](中遠海運港口/)（[md](中遠海運港口/中遠海運港口.md)）: 物流
+- [九州风神](九州风神/)（[md](九州风神/九州风神.md)）: 计算机硬件行业
+- [亞泰集團](亞泰集團/)（[md](亞泰集團/亞泰集團.md)）: 綜合企業
+- [亿航智能](亿航智能/)（[md](亿航智能/亿航智能.md)）: 航空航天工业
+- [伟易达集团](伟易达集团/)（[md](伟易达集团/伟易达集团.md)）: 电子工业
+- [内蒙古第一机械集团](内蒙古第一机械集团/)（[md](内蒙古第一机械集团/内蒙古第一机械集团.md)）: 国防工业
+- [华晨汽车集团](华晨汽车集团/)（[md](华晨汽车集团/华晨汽车集团.md)）: 汽車工業
+- [华谊兄弟](华谊兄弟/)（[md](华谊兄弟/华谊兄弟.md)）: 电影摄影
+- [南京金龙](南京金龙/)（[md](南京金龙/南京金龙.md)）: 汽車工業
+- [吉林敖東藥業](吉林敖東藥業/)（[md](吉林敖東藥業/吉林敖東藥業.md)）: 醫藥產業
+- [周大福集團](周大福集團/)（[md](周大福集團/周大福集團.md)）: 基础设施
+- [咀香園餅家](咀香園餅家/)（[md](咀香園餅家/咀香園餅家.md)）: 西餅店
+- [和記黃埔](和記黃埔/)（[md](和記黃埔/和記黃埔.md)）: 綜合企業
+- [大众汽车（中国）投资有限公司](大众汽车中国投资有限公司/)（[md](大众汽车中国投资有限公司/大众汽车中国投资有限公司.md)）: 汽車工業
+- [大华股份](大华股份/)（[md](大华股份/大华股份.md)）: 视频监控
+- [天凯唱片](天凯唱片/)（[md](天凯唱片/天凯唱片.md)）: 唱片业
+- [天合光能](天合光能/)（[md](天合光能/天合光能.md)）: 太阳能光伏
+- [宁波银行](宁波银行/)（[md](宁波银行/宁波银行.md)）: 金融服務
+- [山東墨龍](山東墨龍/)（[md](山東墨龍/山東墨龍.md)）: 石油
+- [广州泰基电子有限公司](广州泰基电子有限公司/)（[md](广州泰基电子有限公司/广州泰基电子有限公司.md)）: 绘画
+- [康佳](康佳/)（[md](康佳/康佳.md)）: 电子学
+- [康迪汽车](康迪汽车/)（[md](康迪汽车/康迪汽车.md)）: 汽車工業
+- [康龙化成](康龙化成/)（[md](康龙化成/康龙化成.md)）: 醫藥產業
+- [得利斯集团](得利斯集团/)（[md](得利斯集团/得利斯集团.md)）: 食品产业
+- [惠科股份有限公司](惠科股份有限公司/)（[md](惠科股份有限公司/惠科股份有限公司.md)）: 电子工业
+- [抚顺矿业集团公司](抚顺矿业集团公司/)（[md](抚顺矿业集团公司/抚顺矿业集团公司.md)）: 煤礦坑
+- [攀钢集团有限公司](攀钢集团有限公司/)（[md](攀钢集团有限公司/攀钢集团有限公司.md)）: 钢铁冶金学
+- [文思海辉](文思海辉/)（[md](文思海辉/文思海辉.md)）: 信息技术
+- [新濠國際發展](新濠國際發展/)（[md](新濠國際發展/新濠國際發展.md)）: 綜合企業
+- [新移动通讯](新移动通讯/)（[md](新移动通讯/新移动通讯.md)）: 电信
+- [新鴻基公司](新鴻基公司/)（[md](新鴻基公司/新鴻基公司.md)）: 金融服務
+- [日清食品有限公司](日清食品有限公司/)（[md](日清食品有限公司/日清食品有限公司.md)）: 食品产业
+- [松灵机器人](松灵机器人/)（[md](松灵机器人/松灵机器人.md)）: 機器人學
+- [棒谷](棒谷/)（[md](棒谷/棒谷.md)）: 零售
+- [機場空運中心](機場空運中心/)（[md](機場空運中心/機場空運中心.md)）: 航空
+- [比亞迪電子](比亞迪電子/)（[md](比亞迪電子/比亞迪電子.md)）: 电子工业
+- [永诚财产保险](永诚财产保险/)（[md](永诚财产保险/永诚财产保险.md)）: 保險業
+- [江苏沙钢集团](江苏沙钢集团/)（[md](江苏沙钢集团/江苏沙钢集团.md)）: 钢铁冶金学
+- [河南代代环境科技有限公司](河南代代环境科技有限公司/)（[md](河南代代环境科技有限公司/河南代代环境科技有限公司.md)）: 信息技术
+- [济南英斯曼机械有限公司](济南英斯曼机械有限公司/)（[md](济南英斯曼机械有限公司/济南英斯曼机械有限公司.md)）: 制造业
+- [海逸國際酒店集團](海逸國際酒店集團/)（[md](海逸國際酒店集團/海逸國際酒店集團.md)）: 酒店管理方
+- [浸门文化](浸门文化/)（[md](浸门文化/浸门文化.md)）: 娛樂
+- [深圳市晶胜进出口有限公司](深圳市晶胜进出口有限公司/)（[md](深圳市晶胜进出口有限公司/深圳市晶胜进出口有限公司.md)）: 照明
+- [深圳控股](深圳控股/)（[md](深圳控股/深圳控股.md)）: 綜合企業
+- [漢思集團](漢思集團/)（[md](漢思集團/漢思集團.md)）: 能源工業
+- [漢語世界](漢語世界/)（[md](漢語世界/漢語世界.md)）: 出版
+- [無綫集團](無綫集團/)（[md](無綫集團/無綫集團.md)）: 電視
+- [現代貨箱碼頭](現代貨箱碼頭/)（[md](現代貨箱碼頭/現代貨箱碼頭.md)）: 貨櫃碼頭
+- [瑰麗酒店集團](瑰麗酒店集團/)（[md](瑰麗酒店集團/瑰麗酒店集團.md)）: 接待业
+- [石藥集團](石藥集團/)（[md](石藥集團/石藥集團.md)）: 醫藥產業
+- [聊城杰德农林装备有限公司](聊城杰德农林装备有限公司/)（[md](聊城杰德农林装备有限公司/聊城杰德农林装备有限公司.md)）: 吹葉機
+- [荣宝斋](荣宝斋/)（[md](荣宝斋/荣宝斋.md)）: 文具
+- [萬洲國際](萬洲國際/)（[md](萬洲國際/萬洲國際.md)）: 农业
+- [西安航空发动机公司](西安航空发动机公司/)（[md](西安航空发动机公司/西安航空发动机公司.md)）: 航空航天工业
+- [贵州茅台酒股份有限公司](贵州茅台酒股份有限公司/)（[md](贵州茅台酒股份有限公司/贵州茅台酒股份有限公司.md)）: 酒业
+- [辽宁精控节拍机器人有限公司](辽宁精控节拍机器人有限公司/)（[md](辽宁精控节拍机器人有限公司/辽宁精控节拍机器人有限公司.md)）: medical technology industry
+- [遼寧成大](遼寧成大/)（[md](遼寧成大/遼寧成大.md)）: 綜合企業
+- [金風科技](金風科技/)（[md](金風科技/金風科技.md)）: wind power industry
+- [长安福特马自达](长安福特马自达/)（[md](长安福特马自达/长安福特马自达.md)）: 汽車工業
+- [飞傲](飞傲/)（[md](飞傲/飞傲.md)）: 音響
+- [首程控股](首程控股/)（[md](首程控股/首程控股.md)）: 钢铁冶金学
+- [馳為](馳為/)（[md](馳為/馳為.md)）: 电子学
+- [高云](高云/)（[md](高云/高云.md)）: 半導體產業
+- [AAI公司](AAI公司/)（[md](AAI公司/AAI公司.md)）: 航空航天工业
+- [Acclaim娛樂公司](Acclaim娛樂公司/)（[md](Acclaim娛樂公司/Acclaim娛樂公司.md)）: 電子遊戲產業
+- [ADC Telecommunications](ADC-Telecommunications/)（[md](ADC-Telecommunications/ADC-Telecommunications.md)）: 电信
+- [ADP (公司)](ADP-公司/)（[md](ADP-公司/ADP-公司.md)）: 軟件產業
+- [Aerion](Aerion/)（[md](Aerion/Aerion.md)）: 航空航天工业
+- [Aerojet](Aerojet/)（[md](Aerojet/Aerojet.md)）: 航空航天工业
+- [AMC電影院](AMC電影院/)（[md](AMC電影院/AMC電影院.md)）: 娛樂
+- [Ampex](Ampex/)（[md](Ampex/Ampex.md)）: 数据管理
+- [Anchor Brewing Company](Anchor-Brewing-Company/)（[md](Anchor-Brewing-Company/Anchor-Brewing-Company.md)）: 酿酒业
+- [ANSYS公司](ANSYS公司/)（[md](ANSYS公司/ANSYS公司.md)）: software publishing
+- [APA Corporation](APA-Corporation/)（[md](APA-Corporation/APA-Corporation.md)）: 石油产业
+- [Bath & Body Works](Bath-Body-Works/)（[md](Bath-Body-Works/Bath-Body-Works.md)）: 制成品
+- [CBS集团](CBS集团/)（[md](CBS集团/CBS集团.md)）: 電視
+- [CF Industries](CF-Industries/)（[md](CF-Industries/CF-Industries.md)）: 化学工业
+- [Compaq](Compaq/)（[md](Compaq/Compaq.md)）: 資訊業
+- [CompTIA](CompTIA/)（[md](CompTIA/CompTIA.md)）: business and professional associations, unions
+- [Dean Guitars](Dean-Guitars/)（[md](Dean-Guitars/Dean-Guitars.md)）: 乐器
+- [Digium](Digium/)（[md](Digium/Digium.md)）: 电信
+- [Dollar General](Dollar-General/)（[md](Dollar-General/Dollar-General.md)）: 零售
+- [EG&G](EGG/)（[md](EGG/EGG.md)）: 工业探伤
+- [Equinix](Equinix/)（[md](Equinix/Equinix.md)）: 互聯網
+- [Groupon](Groupon/)（[md](Groupon/Groupon.md)）: 电子商务
+- [ITT公司](ITT公司/)（[md](ITT公司/ITT公司.md)）: 制造业
+- [Jet](Jet/)（[md](Jet/Jet.md)）: 石油产业
+- [Juniper Networks](Juniper-Networks/)（[md](Juniper-Networks/Juniper-Networks.md)）: 技术
+- [Macromedia](Macromedia/)（[md](Macromedia/Macromedia.md)）: 軟件產業
+- [Marathon Petroleum](Marathon-Petroleum/)（[md](Marathon-Petroleum/Marathon-Petroleum.md)）: 石油产业
+- [Micrografx](Micrografx/)（[md](Micrografx/Micrografx.md)）: 绘图软件
+- [NCR公司](NCR公司/)（[md](NCR公司/NCR公司.md)）: 信息通信技术
+- [OpenTable](OpenTable/)（[md](OpenTable/OpenTable.md)）: 美食學
+- [PPG工业集团](PPG工业集团/)（[md](PPG工业集团/PPG工业集团.md)）: 玻璃
+- [RCA](RCA/)（[md](RCA/RCA.md)）: 电子学
+- [Red Wing Shoes](Red-Wing-Shoes/)（[md](Red-Wing-Shoes/Red-Wing-Shoes.md)）: 鞋匠
+- [S3 Graphics](S3-Graphics/)（[md](S3-Graphics/S3-Graphics.md)）: 计算机硬件行业
+- [SANS研究所](SANS研究所/)（[md](SANS研究所/SANS研究所.md)）: 计算机安全
+- [Schecter Guitar Research](Schecter-Guitar-Research/)（[md](Schecter-Guitar-Research/Schecter-Guitar-Research.md)）: 乐器
+- [Sirius卫星收音机](Sirius卫星收音机/)（[md](Sirius卫星收音机/Sirius卫星收音机.md)）: 電台廣播
+- [Skyline Chili](Skyline-Chili/)（[md](Skyline-Chili/Skyline-Chili.md)）: fast food industry
+- [TRW公司](TRW公司/)（[md](TRW公司/TRW公司.md)）: 航空航天工业
+- [Vivmark Residential](Vivmark-Residential/)（[md](Vivmark-Residential/Vivmark-Residential.md)）: real estate industry
+- [Zilog](Zilog/)（[md](Zilog/Zilog.md)）: 半導體產業
+- [世界冠軍摔角](世界冠軍摔角/)（[md](世界冠軍摔角/世界冠軍摔角.md)）: 职业摔角
+- [世界摔角協會](世界摔角協會/)（[md](世界摔角協會/世界摔角協會.md)）: 职业摔角
+- [佳得乐](佳得乐/)（[md](佳得乐/佳得乐.md)）: 食品产业
+- [俄亥俄谷摔角](俄亥俄谷摔角/)（[md](俄亥俄谷摔角/俄亥俄谷摔角.md)）: 职业摔角
+- [優利系統](優利系統/)（[md](優利系統/優利系統.md)）: 資訊科技服務管理
+- [克羅格](克羅格/)（[md](克羅格/克羅格.md)）: 零售
+- [凯雷集团](凯雷集团/)（[md](凯雷集团/凯雷集团.md)）: 金融服務
+- [博士伦](博士伦/)（[md](博士伦/博士伦.md)）: 醫藥產業
+- [博士音響](博士音響/)（[md](博士音響/博士音響.md)）: 电子工业
+- [史密斯威森](史密斯威森/)（[md](史密斯威森/史密斯威森.md)）: 军火工业
+- [唐先生甜甜圈](唐先生甜甜圈/)（[md](唐先生甜甜圈/唐先生甜甜圈.md)）: 快餐连锁餐厅
+- [嘉宝产品公司](嘉宝产品公司/)（[md](嘉宝产品公司/嘉宝产品公司.md)）: 食品产业
+- [固特异](固特异/)（[md](固特异/固特异.md)）: 制造业
+- [埃克森美孚](埃克森美孚/)（[md](埃克森美孚/埃克森美孚.md)）: 石油产业
+- [塞拉尼斯](塞拉尼斯/)（[md](塞拉尼斯/塞拉尼斯.md)）: 化学工业
+- [奇異運輸](奇異運輸/)（[md](奇異運輸/奇異運輸.md)）: 运输
+- [安捷伦科技有限公司](安捷伦科技有限公司/)（[md](安捷伦科技有限公司/安捷伦科技有限公司.md)）: 高效液相色谱法
+- [安舒茨娛樂集團](安舒茨娛樂集團/)（[md](安舒茨娛樂集團/安舒茨娛樂集團.md)）: 娛樂產業
+- [富兰克林邓普顿基金](富兰克林邓普顿基金/)（[md](富兰克林邓普顿基金/富兰克林邓普顿基金.md)）: 金融服務
+- [富樂客](富樂客/)（[md](富樂客/富樂客.md)）: 零售
+- [尼曼](尼曼/)（[md](尼曼/尼曼.md)）: 零售
+- [布克兄弟](布克兄弟/)（[md](布克兄弟/布克兄弟.md)）: 零售
+- [康卡斯特](康卡斯特/)（[md](康卡斯特/康卡斯特.md)）: 電信業
+- [弗雷德瑞特工作室](弗雷德瑞特工作室/)（[md](弗雷德瑞特工作室/弗雷德瑞特工作室.md)）: 電影產業
+- [彼得比爾特](彼得比爾特/)（[md](彼得比爾特/彼得比爾特.md)）: 汽車工業
+- [思杰系统](思杰系统/)（[md](思杰系统/思杰系统.md)）: 技术
+- [戰鬥區摔角](戰鬥區摔角/)（[md](戰鬥區摔角/戰鬥區摔角.md)）: 职业摔角
+- [房利美](房利美/)（[md](房利美/房利美.md)）: 金融服務
+- [房地美](房地美/)（[md](房地美/房地美.md)）: 金融服務
+- [挪威郵輪](挪威郵輪/)（[md](挪威郵輪/挪威郵輪.md)）: 旅游
+- [探索通信](探索通信/)（[md](探索通信/探索通信.md)）: 大眾媒體
+- [摩托罗拉解决方案](摩托罗拉解决方案/)（[md](摩托罗拉解决方案/摩托罗拉解决方案.md)）: 電信業
+- [新闻集团](新闻集团/)（[md](新闻集团/新闻集团.md)）: 大眾媒體
+- [日蚀飛機公司](日蚀飛機公司/)（[md](日蚀飛機公司/日蚀飛機公司.md)）: 航空航天工业
+- [昆泰](昆泰/)（[md](昆泰/昆泰.md)）: 醫藥產業
+- [柯爾曼](柯爾曼/)（[md](柯爾曼/柯爾曼.md)）: 運動用品
+- [标普全球](标普全球/)（[md](标普全球/标普全球.md)）: 金融服務
+- [極限冠軍摔角](極限冠軍摔角/)（[md](極限冠軍摔角/極限冠軍摔角.md)）: 职业摔角
+- [榮耀擂台摔角](榮耀擂台摔角/)（[md](榮耀擂台摔角/榮耀擂台摔角.md)）: 职业摔角
+- [洛克达因公司](洛克达因公司/)（[md](洛克达因公司/洛克达因公司.md)）: 航空航天工业
+- [海洋世界娱乐集团](海洋世界娱乐集团/)（[md](海洋世界娱乐集团/海洋世界娱乐集团.md)）: 休闲产业
+- [湯米席爾菲格股份有限公司](湯米席爾菲格股份有限公司/)（[md](湯米席爾菲格股份有限公司/湯米席爾菲格股份有限公司.md)）: 零售
+- [潘那維申公司](潘那維申公司/)（[md](潘那維申公司/潘那維申公司.md)）: 電影產業
+- [爱科](爱科/)（[md](爱科/爱科.md)）: 制造业
+- [特斯提爾埃斯庫多](特斯提爾埃斯庫多/)（[md](特斯提爾埃斯庫多/特斯提爾埃斯庫多.md)）: 金融服務
+- [狮门娱乐](狮门娱乐/)（[md](狮门娱乐/狮门娱乐.md)）: 演藝界
+- [科威](科威/)（[md](科威/科威.md)）: real estate industry
+- [科蒂集團](科蒂集團/)（[md](科蒂集團/科蒂集團.md)）: 化妆品工业
+- [米高梅電視公司](米高梅電視公司/)（[md](米高梅電視公司/米高梅電視公司.md)）: 互動式多媒體
+- [紅帽公司](紅帽公司/)（[md](紅帽公司/紅帽公司.md)）: 軟件產業
+- [維亞康姆](維亞康姆/)（[md](維亞康姆/維亞康姆.md)）: 媒体产业
+- [纽约梅隆银行](纽约梅隆银行/)（[md](纽约梅隆银行/纽约梅隆银行.md)）: 銀行業
+- [罗克韦尔柯林斯](罗克韦尔柯林斯/)（[md](罗克韦尔柯林斯/罗克韦尔柯林斯.md)）: 航空航天工业
+- [羅賓遜全球物流](羅賓遜全球物流/)（[md](羅賓遜全球物流/羅賓遜全球物流.md)）: 物流
+- [美国BD公司](美国BD公司/)（[md](美国BD公司/美国BD公司.md)）: 生物技术
+- [美國哥倫比亞運動服裝公司](美國哥倫比亞運動服裝公司/)（[md](美國哥倫比亞運動服裝公司/美國哥倫比亞運動服裝公司.md)）: 纺织业
+- [美國國際集團](美國國際集團/)（[md](美國國際集團/美國國際集團.md)）: 金融服務
+- [美國銀行](美國銀行/)（[md](美國銀行/美國銀行.md)）: 金融服務
+- [美國雅培](美國雅培/)（[md](美國雅培/美國雅培.md)）: medical technology industry
+- [美國電力公司](美國電力公司/)（[md](美國電力公司/美國電力公司.md)）: 發電
+- [美林证券](美林证券/)（[md](美林证券/美林证券.md)）: 金融服務
+- [美泰兒](美泰兒/)（[md](美泰兒/美泰兒.md)）: 遊戲產業
+- [聯邦住宅貸款銀行](聯邦住宅貸款銀行/)（[md](聯邦住宅貸款銀行/聯邦住宅貸款銀行.md)）: 銀行業
+- [舍溫-威廉斯](舍溫-威廉斯/)（[md](舍溫-威廉斯/舍溫-威廉斯.md)）: 化学工业
+- [航空環境公司](航空環境公司/)（[md](航空環境公司/航空環境公司.md)）: 航空航天工业
+- [莫帕爾](莫帕爾/)（[md](莫帕爾/莫帕爾.md)）: 汽車零件供應商
+- [蒂芙尼公司](蒂芙尼公司/)（[md](蒂芙尼公司/蒂芙尼公司.md)）: 零售
+- [诺德斯特龙百货公司](诺德斯特龙百货公司/)（[md](诺德斯特龙百货公司/诺德斯特龙百货公司.md)）: 零售
+- [資本集團](資本集團/)（[md](資本集團/資本集團.md)）: 金融服務
+- [贝灵巧公司](贝灵巧公司/)（[md](贝灵巧公司/贝灵巧公司.md)）: film equipment industry
+- [赛默飞世尔科技](赛默飞世尔科技/)（[md](赛默飞世尔科技/赛默飞世尔科技.md)）: biotechnology industry
+- [赫斯特国际集团](赫斯特国际集团/)（[md](赫斯特国际集团/赫斯特国际集团.md)）: 媒体产业
+- [迪凯思](迪凯思/)（[md](迪凯思/迪凯思.md)）: 服裝業
+- [通用动力](通用动力/)（[md](通用动力/通用动力.md)）: 机械工程
+- [阿尔蒂斯美国](阿尔蒂斯美国/)（[md](阿尔蒂斯美国/阿尔蒂斯美国.md)）: 電信業
+- [雷多斯](雷多斯/)（[md](雷多斯/雷多斯.md)）: 國防合約商
+- [食品機械公司](食品機械公司/)（[md](食品機械公司/食品機械公司.md)）: 化学工业
+- [高樂氏](高樂氏/)（[md](高樂氏/高樂氏.md)）: 食品产业
+- [麦赛福格森](麦赛福格森/)（[md](麦赛福格森/麦赛福格森.md)）: 农业
+- [Akai](Akai/)（[md](Akai/Akai.md)）: 电子学
+- [APEX Corporation](APEX-Corporation/)（[md](APEX-Corporation/APEX-Corporation.md)）: 遥感
+- [Araigumi](Araigumi/)（[md](Araigumi/Araigumi.md)）: 建筑业
+- [Araya Inc.](Araya-Inc/)（[md](Araya-Inc/Araya-Inc.md)）: 人工智能
+- [ARCHECO Inc.](ARCHECO-Inc/)（[md](ARCHECO-Inc/ARCHECO-Inc.md)）: 管理咨询
+- [ARGANIE LLC.](ARGANIE-LLC/)（[md](ARGANIE-LLC/ARGANIE-LLC.md)）: Jan Hendriks
+- [Big Echo](Big-Echo/)（[md](Big-Echo/Big-Echo.md)）: 电子学
+- [BitTrade](BitTrade/)（[md](BitTrade/BitTrade.md)）: 金融服務
+- [BRAINSROOT](BRAINSROOT/)（[md](BRAINSROOT/BRAINSROOT.md)）: 软件开发
+- [BrightKey](BrightKey/)（[md](BrightKey/BrightKey.md)）: 教育
+- [Camel Coffee](Camel-Coffee/)（[md](Camel-Coffee/Camel-Coffee.md)）: 餐飲業
+- [Casselini](Casselini/)（[md](Casselini/Casselini.md)）: 服裝業
+- [CELM](CELM/)（[md](CELM/CELM.md)）: 管理咨询
+- [Coach A](Coach-A/)（[md](Coach-A/Coach-A.md)）: 管理咨询
+- [CTW Inc.](CTW-Inc/)（[md](CTW-Inc/CTW-Inc.md)）: 電子遊戲產業
+- [DOWA Metals & Mining Co., Ltd.](DOWA-Metals-Mining-Co-Ltd/)（[md](DOWA-Metals-Mining-Co-Ltd/DOWA-Metals-Mining-Co-Ltd.md)）: metal recycling
+- [DroR](DroR/)（[md](DroR/DroR.md)）: 管理咨询
+- [Fuji Sogo Printing Co., Ltd.](Fuji-Sogo-Printing-Co-Ltd/)（[md](Fuji-Sogo-Printing-Co-Ltd/Fuji-Sogo-Printing-Co-Ltd.md)）: printing industry
+- [Fulltime System](Fulltime-System/)（[md](Fulltime-System/Fulltime-System.md)）: 第三產業
+- [GEM SCHOOL](GEM-SCHOOL/)（[md](GEM-SCHOOL/GEM-SCHOOL.md)）: 教授英文
+- [GReddy](GReddy/)（[md](GReddy/GReddy.md)）: 汽車工業
+- [GS Yuasa Energy](GS-Yuasa-Energy/)（[md](GS-Yuasa-Energy/GS-Yuasa-Energy.md)）: 电池产业
+- [Hakusan Inc.](Hakusan-Inc/)（[md](Hakusan-Inc/Hakusan-Inc.md)）: 光通訊
+- [HANAMII, Inc.](HANAMII-Inc/)（[md](HANAMII-Inc/HANAMII-Inc.md)）: 雲端運算
+- [Inside Growth Co., Ltd.](Inside-Growth-Co-Ltd/)（[md](Inside-Growth-Co-Ltd/Inside-Growth-Co-Ltd.md)）: temporary work agency
+- [Japan Music Entertainment General Incorporated Association](Japan-Music-Entertainment-General-Incorporated-Association/)（[md](Japan-Music-Entertainment-General-Incorporated-Association/Japan-Music-Entertainment-General-Incorporated-Association.md)）: 娛樂
+- [JEJ ASTAGE](JEJ-ASTAGE/)（[md](JEJ-ASTAGE/JEJ-ASTAGE.md)）: 制造业
+- [Josys](Josys/)（[md](Josys/Josys.md)）: 身份管理
+- [KADOKAWA Architecture](KADOKAWA-Architecture/)（[md](KADOKAWA-Architecture/KADOKAWA-Architecture.md)）: 出版
+- [KIDO MEIMOKU](KIDO-MEIMOKU/)（[md](KIDO-MEIMOKU/KIDO-MEIMOKU.md)）: 家具
+- [Ko-ken Tool](Ko-ken-Tool/)（[md](Ko-ken-Tool/Ko-ken-Tool.md)）: Manufacturing
+- [Kobayashi Kako](Kobayashi-Kako/)（[md](Kobayashi-Kako/Kobayashi-Kako.md)）: 醫藥產業
+- [KODAMA Co., Ltd.](KODAMA-Co-Ltd/)（[md](KODAMA-Co-Ltd/KODAMA-Co-Ltd.md)）: 镀层
+- [Kumejima Ocean Jet](Kumejima-Ocean-Jet/)（[md](Kumejima-Ocean-Jet/Kumejima-Ocean-Jet.md)）: 航运
+- [L7 Ltd.,](L7-Ltd/)（[md](L7-Ltd/L7-Ltd.md)）: 波蘭國徽
+- [Lustre Housekeeping G.K.](Lustre-Housekeeping-GK/)（[md](Lustre-Housekeeping-GK/Lustre-Housekeeping-GK.md)）: 接待业
+- [Luvina Software Joint Stock Company](Luvina-Software-Joint-Stock-Company/)（[md](Luvina-Software-Joint-Stock-Company/Luvina-Software-Joint-Stock-Company.md)）: 信息技术
+- [Meisei Electric](Meisei-Electric/)（[md](Meisei-Electric/Meisei-Electric.md)）: 电子学
+- [Mercury Technology Solution Company Limited](Mercury-Technology-Solution-Company-Limited/)（[md](Mercury-Technology-Solution-Company-Limited/Mercury-Technology-Solution-Company-Limited.md)）: agency
+- [Milbon](Milbon/)（[md](Milbon/Milbon.md)）: 消费品行业
+- [Mind Melt Co., Ltd.](Mind-Melt-Co-Ltd/)（[md](Mind-Melt-Co-Ltd/Mind-Melt-Co-Ltd.md)）: 市场营销
+- [MTO](MTO/)（[md](MTO/MTO.md)）: 電子遊戲產業
+- [Mumyōsha Shuppan](Mumysha-Shuppan/)（[md](Mumysha-Shuppan/Mumysha-Shuppan.md)）: 出版
+- [Naigai Textile Co., Ltd.](Naigai-Textile-Co-Ltd/)（[md](Naigai-Textile-Co-Ltd/Naigai-Textile-Co-Ltd.md)）: 紡織工業
+- [Nakasone Kojiya](Nakasone-Kojiya/)（[md](Nakasone-Kojiya/Nakasone-Kojiya.md)）: 食品产业
+- [Netsujo Inc.](Netsujo-Inc/)（[md](Netsujo-Inc/Netsujo-Inc.md)）: 人工智能
+- [NX Engineering](NX-Engineering/)（[md](NX-Engineering/NX-Engineering.md)）: 建筑业
+- [NX Information Systems](NX-Information-Systems/)（[md](NX-Information-Systems/NX-Information-Systems.md)）: 信息技术产业
+- [NX Shoji](NX-Shoji/)（[md](NX-Shoji/NX-Shoji.md)）: 批發
+- [OOAKS Inc.](OOAKS-Inc/)（[md](OOAKS-Inc/OOAKS-Inc.md)）: 市场营销
+- [Ozaki Kappu Kogei](Ozaki-Kappu-Kogei/)（[md](Ozaki-Kappu-Kogei/Ozaki-Kappu-Kogei.md)）: 纺织业
+- [PIVOT](PIVOT/)（[md](PIVOT/PIVOT.md)）: 汽車工業
+- [Polyphony Digital](Polyphony-Digital/)（[md](Polyphony-Digital/Polyphony-Digital.md)）: 電子遊戲產業
+- [renovy](renovy/)（[md](renovy/renovy.md)）: 室内设计
+- [SEIBUNSHA INTERNATIONAL](SEIBUNSHA-INTERNATIONAL/)（[md](SEIBUNSHA-INTERNATIONAL/SEIBUNSHA-INTERNATIONAL.md)）: 零售
+- [Sendai Aoba Seika](Sendai-Aoba-Seika/)（[md](Sendai-Aoba-Seika/Sendai-Aoba-Seika.md)）: Q11409188
+- [SmartHR](SmartHR/)（[md](SmartHR/SmartHR.md)）: 軟件產業
+- [SMBC信託銀行](SMBC信託銀行/)（[md](SMBC信託銀行/SMBC信託銀行.md)）: 銀行業
+- [Sofmap](Sofmap/)（[md](Sofmap/Sofmap.md)）: 零售
+- [STAR☆FISH](STARFISH/)（[md](STARFISH/STARFISH.md)）: 電子遊戲產業
+- [Stepup Communications](Stepup-Communications/)（[md](Stepup-Communications/Stepup-Communications.md)）: Management Consulting
+- [Styleworks Inc.](Styleworks-Inc/)（[md](Styleworks-Inc/Styleworks-Inc.md)）: 服裝業
+- [Takoman](Takoman/)（[md](Takoman/Takoman.md)）: Manufacture of Food
+- [Teambox](Teambox/)（[md](Teambox/Teambox.md)）: 管理咨询
+- [TES Capital Co., Ltd.](TES-Capital-Co-Ltd/)（[md](TES-Capital-Co-Ltd/TES-Capital-Co-Ltd.md)）: real estate industry
+- [Toppan Printing](Toppan-Printing/)（[md](Toppan-Printing/Toppan-Printing.md)）: 制造业
+- [Toyosaka kotsu](Toyosaka-kotsu/)（[md](Toyosaka-kotsu/Toyosaka-kotsu.md)）: 交通运输业
+- [Woven by Toyota](Woven-by-Toyota/)（[md](Woven-by-Toyota/Woven-by-Toyota.md)）: 汽車工業
+- [XTalent, Inc.](XTalent-Inc/)（[md](XTalent-Inc/XTalent-Inc.md)）: 人力仲介
+- [Yoii Inc.](Yoii-Inc/)（[md](Yoii-Inc/Yoii-Inc.md)）: 金融服務
+- [ZTV](ZTV/)（[md](ZTV/ZTV.md)）: 有线电视
+- [三井住友銀行](三井住友銀行/)（[md](三井住友銀行/三井住友銀行.md)）: 金融服務
+- [下段汽車](下段汽車/)（[md](下段汽車/下段汽車.md)）: 零售
+- [光村图书出版](光村图书出版/)（[md](光村图书出版/光村图书出版.md)）: 出版
+- [吳羽](吳羽/)（[md](吳羽/吳羽.md)）: 化学工业
+- [和冠](和冠/)（[md](和冠/和冠.md)）: 计算机硬件行业
+- [崇光・西武](崇光西武/)（[md](崇光西武/崇光西武.md)）: 零售
+- [摩托车和发动机部门](摩托车和发动机部门/)（[md](摩托车和发动机部门/摩托车和发动机部门.md)）: motorcycle industry
+- [日產賽車運動國際](日產賽車運動國際/)（[md](日產賽車運動國際/日產賽車運動國際.md)）: 汽車工業
+- [星辰表](星辰表/)（[md](星辰表/星辰表.md)）: 鐘錶學
+- [柯尼卡](柯尼卡/)（[md](柯尼卡/柯尼卡.md)）: 攝影
+- [爾必達](爾必達/)（[md](爾必達/爾必達.md)）: 半導體產業
+- [理科 (企業)](理科-企業/)（[md](理科-企業/理科-企業.md)）: 精密机械
+- [福井放送](福井放送/)（[md](福井放送/福井放送.md)）: 電視聯播網
+- [精工](精工/)（[md](精工/精工.md)）: manufacture of watches and clocks
+- [精工儀器](精工儀器/)（[md](精工儀器/精工儀器.md)）: 电子学
+- [西友](西友/)（[md](西友/西友.md)）: 零售
+- [飛龍文具](飛龍文具/)（[md](飛龍文具/飛龍文具.md)）: 造紙業
+- [高砂香料工業](高砂香料工業/)（[md](高砂香料工業/高砂香料工業.md)）: 化学工业
+- [麒麟啤酒](麒麟啤酒/)（[md](麒麟啤酒/麒麟啤酒.md)）: 酿酒业
+- [2G Energy](2G-Energy/)（[md](2G-Energy/2G-Energy.md)）: 可再生能源
+- [AgileLAB GmbH](AgileLAB-GmbH/)（[md](AgileLAB-GmbH/AgileLAB-GmbH.md)）: management consulting industry
+- [AOT GmbH](AOT-GmbH/)（[md](AOT-GmbH/AOT-GmbH.md)）: 食品产业
+- [Arcor](Arcor/)（[md](Arcor/Arcor.md)）: 电信
+- [Auto-Intern GmbH](Auto-Intern-GmbH/)（[md](Auto-Intern-GmbH/Auto-Intern-GmbH.md)）: 电子工业
+- [Avoxa](Avoxa/)（[md](Avoxa/Avoxa.md)）: 活动管理
+- [BayWa](BayWa/)（[md](BayWa/BayWa.md)）: 零售
+- [Berliner Wohnungsauflösungen](Berliner-Wohnungsauflsungen/)（[md](Berliner-Wohnungsauflsungen/Berliner-Wohnungsauflsungen.md)）: service sector
+- [Bernhard Assekuranz](Bernhard-Assekuranz/)（[md](Bernhard-Assekuranz/Bernhard-Assekuranz.md)）: insurance intermediation
+- [CAS Software AG](CAS-Software-AG/)（[md](CAS-Software-AG/CAS-Software-AG.md)）: 軟件產業
+- [Clearway Capital](Clearway-Capital/)（[md](Clearway-Capital/Clearway-Capital.md)）: 对冲基金
+- [COREY Management GmbH](COREY-Management-GmbH/)（[md](COREY-Management-GmbH/COREY-Management-GmbH.md)）: 金融服務
+- [Corilon violins](Corilon-violins/)（[md](Corilon-violins/Corilon-violins.md)）: musical instrument making
+- [Creato](Creato/)（[md](Creato/Creato.md)）: 达人营销
+- [DPS Business Solutions GmbH](DPS-Business-Solutions-GmbH/)（[md](DPS-Business-Solutions-GmbH/DPS-Business-Solutions-GmbH.md)）: 軟件產業
+- [Elantas](Elantas/)（[md](Elantas/Elantas.md)）: 電氣工業
+- [Energy Building](Energy-Building/)（[md](Energy-Building/Energy-Building.md)）: energy consulting
+- [ENTEGA AG](ENTEGA-AG/)（[md](ENTEGA-AG/ENTEGA-AG.md)）: energy sector
+- [Erdgas Südwest Service GmbH](Erdgas-Sdwest-Service-GmbH/)（[md](Erdgas-Sdwest-Service-GmbH/Erdgas-Sdwest-Service-GmbH.md)）: 暖通空調
+- [ERP 4 Business: Myfactory, Mesonic und Docuvita Partner - ERP & DMS für Fertigung und Produktion](ERP-4-Business-Myfactory-Mesonic-und-Docuvita-Partner-ERP-DMS-fr-Fertigung-und-Produktion/)（[md](ERP-4-Business-Myfactory-Mesonic-und-Docuvita-Partner-ERP-DMS-fr-Fertigung-und-Produktion/ERP-4-Business-Myfactory-Mesonic-und-Docuvita-Partner-ERP-DMS-fr-Fertigung-und-Produktion.md)）: 信息技術諮詢
+- [ESSERT GmbH](ESSERT-GmbH/)（[md](ESSERT-GmbH/ESSERT-GmbH.md)）: 機器人學
+- [Flowgrade GmbH](Flowgrade-GmbH/)（[md](Flowgrade-GmbH/Flowgrade-GmbH.md)）: 健康
+- [freispace GmbH](freispace-GmbH/)（[md](freispace-GmbH/freispace-GmbH.md)）: 軟件產業
+- [Fresenius Kabi](Fresenius-Kabi/)（[md](Fresenius-Kabi/Fresenius-Kabi.md)）: 醫藥產業
+- [Genki](Genki/)（[md](Genki/Genki.md)）: 保險
+- [Großmarkt Rostock](Gromarkt-Rostock/)（[md](Gromarkt-Rostock/Gromarkt-Rostock.md)）: event sector
+- [Gutachter Koop](Gutachter-Koop/)（[md](Gutachter-Koop/Gutachter-Koop.md)）: 文化研究
+- [H & S Bike Discount](H-S-Bike-Discount/)（[md](H-S-Bike-Discount/H-S-Bike-Discount.md)）: bicycle manufacturing
+- [Harrassowitz](Harrassowitz/)（[md](Harrassowitz/Harrassowitz.md)）: library service
+- [Heinrich Schmid](Heinrich-Schmid/)（[md](Heinrich-Schmid/Heinrich-Schmid.md)）: 建筑业
+- [Heinrich Schmid GmbH & Co. KG (Offenburg)](Heinrich-Schmid-GmbH-Co-KG-Offenburg/)（[md](Heinrich-Schmid-GmbH-Co-KG-Offenburg/Heinrich-Schmid-GmbH-Co-KG-Offenburg.md)）: 建筑业
+- [HeldenPilz](HeldenPilz/)（[md](HeldenPilz/HeldenPilz.md)）: 食品产业
+- [HORAiZON GmbH](HORAiZON-GmbH/)（[md](HORAiZON-GmbH/HORAiZON-GmbH.md)）: 軟件產業
+- [HQS Quantum Simulations GmbH](HQS-Quantum-Simulations-GmbH/)（[md](HQS-Quantum-Simulations-GmbH/HQS-Quantum-Simulations-GmbH.md)）: 量子力学
+- [Hutschenreuther](Hutschenreuther/)（[md](Hutschenreuther/Hutschenreuther.md)）: other mining and quarrying
+- [Informationsfabrik GmbH](Informationsfabrik-GmbH/)（[md](Informationsfabrik-GmbH/Informationsfabrik-GmbH.md)）: 信息技术
+- [Ingame](Ingame/)（[md](Ingame/Ingame.md)）: 新闻学
+- [klima&so](klimaso/)（[md](klimaso/klimaso.md)）: 碳排放报告
+- [LAB46 GmbH](LAB46-GmbH/)（[md](LAB46-GmbH/LAB46-GmbH.md)）: 个人护理
+- [Landbell](Landbell/)（[md](Landbell/Landbell.md)）: 資源回收
+- [Leser GmbH (Lahr)](Leser-GmbH-Lahr/)（[md](Leser-GmbH-Lahr/Leser-GmbH-Lahr.md)）: packaging industry
+- [LG Fashion Labs](LG-Fashion-Labs/)（[md](LG-Fashion-Labs/LG-Fashion-Labs.md)）: 軟件產業
+- [Lokalbesucher GmbH](Lokalbesucher-GmbH/)（[md](Lokalbesucher-GmbH/Lokalbesucher-GmbH.md)）: 廣告代理商
+- [Merck Serono](Merck-Serono/)（[md](Merck-Serono/Merck-Serono.md)）: 醫藥產業
+- [Metallbau Windeck GmbH](Metallbau-Windeck-GmbH/)（[md](Metallbau-Windeck-GmbH/Metallbau-Windeck-GmbH.md)）: 工程學
+- [neuroflash](neuroflash/)（[md](neuroflash/neuroflash.md)）: 人工智能
+- [Nexoria Systems](Nexoria-Systems/)（[md](Nexoria-Systems/Nexoria-Systems.md)）: 軟件產業
+- [Office technology & office equipment Stiegler](Office-technology-office-equipment-Stiegler/)（[md](Office-technology-office-equipment-Stiegler/Office-technology-office-equipment-Stiegler.md)）: 贸易
+- [ORAGO GmbH](ORAGO-GmbH/)（[md](ORAGO-GmbH/ORAGO-GmbH.md)）: 軟件產業
+- [Pantaenius Insurance Broker GmbH](Pantaenius-Insurance-Broker-GmbH/)（[md](Pantaenius-Insurance-Broker-GmbH/Pantaenius-Insurance-Broker-GmbH.md)）: insurance intermediation
+- [PK Industrie GmbH](PK-Industrie-GmbH/)（[md](PK-Industrie-GmbH/PK-Industrie-GmbH.md)）: 機器人學
+- [POOL Total GmbH](POOL-Total-GmbH/)（[md](POOL-Total-GmbH/POOL-Total-GmbH.md)）: 电子商务
+- [Powerhouse Company](Powerhouse-Company/)（[md](Powerhouse-Company/Powerhouse-Company.md)）: 建筑
+- [Primepool GmbH](Primepool-GmbH/)（[md](Primepool-GmbH/Primepool-GmbH.md)）: 餐馆
+- [Q140848684](Q140848684/)（[md](Q140848684/Q140848684.md)）: 土力工程
+- [regenold GmbH](regenold-GmbH/)（[md](regenold-GmbH/regenold-GmbH.md)）: consulting
+- [RG Gesellschaft für Information und Organisation mbH](RG-Gesellschaft-fr-Information-und-Organisation-mbH/)（[md](RG-Gesellschaft-fr-Information-und-Organisation-mbH/RG-Gesellschaft-fr-Information-und-Organisation-mbH.md)）: 继续医学教育
+- [Sartorius AG](Sartorius-AG/)（[md](Sartorius-AG/Sartorius-AG.md)）: 生物技术
+- [SDN IT-Services GmbH](SDN-IT-Services-GmbH/)（[md](SDN-IT-Services-GmbH/SDN-IT-Services-GmbH.md)）: 軟件產業
+- [Siecom IT-Systemhaus GmbH](Siecom-IT-Systemhaus-GmbH/)（[md](Siecom-IT-Systemhaus-GmbH/Siecom-IT-Systemhaus-GmbH.md)）: 信息技术
+- [SKOPOS VIEW GmbH & Co. KG](SKOPOS-VIEW-GmbH-Co-KG/)（[md](SKOPOS-VIEW-GmbH-Co-KG/SKOPOS-VIEW-GmbH-Co-KG.md)）: 市場調査
+- [SMAWAX](SMAWAX/)（[md](SMAWAX/SMAWAX.md)）: 搜尋引擎最佳化
+- [SPA Deluxe GmbH](SPA-Deluxe-GmbH/)（[md](SPA-Deluxe-GmbH/SPA-Deluxe-GmbH.md)）: 零售
+- [SPM Sportplatz Media GmbH](SPM-Sportplatz-Media-GmbH/)（[md](SPM-Sportplatz-Media-GmbH/SPM-Sportplatz-Media-GmbH.md)）: 廣告
+- [Stadtreinigungs-, Transport- und Baubetrieb Lüdenscheid](Stadtreinigungs-Transport-und-Baubetrieb-Ldenscheid/)（[md](Stadtreinigungs-Transport-und-Baubetrieb-Ldenscheid/Stadtreinigungs-Transport-und-Baubetrieb-Ldenscheid.md)）: 廢物管理
+- [Stihl](Stihl/)（[md](Stihl/Stihl.md)）: 机械工程
+- [Structify Solutions](Structify-Solutions/)（[md](Structify-Solutions/Structify-Solutions.md)）: 軟件產業
+- [Technische Kunststoffe Hennecke GmbH](Technische-Kunststoffe-Hennecke-GmbH/)（[md](Technische-Kunststoffe-Hennecke-GmbH/Technische-Kunststoffe-Hennecke-GmbH.md)）: 塑料工業
+- [Teufel Audio](Teufel-Audio/)（[md](Teufel-Audio/Teufel-Audio.md)）: 音響
+- [Trovarit AG](Trovarit-AG/)（[md](Trovarit-AG/Trovarit-AG.md)）: 管理咨询
+- [truckoo](truckoo/)（[md](truckoo/truckoo.md)）: 电子商务
+- [TVT.media GmbH](TVTmedia-GmbH/)（[md](TVTmedia-GmbH/TVTmedia-GmbH.md)）: 製作
+- [UIC GmbH](UIC-GmbH/)（[md](UIC-GmbH/UIC-GmbH.md)）: 化学工程
+- [VTA Verfahrenstechnische Anlagen GmbH & Co. KG](VTA-Verfahrenstechnische-Anlagen-GmbH-Co-KG/)（[md](VTA-Verfahrenstechnische-Anlagen-GmbH-Co-KG/VTA-Verfahrenstechnische-Anlagen-GmbH-Co-KG.md)）: 化学工程
+- [Welotec](Welotec/)（[md](Welotec/Welotec.md)）: 制造业
+- [Westermo Eltec](Westermo-Eltec/)（[md](Westermo-Eltec/Westermo-Eltec.md)）: 電信業
+- [Wolf Jansen](Wolf-Jansen/)（[md](Wolf-Jansen/Wolf-Jansen.md)）: 招聘
+- [Zapp AG](Zapp-AG/)（[md](Zapp-AG/Zapp-AG.md)）: 金属加工
+- [ZENIT KI GmbH](ZENIT-KI-GmbH/)（[md](ZENIT-KI-GmbH/ZENIT-KI-GmbH.md)）: 人工智能
+- [Zoot Deutschland GmbH](Zoot-Deutschland-GmbH/)（[md](Zoot-Deutschland-GmbH/Zoot-Deutschland-GmbH.md)）: 軟件產業
+- [創科實業](創科實業/)（[md](創科實業/創科實業.md)）: 制造业
+- [德国天空卫视](德国天空卫视/)（[md](德国天空卫视/德国天空卫视.md)）: 大眾媒體
+- [德律風根](德律風根/)（[md](德律風根/德律風根.md)）: 電氣工業
+- [德铁机动物流](德铁机动物流/)（[md](德铁机动物流/德铁机动物流.md)）: 运输
+- [捷德公司](捷德公司/)（[md](捷德公司/捷德公司.md)）: 技术
+- [肖特爾](肖特爾/)（[md](肖特爾/肖特爾.md)）: 制造业
+- [西氏亞洲有限公司](西氏亞洲有限公司/)（[md](西氏亞洲有限公司/西氏亞洲有限公司.md)）: 醫藥產業
+- [西門子金融服務](西門子金融服務/)（[md](西門子金融服務/西門子金融服務.md)）: 金融服務
+- [貝塔斯曼唱片](貝塔斯曼唱片/)（[md](貝塔斯曼唱片/貝塔斯曼唱片.md)）: 音樂產業
+- [飛斯妥](飛斯妥/)（[md](飛斯妥/飛斯妥.md)）: 自動化
+- [78 Over 37 Ltd](78-Over-37-Ltd/)（[md](78-Over-37-Ltd/78-Over-37-Ltd.md)）: 信息技术
+- [Active Communication Company Ltd](Active-Communication-Company-Ltd/)（[md](Active-Communication-Company-Ltd/Active-Communication-Company-Ltd.md)）: 通用电缆
+- [Adrian Alan](Adrian-Alan/)（[md](Adrian-Alan/Adrian-Alan.md)）: antiquarian seller
+- [Advanced Overwatch](Advanced-Overwatch/)（[md](Advanced-Overwatch/Advanced-Overwatch.md)）: private security industry
+- [aristo sourcing](aristo-sourcing/)（[md](aristo-sourcing/aristo-sourcing.md)）: 商業流程委外
+- [Audit Consulting Group](Audit-Consulting-Group/)（[md](Audit-Consulting-Group/Audit-Consulting-Group.md)）: 会计学
+- [Avocet Mining](Avocet-Mining/)（[md](Avocet-Mining/Avocet-Mining.md)）: 采矿业
+- [Balmer Lawn Hotel and Spa](Balmer-Lawn-Hotel-and-Spa/)（[md](Balmer-Lawn-Hotel-and-Spa/Balmer-Lawn-Hotel-and-Spa.md)）: 接待业
+- [Bluestreak crystals Ltd](Bluestreak-crystals-Ltd/)（[md](Bluestreak-crystals-Ltd/Bluestreak-crystals-Ltd.md)）: 电子商务
+- [Bolter](Bolter/)（[md](Bolter/Bolter.md)）: 軟件產業
+- [BooksForTopics](BooksForTopics/)（[md](BooksForTopics/BooksForTopics.md)）: 教育
+- [Boori UK](Boori-UK/)（[md](Boori-UK/Boori-UK.md)）: 家具
+- [Box UK](Box-UK/)（[md](Box-UK/Box-UK.md)）: 敏捷软件开发
+- [CarReg UK](CarReg-UK/)（[md](CarReg-UK/CarReg-UK.md)）: 汽車工業
+- [Car Sloth](Car-Sloth/)（[md](Car-Sloth/Car-Sloth.md)）: 汽車工業
+- [Chelton Limited](Chelton-Limited/)（[md](Chelton-Limited/Chelton-Limited.md)）: 航空航天
+- [Distribution Engine](Distribution-Engine/)（[md](Distribution-Engine/Distribution-Engine.md)）: 軟件產業
+- [Earthy Timber Ltd](Earthy-Timber-Ltd/)（[md](Earthy-Timber-Ltd/Earthy-Timber-Ltd.md)）: furniture industry
+- [economAIcs Group Ltd](economAIcs-Group-Ltd/)（[md](economAIcs-Group-Ltd/economAIcs-Group-Ltd.md)）: 人工智能
+- [EcoPure Waters](EcoPure-Waters/)（[md](EcoPure-Waters/EcoPure-Waters.md)）: 水处理
+- [Edwin Jagger](Edwin-Jagger/)（[md](Edwin-Jagger/Edwin-Jagger.md)）: razor industry
+- [Elite Property London](Elite-Property-London/)（[md](Elite-Property-London/Elite-Property-London.md)）: 2040年
+- [Equiti Capital UK Limited](Equiti-Capital-UK-Limited/)（[md](Equiti-Capital-UK-Limited/Equiti-Capital-UK-Limited.md)）: 金融业
+- [Eureka Pet Station Company](Eureka-Pet-Station-Company/)（[md](Eureka-Pet-Station-Company/Eureka-Pet-Station-Company.md)）: 电信
+- [Ferguson Enterprises](Ferguson-Enterprises/)（[md](Ferguson-Enterprises/Ferguson-Enterprises.md)）: 建筑材料
+- [Final Rest Ltd](Final-Rest-Ltd/)（[md](Final-Rest-Ltd/Final-Rest-Ltd.md)）: 兽医学
+- [Fleet Evolution](Fleet-Evolution/)（[md](Fleet-Evolution/Fleet-Evolution.md)）: 车辆融资租赁
+- [fotool.ai](fotoolai/)（[md](fotoolai/fotoolai.md)）: 软件即服务
+- [Future Considerations](Future-Considerations/)（[md](Future-Considerations/Future-Considerations.md)）: 管理咨询
+- [GA Salons](GA-Salons/)（[md](GA-Salons/GA-Salons.md)）: hairdressing industry
+- [Gemlea](Gemlea/)（[md](Gemlea/Gemlea.md)）: jewelry industry
+- [Grant UK](Grant-UK/)（[md](Grant-UK/Grant-UK.md)）: 暖气
+- [Great Wave AI](Great-Wave-AI/)（[md](Great-Wave-AI/Great-Wave-AI.md)）: 人工智能
+- [Greybull Capital](Greybull-Capital/)（[md](Greybull-Capital/Greybull-Capital.md)）: 投资
+- [Grey Technology](Grey-Technology/)（[md](Grey-Technology/Grey-Technology.md)）: 白色家電
+- [GTM Signal Studio](GTM-Signal-Studio/)（[md](GTM-Signal-Studio/GTM-Signal-Studio.md)）: management consulting industry
+- [HM Services and Consultancy](HM-Services-and-Consultancy/)（[md](HM-Services-and-Consultancy/HM-Services-and-Consultancy.md)）: 管理咨询
+- [Hospitual](Hospitual/)（[md](Hospitual/Hospitual.md)）: 遠距醫療
+- [Hourican Associates](Hourican-Associates/)（[md](Hourican-Associates/Hourican-Associates.md)）: 建筑业
+- [Luna Manchester](Luna-Manchester/)（[md](Luna-Manchester/Luna-Manchester.md)）: 時尚
+- [Made by Dave](Made-by-Dave/)（[md](Made-by-Dave/Made-by-Dave.md)）: 网页设计
+- [Meridian Finance](Meridian-Finance/)（[md](Meridian-Finance/Meridian-Finance.md)）: 金融科技
+- [Mickai](Mickai/)（[md](Mickai/Mickai.md)）: 人工智能
+- [Microform Imaging](Microform-Imaging/)（[md](Microform-Imaging/Microform-Imaging.md)）: 信息产业
+- [Model Products Ltd](Model-Products-Ltd/)（[md](Model-Products-Ltd/Model-Products-Ltd.md)）: 制造业
+- [Morphsuits](Morphsuits/)（[md](Morphsuits/Morphsuits.md)）: 零售
+- [NECL Consulting Limited](NECL-Consulting-Limited/)（[md](NECL-Consulting-Limited/NECL-Consulting-Limited.md)）: 信息技术
+- [Nellie Supports](Nellie-Supports/)（[md](Nellie-Supports/Nellie-Supports.md)）: 社会工作者
+- [Nethermind](Nethermind/)（[md](Nethermind/Nethermind.md)）: 分布式计算
+- [NJoy Consulting](NJoy-Consulting/)（[md](NJoy-Consulting/NJoy-Consulting.md)）: 管理咨询
+- [Pfizer UK](Pfizer-UK/)（[md](Pfizer-UK/Pfizer-UK.md)）: 醫藥產業
+- [Q141244871](Q141244871/)（[md](Q141244871/Q141244871.md)）: real estate industry
+- [RAK Global](RAK-Global/)（[md](RAK-Global/RAK-Global.md)）: 投资管理
+- [Relo AI](Relo-AI/)（[md](Relo-AI/Relo-AI.md)）: 人工智能
+- [Restoric Design Ltd](Restoric-Design-Ltd/)（[md](Restoric-Design-Ltd/Restoric-Design-Ltd.md)）: 工程學
+- [Safecall](Safecall/)（[md](Safecall/Safecall.md)）: 守规
+- [SEC Group](SEC-Group/)（[md](SEC-Group/SEC-Group.md)）: 物流
+- [Smart Cover Direct Limited](Smart-Cover-Direct-Limited/)（[md](Smart-Cover-Direct-Limited/Smart-Cover-Direct-Limited.md)）: 保險業
+- [Strange & Twisted](Strange-Twisted/)（[md](Strange-Twisted/Strange-Twisted.md)）: 零售
+- [Stratajet](Stratajet/)（[md](Stratajet/Stratajet.md)）: 航空
+- [Tailfin](Tailfin/)（[md](Tailfin/Tailfin.md)）: 电子商务
+- [Talonmore Drinks Company](Talonmore-Drinks-Company/)（[md](Talonmore-Drinks-Company/Talonmore-Drinks-Company.md)）: non-alcoholic beverage industry
+- [Technomate](Technomate/)（[md](Technomate/Technomate.md)）: 电子学
+- [The Manchester Shop](The-Manchester-Shop/)（[md](The-Manchester-Shop/The-Manchester-Shop.md)）: 時尚
+- [The Scottish Shutter Company](The-Scottish-Shutter-Company/)（[md](The-Scottish-Shutter-Company/The-Scottish-Shutter-Company.md)）: window covering
+- [theSpaceUK](theSpaceUK/)（[md](theSpaceUK/theSpaceUK.md)）: 表演艺术
+- [Tidebreak AI](Tidebreak-AI/)（[md](Tidebreak-AI/Tidebreak-AI.md)）: 軟件產業
+- [Told London](Told-London/)（[md](Told-London/Told-London.md)）: perfumes industry
+- [Twinkl](Twinkl/)（[md](Twinkl/Twinkl.md)）: 信息技术
+- [UK Expat Mortgage](UK-Expat-Mortgage/)（[md](UK-Expat-Mortgage/UK-Expat-Mortgage.md)）: 房地產抵押
+- [VALK](VALK/)（[md](VALK/VALK.md)）: 遊戲樹
+- [VerifyDoc.ai](VerifyDocai/)（[md](VerifyDocai/VerifyDocai.md)）: 軟件產業
+- [Vernalis Research](Vernalis-Research/)（[md](Vernalis-Research/Vernalis-Research.md)）: 生物技术
+- [WeCovr](WeCovr/)（[md](WeCovr/WeCovr.md)）: 保險
+- [Zoot Enterprises Limited](Zoot-Enterprises-Limited/)（[md](Zoot-Enterprises-Limited/Zoot-Enterprises-Limited.md)）: 軟件產業
+- [多曼朗](多曼朗/)（[md](多曼朗/多曼朗.md)）: 制造业
+- [斯坦利·吉本斯](斯坦利吉本斯/)（[md](斯坦利吉本斯/斯坦利吉本斯.md)）: 郵票研究
+- [曼徹斯特華人當代藝術中心](曼徹斯特華人當代藝術中心/)（[md](曼徹斯特華人當代藝術中心/曼徹斯特華人當代藝術中心.md)）: 艺术领域
+- [老鷹搖滾](老鷹搖滾/)（[md](老鷹搖滾/老鷹搖滾.md)）: 唱片业
+- [芝商所](芝商所/)（[md](芝商所/芝商所.md)）: 金融
+- [Aescia](Aescia/)（[md](Aescia/Aescia.md)）: 医疗卫生
+- [Compare Club](Compare-Club/)（[md](Compare-Club/Compare-Club.md)）: 金融服務
+- [Danao Group](Danao-Group/)（[md](Danao-Group/Danao-Group.md)）: 保安
+- [Empirica Technologies](Empirica-Technologies/)（[md](Empirica-Technologies/Empirica-Technologies.md)）: 人工智能
+- [Hidrive Group Pty Ltd](Hidrive-Group-Pty-Ltd/)（[md](Hidrive-Group-Pty-Ltd/Hidrive-Group-Pty-Ltd.md)）: 制造业
+- [Inclusive Sport Design](Inclusive-Sport-Design/)（[md](Inclusive-Sport-Design/Inclusive-Sport-Design.md)）: 体育管理
+- [Citas](Citas/)（[md](Citas/Citas.md)）: real estate industry
+- [EvoTalks](EvoTalks/)（[md](EvoTalks/EvoTalks.md)）: 软件即服务
+- [Joom.pro](Joompro/)（[md](Joompro/Joompro.md)）: 物流
+- [Pronova](Pronova/)（[md](Pronova/Pronova.md)）: health technology
+- [Superplural](Superplural/)（[md](Superplural/Superplural.md)）: 信息技术
+- [Vinco Leilões](Vinco-Leiles/)（[md](Vinco-Leiles/Vinco-Leiles.md)）: 拍賣
+- [A Different Booklist](A-Different-Booklist/)（[md](A-Different-Booklist/A-Different-Booklist.md)）: 零售
+- [Advanced Gas Technologies](Advanced-Gas-Technologies/)（[md](Advanced-Gas-Technologies/Advanced-Gas-Technologies.md)）: 制造业
+- [CanDeal.ca Inc](CanDealca-Inc/)（[md](CanDealca-Inc/CanDealca-Inc.md)）: 金融
+- [Dalia Tech Inc](Dalia-Tech-Inc/)（[md](Dalia-Tech-Inc/Dalia-Tech-Inc.md)）: 消费电子行业
+- [DarkoLab](DarkoLab/)（[md](DarkoLab/DarkoLab.md)）: 人工智能
+- [EBizCharge](EBizCharge/)（[md](EBizCharge/EBizCharge.md)）: 金融服務
+- [Kibbi Technologies](Kibbi-Technologies/)（[md](Kibbi-Technologies/Kibbi-Technologies.md)）: 軟件產業
+- [2D ApS](2D-ApS/)（[md](2D-ApS/2D-ApS.md)）: 纳米技术
+- [3RD](3RD/)（[md](3RD/3RD.md)）: 软件即服务
+- [Audo Copenhagen](Audo-Copenhagen/)（[md](Audo-Copenhagen/Audo-Copenhagen.md)）: 家具
+- [Fiberline Building Profiles A/S](Fiberline-Building-Profiles-AS/)（[md](Fiberline-Building-Profiles-AS/Fiberline-Building-Profiles-AS.md)）: 复合材料
+- [Louis Poulsen](Louis-Poulsen/)（[md](Louis-Poulsen/Louis-Poulsen.md)）: 照明
+- [Sparekassen Danmark](Sparekassen-Danmark/)（[md](Sparekassen-Danmark/Sparekassen-Danmark.md)）: 銀行業
+- [1000flies srl](1000flies-srl/)（[md](1000flies-srl/1000flies-srl.md)）: 电子商务
+- [Abri Plus Equipement](Abri-Plus-Equipement/)（[md](Abri-Plus-Equipement/Abri-Plus-Equipement.md)）: Q112165353
+- [Ask Amélie](Ask-Amlie/)（[md](Ask-Amlie/Ask-Amlie.md)）: Walter Friedrich
+- [ATP Formation](ATP-Formation/)（[md](ATP-Formation/ATP-Formation.md)）: 繼續教育
+- [BackToMe](BackToMe/)（[md](BackToMe/BackToMe.md)）: 电子商务
+- [BioEssentials](BioEssentials/)（[md](BioEssentials/BioEssentials.md)）: 食品产业
+- [BOOME](BOOME/)（[md](BOOME/BOOME.md)）: 膳食补充剂
+- [3D-LABS Engineering](3D-LABS-Engineering/)（[md](3D-LABS-Engineering/3D-LABS-Engineering.md)）: 工程學
+- [AGDIRA](AGDIRA/)（[md](AGDIRA/AGDIRA.md)）: 軟件產業
+- [Colormyles](Colormyles/)（[md](Colormyles/Colormyles.md)）: 制造业
+- [CTLG](CTLG/)（[md](CTLG/CTLG.md)）: 娛樂
+- [FindYourFit](FindYourFit/)（[md](FindYourFit/FindYourFit.md)）: 社会福利
+- [iCube Logics](iCube-Logics/)（[md](iCube-Logics/iCube-Logics.md)）: Engineering Services
+- [Inti Solar](Inti-Solar/)（[md](Inti-Solar/Inti-Solar.md)）: 太阳能
+- [Invitee Site](Invitee-Site/)（[md](Invitee-Site/Invitee-Site.md)）: 軟件產業
+- [Pewaristoto](Pewaristoto/)（[md](Pewaristoto/Pewaristoto.md)）: 娛樂
+- [Pulau Asli Tour](Pulau-Asli-Tour/)（[md](Pulau-Asli-Tour/Pulau-Asli-Tour.md)）: 旅游
+- [美罗百货](美罗百货/)（[md](美罗百货/美罗百货.md)）: 零售
+- [飞想飲料](飞想飲料/)（[md](飞想飲料/飞想飲料.md)）: 饮料产业
+- [Autolinee Troiani](Autolinee-Troiani/)（[md](Autolinee-Troiani/Autolinee-Troiani.md)）: 公共交通
+- [Direzioni Parallele Wedding Entertainment](Direzioni-Parallele-Wedding-Entertainment/)（[md](Direzioni-Parallele-Wedding-Entertainment/Direzioni-Parallele-Wedding-Entertainment.md)）: 娛樂產業
+- [FIAMM](FIAMM/)（[md](FIAMM/FIAMM.md)）: 電機工程學
+- [Fragos Media](Fragos-Media/)（[md](Fragos-Media/Fragos-Media.md)）: 廣告
+- [Genjiko S.r.l.](Genjiko-Srl/)（[md](Genjiko-Srl/Genjiko-Srl.md)）: 网络购物
+- [Iotti & Vibe violin makers](Iotti-Vibe-violin-makers/)（[md](Iotti-Vibe-violin-makers/Iotti-Vibe-violin-makers.md)）: lutherie
+- [La Decormarmi](La-Decormarmi/)（[md](La-Decormarmi/La-Decormarmi.md)）: 电子商务
+- [Art of Vedas](Art-of-Vedas/)（[md](Art-of-Vedas/Art-of-Vedas.md)）: 草藥醫學
+- [EA Scheer](EA-Scheer/)（[md](EA-Scheer/EA-Scheer.md)）: 工业
+- [Munckhof Group](Munckhof-Group/)（[md](Munckhof-Group/Munckhof-Group.md)）: 交通網絡
+- [Q135779183](Q135779183/)（[md](Q135779183/Q135779183.md)）: 信息技术
+- [Sustainable Commodities 3 B.V.](Sustainable-Commodities-3-BV/)（[md](Sustainable-Commodities-3-BV/Sustainable-Commodities-3-BV.md)）: 商品市場
+- [TT Engineering](TT-Engineering/)（[md](TT-Engineering/TT-Engineering.md)）: 机械工程
+- [American Shipping Company](American-Shipping-Company/)（[md](American-Shipping-Company/American-Shipping-Company.md)）: 石油产业
+- [Austevoll Seafood](Austevoll-Seafood/)（[md](Austevoll-Seafood/Austevoll-Seafood.md)）: 養殖漁業
+- [Cointegrity](Cointegrity/)（[md](Cointegrity/Cointegrity.md)）: 人工智能
+- [FF Rollerskis](FF-Rollerskis/)（[md](FF-Rollerskis/FF-Rollerskis.md)）: sporting goods manufacturer
+- [Norfund](Norfund/)（[md](Norfund/Norfund.md)）: 金融服務
+- [Roxar Software Solutions AS](Roxar-Software-Solutions-AS/)（[md](Roxar-Software-Solutions-AS/Roxar-Software-Solutions-AS.md)）: Other software publishing
+- [Zendera](Zendera/)（[md](Zendera/Zendera.md)）: 物流
+- [Creative Programs](Creative-Programs/)（[md](Creative-Programs/Creative-Programs.md)）: 付费电视
+- [Notus Regalia](Notus-Regalia/)（[md](Notus-Regalia/Notus-Regalia.md)）: 工业
+- [Projexiom](Projexiom/)（[md](Projexiom/Projexiom.md)）: 商業顧問
+- [SOFI AI Tech Solution Inc.](SOFI-AI-Tech-Solution-Inc/)（[md](SOFI-AI-Tech-Solution-Inc/SOFI-AI-Tech-Solution-Inc.md)）: 人工智能
+- [Viro Homes](Viro-Homes/)（[md](Viro-Homes/Viro-Homes.md)）: 建筑施工
+- [菲律賓國家電力網公司](菲律賓國家電力網公司/)（[md](菲律賓國家電力網公司/菲律賓國家電力網公司.md)）: 电力行业
+- [AIZ Business Consulta](AIZ-Business-Consulta/)（[md](AIZ-Business-Consulta/AIZ-Business-Consulta.md)）: 管理咨询
+- [Caixa Mágica Software](Caixa-Mgica-Software/)（[md](Caixa-Mgica-Software/Caixa-Mgica-Software.md)）: 軟件產業
+- [Honu Handmade Jewellery](Honu-Handmade-Jewellery/)（[md](Honu-Handmade-Jewellery/Honu-Handmade-Jewellery.md)）: 珠宝艺术
+- [TIME&SPACE](TIMESPACE/)（[md](TIMESPACE/TIMESPACE.md)）: 攝影
+- [Tuhkana Swimwear](Tuhkana-Swimwear/)（[md](Tuhkana-Swimwear/Tuhkana-Swimwear.md)）: 服裝業
+- [Wellzen by Diana](Wellzen-by-Diana/)（[md](Wellzen-by-Diana/Wellzen-by-Diana.md)）: 按摩
+- [Chemitech](Chemitech/)（[md](Chemitech/Chemitech.md)）: 化学工业
+- [ENIKS](ENIKS/)（[md](ENIKS/ENIKS.md)）: 航空產業
+- [LaVoyage Cruises & Travel](LaVoyage-Cruises-Travel/)（[md](LaVoyage-Cruises-Travel/LaVoyage-Cruises-Travel.md)）: 娛樂
+- [MTZ-Tatarstan](MTZ-Tatarstan/)（[md](MTZ-Tatarstan/MTZ-Tatarstan.md)）: agricultural machinery industry
+- [PSM](PSM/)（[md](PSM/PSM.md)）: 制造业
+- [Usoliekhimprom](Usoliekhimprom/)（[md](Usoliekhimprom/Usoliekhimprom.md)）: 化学工业
+- [Andrew Choong Vascular Surgery](Andrew-Choong-Vascular-Surgery/)（[md](Andrew-Choong-Vascular-Surgery/Andrew-Choong-Vascular-Surgery.md)）: 医疗卫生
+- [Cracks (software)](Cracks-software/)（[md](Cracks-software/Cracks-software.md)）: 軟件產業
+- [discovermarket](discovermarket/)（[md](discovermarket/discovermarket.md)）: insurtech
+- [Gumtoo](Gumtoo/)（[md](Gumtoo/Gumtoo.md)）: 廣告
+- [Pelago by Singapore Airlines](Pelago-by-Singapore-Airlines/)（[md](Pelago-by-Singapore-Airlines/Pelago-by-Singapore-Airlines.md)）: 旅游
+- [戴森](戴森/)（[md](戴森/戴森.md)）: 家用电器产业
+- [BDS Korea](BDS-Korea/)（[md](BDS-Korea/BDS-Korea.md)）: real estate brokerage
+- [Gonggam Design](Gonggam-Design/)（[md](Gonggam-Design/Gonggam-Design.md)）: 室内设计
+- [Neo Genesis](Neo-Genesis/)（[md](Neo-Genesis/Neo-Genesis.md)）: 人工智能
+- [Original Beer Company](Original-Beer-Company/)（[md](Original-Beer-Company/Original-Beer-Company.md)）: 酿酒业
+- [SR (企業)](SR-企業/)（[md](SR-企業/SR-企業.md)）: 鐵路運輸
+- [TONE SEOUL](TONE-SEOUL/)（[md](TONE-SEOUL/TONE-SEOUL.md)）: 醫療旅行
+- [Beetle Wood](Beetle-Wood/)（[md](Beetle-Wood/Beetle-Wood.md)）: furniture industry
+- [Boro33 SL](Boro33-SL/)（[md](Boro33-SL/Boro33-SL.md)）: 电子商务
+- [Clínica Thodos](Clnica-Thodos/)（[md](Clnica-Thodos/Clnica-Thodos.md)）: 医疗卫生
+- [Dr. Romeu](Dr-Romeu/)（[md](Dr-Romeu/Dr-Romeu.md)）: 医疗卫生
+- [Flame Analytics](Flame-Analytics/)（[md](Flame-Analytics/Flame-Analytics.md)）: 軟件產業
+- [fototrending.com](fototrendingcom/)（[md](fototrendingcom/fototrendingcom.md)）: 網誌
+- [comparis.ch](comparisch/)（[md](comparisch/comparisch.md)）: 金融服務
+- [DolcePack](DolcePack/)（[md](DolcePack/DolcePack.md)）: 包装机
+- [Properstar](Properstar/)（[md](Properstar/Properstar.md)）: real estate industry
+- [SMG Swiss Marketplace Group AG](SMG-Swiss-Marketplace-Group-AG/)（[md](SMG-Swiss-Marketplace-Group-AG/SMG-Swiss-Marketplace-Group-AG.md)）: 电子商务
+- [Vestergaard](Vestergaard/)（[md](Vestergaard/Vestergaard.md)）: 公共衛生
+- [Westermo Neratec](Westermo-Neratec/)（[md](Westermo-Neratec/Westermo-Neratec.md)）: 電信業
+- [1Moby](1Moby/)（[md](1Moby/1Moby.md)）: 信息技术
+- [Bangkok Business Service Center](Bangkok-Business-Service-Center/)（[md](Bangkok-Business-Service-Center/Bangkok-Business-Service-Center.md)）: 专业服务产业
+- [E-C.O.P (Thailand) Limited](E-COP-Thailand-Limited/)（[md](E-COP-Thailand-Limited/E-COP-Thailand-Limited.md)）: 计算机安全
+- [K.L. Interfood Co., Ltd.](KL-Interfood-Co-Ltd/)（[md](KL-Interfood-Co-Ltd/KL-Interfood-Co-Ltd.md)）: 食品加工
+- [New Paradigm Mental Health Retreat](New-Paradigm-Mental-Health-Retreat/)（[md](New-Paradigm-Mental-Health-Retreat/New-Paradigm-Mental-Health-Retreat.md)）: 心理治療
+- [Siam Trade Development Co., Ltd.](Siam-Trade-Development-Co-Ltd/)（[md](Siam-Trade-Development-Co-Ltd/Siam-Trade-Development-Co-Ltd.md)）: regulatory affairs
+- [GetGrant](GetGrant/)（[md](GetGrant/GetGrant.md)）: 教育
+- [HOMEDOME](HOMEDOME/)（[md](HOMEDOME/HOMEDOME.md)）: 太阳能
+- [Kislorodmash](Kislorodmash/)（[md](Kislorodmash/Kislorodmash.md)）: 机械工程
+- [Progress Group](Progress-Group/)（[md](Progress-Group/Progress-Group.md)）: 鞋具
+- [Sivak+Partners](SivakPartners/)（[md](SivakPartners/SivakPartners.md)）: 建筑
+- [乌克兰能源机械股份公司](乌克兰能源机械股份公司/)（[md](乌克兰能源机械股份公司/乌克兰能源机械股份公司.md)）: 電力工程學

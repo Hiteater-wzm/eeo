@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vestas",
+  "alternateName": "维斯塔斯",
+  "url": "https://www.vestas.com",
+  "description": "丹麦风机制造商，总部位于奥胡斯，业务涵盖风机整机制造、安装与运维服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Aarhus",
+    "addressCountry": "丹麦"
+  }
+}

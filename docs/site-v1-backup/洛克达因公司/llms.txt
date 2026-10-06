@@ -1,0 +1,17 @@
+# 洛克达因公司
+
+> American rocket engine design and production company
+
+- 官方网站: http://www.pw.utc.com/Power_Propulsion_and_Optimization
+- 所属行业: 航空航天工业
+- 别名: 洛克达因
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q968710
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Siam Trade Development Co., Ltd.",
+  "alternateName": [
+    "STD",
+    "Siam Trade Development",
+    "Siam Trade Development Co.",
+    "Ltd."
+  ],
+  "url": "https://www.siamdevelopment.com",
+  "description": "Thai regulatory and market-access consulting company. Medical Device registration and MAH service"
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Abbott",
+  "alternateName": [
+    "雅培",
+    "Abbott Laboratories"
+  ],
+  "url": "https://www.abbott.com",
+  "description": "美国医疗健康公司，总部位于伊利诺伊州Abbott Park，业务涵盖医疗器械、诊断、营养品与成熟药品。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Abbott Park",
+    "addressCountry": "美国"
+  }
+}

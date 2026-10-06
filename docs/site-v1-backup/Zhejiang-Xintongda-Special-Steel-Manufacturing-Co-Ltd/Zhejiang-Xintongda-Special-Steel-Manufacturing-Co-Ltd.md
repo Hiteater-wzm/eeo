@@ -1,0 +1,20 @@
+# Zhejiang Xintongda Special Steel Manufacturing Co., Ltd. 钢铁冶金学
+
+别名：XTD、Xintongda、Xintongda Special Steel、Zhejiang Xintongda Special Steel
+
+> Chinese manufacturer of seamless stainless steel, duplex, and nickel-alloy pipes and tubes
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 钢铁冶金学
+- 官方网站: [https://www.xtd-ss.com/](https://www.xtd-ss.com/)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q139897277](https://www.wikidata.org/wiki/Q139897277)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

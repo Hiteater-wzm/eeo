@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Superplural",
+  "alternateName": [
+    "Superplural Agency",
+    "Superplural Consulting",
+    "Superplural Digital Marketing"
+  ],
+  "url": "https://www.superplural.com",
+  "description": "Technology and digital transformation consultancy, Google Partner, Meta Business Partner, AWS Partner and Google Cloud P"
+}

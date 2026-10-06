@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Scottish Shutter Company",
+  "alternateName": [
+    "SSC",
+    "Rocknowe Interiors Ltd",
+    "Scottish Shutter Company",
+    "Rocknowe Interiors"
+  ],
+  "url": "https://scottishshutters.co.uk",
+  "description": "Scottish window shutter and shading retailer, trading name of Rocknowe Interiors Limited"
+}

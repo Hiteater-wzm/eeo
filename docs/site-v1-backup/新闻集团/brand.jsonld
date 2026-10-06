@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "新闻集团",
+  "alternateName": "News Corporation",
+  "url": "https://newscorp.com/",
+  "description": "multinational media corporation (1980–2013)"
+}

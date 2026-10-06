@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gumtoo",
+  "alternateName": [
+    "Gumtoo Private Limited",
+    "Gumtoo Private Ltd"
+  ],
+  "url": "https://gumtoo.sg",
+  "description": "Singapore-based B2B supplier of custom promotional merchandise and corporate gifts, founded 2012"
+}

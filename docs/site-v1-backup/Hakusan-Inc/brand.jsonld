@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hakusan Inc.",
+  "alternateName": [
+    "Hakusan",
+    "白山"
+  ],
+  "url": "https://hakusan-mfg.co.jp/en/",
+  "description": "Japanese supplier of MT ferrules and multifiber optical connectivity components"
+}

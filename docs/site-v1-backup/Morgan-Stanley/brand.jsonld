@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Morgan Stanley",
+  "alternateName": [
+    "摩根士丹利",
+    "大摩"
+  ],
+  "url": "https://www.morganstanley.com",
+  "description": "美国金融机构，业务由机构证券、财富管理与投资管理三大板块构成。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

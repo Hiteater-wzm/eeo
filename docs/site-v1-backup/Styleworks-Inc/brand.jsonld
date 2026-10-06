@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Styleworks Inc.",
+  "alternateName": [
+    "STYLE WORKS",
+    "Style Works Co.",
+    "Ltd.",
+    "Styleworks",
+    "STYLEWORKS"
+  ],
+  "url": "https://www.styleworks.co.jp/",
+  "description": "Japanese apparel OEM/ODM company headquartered in Tokyo, founded 2013"
+}

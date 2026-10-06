@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SVOLT Energy Technology Co., Ltd.",
+  "alternateName": [
+    "SVOLT",
+    "Honeycomb Energy"
+  ],
+  "url": "https://www.svolt.cn/",
+  "description": "Chinese lithium battery manufacturing company"
+}

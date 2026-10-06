@@ -1,0 +1,17 @@
+# Elantas
+
+> German manufacturer of insulating materials for the electrical and electronics industry
+
+- 官方网站: http://elantas.de
+- 所属行业: 電氣工業
+- 别名: Elantas GmbH、ELANTAS GmbH
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q17321401
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

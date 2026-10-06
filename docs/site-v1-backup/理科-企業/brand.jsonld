@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "理科 (企業)",
+  "alternateName": [
+    "Rigaku Corporation",
+    "Rigaku Holdings"
+  ],
+  "url": "https://rigaku-holdings.com/",
+  "description": "Japanese manufacturer of scientific and industrial instrumentation"
+}

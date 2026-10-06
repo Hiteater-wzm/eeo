@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "3RD",
+  "alternateName": [
+    "Third",
+    "Third Law ApS",
+    "get3rd",
+    "get3rd.com"
+  ],
+  "url": "https://www.get3rd.com/",
+  "description": "3RD provides a software-as-a-service platform focused on AI-powered marketing analytics and visibility insights. 3RD pro"
+}

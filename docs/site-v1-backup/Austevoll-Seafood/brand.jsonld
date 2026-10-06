@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Austevoll Seafood",
+  "alternateName": [
+    "AUSS",
+    "Austevoll Seafood ASA"
+  ],
+  "url": "https://www.auss.no/",
+  "description": "The Austevoll Seafood group is a significant player in pelagic fishery, fishmeal/oil production, processing of fish for"
+}

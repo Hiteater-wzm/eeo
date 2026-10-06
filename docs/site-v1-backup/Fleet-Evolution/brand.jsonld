@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fleet Evolution",
+  "alternateName": [
+    "Fleet Evolution Limited",
+    "Fleet Evolution Ltd"
+  ],
+  "url": "https://fleetevolution.com/",
+  "description": "UK company providing salary sacrifice and car leasing services specialising in electric vehicles"
+}

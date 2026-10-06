@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Anchor Brewing Company",
+  "alternateName": "Anchor Brewing",
+  "url": "http://www.anchorbrewing.com",
+  "description": "alcoholic beverage producer in San Francisco, California"
+}

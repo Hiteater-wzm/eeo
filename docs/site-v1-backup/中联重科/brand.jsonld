@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中联重科",
+  "alternateName": [
+    "中联重科股份有限公司",
+    "长沙中联重工科技发展股份有限公司"
+  ],
+  "url": "http://www.zoomlion.com/",
+  "description": "Chinese construction and sanitation company"
+}

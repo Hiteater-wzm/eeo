@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SEC Group",
+  "alternateName": [
+    "SEC Storage",
+    "The Storage Equipment Centre"
+  ],
+  "url": "https://sec-group.co.uk/",
+  "description": "UK warehouse design, optimisation, automation, and integration company based in Stevenage, Hertfordshire"
+}

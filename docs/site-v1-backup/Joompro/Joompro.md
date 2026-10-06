@@ -1,0 +1,20 @@
+# Joom.pro 物流
+
+别名：Joom China import Brazil、Joom import、Joom Pro、joom.pro
+
+> Brazilian turnkey import operator specializing in end-to-end sourcing, logistics, customs clearance, and regulatory comp
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 物流
+- 官方网站: [https://joom.pro/](https://joom.pro/)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q140278312](https://www.wikidata.org/wiki/Q140278312)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

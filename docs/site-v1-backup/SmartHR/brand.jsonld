@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SmartHR",
+  "alternateName": [
+    "SmartHR",
+    "Inc."
+  ],
+  "url": "https://smarthr.co.jp/",
+  "description": "Japanese cloud human resources software company based in Minato, Tokyo"
+}

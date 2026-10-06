@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BlackRock",
+  "alternateName": [
+    "贝莱德",
+    "黑岩"
+  ],
+  "url": "https://www.blackrock.com",
+  "description": "美国资产管理公司，管理资产规模超过10万亿美元，旗下运营iShares ETF系列与Aladdin投资管理技术平台。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressCountry": "美国"
+  }
+}

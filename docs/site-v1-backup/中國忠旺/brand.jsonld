@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中國忠旺",
+  "alternateName": [
+    "中国忠旺",
+    "中國忠旺控股",
+    "中國忠旺控股有限公司",
+    "辽宁忠旺集团"
+  ],
+  "url": "http://www.zhongwang.com/",
+  "description": "industrial aluminium extrusion product developer"
+}

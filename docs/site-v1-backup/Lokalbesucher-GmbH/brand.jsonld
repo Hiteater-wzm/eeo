@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Lokalbesucher GmbH",
+  "alternateName": [
+    "Lokalbesucher",
+    "Lokalbesucher Kreis Recklinghausen"
+  ],
+  "url": "https://lokalbesucher.de",
+  "description": "German local marketing agency specialising in Google Business Profile optimisation and local SEO, founded 2024 in Reckli"
+}

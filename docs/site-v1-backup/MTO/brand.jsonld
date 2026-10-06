@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MTO",
+  "alternateName": [
+    "MTO.Co.",
+    "Ltd."
+  ],
+  "url": "http://www.mto-power.com/",
+  "description": "Yokohama-based video game developer and publisher founded in May 1996"
+}

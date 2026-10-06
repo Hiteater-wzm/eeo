@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Welotec",
+  "alternateName": [
+    "Welotec Automation GmbH",
+    "Welotec Communication GmbH",
+    "Welotec GmbH",
+    "Wenglorz"
+  ],
+  "url": "https://welotec.com/",
+  "description": "German technology company and subsidiary of Westermo, specializing in edge computing, industrial IoT, and substation aut"
+}

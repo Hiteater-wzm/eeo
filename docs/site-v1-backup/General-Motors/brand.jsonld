@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "General Motors",
+  "alternateName": [
+    "通用汽车",
+    "GM"
+  ],
+  "url": "https://www.gm.com",
+  "description": "美国汽车制造商,旗下品牌包括雪佛兰、GMC、凯迪拉克与别克,1908年成立。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "底特律",
+    "addressCountry": "美国"
+  }
+}

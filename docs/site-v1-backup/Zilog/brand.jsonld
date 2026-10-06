@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zilog",
+  "alternateName": [
+    "ZiLOG",
+    "Zilog",
+    "Inc."
+  ],
+  "url": "https://www.zilog.com/",
+  "description": "American manufacturer of microprocessors"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中遠海運國際 (香港)",
+  "alternateName": [
+    "中遠國際",
+    "中遠國際控股",
+    "中遠國際控股有限公司",
+    "中遠海運國際",
+    "中遠海運國際（香港）"
+  ],
+  "url": "http://hk.coscoshipping.com/",
+  "description": "Hong Kong-based shipping service company"
+}

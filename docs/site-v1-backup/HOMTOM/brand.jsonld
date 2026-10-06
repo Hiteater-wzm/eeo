@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HOMTOM",
+  "alternateName": [
+    "Homtom",
+    "HomTom",
+    "Shenzhen ZHOUJI HOMTOM Technology Co.",
+    "Ltd"
+  ],
+  "url": "http://homtom.cc/",
+  "description": "producer of smartphones and accessories from China"
+}

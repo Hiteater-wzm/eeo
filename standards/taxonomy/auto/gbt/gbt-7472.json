@@ -1,0 +1,173 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-7472",
+  "industry": "固体矿产地质勘查",
+  "industry_aliases": [
+    "7472",
+    "固体矿产地质勘查",
+    "科学研究和技术服务业",
+    "专业技术服务业",
+    "地质勘查"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "service",
+      "label": "服务类型",
+      "select": "many"
+    },
+    {
+      "id": "accredit",
+      "label": "资质与效力",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客户类型",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "计价方式",
+      "select": "one"
+    }
+  ],
+  "traits": [
+    {
+      "id": "testing",
+      "group": "service",
+      "label": "检验检测",
+      "description": "出具检测数据的检验检测服务"
+    },
+    {
+      "id": "rd_out",
+      "group": "service",
+      "label": "研发与试验外包",
+      "description": "承接研发、试验与开发设计"
+    },
+    {
+      "id": "survey_map",
+      "group": "service",
+      "label": "勘察与测绘",
+      "description": "提供勘察、测绘类技术服务"
+    },
+    {
+      "id": "cert_consult",
+      "group": "service",
+      "label": "认证与咨询",
+      "description": "协助认证申报与技术咨询"
+    },
+    {
+      "id": "cma",
+      "group": "accredit",
+      "label": "CMA 检验检测资质",
+      "description": "持检验检测机构资质认定，报告具法律效力"
+    },
+    {
+      "id": "cnas",
+      "group": "accredit",
+      "label": "CNAS 实验室认可",
+      "description": "获 CNAS 实验室认可"
+    },
+    {
+      "id": "report_gov",
+      "group": "accredit",
+      "label": "报告可用于政府事项",
+      "description": "报告被监管或审批环节采信"
+    },
+    {
+      "id": "b_corp",
+      "group": "buyer",
+      "label": "企业委托",
+      "description": "主要承接企业委托"
+    },
+    {
+      "id": "b_gov",
+      "group": "buyer",
+      "label": "政府委托",
+      "description": "承接政府购买服务或监督抽检"
+    },
+    {
+      "id": "b_personal",
+      "group": "buyer",
+      "label": "个人委托",
+      "description": "接受个人委托检测"
+    },
+    {
+      "id": "per_item",
+      "group": "pricing",
+      "label": "按项目计价",
+      "description": "按检测项目逐项计价"
+    },
+    {
+      "id": "package",
+      "group": "pricing",
+      "label": "打包套餐价",
+      "description": "按套餐打包计价"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "legal",
+      "group": "decision",
+      "question": "出的报告有法律效力吗？能用于诉讼或审批吗？",
+      "hint": "回答应说明资质和报告效力范围"
+    },
+    {
+      "id": "cycle",
+      "group": "decision",
+      "question": "多久出报告？能加急吗？加急费多少？",
+      "hint": "回答应给出常规周期和加急选项"
+    },
+    {
+      "id": "sampling",
+      "group": "decision",
+      "question": "样品怎么采？你们来采还是我送？",
+      "hint": "回答应说明采样方式和代表性问题"
+    },
+    {
+      "id": "items",
+      "group": "detail",
+      "question": "检哪些项目？标准依据是什么？",
+      "hint": "回答应列出检测项目和依据标准"
+    },
+    {
+      "id": "retest",
+      "group": "detail",
+      "question": "对结果有异议能复检吗？",
+      "hint": "回答应说明复检流程和费用"
+    },
+    {
+      "id": "report_sample",
+      "group": "detail",
+      "question": "能给看过往报告样式吗？",
+      "hint": "回答应提供脱敏样例报告"
+    },
+    {
+      "id": "fake_report",
+      "group": "risk",
+      "question": "报告真伪怎么验证？",
+      "hint": "回答应给出官方验真渠道"
+    },
+    {
+      "id": "conflict",
+      "group": "risk",
+      "question": "检测不合格会影响后续申报吗？你们帮忙整改吗？",
+      "hint": "回答应说明不合格后的处理与整改支持"
+    }
+  ]
+}

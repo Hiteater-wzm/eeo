@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "3D-LABS Engineering",
+  "alternateName": [
+    "3D LABS",
+    "3D-LABS"
+  ],
+  "url": "https://3d-labs.com",
+  "description": "Indian engineering design and consultancy firm founded in 2003, providing pressure vessel design, structural analysis, s"
+}

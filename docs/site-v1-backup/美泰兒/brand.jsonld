@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美泰兒",
+  "alternateName": [
+    "美泰",
+    "美泰公司",
+    "美泰爾"
+  ],
+  "url": "https://corporate.mattel.com/",
+  "description": "American multinational toy and entertainment company"
+}

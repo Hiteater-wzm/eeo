@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vivmark Residential",
+  "alternateName": "Equity Residential",
+  "url": "https://www.equityapartments.com/",
+  "description": "publicly traded real estate investment trust that invests in apartments"
+}

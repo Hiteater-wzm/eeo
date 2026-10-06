@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "紅帽公司",
+  "alternateName": [
+    "Red Hat",
+    "紅帽",
+    "红帽捷克"
+  ],
+  "url": "https://www.redhat.com/",
+  "description": "American multinational software company"
+}

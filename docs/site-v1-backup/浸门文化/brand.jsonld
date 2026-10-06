@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "浸门文化",
+  "alternateName": [
+    "Jinmen Culture",
+    "JINMEN CULTURE",
+    "浸门文化"
+  ],
+  "url": "https://jinmenculture.com",
+  "description": "一家总部位于上海的公司，专注于沉浸式魔术表演、戏剧，幻术工程和为企业和娱乐客户提供原创 IP"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jet",
+  "alternateName": "JET (Phillips 66)",
+  "url": "https://www.jet.de/",
+  "description": "filling station brand used in Europe by Phillips 66"
+}

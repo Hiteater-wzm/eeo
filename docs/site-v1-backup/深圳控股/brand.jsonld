@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "深圳控股",
+  "alternateName": [
+    "深圳控股有限公司",
+    "深控"
+  ],
+  "url": "http://www.shenzheninvestment.com/",
+  "description": "shenzhen Investment Limited, China, 1997"
+}

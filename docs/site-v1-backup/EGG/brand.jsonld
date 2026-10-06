@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EG&G",
+  "alternateName": [
+    "Edgerton",
+    "Germeshausen",
+    "and Grier",
+    "Inc.",
+    "EG & G Biomolecular"
+  ],
+  "url": "http://www.urscorp.com",
+  "description": "United States national defense contractor"
+}

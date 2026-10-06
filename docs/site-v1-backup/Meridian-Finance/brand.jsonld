@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Meridian Finance",
+  "alternateName": [
+    "Meridian",
+    "Meridian Finance Group",
+    "Meridian Finance Group Ltd"
+  ],
+  "url": "https://themeridian.finance",
+  "description": "British fintech company building USDC payments, treasury, and AI-agent trust infrastructure on Arc"
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SKOPOS VIEW GmbH & Co. KG",
+  "alternateName": [
+    "SKOPOS VIEW",
+    "Skoposview",
+    "VIEW"
+  ],
+  "url": "https://www.skopos-view.de",
+  "description": "A German company specializing in employee experience and employee surveys, based in Hürth"
+}

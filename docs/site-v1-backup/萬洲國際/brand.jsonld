@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "萬洲國際",
+  "alternateName": [
+    "Shineway Group",
+    "Shuanghui Group"
+  ],
+  "url": "http://www.wh-group.com/",
+  "description": "publicly-traded Chinese meat and food processing company headquartered in Luohe, Henan, China"
+}

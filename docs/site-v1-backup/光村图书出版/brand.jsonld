@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "光村图书出版",
+  "alternateName": [
+    "Mitsumura Book Publishing",
+    "Mitsumura Tosho Shuppan"
+  ],
+  "url": "http://www.mitsumura-tosho.co.jp/",
+  "description": "textbook publishing company headquartered in Shinagawa-ku, Tokyo, Japan"
+}

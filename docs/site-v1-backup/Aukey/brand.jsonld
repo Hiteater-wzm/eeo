@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aukey",
+  "alternateName": [
+    "Aukey Technology Co.",
+    "Ltd."
+  ],
+  "url": "https://www.aukey.com/",
+  "description": "Chinese company of consumer electronics"
+}

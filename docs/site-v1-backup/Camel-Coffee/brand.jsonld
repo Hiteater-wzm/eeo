@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Camel Coffee",
+  "alternateName": "CAMEL COFFEE",
+  "url": "https://camelcoffee.jp/",
+  "description": "Japanese retail company; operator of Kaldi Coffee Farm and other businesses"
+}

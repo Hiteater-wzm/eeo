@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "現代貨箱碼頭",
+  "alternateName": [
+    "現代貨箱",
+    "現代貨箱碼頭有限公司"
+  ],
+  "url": "http://www.modernterminals.com/",
+  "description": "container terminal operator in Hong Kong"
+}

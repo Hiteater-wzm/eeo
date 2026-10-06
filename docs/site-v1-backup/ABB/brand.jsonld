@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ABB",
+  "alternateName": "ABB集团",
+  "url": "https://www.abb.com",
+  "description": "瑞士-瑞典背景的电气与自动化集团，总部位于苏黎世，业务涵盖电气化与过程自动化两大板块，工业机器人为其产品线之一。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Zurich",
+    "addressCountry": "瑞士"
+  }
+}

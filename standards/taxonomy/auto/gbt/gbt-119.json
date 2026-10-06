@@ -1,0 +1,172 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-119",
+  "industry": "其他开采专业及辅助性活动",
+  "industry_aliases": [
+    "119",
+    "其他开采专业及辅助性活动",
+    "采矿业",
+    "开采专业及辅助性活动"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "biz",
+      "label": "业务形态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "主要客户",
+      "select": "many"
+    },
+    {
+      "id": "deliver",
+      "label": "交付方式",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "定价机制",
+      "select": "one"
+    }
+  ],
+  "traits": [
+    {
+      "id": "own_mine",
+      "group": "biz",
+      "label": "自有矿区开采",
+      "description": "持有采矿权自行开采"
+    },
+    {
+      "id": "contracting",
+      "group": "biz",
+      "label": "工程与技术承包",
+      "description": "承包开采、洗选或技术服务"
+    },
+    {
+      "id": "trading",
+      "group": "biz",
+      "label": "矿产品贸易",
+      "description": "以购销贸易为主"
+    },
+    {
+      "id": "b_smelter",
+      "group": "buyer",
+      "label": "冶炼与制造企业",
+      "description": "主要卖给下游冶炼厂、材料厂"
+    },
+    {
+      "id": "b_trader",
+      "group": "buyer",
+      "label": "贸易商",
+      "description": "通过贸易商走货"
+    },
+    {
+      "id": "b_public",
+      "group": "buyer",
+      "label": "政府与公共项目",
+      "description": "供应政府储备或公共工程"
+    },
+    {
+      "id": "ex_factory",
+      "group": "deliver",
+      "label": "矿区厂交",
+      "description": "矿区或选厂交货，运费买方承担"
+    },
+    {
+      "id": "to_plant",
+      "group": "deliver",
+      "label": "到厂交付",
+      "description": "送货到买方厂区"
+    },
+    {
+      "id": "port_delivery",
+      "group": "deliver",
+      "label": "港口交割",
+      "description": "在指定港口或交割库交货"
+    },
+    {
+      "id": "p_spot",
+      "group": "pricing",
+      "label": "现货随行就市",
+      "description": "按市场行情逐单议价"
+    },
+    {
+      "id": "p_long",
+      "group": "pricing",
+      "label": "长协合同价",
+      "description": "与客户签长期协议锁量锁价"
+    },
+    {
+      "id": "p_index",
+      "group": "pricing",
+      "label": "挂指数定价",
+      "description": "按公开价格指数加减点定价"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "spec",
+      "group": "decision",
+      "question": "品位和规格怎么样？有化验单吗？",
+      "hint": "回答应给出品位区间并提供每批化验单"
+    },
+    {
+      "id": "capacity",
+      "group": "decision",
+      "question": "月供量能到多少？能稳定供多久？",
+      "hint": "回答应给出可供货量和稳定供货周期"
+    },
+    {
+      "id": "sample",
+      "group": "decision",
+      "question": "可以先寄样品吗？费用谁出？",
+      "hint": "回答应说明样品政策"
+    },
+    {
+      "id": "logistics",
+      "group": "detail",
+      "question": "运输和装卸谁负责？运费怎么算？",
+      "hint": "回答应写明交货地点和运费承担"
+    },
+    {
+      "id": "settle",
+      "group": "detail",
+      "question": "结算方式是什么？验货后付款还是预付？",
+      "hint": "回答应说明付款节奏和结算依据"
+    },
+    {
+      "id": "quality_claim",
+      "group": "detail",
+      "question": "到货品位对不上怎么处理？",
+      "hint": "回答应说明复检机制和差异处理规则"
+    },
+    {
+      "id": "license",
+      "group": "risk",
+      "question": "采矿证、安全生产许可证齐全吗？在哪查？",
+      "hint": "回答应给出证照编号或官方查询渠道"
+    },
+    {
+      "id": "enviro",
+      "group": "risk",
+      "question": "环保和复垦方面有没有处罚记录？",
+      "hint": "回答应说明环保合规情况及查询方式"
+    }
+  ]
+}

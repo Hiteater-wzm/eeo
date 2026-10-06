@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UBS",
+  "alternateName": [
+    "瑞银",
+    "瑞银集团",
+    "瑞士银行"
+  ],
+  "url": "https://www.ubs.com",
+  "description": "瑞士银行集团，总部位于苏黎世，以全球财富管理为核心业务，同时经营投资银行、资产管理与瑞士本土商业银行，2023年完成对瑞士信贷的合并。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Zurich",
+    "addressCountry": "瑞士"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Eli Lilly",
+  "alternateName": [
+    "礼来",
+    "礼来公司"
+  ],
+  "url": "https://www.lilly.com",
+  "description": "美国制药公司，总部位于印第安纳波利斯，产品涵盖糖尿病与肥胖（替尔泊肽）、神经科学与肿瘤领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Indianapolis",
+    "addressCountry": "美国"
+  }
+}

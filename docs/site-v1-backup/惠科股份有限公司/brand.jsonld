@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "惠科股份有限公司",
+  "alternateName": [
+    "HKC Overseas Limited",
+    "HKC CORPORATION LIMITED"
+  ],
+  "url": "https://www.hkcelec.com/",
+  "description": "Chinese electronics company and screen monitor manufacturer"
+}

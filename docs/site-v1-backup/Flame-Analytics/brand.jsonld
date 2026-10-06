@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Flame Analytics",
+  "alternateName": [
+    "Flame Analytics S.L.",
+    "Flame Analytics SL",
+    "Flame Connect",
+    "Flame Hypersensor",
+    "Flame Traffic"
+  ],
+  "url": "https://flameanalytics.com",
+  "description": "Spanish AI video analytics and people counting software company for retail, shopping malls, and physical spaces"
+}

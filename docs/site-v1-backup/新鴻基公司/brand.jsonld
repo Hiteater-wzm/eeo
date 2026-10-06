@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "新鴻基公司",
+  "alternateName": [
+    "新鴻基有限公司",
+    "新鸿基公司"
+  ],
+  "url": "http://www.shkco.com/",
+  "description": "listed non-bank financial corporation in Hong Kong"
+}

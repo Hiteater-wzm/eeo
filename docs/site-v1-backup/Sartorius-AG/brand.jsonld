@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sartorius AG",
+  "alternateName": [
+    "Sartorius Stedim Biotech",
+    "Sartorius (Germany)"
+  ],
+  "url": "http://www.sartorius.com/",
+  "description": "German technology company specializing in equipment and services for the biopharmaceutical industry"
+}

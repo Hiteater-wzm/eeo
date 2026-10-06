@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wells Fargo",
+  "alternateName": "富国银行",
+  "url": "https://www.wellsfargo.com",
+  "description": "美国银行控股公司，总部位于旧金山，以零售银行、商业银行、企业与投资银行业务为主。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressCountry": "美国"
+  }
+}

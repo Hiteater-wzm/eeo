@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Westermo Neratec",
+  "alternateName": [
+    "Neratec",
+    "Westermo Neratec AG",
+    "Neratec Solutions AG"
+  ],
+  "url": "https://www.westermo.com/neratec",
+  "description": "Swiss wireless technology company and subsidiary of Westermo, specializing in industrial WLAN and railway communication"
+}

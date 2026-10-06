@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SLB",
+  "alternateName": [
+    "斯伦贝谢",
+    "Schlumberger"
+  ],
+  "url": "https://www.slb.com",
+  "description": "油田服务公司（2022年由Schlumberger更名），总部位于休斯敦，为油气田提供勘探测井、钻完井与生产技术服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Houston",
+    "addressCountry": "美国"
+  }
+}

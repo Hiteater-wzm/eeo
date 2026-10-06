@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Honeywell",
+  "alternateName": "霍尼韦尔",
+  "url": "https://www.honeywell.com",
+  "description": "美国工业集团，总部位于北卡罗来纳州夏洛特，业务涵盖航空航天、楼宇与过程自动化以及新材料（先进材料）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Charlotte",
+    "addressCountry": "美国"
+  }
+}

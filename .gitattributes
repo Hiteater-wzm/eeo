@@ -1,0 +1,2 @@
+# Normalize text files to LF in the repository; git auto-detects binaries.
+* text=auto

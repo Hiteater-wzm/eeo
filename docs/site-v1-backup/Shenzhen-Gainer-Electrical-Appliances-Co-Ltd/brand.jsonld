@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shenzhen Gainer Electrical Appliances Co., Ltd.",
+  "alternateName": [
+    "Gainer",
+    "Shenzhen Gainer"
+  ],
+  "url": "https://szgainer.com",
+  "description": "Chinese kitchen appliance OEM/ODM manufacturer specializing in hand blenders, meat grinders, and stand mixers"
+}

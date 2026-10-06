@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "松灵机器人",
+  "alternateName": [
+    "AgileX",
+    "Songling Robot"
+  ],
+  "url": "https://global.agilex.ai",
+  "description": "Chinese manufacturer of mobile robot platforms and robotic arms, founded in 2016, based in Shenzhen"
+}

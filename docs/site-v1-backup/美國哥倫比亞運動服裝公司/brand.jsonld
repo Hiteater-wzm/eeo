@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美國哥倫比亞運動服裝公司",
+  "alternateName": [
+    "Columbia",
+    "Columbia Factory Store",
+    "Columbia Sportswear",
+    "Columbia Sportswear Co."
+  ],
+  "url": "https://www.columbia.com/",
+  "description": "United States company that manufactures and distributes outerwear and sportswear"
+}

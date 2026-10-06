@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LINKO DTF Printer",
+  "alternateName": [
+    "LINKO",
+    "DTF LINKO",
+    "dtflinko"
+  ],
+  "url": "https://www.dtflinko.com",
+  "description": "Chinese manufacturer of DTF printers and UV DTF printers, founded in Zhuhai, China"
+}

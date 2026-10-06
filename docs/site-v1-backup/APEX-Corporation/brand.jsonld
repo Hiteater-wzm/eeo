@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "APEX Corporation",
+  "alternateName": [
+    "APEX",
+    "APEX Corporation (Japan)",
+    "APEX Inc.",
+    "Apex Kabushiki Gaisha"
+  ],
+  "url": "https://apex.tokyo/",
+  "description": "Japanese drone surveying and 3D measurement (LiDAR/SLAM) company based in Shibuya, Tokyo"
+}

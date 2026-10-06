@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OpenTable",
+  "alternateName": [
+    "open table",
+    "opentable",
+    "OpenTable",
+    "Inc."
+  ],
+  "url": "https://www.opentable.com",
+  "description": "American internet company owned by Booking Holdings"
+}

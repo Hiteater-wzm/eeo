@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TIME&SPACE",
+  "alternateName": [
+    "Time and Space",
+    "TIME & SPACE",
+    "timeandspace",
+    "timeandspace.app"
+  ],
+  "url": "https://timeandspace.app/",
+  "description": "Portuguese event media company and photo-delivery software based in Lisbon"
+}

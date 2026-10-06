@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rene.E Laboratory",
+  "alternateName": [
+    "Rene.E Lab",
+    "Reneelab"
+  ],
+  "url": "https://www.reneelab.com",
+  "description": "Chinese computer software developer for data recovery, data backup, system rescue, video editing, file encryption, etc."
+}

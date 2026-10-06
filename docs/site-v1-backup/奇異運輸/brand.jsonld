@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "奇異運輸",
+  "alternateName": [
+    "奇異交通",
+    "通用电气运输系统",
+    "通用运输"
+  ],
+  "url": "http://www.getransportation.com",
+  "description": "American railroad rolling stock manufacturer"
+}

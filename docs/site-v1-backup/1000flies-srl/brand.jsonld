@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "1000flies srl",
+  "alternateName": [
+    "1000fliegen",
+    "1000fliegen.de",
+    "1000flies",
+    "1000flies.com",
+    "1000moscas"
+  ],
+  "url": "https://www.1000mosche.it/",
+  "description": "1000flies srl is a specialized online shop for fly fishers. The company offers a comprehensive selection of high-quality"
+}

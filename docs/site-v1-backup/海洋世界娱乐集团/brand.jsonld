@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "海洋世界娱乐集团",
+  "alternateName": [
+    "SeaWorld",
+    "SeaWorld Parks and Entertainment",
+    "SeaWorld Parks & Entertainment",
+    "United Parks & Resorts Inc."
+  ],
+  "url": "http://www.SeaWorldEntertainment.com/",
+  "description": "family entertainment, amusement park and attraction company headquartered in Orlando, Florida"
+}

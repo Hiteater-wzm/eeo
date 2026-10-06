@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "辽宁精控节拍机器人有限公司",
+  "alternateName": [
+    "JKBEAT",
+    "精控节拍"
+  ],
+  "url": "https://www.jkbeat.com",
+  "description": "中国首家自主研发AI药品核对机的医疗自动化设备企业，以AI视觉核对机与自动剥药机为核心产品，服务于医院药房自动化场景"
+}

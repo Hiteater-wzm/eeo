@@ -1,0 +1,25 @@
+# Circle K
+
+> 便利店品牌,1951年创立于美国,现由加拿大Alimentation Couche-Tard持有,在北美、欧洲与亚洲运营门店。
+
+- 官方网站: https://www.couche-tard.com
+- 所属行业: 便利店
+- 所在城市: 拉瓦尔(魁北克省)
+- 所在国家: 加拿大
+- 别名: Alimentation Couche-Tard、OK便利店(部分市场)
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 母公司Couche-Tard在全球运营约1.7万家门店
+- 在多伦多证券交易所上市
+
+## 信息来源
+
+- https://www.couche-tard.com
+- https://en.wikipedia.org/wiki/Alimentation_Couche-Tard
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "湯米席爾菲格股份有限公司",
+  "alternateName": [
+    "Tommy Hilfiger",
+    "Tommy Hilfiger Corporation",
+    "Tommy Hilfiger Group",
+    "Tommy Hilfiger Inc."
+  ],
+  "url": "https://usa.tommy.com/en#/home_page",
+  "description": "American multinational corporation that designs and manufactures apparel"
+}

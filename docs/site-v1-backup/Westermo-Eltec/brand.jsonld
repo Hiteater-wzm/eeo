@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Westermo Eltec",
+  "alternateName": [
+    "ELTEC Elektronik AG",
+    "Westermo Eltec GmbH"
+  ],
+  "url": "https://www.westermo.com/contact/main-contact-details",
+  "description": "German technology company and subsidiary of Westermo, specializing in wireless communication and networking solutions fo"
+}

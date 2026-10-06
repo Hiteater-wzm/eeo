@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "史密斯威森",
+  "alternateName": [
+    "Smith & Wesson",
+    "史密夫威信",
+    "史密斯·威爾森",
+    "史密斯威爾森"
+  ],
+  "url": "http://www.smith-wesson.com/",
+  "description": "manufacturer of firearms and BB guns in the United States"
+}

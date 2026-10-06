@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sparekassen Danmark",
+  "alternateName": "Sparekassen Danmark af 1871",
+  "url": "https://www.spard.dk",
+  "description": "Denmarks largest mutual savings bank, established in a merger of Sparekassen Vendsyssel and Jutlander Bank"
+}

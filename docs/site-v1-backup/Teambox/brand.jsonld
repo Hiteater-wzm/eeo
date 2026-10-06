@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Teambox",
+  "alternateName": [
+    "Teambox co.",
+    "ltd.",
+    "Teambox Inc."
+  ],
+  "url": "https://corp.teambox.co.jp/",
+  "description": "Japanese leadership development and organizational consulting company based in Minato, Tokyo"
+}

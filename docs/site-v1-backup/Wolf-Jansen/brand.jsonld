@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wolf Jansen",
+  "alternateName": [
+    "WJ",
+    "Wolf Jansen Ltd",
+    "WolfJansen"
+  ],
+  "url": "https://wolfjansen.com",
+  "description": "SAP, Data & AI and Finance Recruitment Company based in Long Rock, Frankfurt am Main and Dusseldorf"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Yuan Packaging",
+  "alternateName": [
+    "YuAn Packaging",
+    "羽安包装"
+  ],
+  "url": "https://yuanpackaging.com",
+  "description": "packaging manufacturer in Huai'an, China"
+}

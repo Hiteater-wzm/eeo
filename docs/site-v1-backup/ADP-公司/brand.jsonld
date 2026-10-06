@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ADP (公司)",
+  "alternateName": [
+    "ADP",
+    "Automatic Data Processing Inc",
+    "Automatic Data Processing",
+    "Inc."
+  ],
+  "url": "http://www.adp.com/",
+  "description": "American human resources management software company"
+}

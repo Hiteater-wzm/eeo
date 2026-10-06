@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "New Paradigm Mental Health Retreat",
+  "alternateName": [
+    "New Paradigm",
+    "New Paradigm Chiang Mai",
+    "New Paradigm Retreat",
+    "New Paradigm Trauma Institute",
+    "New Paradigm Trauma Retreat"
+  ],
+  "url": "https://www.newparadigm.org/",
+  "description": "private residential mental health retreat in Chiang Mai, Thailand, specialising in trauma and EMDR therapy"
+}

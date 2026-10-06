@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ZWO Astrophotography",
+  "alternateName": [
+    "Suzhou Zhenwang Optoelectronics Co.",
+    "Ltd.",
+    "Suzhou ZWO Co.",
+    "Ltd.",
+    "ZWO"
+  ],
+  "url": "https://www.zwoastro.com/",
+  "description": "Chiense company that specializes in developing and manufacturing astrophotography equipment"
+}

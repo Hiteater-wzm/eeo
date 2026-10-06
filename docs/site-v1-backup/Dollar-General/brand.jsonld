@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dollar General",
+  "alternateName": [
+    "DolGenCorp",
+    "Dollar General Corporation",
+    "Dollar General Store"
+  ],
+  "url": "https://www.dollargeneral.com/",
+  "description": "discount variety store chain in the USA"
+}

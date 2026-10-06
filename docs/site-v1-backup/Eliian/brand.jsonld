@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Eliian",
+  "alternateName": [
+    "Eliian Sportswear Factory",
+    "Xiamen Eliian Industrial & Trading Co.",
+    "Ltd."
+  ],
+  "url": "https://www.eliian.com",
+  "description": "custom sportswear manufacturer in Xiamen, China"
+}

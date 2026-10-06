@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vernalis Research",
+  "alternateName": "Vernalis (R&D) Limited",
+  "url": "https://www.vernalis.com/",
+  "description": "Fragment and structure-based drug discovery subsidiary of Ligand Pharmaceuticals, Inc."
+}

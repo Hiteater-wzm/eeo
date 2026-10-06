@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Car Sloth",
+  "alternateName": [
+    "CarSloth",
+    "carsloth.com"
+  ],
+  "url": "https://www.carsloth.com/",
+  "description": "British car subscription comparison website. It aggregates hundreds of subscription cars from all UK-based car subscript"
+}

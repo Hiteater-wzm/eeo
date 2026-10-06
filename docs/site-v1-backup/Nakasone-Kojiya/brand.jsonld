@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nakasone Kojiya",
+  "alternateName": [
+    "Nakasone Kojiya Co.",
+    "Ltd.",
+    "NUCHI"
+  ],
+  "url": "https://nakasone-kojiya.com/",
+  "description": "Japanese koji and fermented food manufacturer based in Naha, Okinawa"
+}

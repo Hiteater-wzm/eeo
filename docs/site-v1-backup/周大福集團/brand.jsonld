@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "周大福集團",
+  "alternateName": [
+    "周大福",
+    "周大福企業"
+  ],
+  "url": "http://www.chowtaifook.com/",
+  "description": "Hong Kong–based privately owned conglomerate"
+}

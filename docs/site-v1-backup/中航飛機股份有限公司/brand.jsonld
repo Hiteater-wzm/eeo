@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中航飛機股份有限公司",
+  "alternateName": [
+    "中航飛機",
+    "西安飛機國際航空製造股份有限公司",
+    "西飛國際"
+  ],
+  "url": "https://www.xac.com.cn",
+  "description": "aviation and aerostructure manufacturer in China"
+}

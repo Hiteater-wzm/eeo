@@ -1,0 +1,203 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "em-0434",
+  "industry": "动力电池电芯制造",
+  "industry_aliases": [
+    "动力电池电芯制造"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "user",
+      "label": "用户类型",
+      "select": "many"
+    },
+    {
+      "id": "scope",
+      "label": "经营范围",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "价格机制",
+      "select": "one"
+    },
+    {
+      "id": "biz",
+      "label": "业务环节",
+      "select": "many"
+    },
+    {
+      "id": "production",
+      "label": "生产方式",
+      "select": "many"
+    },
+    {
+      "id": "service_p",
+      "label": "配套服务",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "u_resident",
+      "group": "user",
+      "label": "居民用户",
+      "description": "面向家庭用户供应或服务"
+    },
+    {
+      "id": "u_business",
+      "group": "user",
+      "label": "工商业用户",
+      "description": "面向工厂、商铺等经营用户"
+    },
+    {
+      "id": "u_grid",
+      "group": "user",
+      "label": "电力上网",
+      "description": "所产电力上网销售"
+    },
+    {
+      "id": "u_park",
+      "group": "user",
+      "label": "园区集中供能",
+      "description": "向园区多家用户集中供应"
+    },
+    {
+      "id": "s_local",
+      "group": "scope",
+      "label": "本地经营",
+      "description": "在单一城市或园区内经营"
+    },
+    {
+      "id": "s_multi",
+      "group": "scope",
+      "label": "跨区域经营",
+      "description": "在多个省市有项目或用户"
+    },
+    {
+      "id": "p_gov",
+      "group": "pricing",
+      "label": "政府定价或指导价",
+      "description": "执行政府核价或指导价"
+    },
+    {
+      "id": "p_market",
+      "group": "pricing",
+      "label": "市场化交易",
+      "description": "通过市场化交易形成价格"
+    },
+    {
+      "id": "p_contract",
+      "group": "pricing",
+      "label": "长期合同价",
+      "description": "与用户签长期合同锁定价格"
+    },
+    {
+      "id": "b_generate",
+      "group": "biz",
+      "label": "生产供应",
+      "description": "自营生产电、热、气或水"
+    },
+    {
+      "id": "b_network",
+      "group": "biz",
+      "label": "管网与输配",
+      "description": "运营管网或输配设施"
+    },
+    {
+      "id": "b_service",
+      "group": "biz",
+      "label": "安装与维保服务",
+      "description": "提供接入安装、运维检修服务"
+    },
+    {
+      "id": "battery_cell_self",
+      "group": "production",
+      "label": "自产电芯",
+      "description": "电芯自制而非外购"
+    },
+    {
+      "id": "battery_cycle_life",
+      "group": "production",
+      "label": "标注循环寿命",
+      "description": "公开标注循环寿命数据"
+    },
+    {
+      "id": "battery_battery_recycle",
+      "group": "service_p",
+      "label": "以旧回收",
+      "description": "提供旧电池回收渠道"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_check",
+      "group": "decision",
+      "question": "价格怎么定的？在哪能查到收费标准？",
+      "hint": "回答应给出价格构成和官方可查渠道"
+    },
+    {
+      "id": "access",
+      "group": "decision",
+      "question": "报装要什么材料、多久能通？",
+      "hint": "回答应列出报装材料和办理时限"
+    },
+    {
+      "id": "plan_diff",
+      "group": "decision",
+      "question": "有几种套餐或计价方式？适合哪种用量？",
+      "hint": "回答应分档说明并给出用量适配建议"
+    },
+    {
+      "id": "meter",
+      "group": "detail",
+      "question": "计量表怎么抄、怎么核对用量？",
+      "hint": "回答应说明抄表周期和用量查询方式"
+    },
+    {
+      "id": "outage",
+      "group": "detail",
+      "question": "停供或故障怎么报修？多久恢复？",
+      "hint": "回答应给出报修渠道和抢修时限承诺"
+    },
+    {
+      "id": "bill",
+      "group": "detail",
+      "question": "账单怎么开？能开增值税发票吗？",
+      "hint": "回答应说明账单周期和开票渠道"
+    },
+    {
+      "id": "safety",
+      "group": "risk",
+      "question": "户内设施安全问题谁负责？有定期检查吗？",
+      "hint": "回答应划分责任边界并说明入户安检安排"
+    },
+    {
+      "id": "complaint",
+      "group": "risk",
+      "question": "对计量或收费有争议找谁？",
+      "hint": "回答应给出争议复核渠道和处理时限"
+    },
+    {
+      "id": "battery_battery_safe",
+      "group": "risk",
+      "question": "起火风险怎么控？有什么认证？",
+      "hint": "回答应说明安全标准与认证情况"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Primepool GmbH",
+  "alternateName": [
+    "Primepool",
+    "Primepool.de"
+  ],
+  "url": "https://www.primepool.de/",
+  "description": "German online specialist dealer for swimming pools, pool enclosures and pool accessories"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Metallbau Windeck GmbH",
+  "alternateName": [
+    "Windeck",
+    "Metallbau Windeck"
+  ],
+  "url": "https://windeck.de",
+  "description": "German construction company planning, realizing and managing complex building envelopes like facades or roofs."
+}

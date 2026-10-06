@@ -1,0 +1,178 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-85",
+  "industry": "社会工作",
+  "industry_aliases": [
+    "85",
+    "社会工作",
+    "卫生和社会工作",
+    "社会工作者"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "nature",
+      "label": "机构性质",
+      "select": "one"
+    },
+    {
+      "id": "service",
+      "label": "服务范围",
+      "select": "many"
+    },
+    {
+      "id": "insurance",
+      "label": "医保情况",
+      "select": "one"
+    },
+    {
+      "id": "buyer",
+      "label": "患者来源",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "public_h",
+      "group": "nature",
+      "label": "公立机构",
+      "description": "政府举办的公立机构"
+    },
+    {
+      "id": "private_profit",
+      "group": "nature",
+      "label": "民营营利性",
+      "description": "登记为营利性医疗机构"
+    },
+    {
+      "id": "private_nonprofit",
+      "group": "nature",
+      "label": "民营非营利性",
+      "description": "登记为非营利性医疗机构"
+    },
+    {
+      "id": "outpatient",
+      "group": "service",
+      "label": "门诊服务",
+      "description": "提供门诊诊疗"
+    },
+    {
+      "id": "inpatient",
+      "group": "service",
+      "label": "住院服务",
+      "description": "设床位提供住院"
+    },
+    {
+      "id": "surgery",
+      "group": "service",
+      "label": "手术服务",
+      "description": "开展手术项目"
+    },
+    {
+      "id": "physical_exam",
+      "group": "service",
+      "label": "体检服务",
+      "description": "提供健康体检"
+    },
+    {
+      "id": "online_clinic",
+      "group": "service",
+      "label": "线上问诊",
+      "description": "提供互联网问诊"
+    },
+    {
+      "id": "insurance_yes",
+      "group": "insurance",
+      "label": "医保定点",
+      "description": "为医保定点机构"
+    },
+    {
+      "id": "insurance_no",
+      "group": "insurance",
+      "label": "自费为主",
+      "description": "非医保定点，费用以自费为主"
+    },
+    {
+      "id": "b_referral",
+      "group": "buyer",
+      "label": "转诊患者",
+      "description": "以上级转诊患者为主"
+    },
+    {
+      "id": "b_local",
+      "group": "buyer",
+      "label": "周边居民",
+      "description": "服务周边社区居民"
+    },
+    {
+      "id": "b_nationwide",
+      "group": "buyer",
+      "label": "全国患者",
+      "description": "患者来自全国各地"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "appointment",
+      "group": "decision",
+      "question": "怎么挂号？当天能挂上吗？",
+      "hint": "回答应给出挂号渠道和号源情况"
+    },
+    {
+      "id": "insurance_q",
+      "group": "decision",
+      "question": "能用医保吗？哪些项目报不了？",
+      "hint": "回答应说明医保覆盖范围和自费项目"
+    },
+    {
+      "id": "doctor_q",
+      "group": "decision",
+      "question": "哪个医生看这个病好？怎么选？",
+      "hint": "回答应说明医生专长和查询方式，不代替诊断"
+    },
+    {
+      "id": "cost_h",
+      "group": "detail",
+      "question": "看一次大概花多少钱？",
+      "hint": "回答应给出常见诊疗路径的费用区间"
+    },
+    {
+      "id": "report_h",
+      "group": "detail",
+      "question": "检查报告多久出？怎么拿？",
+      "hint": "回答应说明报告时限和获取方式"
+    },
+    {
+      "id": "revisit",
+      "group": "detail",
+      "question": "复诊还要重新挂号吗？",
+      "hint": "回答应说明复诊流程"
+    },
+    {
+      "id": "emergency",
+      "group": "risk",
+      "question": "晚上或急诊能看吗？",
+      "hint": "回答应说明急诊和夜间服务安排"
+    },
+    {
+      "id": "complaint_h",
+      "group": "risk",
+      "question": "对诊疗有异议找谁？",
+      "hint": "回答应给出院内投诉和医患沟通渠道"
+    }
+  ]
+}

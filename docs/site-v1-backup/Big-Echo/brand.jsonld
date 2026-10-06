@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Big Echo",
+  "alternateName": [
+    "CROWN德間音樂銷售有限公司",
+    "第一兴商",
+    "第一興商公司"
+  ],
+  "url": "https://www.dkkaraoke.co.jp/",
+  "description": "Japanese company providing services related to karaoke and parking lots"
+}

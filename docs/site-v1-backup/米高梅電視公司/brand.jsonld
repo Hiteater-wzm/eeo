@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "米高梅電視公司",
+  "alternateName": [
+    "Metro-Goldwyn-Mayer Studios Television Group and Digital",
+    "Metro-Goldwyn-Mayer Television",
+    "MGM Television Entertainment",
+    "MGM/UA Television."
+  ],
+  "url": "http://www.mgm.com/tv.php",
+  "description": "American television production/distribution studio"
+}

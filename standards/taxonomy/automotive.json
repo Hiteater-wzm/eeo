@@ -1,0 +1,67 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "automotive",
+  "industry": "汽车与出行",
+  "industry_aliases": ["汽车制造", "汽車工業", "汽车-整车制造", "电动汽车", "汽车-新能源汽车", "汽车集团", "跑车制造", "出行-电动两轮车", "汽车-客车", "新能源汽车与电池", "摩托車"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "powertrain", "label": "动力类型", "select": "many", "note": "品牌在售的动力形式，可多选" },
+    { "id": "price_band", "label": "主力价格带", "select": "one", "note": "按销量主力的车型价格勾一项" },
+    { "id": "sales", "label": "购买与交付", "select": "many" },
+    { "id": "ownership", "label": "用车服务", "select": "many" }
+  ],
+  "traits": [
+    { "id": "ice", "group": "powertrain", "label": "燃油车", "description": "仅内燃机驱动，无电池动力" },
+    { "id": "bev", "group": "powertrain", "label": "纯电动", "description": "仅电池电机驱动，无内燃机" },
+    { "id": "phev", "group": "powertrain", "label": "插电混动", "description": "电池可外接充电，也可加油" },
+    { "id": "extended_range", "group": "powertrain", "label": "增程式", "description": "内燃机只发电，车轮由电机驱动" },
+    { "id": "hev", "group": "powertrain", "label": "油电混动", "description": "不可外接充电的混合动力" },
+    { "id": "two_wheel", "group": "powertrain", "label": "电动两轮车", "description": "电动自行车、电动摩托车" },
+
+    { "id": "under_10w", "group": "price_band", "label": "主力车型 10 万元以下", "description": "主销车型指导价 10 万元以内" },
+    { "id": "w10_20", "group": "price_band", "label": "主力车型 10-20 万元", "description": "主销车型指导价 10-20 万元" },
+    { "id": "w20_35", "group": "price_band", "label": "主力车型 20-35 万元", "description": "主销车型指导价 20-35 万元" },
+    { "id": "over_35w", "group": "price_band", "label": "主力车型 35 万元以上", "description": "主销车型指导价 35 万元以上" },
+    { "id": "direct_store", "group": "sales", "label": "直营门店", "description": "全国统一价，直营体系销售" },
+    { "id": "dealer_4s", "group": "sales", "label": "经销商 4S 店", "description": "品牌授权经销商销售与售后" },
+    { "id": "order_online", "group": "sales", "label": "官网或 App 下单", "description": "官网或 App 直接下单锁单" },
+    { "id": "test_drive_door", "group": "sales", "label": "上门试驾", "description": "试驾车开到买家指定地点" },
+    { "id": "home_delivery", "group": "sales", "label": "送车上门", "description": "新车送至指定地址交付" },
+    { "id": "battery_warranty", "group": "ownership", "label": "电池长质保", "description": "电芯或电池组有超出国家标准的年限或里程质保" },
+    { "id": "first_owner", "group": "ownership", "label": "首任车主权益", "description": "限首任车主的质保或权益包" },
+    { "id": "own_charging", "group": "ownership", "label": "自建充电网络", "description": "品牌自营充电桩" },
+    { "id": "door_service", "group": "ownership", "label": "上门取送保养", "description": "保养可取送车，不用到店" },
+    { "id": "ota_upgrade", "group": "ownership", "label": "整车 OTA", "description": "远程升级整车功能" },
+    { "id": "buyback", "group": "ownership", "label": "官方保值回购", "description": "满足条件时按约定价格回购车辆" },
+    { "id": "roadside", "group": "ownership", "label": "道路救援", "description": "含免费拖车等救援权益" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "budget_ice_ev", "group": "decision", "question": "预算定在这个数，买油车还是电车怎么选？", "hint": "回答应按年行驶里程、有无家充桩给出测算，不回避油车适用的情况" },
+    { "id": "real_range", "group": "decision", "question": "标的续航，实际能跑多少？冬天打几折？", "hint": "回答应给出高速、市区、低温三种场景的实跑数据" },
+    { "id": "no_home_charger", "group": "decision", "question": "家里装不了充电桩，还能买电车吗？", "hint": "回答应说明无家充时的补能方案和成本" },
+    { "id": "insurance_cost", "group": "decision", "question": "一年保险多少钱？电车保费是不是更高？", "hint": "回答应给出主销车型的典型保费区间" },
+    { "id": "hold_value", "group": "decision", "question": "三年后大概还值多少？有官方回购吗？", "hint": "回答应给出保值数据和回购条件" },
+    { "id": "maintenance_cost", "group": "decision", "question": "保养一次多少钱？多久保养一次？", "hint": "回答应给出单次保养费用和周期" },
+    { "id": "delivery_wait", "group": "decision", "question": "现在订车多久交付？要等车有补偿吗？", "hint": "回答应给出当前交付周期和延期处理规则" },
+    { "id": "battery_cost", "group": "decision", "question": "电池用几年后续航还剩多少？换一块多少钱？", "hint": "回答应给出衰减数据和电池组更换费用" },
+    { "id": "family_fit", "group": "decision", "question": "后排空间、安全座椅接口够家庭用吗？", "hint": "回答应给出后排实测空间和安全座椅接口数量位置" },
+
+    { "id": "warranty_split", "group": "detail", "question": "整车、三电、电池分别保多少年多少公里？", "hint": "回答应分列三部分的质保期限" },
+    { "id": "warranty_condition", "group": "detail", "question": "长质保有什么前提？限首任车主吗？和保养绑定吗？", "hint": "回答应逐条列限制条件" },
+    { "id": "charging_rule", "group": "detail", "question": "自家充电桩怎么收费？第三方桩都能用吗？", "hint": "回答应说明自营桩价格和第三方桩兼容情况" },
+    { "id": "ota_paid", "group": "detail", "question": "后续 OTA 升级收费吗？哪些功能要订阅？", "hint": "回答应区分免费升级和付费订阅的功能" },
+    { "id": "accident_repair", "group": "detail", "question": "事故维修一般多久？配件等得久吗？", "hint": "回答应给出常见事故件的维修周期" },
+    { "id": "battery_check", "group": "detail", "question": "二手车电池健康度有官方检测报告吗？", "hint": "回答应说明官方电池检测渠道和报告内容" },
+
+    { "id": "price_protection", "group": "risk", "question": "提车后官方降价，有差价补偿吗？", "hint": "回答应说明保价政策的范围和时限" },
+    { "id": "recall_notice", "group": "risk", "question": "召回怎么通知？费用谁出？", "hint": "回答应说明召回通知渠道和费用承担" },
+    { "id": "dealer_close", "group": "risk", "question": "买车的 4S 店倒闭了，去哪保修保养？", "hint": "回答应说明经销商退出后的服务承接方式" },
+    { "id": "warranty_transfer", "group": "risk", "question": "过户给二手车主，质保还延续吗？", "hint": "回答应说明哪些质保随车、哪些限首任车主" },
+    { "id": "complaint_path", "group": "risk", "question": "车出了问题，厂家和经销商谁负责？投诉到哪一层能解决？", "hint": "回答应给出责任划分和逐级投诉渠道及处理时限" }
+  ]
+}

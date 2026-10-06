@@ -1,0 +1,17 @@
+# 菲律賓國家電力網公司
+
+> consortium of electric corporations which is a transmission system operator for the Philippines
+
+- 官方网站: https://www.ngcp.ph
+- 所属行业: 电力行业
+- 别名: 菲律宾国家电网公司
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q28197109
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

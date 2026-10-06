@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AstraZeneca",
+  "alternateName": "阿斯利康",
+  "url": "https://www.astrazeneca.com",
+  "description": "跨国制药公司，总部位于英国剑桥，产品聚焦肿瘤、呼吸与免疫、心血管肾脏及代谢疾病领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cambridge",
+    "addressCountry": "英国"
+  }
+}

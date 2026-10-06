@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "唐先生甜甜圈",
+  "alternateName": [
+    "Dunkin' Donuts",
+    "唐恩都乐",
+    "鄧勤圈餅"
+  ],
+  "url": "https://www.dunkindonuts.com/",
+  "description": "American global donut company and coffeehouse"
+}

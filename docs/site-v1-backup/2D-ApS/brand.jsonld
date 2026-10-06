@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "2D ApS",
+  "alternateName": [
+    "2D",
+    "2-D",
+    "2d",
+    "2-d",
+    "2-D ApS"
+  ],
+  "url": "https://2-d.tech/",
+  "description": "European deep-tech company simplifying CVD graphene integration through its easy-to-use graphene materials platform; off"
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "标普全球",
+  "alternateName": "杠杆评论与数据",
+  "url": "https://www.spglobal.com/en",
+  "description": "American publicly traded corporation, formerly McGraw Hill Financial, Inc"
+}

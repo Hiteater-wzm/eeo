@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NJoy Consulting",
+  "alternateName": [
+    "NJoy Consulting UK",
+    "njoy.consulting"
+  ],
+  "url": "https://njoy.consulting",
+  "description": "NJoy Consulting is an independent UK-based digital strategy and SEO consultancy founded by Nathan James, specializing in"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "KADOKAWA Architecture",
+  "alternateName": [
+    "KADOKAWA Architecture Co.",
+    "Ltd."
+  ],
+  "url": "https://kadokawa-architecture.com/",
+  "description": "The defunct joint venture between Kadokawa and C2 Preparat (2018-2025)"
+}

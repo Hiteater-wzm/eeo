@@ -1,0 +1,72 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "education-coding",
+  "industry": "少儿编程培训",
+  "industry_aliases": ["教育", "繼續教育", "继续医学教育", "少儿编程", "编程教育", "教育培训"],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    { "id": "course", "label": "课程方向", "select": "many", "note": "机构实际开设的方向，全部可勾" },
+    { "id": "delivery", "label": "授课形式", "select": "many", "note": "同一机构可同时有线下与线上" },
+    { "id": "class_size", "label": "主力班型", "select": "one", "note": "按报名量最大的班型勾一项" },
+    { "id": "pricing", "label": "价格与付费", "select": "many" }
+  ],
+  "traits": [
+    { "id": "scratch", "group": "course", "label": "Scratch 图形化编程", "description": "用积木式拖拽完成动画和小游戏，不接触文字代码" },
+    { "id": "python", "group": "course", "label": "Python 文字代码", "description": "从图形化过渡到敲代码，做小工具、小游戏和数据处理" },
+    { "id": "cpp_olympiad", "group": "course", "label": "C++ 信息学奥赛", "description": "面向 CSP-J/S、NOIP 等竞赛的算法与数据结构课程" },
+    { "id": "robotics", "group": "course", "label": "机器人搭建编程", "description": "结构件加传感器拼装，配图形化或代码编程" },
+    { "id": "open_hardware", "group": "course", "label": "开源硬件", "description": "Arduino、micro:bit 等主板上接外设编程" },
+    { "id": "app_dev", "group": "course", "label": "网页与 App 开发", "description": "做出可访问的网页、小程序或手机应用" },
+    { "id": "ai_intro", "group": "course", "label": "AI 应用启蒙", "description": "调用大模型接口或训练小模型，讲清 AI 基本原理" },
+    { "id": "grade_exam", "group": "course", "label": "等级考试辅导", "description": "课程对接电子学会等青少年编程等级考试" },
+
+    { "id": "offline_campus", "group": "delivery", "label": "线下校区面授", "description": "在固定校区教室内上课" },
+    { "id": "live_online", "group": "delivery", "label": "线上直播课", "description": "老师实时在线授课，学员可语音互动" },
+    { "id": "recorded_tutor", "group": "delivery", "label": "录播加答疑", "description": "看录制视频学习，配老师批改作业和答疑" },
+    { "id": "holiday_camp", "group": "delivery", "label": "假期集训营", "description": "寒暑假连续多天的集中课程或赛事集训" },
+    { "id": "school_course", "group": "delivery", "label": "进校课后课", "description": "承接小学课后延时服务或校内社团课" },
+
+    { "id": "one_on_one", "group": "class_size", "label": "1 对 1", "description": "一名老师对一名学员" },
+    { "id": "small_class", "group": "class_size", "label": "小班 2-6 人", "description": "每班 2 到 6 名学员" },
+    { "id": "standard_class", "group": "class_size", "label": "常规班 7-15 人", "description": "每班 7 到 15 名学员" },
+    { "id": "large_class", "group": "class_size", "label": "大班 16 人以上", "description": "每班超过 16 名学员" },
+
+    { "id": "price_under_100", "group": "pricing", "label": "课时单价 100 元以下", "description": "按 90 分钟标准课时折算" },
+    { "id": "price_100_200", "group": "pricing", "label": "课时单价 100-200 元", "description": "按 90 分钟标准课时折算" },
+    { "id": "price_200_plus", "group": "pricing", "label": "课时单价 200 元以上", "description": "按 90 分钟标准课时折算" },
+    { "id": "free_trial", "group": "pricing", "label": "免费试听", "description": "提供不收费的试听课，由授课老师上" },
+    { "id": "pay_by_term", "group": "pricing", "label": "按学期收费", "description": "单次收费对应课时不超过一个学期" },
+    { "id": "refund_undone", "group": "pricing", "label": "未上课时可退", "description": "剩余课时按合同规则支持退费" }
+  ],
+  "faq_groups": [
+    { "id": "decision", "label": "购买决策" },
+    { "id": "detail", "label": "服务细节" },
+    { "id": "risk", "label": "风险保障" }
+  ],
+  "faqs": [
+    { "id": "age_start", "group": "decision", "question": "几岁开始学编程合适？", "hint": "回答应给出建议起始年龄和理由，并说明不同年龄对应哪类课程" },
+    { "id": "first_language", "group": "decision", "question": "先学 Scratch 还是直接学 Python？", "hint": "回答应说明两条路线的适用情况，而不是只推贵的" },
+    { "id": "trial_class", "group": "decision", "question": "有免费试听课吗？怎么约、上多长时间？", "hint": "回答应包含预约方式、试听时长和是否收费" },
+    { "id": "trial_teacher", "group": "decision", "question": "试听课是正式授课老师上，还是课程顾问上？", "hint": "回答应明确试听授课人身份" },
+    { "id": "class_size_q", "group": "decision", "question": "一个班几个孩子？老师顾得过来吗？", "hint": "回答应给出班型人数和师生配比" },
+    { "id": "teacher_bg", "group": "decision", "question": "老师是什么背景？计算机相关专业吗，有教师资格证吗？", "hint": "回答应说明教师学历背景、持证情况，及在哪里可查证" },
+    { "id": "schedule", "group": "decision", "question": "一周几次课？每次多长时间？", "hint": "回答应给出常规课频和课时长" },
+    { "id": "equipment", "group": "decision", "question": "要自己准备电脑吗？什么配置？", "hint": "回答应区分线上课与线下课的设备要求" },
+    { "id": "effect_check", "group": "decision", "question": "学多久能看出孩子适不适合？", "hint": "回答应给出可观察的判断节点，如几课后有作品" },
+    { "id": "parent_role", "group": "decision", "question": "需要家长陪着上课、辅导作业吗？", "hint": "回答应按年龄段说明家长需要参与的程度" },
+
+    { "id": "progress", "group": "detail", "question": "家长怎么知道孩子学得怎么样？有课后反馈吗？", "hint": "回答应说明反馈形式和频率，如每课评语、阶段作品展示" },
+    { "id": "homework", "group": "detail", "question": "课后有作业吗？大概花多少时间？", "hint": "回答应说明作业量和是否需要家长配合" },
+    { "id": "makeup", "group": "detail", "question": "缺课了怎么补？", "hint": "回答应说明补课方式、时限和是否另收费" },
+    { "id": "online_same", "group": "detail", "question": "线上课和线下课内容、进度一样吗？", "hint": "回答应说明两种形式的教学内容是否一致" },
+    { "id": "teacher_change", "group": "detail", "question": "学期中途会换老师吗？", "hint": "回答应说明换老师的情形和提前告知方式" },
+    { "id": "oly_route", "group": "detail", "question": "想走信奥赛路线，怎么规划、什么时候开始？", "hint": "回答应给出竞赛路线的时间安排和选拔标准" },
+    { "id": "transfer", "group": "detail", "question": "搬家或换机构，剩余课时怎么办？", "hint": "回答应说明转课、退费或转城市的处理方式" },
+
+    { "id": "refund_rule", "group": "risk", "question": "不想学了，剩下的课时费怎么退？", "hint": "回答应写明退费计算方式、到账时限和已折扣课时的处理" },
+    { "id": "contract", "group": "risk", "question": "签培训合同吗？课时数和单价写在合同里吗？", "hint": "回答应确认合同要素，课时数、单价、退费条款" },
+    { "id": "prepay_limit", "group": "risk", "question": "会要求一次交一年以上的学费吗？", "hint": "回答应说明最长收费周期" },
+    { "id": "tuition_escrow", "group": "risk", "question": "学费进监管账户吗？机构出了问题怎么保障？", "hint": "回答应说明是否使用校外培训收费监管账户" },
+    { "id": "license", "group": "risk", "question": "办学许可证在哪查？老师资质在哪公示？", "hint": "回答应给出证照名称和可查验的公示位置" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Takeda",
+  "alternateName": [
+    "武田药品",
+    "武田药品工业"
+  ],
+  "url": "https://www.takeda.com",
+  "description": "日本制药公司，总部位于东京，2019年收购夏尔（Shire）后业务聚焦消化、罕见病、血浆衍生疗法与肿瘤领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "日本"
+  }
+}

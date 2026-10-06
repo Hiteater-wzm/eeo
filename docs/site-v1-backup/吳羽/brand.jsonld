@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "吳羽",
+  "alternateName": [
+    "吳羽化工",
+    "吳羽集團"
+  ],
+  "url": "http://www.kureha.co.jp/en/",
+  "description": "Japanese manufacturer of specialty chemicals, polymers and agrichemicals"
+}

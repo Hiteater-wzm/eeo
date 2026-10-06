@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "瑰麗酒店集團",
+  "alternateName": [
+    "New World Hospitality",
+    "New World Hotel Group",
+    "New World Hotel Management",
+    "New World Hotel Management (BVI) Limited",
+    "New World Hotel Management (Macau)"
+  ],
+  "url": "https://www.rosewoodhotelgroup.com",
+  "description": "privately owned hotel chain and hotel management company headquartered in Hong Kong"
+}

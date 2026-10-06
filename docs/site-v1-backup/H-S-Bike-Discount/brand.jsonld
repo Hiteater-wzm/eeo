@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "H & S Bike Discount",
+  "alternateName": [
+    "Bike-Discount",
+    "H und S Bike Discount",
+    "H&S Bike-Discount"
+  ],
+  "url": "https://www.bike-discount.de",
+  "description": "German bicycle retailer and manufacturer headquartered in Grafschaft, Rhineland-Palatinate"
+}

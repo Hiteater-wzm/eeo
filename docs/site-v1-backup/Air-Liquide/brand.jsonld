@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Air Liquide",
+  "alternateName": [
+    "法国液化空气集团",
+    "液化空气"
+  ],
+  "url": "https://www.airliquide.com",
+  "description": "法国工业气体公司，总部位于巴黎，为工业与医疗领域供应氧气、氮气、氢气等气体及相关设备与服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "法国"
+  }
+}

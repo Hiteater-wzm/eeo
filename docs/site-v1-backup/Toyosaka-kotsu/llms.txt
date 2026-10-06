@@ -1,0 +1,17 @@
+# Toyosaka kotsu
+
+> bus and taxicab operator based in Higashihiroshima, Hiroshima prefecture, Japan
+
+- 官方网站: http://toyosaka-kotsu.co.jp/
+- 所属行业: 交通运输业
+- 别名: Toyoko、Geiyo Taxi、Toyoko Taxi
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q11633753
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

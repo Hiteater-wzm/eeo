@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "金域医学",
+  "alternateName": [
+    "KingMed",
+    "广州金域医学检验集团股份有限公司"
+  ],
+  "url": "https://www.kingmed.com.cn",
+  "description": "1994年创立于广州的第三方医学检验企业，2017年在上海证券交易所上市（603882.SH），服务网络覆盖全国。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "广州",
+    "addressCountry": "中国"
+  }
+}

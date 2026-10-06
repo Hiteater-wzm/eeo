@@ -1,0 +1,17 @@
+# 长安福特马自达
+
+> automotive manufacturing company headquartered in Chongqing, China
+
+- 官方网站: http://www.ford.com.cn/servlet/ContentServer?pagename=DFY/CN
+- 所属行业: 汽車工業
+- 别名: 長安福特馬自達
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q10564479
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

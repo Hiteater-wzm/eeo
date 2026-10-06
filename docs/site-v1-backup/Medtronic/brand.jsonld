@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Medtronic",
+  "alternateName": "美敦力",
+  "url": "https://www.medtronic.com",
+  "description": "医疗器械公司，注册总部位于爱尔兰都柏林，运营总部位于美国明尼阿波利斯，产品覆盖心脏节律与管理、外科与神经调控等领域。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dublin",
+    "addressCountry": "爱尔兰"
+  }
+}

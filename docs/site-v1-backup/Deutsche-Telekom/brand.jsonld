@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Deutsche Telekom",
+  "alternateName": "德国电信",
+  "url": "https://www.telekom.com",
+  "description": "德国电信集团，总部位于波恩，旗下含T-Mobile（美国）与欧洲多国运营子公司，提供固网、移动与企业ICT服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bonn",
+    "addressCountry": "德国"
+  }
+}

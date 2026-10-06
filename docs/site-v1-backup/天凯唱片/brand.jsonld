@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "天凯唱片",
+  "alternateName": "Tiankai Records",
+  "url": "http://www.tiankaimusic.cn/",
+  "description": "record publishing and distribution company in Mainland China"
+}

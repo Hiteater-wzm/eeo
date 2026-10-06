@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Original Beer Company",
+  "alternateName": [
+    "OBC",
+    "Original Beer Company Co.",
+    "Ltd."
+  ],
+  "url": "https://originalbeer.co.kr/",
+  "description": "South Korean craft brewery (brewery in Paju; flagship and Seoul office in Samseong-dong, Gangnam)"
+}

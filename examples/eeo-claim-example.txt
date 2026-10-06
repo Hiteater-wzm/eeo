@@ -1,0 +1,37 @@
+EEO 品牌信息规范 · 官网认领验证文件（格式示例）
+====================================================
+
+本文件演示「先收录后认领」机制中，品牌方需要放置在
+官网根目录的验证文件长什么样。真实文件由平台签发。
+
+一、文件名
+    eeo-claim-{token}.txt
+    token 是平台签发的一次性随机串，例如：
+    eeo-claim-8f3k2q9v.txt
+
+二、放置位置
+    官网根目录，须可公开访问，例如：
+    https://www.xingqiao-code.example/eeo-claim-8f3k2q9v.txt
+
+三、文件内容
+    以下 6 行是文件本体，上传时保持原样：
+
+    eeo-claim-v1
+    token=8f3k2q9v
+    brand=星桥编程
+    website=https://www.xingqiao-code.example
+    issued-at=2026-09-12T10:30:00+08:00
+    issued-by=EEO Brand Registry
+
+四、核验流程
+    1. 品牌方提交认领申请，平台生成 token 并签发本文件
+    2. 品牌方将文件上传到官网根目录
+    3. 平台在 48 小时内抓取该 URL，比对 token 一致即认领成功
+    4. 认领成功后保留该文件至少 90 天，平台会不定期复查
+    5. 无官网主体走营业执照人工审核通道（claim.method 填 manual-review）
+
+五、说明
+    - 验证对象是域名控制权，token 被他人看到不构成安全风险
+    - 认领后的每次修改保留公开历史，见品牌信息卡的 claim.history
+    - 本文件为演示内容，其中的 token 与域名均为虚构，不能用于真实核验
+    - 机制定义见 ../docs/eeo-standard.md 第 1.3 节

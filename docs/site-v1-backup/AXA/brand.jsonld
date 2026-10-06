@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AXA",
+  "alternateName": [
+    "安盛",
+    "AXA保险"
+  ],
+  "url": "https://www.axa.com",
+  "description": "法国保险集团，总部位于巴黎，业务涵盖财产险、人寿保险、储蓄与退休以及资产管理。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "法国"
+  }
+}

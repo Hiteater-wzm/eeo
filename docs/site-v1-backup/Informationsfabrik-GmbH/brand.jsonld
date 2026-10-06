@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Informationsfabrik GmbH",
+  "alternateName": [
+    "In-Fab",
+    "INFAB",
+    "Informationsfabrik"
+  ],
+  "url": "https://informationsfabrik.com/",
+  "description": "German consulting company specialized in data analysis of business information and artificial intelligence"
+}

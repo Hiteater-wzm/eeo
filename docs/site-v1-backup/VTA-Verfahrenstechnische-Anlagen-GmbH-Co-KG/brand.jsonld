@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "VTA Verfahrenstechnische Anlagen GmbH & Co. KG",
+  "alternateName": [
+    "VTA",
+    "VTA Verfahrenstechnische Anlagen",
+    "VTA Verfahrenstechnische Anlagen GmbH"
+  ],
+  "url": "https://www.vta-process.de/",
+  "description": "Manufacturer of thin film and short path distillation systems based in Niederwinkling (Bavaria, Germany)"
+}

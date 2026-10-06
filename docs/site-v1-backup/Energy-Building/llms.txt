@@ -1,0 +1,17 @@
+# Energy Building
+
+> German engineering firm for energy consulting, indoor air measurement and fire protection, based in Hamburg
+
+- 官方网站: https://energy-building.de/
+- 所属行业: energy consulting
+- 别名: Energy Building - Goldbeck & Giesing GmbH
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q138841810
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

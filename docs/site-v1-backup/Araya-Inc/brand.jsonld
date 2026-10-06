@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Araya Inc.",
+  "alternateName": [
+    "Araya",
+    "Araya Inc. (Japan)"
+  ],
+  "url": "https://www.araya.org",
+  "description": "Japanese artificial intelligence company headquartered in Chiyoda (Akihabara), Tokyo; founded in 2013 by Ryota Kanai"
+}

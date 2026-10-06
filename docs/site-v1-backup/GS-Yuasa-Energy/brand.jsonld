@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GS Yuasa Energy",
+  "alternateName": "Panasonic Storage Battery",
+  "url": "https://www.gs-yuasa.com/gye/",
+  "description": "battery manufacturer previously known as Panasonic Storage Battery"
+}

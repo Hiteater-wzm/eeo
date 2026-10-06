@@ -1,0 +1,31 @@
+# 密钥与本地配置（绝不入库）
+config.json
+jobs/
+*.log
+
+# 依赖与构建
+web/node_modules/
+web/dist/
+web/preview.log
+# 目录索引由 tools/build-index.cjs 从分片注册表生成（build 时自动重建）
+web/public/data/brand-index.json
+# 注册表正本已分片到 datasets/registry/；单文件版为本地工作产物不入库
+datasets/brands-all.json
+
+# Action 报告产物
+eeo-report.json
+
+# watch 监测本地数据（清单与历史不入库）
+watch/*
+!watch/.gitkeep
+
+# 站点与 schema 生成产物（gen-site / gen-schema 本地输出）
+site/
+schemas/
+# docs/site/ 是 v1 旧版站点产物，仅留档（pages.yml 现从 public/ 部署新版 SPA）
+!docs/site/
+
+# 系统杂物
+.DS_Store
+Thumbs.db
+datasets/harvest/

@@ -1,0 +1,27 @@
+# Medtronic
+
+> 医疗器械公司，注册总部位于爱尔兰都柏林，运营总部位于美国明尼阿波利斯，产品覆盖心脏节律与管理、外科与神经调控等领域。
+
+- 官方网站: https://www.medtronic.com
+- 所属行业: 医疗器械
+- 所在城市: Dublin
+- 所在国家: 爱尔兰
+- 别名: 美敦力
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 按器械收入计为全球规模居前的医疗器械公司
+- 心脏起搏器与电生理产品线
+- 手术机器人与糖尿病管理（胰岛素泵）业务
+
+## 信息来源
+
+- https://www.medtronic.com
+- https://en.wikipedia.org/wiki/Medtronic
+- https://www.massdevice.com/largest-medical-device-companies-2025
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

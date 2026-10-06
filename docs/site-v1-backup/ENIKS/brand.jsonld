@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ENIKS",
+  "alternateName": [
+    "JSC Eniks",
+    "Закрытое Акционерное Общество «ЭНИКС»",
+    "ЗАО «ЭНИКС»"
+  ],
+  "url": "http://enics.aero/",
+  "description": "company develop of drones, autonomous radio navigation systems and gyrostabilized optical systems, located in Kazan"
+}

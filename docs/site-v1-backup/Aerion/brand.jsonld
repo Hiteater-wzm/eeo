@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aerion",
+  "alternateName": "Aerion Corporation",
+  "url": "http://www.aerionsupersonic.com/",
+  "description": "defunct American aircraft manufacturer"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ampex",
+  "alternateName": [
+    "Ampex Corporation",
+    "Ampex Data Systems Corporation",
+    "Ampex Data Systems",
+    "Ampex Electric Corporation",
+    "Alexander M. Poniatoff Excellence"
+  ],
+  "url": "http://www.ampex.com",
+  "description": "American audio and video recorder and storage media company"
+}

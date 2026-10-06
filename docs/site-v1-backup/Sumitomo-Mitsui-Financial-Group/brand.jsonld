@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sumitomo Mitsui Financial Group",
+  "alternateName": [
+    "三井住友",
+    "三井住友金融集团",
+    "SMFG"
+  ],
+  "url": "https://www.smfg.co.jp",
+  "description": "日本银行集团三井住友金融集团，总部位于东京，业务包括商业银行、消费金融、租赁与资产管理。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "日本"
+  }
+}

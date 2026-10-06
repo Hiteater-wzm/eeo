@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "小鹏汽车",
+  "alternateName": [
+    "XPeng",
+    "广州小鹏汽车科技有限公司"
+  ],
+  "url": "https://www.xiaopeng.com",
+  "description": "2014年成立于广州的智能电动汽车企业，2020年在纽约证券交易所上市，以智能驾驶辅助功能为主要产品特征。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "广州",
+    "addressCountry": "中国"
+  }
+}

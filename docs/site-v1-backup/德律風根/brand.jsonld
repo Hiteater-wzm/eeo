@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "德律風根",
+  "alternateName": [
+    "TFK",
+    "Telefunken AG"
+  ],
+  "url": "http://www.telefunken.com/",
+  "description": "German radio and television apparatus company, founded in Berlin in 1903; joint venture of Siemens & Halske and Allgemei"
+}

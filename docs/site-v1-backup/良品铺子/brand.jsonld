@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "良品铺子",
+  "alternateName": "Bestore",
+  "url": "https://www.lppz.com",
+  "description": "2006年成立于武汉的高端零食连锁品牌，产品覆盖坚果、糕点与肉脯等品类，于上海证券交易所上市（603719.SH）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "武汉",
+    "addressCountry": "中国"
+  }
+}

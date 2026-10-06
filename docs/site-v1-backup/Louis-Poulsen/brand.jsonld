@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Louis Poulsen",
+  "alternateName": [
+    "Louis Poulsen Lighting",
+    "louis.poulsen.com",
+    "The First House of Light"
+  ],
+  "url": "https://www.louispoulsen.com",
+  "description": "Louis Poulsen is a Danish lighting manufacturer founded in Copenhagen in 1874. The company designs and produces lighting"
+}

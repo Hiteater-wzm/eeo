@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "L7 Ltd.,",
+  "alternateName": [
+    "L7",
+    "Roam Japan",
+    "株式会社L7"
+  ],
+  "url": "https://roamjapan.com/",
+  "description": "Japan-based travel guide and tour company for English-speaking inbound tourists"
+}

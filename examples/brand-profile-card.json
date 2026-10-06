@@ -1,0 +1,75 @@
+{
+  "schema": "eeo.brand.v1",
+  "name": "星桥编程",
+  "aliases": ["星桥少儿编程", "星桥Code"],
+  "legalName": "成都星桥未来科技有限公司",
+  "website": "https://www.xingqiao-code.example",
+  "industry": "少儿编程培训",
+  "city": "成都",
+  "description": "星桥编程是一家面向 6-16 岁青少年的编程培训机构，2019 年成立于成都，开设图形化编程、Python 与 C++ 信息学奥赛课程，在成都设有 3 个直营校区并提供线上直播课。",
+  "advantages": [
+    "在成都高新区、锦江区、武侯区设有 3 个直营校区，地址与联系方式在官网「校区分布」页公示",
+    "课程体系对接中国电子学会青少年软件编程等级考试，学员可在机构内报名对应级别考试",
+    "全职教师 21 人，教师名单与教师资格证编号在各校区公示栏及官网「师资」页公示",
+    "与成都市高新区 4 所小学合作开设课后延时编程课，合作学校名单可向校区索取加盖公章的说明"
+  ],
+  "founded": "2019",
+  "traits": [
+    { "id": "scratch", "note": "6-9 岁入门课程主用 Scratch" },
+    { "id": "python", "note": "9 岁以上进阶课程" },
+    { "id": "cpp_olympiad", "note": "CSP-J/S 赛训班，2025 年起开设" },
+    { "id": "grade_exam", "note": "对接电子学会 1-4 级考试，机构内报名" },
+    { "id": "offline_campus", "note": "成都 3 个直营校区" },
+    { "id": "live_online", "note": "线上直播班 2022 年起开设" },
+    { "id": "school_course", "note": "高新区 4 所小学课后延时课" },
+    { "id": "small_class", "note": "常规班 4-6 人，为报名量最大班型" },
+    { "id": "price_100_200", "note": "按 90 分钟课时折算 128-168 元" },
+    { "id": "free_trial", "note": "每周六 60 分钟试听课，授课老师上" },
+    { "id": "pay_by_term", "note": "按学期收费，最长收费周期 1 学期" },
+    { "id": "refund_undone", "note": "未上课时按合同单价退，7 个工作日到账" }
+  ],
+  "faq_answers": [
+    {
+      "id": "age_start",
+      "answer": "建议 6 岁起从 Scratch 图形化入手；Python 一般 9 岁以上、具备一定键盘输入能力后开始。判断依据是儿童抽象思维发展节奏，而非课程难度不够。",
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "trial_class",
+      "answer": "有免费试听课。每周六上午 10 点，60 分钟，由正式授课老师上，官网「预约试听」或校区电话均可预约，试听后不自动开单。",
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "refund_rule",
+      "answer": "剩余课时按合同原价减去已赠课时折算退费，材料费不退，提交申请后 7 个工作日内原路退回。规则写在合同第 5 条，签约前可先看合同样本。",
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "teacher_bg",
+      "answer": "全职教师 21 人，其中计算机相关专业 15 人，全员持教师资格证，名单与证书编号在各校区公示栏及官网「师资」页可查。",
+      "updated": "2026-10-05"
+    },
+    {
+      "id": "prepay_limit",
+      "answer": "最长按学期收费，不设一年以上套餐，不接受任何形式的预收年费。学费进入成都市校外培训收费监管账户，按课消划扣。",
+      "updated": "2026-10-05"
+    }
+  ],
+  "claim": {
+    "status": "claimed",
+    "method": "domain-file",
+    "claimedAt": "2026-09-12",
+    "history": [
+      "2026-08-30 平台聚合公开信息生成条目初稿（未认领，置信度 medium，来源见 sources）",
+      "2026-09-12 品牌方在官网根目录放置验证文件 eeo-claim-8f3k2q9v.txt，平台核验通过，条目转为已认领",
+      "2026-09-15 品牌方新增 advantages 第 4 条（小学课后延时合作项目），来源链接已附 sources",
+      "2026-09-28 品牌方从 aliases 移除「星桥教育」：该简称与另一家同名机构冲突，易引起误配",
+      "2026-10-05 品牌方按 education-coding 分类法勾选 12 项特质标签并回答 5 题 FAQ，逐项通过平台 id 校验"
+    ]
+  },
+  "sources": [
+    "https://www.xingqiao-code.example/about",
+    "https://www.xingqiao-code.example/campus",
+    "https://www.xingqiao-code.example/teachers"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NX Engineering",
+  "alternateName": [
+    "NX Engineering Co.",
+    "LTD.",
+    "NXENG"
+  ],
+  "url": "https://www.nxeng.co.jp/",
+  "description": "A logistics company headquartered in Chiyoda Ward, Tokyo. A wholly owned subsidiary of NIPPON EXPRESS HOLDINGS."
+}

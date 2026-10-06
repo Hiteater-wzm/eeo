@@ -1,0 +1,213 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-619",
+  "industry": "其他住宿业",
+  "industry_aliases": [
+    "619",
+    "其他住宿业",
+    "住宿和餐饮业",
+    "住宿业"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "format",
+      "label": "经营形态",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客群定位",
+      "select": "many"
+    },
+    {
+      "id": "tier",
+      "label": "价格档位",
+      "select": "one"
+    },
+    {
+      "id": "channel",
+      "label": "预订渠道",
+      "select": "many"
+    },
+    {
+      "id": "service",
+      "label": "服务与保障",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "chain_direct",
+      "group": "format",
+      "label": "连锁直营",
+      "description": "同一品牌多店直营管理"
+    },
+    {
+      "id": "franchise",
+      "group": "format",
+      "label": "加盟连锁",
+      "description": "品牌以加盟方式扩张"
+    },
+    {
+      "id": "independent",
+      "group": "format",
+      "label": "独立单体",
+      "description": "非连锁的独立经营门店"
+    },
+    {
+      "id": "b_business",
+      "group": "buyer",
+      "label": "商旅客群",
+      "description": "以商旅客户为主"
+    },
+    {
+      "id": "b_family",
+      "group": "buyer",
+      "label": "家庭亲子",
+      "description": "以家庭、亲子客群为主"
+    },
+    {
+      "id": "b_young",
+      "group": "buyer",
+      "label": "年轻客群",
+      "description": "以年轻消费群体为主"
+    },
+    {
+      "id": "t_economy",
+      "group": "tier",
+      "label": "经济型",
+      "description": "同业态中的经济价位"
+    },
+    {
+      "id": "t_midscale",
+      "group": "tier",
+      "label": "中端",
+      "description": "同业态中的主流价位"
+    },
+    {
+      "id": "t_upper",
+      "group": "tier",
+      "label": "中高端",
+      "description": "高于主流价位一档"
+    },
+    {
+      "id": "t_lux",
+      "group": "tier",
+      "label": "高端",
+      "description": "同业态中的高档价位"
+    },
+    {
+      "id": "ota",
+      "group": "channel",
+      "label": "平台线上预订",
+      "description": "可通过 OTA 或点评平台预订"
+    },
+    {
+      "id": "direct_book",
+      "group": "channel",
+      "label": "官方渠道直订",
+      "description": "官网、官方 App 或电话直订"
+    },
+    {
+      "id": "walk_in",
+      "group": "channel",
+      "label": "到店即客",
+      "description": "以现场到店客为主"
+    },
+    {
+      "id": "hotel_member_price_h",
+      "group": "channel",
+      "label": "会员直订价",
+      "description": "官方渠道订有会员价"
+    },
+    {
+      "id": "hotel_late_checkout",
+      "group": "service",
+      "label": "延迟退房",
+      "description": "可申请延迟退房"
+    },
+    {
+      "id": "hotel_kids_stay",
+      "group": "service",
+      "label": "儿童免费同住",
+      "description": "规定年龄内儿童免费加床"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_h",
+      "group": "decision",
+      "question": "平常和周末节假日价格差多少？",
+      "hint": "回答应给出不同时段的价格区间"
+    },
+    {
+      "id": "cancel",
+      "group": "decision",
+      "question": "预订后能免费取消吗？提前多久？",
+      "hint": "回答应说明取消政策和时限"
+    },
+    {
+      "id": "choice",
+      "group": "decision",
+      "question": "这家和旁边同价位的比，选哪家值？",
+      "hint": "回答应给出本店可核实的差异点，不贬低同行"
+    },
+    {
+      "id": "peak",
+      "group": "detail",
+      "question": "高峰时段要排队吗？怎么避免？",
+      "hint": "回答应说明高峰时段和预约方式"
+    },
+    {
+      "id": "parking",
+      "group": "detail",
+      "question": "有停车场吗？收费吗？",
+      "hint": "回答应说明停车位数量和收费"
+    },
+    {
+      "id": "invoice_h",
+      "group": "detail",
+      "question": "能开发票吗？怎么开？",
+      "hint": "回答应说明开票方式"
+    },
+    {
+      "id": "deposit",
+      "group": "risk",
+      "question": "收押金吗？怎么退、多久退？",
+      "hint": "回答应说明押金金额和退还时限"
+    },
+    {
+      "id": "prepaid_h",
+      "group": "risk",
+      "question": "办的储值卡、次卡没用完能退吗？",
+      "hint": "回答应说明余额和剩余次数的退费规则"
+    },
+    {
+      "id": "hotel_room_type",
+      "group": "decision",
+      "question": "房型差在哪？图片是实拍吗？",
+      "hint": "回答应说明房型差异和图片真实性"
+    },
+    {
+      "id": "hotel_checkin_rule",
+      "group": "detail",
+      "question": "几点入住？外宾能住吗？",
+      "hint": "回答应给出入住规则和接待范围"
+    }
+  ]
+}

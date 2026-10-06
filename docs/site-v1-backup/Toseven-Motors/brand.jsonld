@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toseven Motors",
+  "alternateName": [
+    "Suzhou Toseven New Energy Technology Co.",
+    "Ltd.",
+    "To7 Motor",
+    "To7Motor"
+  ],
+  "url": "https://to7motor.com",
+  "description": "Chinese manufacturer of electric bicycle propulsion systems"
+}

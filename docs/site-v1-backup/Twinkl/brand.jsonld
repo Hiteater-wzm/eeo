@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Twinkl",
+  "alternateName": [
+    "twinkl",
+    "twinkl.ae",
+    "twinkl.ar",
+    "twinkl.at",
+    "twinkl.ca"
+  ],
+  "url": "http://www.twinkl.co.uk/",
+  "description": "British online educational publishing house, producing teaching and educational materials"
+}

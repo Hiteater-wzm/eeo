@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "COREY Management GmbH",
+  "alternateName": [
+    "COREY",
+    "Corey Management",
+    "COREY Management",
+    "Corey Management GmbH"
+  ],
+  "url": "https://corey-management.com",
+  "description": "Berlin-based independent advisory firm specializing in institutional asset management and securities trading"
+}

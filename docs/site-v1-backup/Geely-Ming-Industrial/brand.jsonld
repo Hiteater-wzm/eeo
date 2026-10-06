@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Geely Ming Industrial",
+  "alternateName": [
+    "Jiming",
+    "Geely Ming",
+    "GM Motor",
+    "Zhejiang Geely Ming Industrial Co.",
+    "Ltd."
+  ],
+  "url": "http://www.geelymotor.cn/",
+  "description": "motorcycle manufacturer part of Geely Group"
+}

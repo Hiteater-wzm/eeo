@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "S3 Graphics",
+  "alternateName": [
+    "S3 Graphics",
+    "Ltd"
+  ],
+  "url": "http://www.s3graphics.com/",
+  "description": "American-based computer graphics company"
+}

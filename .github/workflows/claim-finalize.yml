@@ -1,0 +1,67 @@
+name: Claim finalize
+
+# 认领收尾：PR 合并后把 status=claiming 的品牌卡盖章为 claimed
+# （写入 method=domain-file、claimedAt、history），用 GITHUB_TOKEN 推回主分支。
+#
+# 两个前提（给维护者）：
+#   1. 认领 PR 必须先过 Claim verify（建议设为 required status check），
+#      本流程不重复核验，只负责盖章。
+#   2. 主分支需允许 GITHUB_TOKEN 直接 push；若开了 branch protection，
+#      确认规则没有把 Actions 的推送拦下。
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claim-finalize-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          fetch-depth: 0  # base.sha 是合并提交的祖先，全量检出后可直接 diff
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: List merged JSON files
+        id: files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          {
+            echo 'files<<EOF'
+            git diff --name-only --diff-filter=ACMR "$BASE_SHA" HEAD -- '*.json'
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Stamp claimed cards
+        env:
+          PR_FILES: ${{ steps.files.outputs.files }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node platform/claim-finalize.cjs
+
+      - name: Commit and push to main
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git config user.name "eeo-claim-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -u
+          if git diff --cached --quiet; then
+            echo "nothing to finalize"
+            exit 0
+          fi
+          git commit -m "claim: finalize PR #${PR_NUMBER} (claiming -> claimed)"
+          git push origin HEAD:main

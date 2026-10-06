@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Riitek",
+  "alternateName": [
+    "Rii",
+    "Shenzhen Riitek",
+    "Shenzhen Riitek CO.，Ltd",
+    "Shenzhen Riitek Electronics Co.",
+    "LTD"
+  ],
+  "url": "http://www.riitek.com/",
+  "description": "Chinese manufacturer of consumer electronics"
+}

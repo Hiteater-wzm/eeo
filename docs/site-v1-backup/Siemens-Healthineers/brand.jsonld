@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Siemens Healthineers",
+  "alternateName": "西门子医疗",
+  "url": "https://www.siemens-healthineers.com",
+  "description": "德国医疗科技公司，总部位于Erlangen，产品涵盖医学影像、实验室诊断与临床治疗设备，为西门子股份公司控股的上市公司。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Erlangen",
+    "addressCountry": "德国"
+  }
+}

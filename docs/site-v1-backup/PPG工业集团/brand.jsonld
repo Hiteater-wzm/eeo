@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PPG工业集团",
+  "alternateName": [
+    "PPG",
+    "PPG Industries (United States)"
+  ],
+  "url": "https://www.ppg.com/",
+  "description": "global supplier of glass, paint, coatings and chemical products"
+}

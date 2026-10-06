@@ -1,0 +1,17 @@
+# 飛斯妥
+
+> Group of companies in the area of control and automation technology with headquarter in Esslingen am Neckar
+
+- 官方网站: https://www.festo.com
+- 所属行业: 自動化
+- 别名: Festo (Germany)、Festo Group、Festo SE & Co. KG
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q657230
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

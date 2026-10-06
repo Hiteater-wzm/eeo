@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toppan Printing",
+  "alternateName": [
+    "Toppan Printing Co.",
+    "Ltd.",
+    "Toppan Printing Limited Partnership"
+  ],
+  "url": "https://www.holdings.toppan.com/",
+  "description": "printing company in Taitō Ward, Tōkyō Metropolis, Japan (1900-2023)"
+}

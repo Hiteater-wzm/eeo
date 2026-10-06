@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GReddy",
+  "alternateName": [
+    "TRUST CO.",
+    "LTD"
+  ],
+  "url": "http://www.trust-power.com/",
+  "description": "Japanese automotive aftermarket company specialising in performance tuning parts for cars"
+}

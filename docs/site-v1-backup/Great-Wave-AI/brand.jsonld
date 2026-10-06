@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Great Wave AI",
+  "alternateName": [
+    "Great Wave AI",
+    "GREAT WAVE AI LIMITED"
+  ],
+  "url": "https://greatwave.ai/",
+  "description": "UK Sovereign GenAI Agent Orchestration Platform. Built for Police, Government & Enterprise"
+}

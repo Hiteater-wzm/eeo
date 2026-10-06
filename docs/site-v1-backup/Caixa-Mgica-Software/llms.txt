@@ -1,0 +1,17 @@
+# Caixa Mágica Software
+
+> Portuguese software company founded in 2004, specialising in custom software development, digital identity and open sour
+
+- 官方网站: https://caixamagica.pt
+- 所属行业: 軟件產業
+- 别名: CMS、Caixa Mágica
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q2933390
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BP",
+  "alternateName": "英国石油",
+  "url": "https://www.bp.com",
+  "description": "英国能源公司，总部位于伦敦，业务涵盖油气勘探生产、炼化与营销，并投资光伏、充电网络与生物燃料。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "英国"
+  }
+}

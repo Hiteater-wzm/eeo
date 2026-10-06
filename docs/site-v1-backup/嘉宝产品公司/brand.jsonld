@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "嘉宝产品公司",
+  "alternateName": [
+    "Gerber",
+    "Gerber Baby Products"
+  ],
+  "url": "http://gerber.com/",
+  "description": "a purveyor of baby food and baby products"
+}

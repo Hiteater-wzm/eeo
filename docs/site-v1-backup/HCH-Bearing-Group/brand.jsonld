@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HCH Bearing Group",
+  "alternateName": [
+    "HCH Bearing",
+    "Huanchi Bearing"
+  ],
+  "url": "https://huanchi.com/en/",
+  "description": "Chinese precision bearing manufacturer founded in 1973 in Cixi, Zhejiang │"
+}

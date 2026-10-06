@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "漢語世界",
+  "alternateName": "汉语世界",
+  "url": "http://www.theworldofchinese.com",
+  "description": "a bi-monthly English magazine and web portal dedicated to Chinese language and culture"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Teufel Audio",
+  "alternateName": [
+    "Teufel",
+    "Lautsprecher Teufel"
+  ],
+  "url": "https://teufel.ch/",
+  "description": "German manufacturer of passive and powered HiFi loudspeaker boxes and other audio products"
+}

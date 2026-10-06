@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Avoxa",
+  "alternateName": [
+    "Avoxa – Mediengruppe Deutscher Apotheker GmbH",
+    "Avoxa Mediengruppe"
+  ],
+  "url": "https://avoxa.de/",
+  "description": "German media, publishing and services company for the pharmacy sector based in Eschborn"
+}

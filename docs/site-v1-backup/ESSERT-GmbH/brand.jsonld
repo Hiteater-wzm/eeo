@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ESSERT GmbH",
+  "alternateName": [
+    "ESSERT",
+    "Essert GmbH",
+    "Essert Robotics",
+    "ESSERT Robotics",
+    "Essert Steuerungstechnik GmbH"
+  ],
+  "url": "https://essert.com",
+  "description": "German manufacturer of modular robotic automation for pharmaceutical and medical device manufacturing, founded 2012, hea"
+}

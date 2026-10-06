@@ -1,0 +1,17 @@
+# 房利美
+
+> government-backed financial services company
+
+- 官方网站: https://www.fanniemae.com/
+- 所属行业: 金融服務
+- 别名: 联邦国民抵押贷款协会
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q621096
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

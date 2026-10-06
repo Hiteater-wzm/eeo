@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sustainable Commodities 3 B.V.",
+  "alternateName": [
+    "Sustainable Commodities",
+    "SustComm"
+  ],
+  "url": "https://www.sustainablecommodities.eu/",
+  "description": "independent commodity brokerage in waste-based feedstocks and renewable fuels, based in Lemmer, the Netherlands"
+}

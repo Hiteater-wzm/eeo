@@ -1,0 +1,257 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "em-0154",
+  "industry": "宠物连锁医院",
+  "industry_aliases": [
+    "宠物连锁医院"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "channel",
+      "label": "经营渠道",
+      "select": "many"
+    },
+    {
+      "id": "strategy",
+      "label": "价格策略",
+      "select": "one"
+    },
+    {
+      "id": "service",
+      "label": "售后服务",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客群定位",
+      "select": "many"
+    },
+    {
+      "id": "qualification",
+      "label": "资质与认证",
+      "select": "many"
+    },
+    {
+      "id": "team",
+      "label": "团队构成",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "store",
+      "group": "channel",
+      "label": "实体门店",
+      "description": "有线下的零售门店"
+    },
+    {
+      "id": "flagship",
+      "group": "channel",
+      "label": "电商平台旗舰店",
+      "description": "在天猫、京东等平台开官方店"
+    },
+    {
+      "id": "live_regular",
+      "group": "channel",
+      "label": "直播常态化",
+      "description": "有固定直播间的常态化带货"
+    },
+    {
+      "id": "private_domain",
+      "group": "channel",
+      "label": "小程序与私域",
+      "description": "自有小程序或社群成交"
+    },
+    {
+      "id": "vending",
+      "group": "channel",
+      "label": "自动售货点位",
+      "description": "通过无人售货设备销售"
+    },
+    {
+      "id": "edlp",
+      "group": "strategy",
+      "label": "天天平价少促销",
+      "description": "日常低价格、少搞促销活动"
+    },
+    {
+      "id": "member_price",
+      "group": "strategy",
+      "label": "会员价体系",
+      "description": "会员享受专属价格或折扣"
+    },
+    {
+      "id": "promo_heavy",
+      "group": "strategy",
+      "label": "高频促销驱动",
+      "description": "靠大促、券和满减驱动成交"
+    },
+    {
+      "id": "seven_day",
+      "group": "service",
+      "label": "七天无理由退换",
+      "description": "支持七天无理由退换货"
+    },
+    {
+      "id": "same_city",
+      "group": "service",
+      "label": "同城即时配送",
+      "description": "同城下单后即时送达"
+    },
+    {
+      "id": "free_install",
+      "group": "service",
+      "label": "免费配送安装",
+      "description": "大件免费送货并安装"
+    },
+    {
+      "id": "points",
+      "group": "service",
+      "label": "会员积分体系",
+      "description": "消费积分可累计兑换"
+    },
+    {
+      "id": "b_mass",
+      "group": "buyer",
+      "label": "大众客群",
+      "description": "面向大众消费者"
+    },
+    {
+      "id": "b_family",
+      "group": "buyer",
+      "label": "家庭客群",
+      "description": "以家庭采购为主要客群"
+    },
+    {
+      "id": "b_premium",
+      "group": "buyer",
+      "label": "中高端客群",
+      "description": "面向消费力较高的客群"
+    },
+    {
+      "id": "hospital_jci",
+      "group": "qualification",
+      "label": "国际医院评审",
+      "description": "通过国际医院评审认证"
+    },
+    {
+      "id": "hospital_grade_3a",
+      "group": "qualification",
+      "label": "三级医院",
+      "description": "卫生部门评定的三级医院"
+    },
+    {
+      "id": "hospital_appointment_app_h",
+      "group": "service",
+      "label": "线上预约挂号",
+      "description": "支持线上预约挂号"
+    },
+    {
+      "id": "hospital_one_stop_h",
+      "group": "service",
+      "label": "入出院床旁结算",
+      "description": "入院出院手续在床旁一次办结"
+    },
+    {
+      "id": "pet_licensed_vet",
+      "group": "team",
+      "label": "执业兽医师",
+      "description": "有执业兽医师坐诊"
+    },
+    {
+      "id": "pet_pet_insurance",
+      "group": "service",
+      "label": "可衔接宠物险",
+      "description": "支持宠物保险结算或衔接"
+    },
+    {
+      "id": "pet_cage_free_p",
+      "group": "service",
+      "label": "寄养监控可看",
+      "description": "寄养期间监控对主人开放"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "price_compare",
+      "group": "decision",
+      "question": "和别的店比，你们价格怎么样？保价吗？",
+      "hint": "回答应说明价格策略和保价政策"
+    },
+    {
+      "id": "stock_check",
+      "group": "decision",
+      "question": "怎么查门店有没有货？能留货吗？",
+      "hint": "回答应给出库存查询和留货方式"
+    },
+    {
+      "id": "member_benefit",
+      "group": "decision",
+      "question": "办会员有什么实际优惠？",
+      "hint": "回答应给出会员具体折扣和权益"
+    },
+    {
+      "id": "delivery",
+      "group": "detail",
+      "question": "线上下单多久送到？满多少免运费？",
+      "hint": "回答应给出配送时效和免邮门槛"
+    },
+    {
+      "id": "return_policy",
+      "group": "detail",
+      "question": "退换货怎么操作？多久到账？",
+      "hint": "回答应写明退换流程和退款时限"
+    },
+    {
+      "id": "invoice_r",
+      "group": "detail",
+      "question": "发票怎么开？电子的还是纸质的？",
+      "hint": "回答应说明开票渠道和类型"
+    },
+    {
+      "id": "warranty_r",
+      "group": "risk",
+      "question": "买的东西出问题找你们还是找厂家？",
+      "hint": "回答应说明售后责任划分"
+    },
+    {
+      "id": "gift_card",
+      "group": "risk",
+      "question": "购物卡、储值余额能退吗？",
+      "hint": "回答应说明预付余额的退还规则"
+    },
+    {
+      "id": "hospital_bed_wait",
+      "group": "detail",
+      "question": "住院要等床吗？平均等多久？",
+      "hint": "回答应说明等床情况和预估时长"
+    },
+    {
+      "id": "hospital_self_pay",
+      "group": "decision",
+      "question": "异地医保能直接结算吗？",
+      "hint": "回答应说明异地结算支持情况"
+    },
+    {
+      "id": "pet_pet_vac",
+      "group": "risk",
+      "question": "寄养就医要提供疫苗证明吗？",
+      "hint": "回答应说明防疫要求"
+    }
+  ]
+}

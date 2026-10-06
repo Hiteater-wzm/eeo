@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shanghai Newtrend Electric",
+  "alternateName": [
+    "NewTrend",
+    "Shanghai Newtrend Electric Co.",
+    "Ltd.",
+    "SNTELEC"
+  ],
+  "url": "https://www.sntelec.com",
+  "description": "Chinese manufacturer of low-voltage electrical products"
+}

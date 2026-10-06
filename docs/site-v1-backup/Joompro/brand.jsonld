@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Joom.pro",
+  "alternateName": [
+    "Joom China import Brazil",
+    "Joom import",
+    "Joom Pro",
+    "joom.pro"
+  ],
+  "url": "https://joom.pro/",
+  "description": "Brazilian turnkey import operator specializing in end-to-end sourcing, logistics, customs clearance, and regulatory comp"
+}

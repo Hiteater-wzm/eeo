@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pronova",
+  "alternateName": [
+    "Pronova",
+    "PronovaTech"
+  ],
+  "url": "https://pronovatech.com.br",
+  "description": "Brazilian healthtech company that uses AI to transcribe medical consultations and automatically generate clinical record"
+}

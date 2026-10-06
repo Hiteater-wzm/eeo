@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "聯邦住宅貸款銀行",
+  "alternateName": "聯邦住房貸款銀行",
+  "url": "https://fhlbanks.com",
+  "description": "U.S. government-sponsored banks that support housing finance"
+}

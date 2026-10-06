@@ -1,0 +1,243 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-0163",
+  "industry": "香料作物种植",
+  "industry_aliases": [
+    "0163",
+    "香料作物种植",
+    "农、林、牧、渔业",
+    "农业",
+    "坚果、含油果、香料和饮料作物种植"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "sales",
+      "label": "销售渠道",
+      "select": "many"
+    },
+    {
+      "id": "org",
+      "label": "生产组织",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "主要买方",
+      "select": "many"
+    },
+    {
+      "id": "tier",
+      "label": "产品定位",
+      "select": "one"
+    },
+    {
+      "select": "many",
+      "id": "crop_mode",
+      "label": "种植方式"
+    },
+    {
+      "select": "many",
+      "id": "crop_cert_f",
+      "label": "种植认证"
+    }
+  ],
+  "traits": [
+    {
+      "id": "wholesale_local",
+      "group": "sales",
+      "label": "产地批发给收购商",
+      "description": "主要在产地批发市场或通过收购商走货"
+    },
+    {
+      "id": "direct_supply",
+      "group": "sales",
+      "label": "商超餐饮直供",
+      "description": "与商超、餐饮企业签订直供协议"
+    },
+    {
+      "id": "ecom_direct",
+      "group": "sales",
+      "label": "电商直销",
+      "description": "自有网店或平台店铺直接卖给消费者"
+    },
+    {
+      "id": "member_delivery",
+      "group": "sales",
+      "label": "会员周期配送",
+      "description": "按周期向会员家庭宅配"
+    },
+    {
+      "id": "own_base",
+      "group": "org",
+      "label": "自有基地生产",
+      "description": "产品产自自营种养基地"
+    },
+    {
+      "id": "farmer_order",
+      "group": "org",
+      "label": "农户订单收购",
+      "description": "与农户签订单按标准收购"
+    },
+    {
+      "id": "coop",
+      "group": "org",
+      "label": "合作社联营",
+      "description": "以合作社形式组织生产销售"
+    },
+    {
+      "id": "b_processor",
+      "group": "buyer",
+      "label": "加工企业",
+      "description": "主要买方是下游加工厂"
+    },
+    {
+      "id": "b_retail",
+      "group": "buyer",
+      "label": "零售与餐饮企业",
+      "description": "主要买方是零售商、餐饮企业"
+    },
+    {
+      "id": "b_consumer",
+      "group": "buyer",
+      "label": "个人消费者",
+      "description": "直接卖给个人买家"
+    },
+    {
+      "id": "t_bulk",
+      "group": "tier",
+      "label": "大宗经济型",
+      "description": "走量为主，按大宗行情定价"
+    },
+    {
+      "id": "t_mid",
+      "group": "tier",
+      "label": "常规中端",
+      "description": "常规品质，价格带位于市场中位"
+    },
+    {
+      "id": "t_premium",
+      "group": "tier",
+      "label": "精品高端",
+      "description": "分级精选、礼盒或认证产品，价格高于大宗行情"
+    },
+    {
+      "id": "crop_open_field",
+      "group": "crop_mode",
+      "label": "露天大田种植",
+      "description": "在露天大田进行生产"
+    },
+    {
+      "id": "crop_greenhouse",
+      "group": "crop_mode",
+      "label": "设施大棚种植",
+      "description": "在温室或大棚等设施内生产"
+    },
+    {
+      "id": "crop_rotation",
+      "group": "crop_mode",
+      "label": "轮作与休耕",
+      "description": "按轮作休耕安排茬口"
+    },
+    {
+      "id": "crop_organic_f",
+      "group": "crop_cert_f",
+      "label": "有机产品认证",
+      "description": "持有效有机产品认证证书"
+    },
+    {
+      "id": "crop_green_food",
+      "group": "crop_cert_f",
+      "label": "绿色食品认证",
+      "description": "持有效绿色食品标志使用证书"
+    },
+    {
+      "id": "crop_geo_f",
+      "group": "crop_cert_f",
+      "label": "地理标志产品",
+      "description": "产自地理标志保护产区"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "origin",
+      "group": "decision",
+      "question": "东西产自哪里？什么季节上市？",
+      "hint": "回答应给出产地、上市时间和当季供应量"
+    },
+    {
+      "id": "grade",
+      "group": "decision",
+      "question": "怎么分级定价？一级和二级差在哪？",
+      "hint": "回答应说明分级标准和各级价差"
+    },
+    {
+      "id": "moq",
+      "group": "decision",
+      "question": "起批量是多少？散买卖不卖？",
+      "hint": "回答应给出起批量和零售是否可单买"
+    },
+    {
+      "id": "visit",
+      "group": "detail",
+      "question": "基地能参观吗？能看现场采摘或分拣吗？",
+      "hint": "回答应说明是否开放参观及预约方式"
+    },
+    {
+      "id": "delivery_fresh",
+      "group": "detail",
+      "question": "发货后几天到？损耗坏了怎么算？",
+      "hint": "回答应给出运输时限和破损坏果的赔付规则"
+    },
+    {
+      "id": "trace",
+      "group": "detail",
+      "question": "能查到这批货的产地和检测记录吗？",
+      "hint": "回答应说明溯源方式和检测报告获取渠道"
+    },
+    {
+      "id": "cert",
+      "group": "risk",
+      "question": "宣传的有机、绿色认证，证书编号在哪查？",
+      "hint": "回答应给出证书类型、编号和官方查询入口"
+    },
+    {
+      "id": "settle",
+      "group": "risk",
+      "question": "大宗采购怎么签合同？价格波动谁承担？",
+      "hint": "回答应说明合同定价方式、订金和违约条款"
+    },
+    {
+      "id": "crop_season",
+      "group": "decision",
+      "question": "一年几茬？什么月份有货？",
+      "hint": "回答应给出产季和供应窗口"
+    },
+    {
+      "id": "crop_pesticide",
+      "group": "risk",
+      "question": "打不打农药？用了什么？停药期多久？",
+      "hint": "回答应说明用药情况和安全间隔期"
+    },
+    {
+      "id": "crop_seed_source",
+      "group": "detail",
+      "question": "用的什么种？自己留种还是买的？",
+      "hint": "回答应说明种源和品种"
+    }
+  ]
+}

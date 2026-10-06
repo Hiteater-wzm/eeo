@@ -1,0 +1,27 @@
+# 招商银行
+
+> 中国全国性股份制商业银行，总部位于深圳，以零售金融与财富管理业务为主要特色。
+
+- 官方网站: https://www.cmbchina.com
+- 所属行业: 商业银行
+- 所在城市: 深圳
+- 所在国家: 中国
+- 别名: China Merchants Bank、CMB、招行
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 零售客户与App经营体系为业务特色
+- 私人银行与财富管理业务线
+- 信用卡与消费金融产品线
+
+## 信息来源
+
+- https://www.cmbchina.com
+- https://en.wikipedia.org/wiki/China_Merchants_Bank
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

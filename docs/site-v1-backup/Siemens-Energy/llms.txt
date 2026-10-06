@@ -1,0 +1,27 @@
+# Siemens Energy
+
+> 德国能源技术公司，总部位于慕尼黑，产品涵盖燃气轮机、电网设备、风机（Siemens Gamesa）与电解制氢设备。
+
+- 官方网站: https://www.siemens-energy.com
+- 所属行业: 能源技术与电网设备
+- 所在城市: Munich
+- 所在国家: 德国
+- 别名: 西门子能源
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 燃气与蒸汽轮机发电产品线
+- 高压电网与变压器设备业务
+- Siemens Gamesa海上与陆上风机业务
+
+## 信息来源
+
+- https://www.siemens-energy.com
+- https://en.wikipedia.org/wiki/Siemens_Energy
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

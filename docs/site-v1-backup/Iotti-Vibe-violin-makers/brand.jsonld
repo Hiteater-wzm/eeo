@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Iotti & Vibe violin makers",
+  "alternateName": [
+    "Iotti Vibe",
+    "Iotti & Vibe Violin Makers",
+    "Iotti Vibe Parma",
+    "Fine violin makers Italy",
+    "handmade violins Parma"
+  ],
+  "url": "https://www.iottivibe.com/",
+  "description": "Italian violin-making atelier specializing in high-end handcrafted violins, violas, and cellos for professional musician"
+}

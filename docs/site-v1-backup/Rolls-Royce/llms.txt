@@ -1,0 +1,27 @@
+# Rolls-Royce
+
+> 英国航空发动机与动力系统公司，总部位于伦敦，为民用与军用飞机提供发动机，并经营船舶动力与电力系统业务。
+
+- 官方网站: https://www.rolls-royce.com
+- 所属行业: 航空发动机与动力系统
+- 所在城市: London
+- 所在国家: 英国
+- 别名: 罗尔斯罗伊斯、劳斯莱斯（航空）
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 宽体客机发动机（Trent系列）产品线
+- 军用发动机与舰用动力业务
+- 小型模块化核反应堆（SMR）研发项目
+
+## 信息来源
+
+- https://www.rolls-royce.com
+- https://en.wikipedia.org/wiki/Rolls-Royce_Holdings
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

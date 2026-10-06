@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "T-Mobile US",
+  "alternateName": "T-Mobile美国",
+  "url": "https://www.t-mobile.com",
+  "description": "美国移动运营商，总部位于华盛顿州Bellevue，2020年完成与Sprint的合并，提供5G移动与家庭互联网服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bellevue",
+    "addressCountry": "美国"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LG Fashion Labs",
+  "alternateName": [
+    "LGFL",
+    "LG Fashion Labs GmbH",
+    "LGFashionLabs"
+  ],
+  "url": "https://lgfashionlabs.com",
+  "description": "German fashion technology company developing production orchestration software for EU Digital Product Passport complianc"
+}

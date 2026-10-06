@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dr. Romeu",
+  "alternateName": [
+    "Doctor Romeu",
+    "Dr Romeu"
+  ],
+  "url": "https://www.drromeu.net/",
+  "description": "Clinical Psychology and Psychiatry Office in Barcelona specialized in: Psychology, Child and Adolescent Psychology, Chil"
+}

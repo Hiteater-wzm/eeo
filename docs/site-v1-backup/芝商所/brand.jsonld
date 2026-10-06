@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "芝商所",
+  "alternateName": [
+    "CME",
+    "CME EUROPE",
+    "CME Group Inc.",
+    "CMEE"
+  ],
+  "url": "https://www.cmegroup.com",
+  "description": "futures company and one of the largest options and futures exchanges, located in Chicago, Illinois, United States"
+}

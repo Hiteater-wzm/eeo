@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "VALK",
+  "alternateName": [
+    "DatAI Network",
+    "datai.network",
+    "VALK Solutions"
+  ],
+  "url": "https://datai.network",
+  "description": "UK-based fintech company specializing in digital asset management for institutional investors, now DatAI Network"
+}

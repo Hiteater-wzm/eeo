@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mickai",
+  "alternateName": [
+    "MICKAI",
+    "Mickai Sovereign Intelligence Operating System",
+    "Mickai LTD",
+    "Mickai SIOS"
+  ],
+  "url": "https://mickai.co.uk",
+  "description": "British sovereign artificial intelligence company, developer of the Mickai Sovereign Intelligence Operating System"
+}

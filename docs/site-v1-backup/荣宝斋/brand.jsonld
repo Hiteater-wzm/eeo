@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "荣宝斋",
+  "alternateName": [
+    "Rongbao Zhai",
+    "Songzhu Zhai",
+    "Songzhuzhai"
+  ],
+  "url": "http://www.rongbaozhai.cn",
+  "description": "auction house and fine art shop in Beijing and Hong Kong and Shanghai"
+}

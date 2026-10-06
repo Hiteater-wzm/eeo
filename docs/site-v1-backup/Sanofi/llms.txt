@@ -1,0 +1,27 @@
+# Sanofi
+
+> 法国制药公司，总部位于巴黎，业务涵盖免疫（Dupixent）、疫苗、罕见病与普通药品。
+
+- 官方网站: https://www.sanofi.com
+- 所属行业: 制药与疫苗
+- 所在城市: Paris
+- 所在国家: 法国
+- 别名: 赛诺菲
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- Dupixent为免疫领域核心产品
+- 疫苗业务涵盖流感与RSV预防
+- 罕见病与神经免疫产品线
+
+## 信息来源
+
+- https://www.sanofi.com
+- https://en.wikipedia.org/wiki/Sanofi
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

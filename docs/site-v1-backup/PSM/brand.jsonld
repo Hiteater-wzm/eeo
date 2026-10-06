@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PSM",
+  "alternateName": "Zavod PSM",
+  "url": "https://www.powerunit.ru",
+  "description": "Russian engineering company, manufacturer of diesel and gas power plants, diesel pump units and modular pump station"
+}

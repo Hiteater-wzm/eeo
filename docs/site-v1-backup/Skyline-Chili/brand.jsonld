@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Skyline Chili",
+  "alternateName": [
+    "Skyline Chili LLC",
+    "Skyline Chili",
+    "LLC"
+  ],
+  "url": "https://www.skylinechili.com/",
+  "description": "American restaurant chain specializing in Cincinnati chili"
+}

@@ -1,0 +1,25 @@
+# Tata Motors
+
+> 印度汽车制造商,1945年成立,业务涵盖乘用车、商用车,旗下包含捷豹路虎业务。
+
+- 官方网站: https://www.tatamotors.com
+- 所属行业: 汽车制造
+- 所在城市: 孟买
+- 所在国家: 印度
+- 别名: 塔塔汽车
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 在孟买证券交易所上市
+- 旗下包含捷豹路虎业务
+
+## 信息来源
+
+- https://www.tatamotors.com
+- https://en.wikipedia.org/wiki/Tata_Motors
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

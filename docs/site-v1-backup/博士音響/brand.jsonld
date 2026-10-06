@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "博士音響",
+  "alternateName": [
+    "Bose",
+    "BOSE",
+    "Bose Audio",
+    "Bose Corp."
+  ],
+  "url": "https://www.bose.com",
+  "description": "US audio equipment manufacturer and retail chain"
+}

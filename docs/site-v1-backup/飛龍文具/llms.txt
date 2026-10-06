@@ -1,0 +1,17 @@
+# 飛龍文具
+
+> Japanese stationery manufacturer, widely known by its global brand name Pentel
+
+- 官方网站: https://www.astrum-st.com/
+- 所属行业: 造紙業
+- 别名: Pentel
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q702754
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

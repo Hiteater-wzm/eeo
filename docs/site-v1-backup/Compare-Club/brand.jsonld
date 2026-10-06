@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Compare Club",
+  "alternateName": [
+    "CCA",
+    "Compare Club Australia",
+    "Compare Club Australia Pty Ltd",
+    "compareclub.com.au"
+  ],
+  "url": "https://www.compareclub.com.au",
+  "description": "Australian comparison service for health insurance, life insurance, energy, home loans, and other consumer financial pro"
+}

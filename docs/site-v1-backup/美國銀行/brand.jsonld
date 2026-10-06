@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "美國銀行",
+  "alternateName": [
+    "Bank of America",
+    "美洲银行",
+    "美洲银行公司"
+  ],
+  "url": "https://www.bankofamerica.com/",
+  "description": "American multinational banking and financial services corporation"
+}

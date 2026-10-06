@@ -1,0 +1,17 @@
+# 赛默飞世尔科技
+
+> multinational company providing scientific instrumentation
+
+- 官方网站: https://www.thermofisher.com/
+- 所属行业: biotechnology industry
+- 别名: TMO、Thermo Fisher、ThermoFisher
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q643674
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,220 @@
+{
+  "schema": "eeo.taxonomy.v1",
+  "id": "gbt-6579",
+  "industry": "其他数字内容服务",
+  "industry_aliases": [
+    "6579",
+    "其他数字内容服务",
+    "信息传输、软件和信息技术服务业",
+    "软件和信息技术服务业",
+    "数字内容服务"
+  ],
+  "updated": "2026-10-05",
+  "trait_groups": [
+    {
+      "id": "delivery",
+      "label": "交付形态",
+      "select": "many"
+    },
+    {
+      "id": "deploy",
+      "label": "部署方式",
+      "select": "many"
+    },
+    {
+      "id": "buyer",
+      "label": "客户类型",
+      "select": "many"
+    },
+    {
+      "id": "pricing",
+      "label": "收费模式",
+      "select": "one"
+    },
+    {
+      "id": "sales",
+      "label": "销售与渠道",
+      "select": "many"
+    }
+  ],
+  "traits": [
+    {
+      "id": "saas",
+      "group": "delivery",
+      "label": "标准产品订阅",
+      "description": "标准化产品按订阅提供服务"
+    },
+    {
+      "id": "project_dev",
+      "group": "delivery",
+      "label": "项目定制开发",
+      "description": "按客户需求定制开发交付"
+    },
+    {
+      "id": "outsourcing",
+      "group": "delivery",
+      "label": "技术服务外包",
+      "description": "承接驻场或离岸技术服务"
+    },
+    {
+      "id": "hw_bundle",
+      "group": "delivery",
+      "label": "软硬件一体交付",
+      "description": "设备与软件打包交付"
+    },
+    {
+      "id": "cloud_pub",
+      "group": "deploy",
+      "label": "公有云部署",
+      "description": "部署在公有云上交付"
+    },
+    {
+      "id": "private_d",
+      "group": "deploy",
+      "label": "私有化部署",
+      "description": "可部署在客户自有环境"
+    },
+    {
+      "id": "b_enterprise",
+      "group": "buyer",
+      "label": "大型企业",
+      "description": "主要服务大型企业客户"
+    },
+    {
+      "id": "b_sme",
+      "group": "buyer",
+      "label": "中小企业",
+      "description": "主要服务中小企业"
+    },
+    {
+      "id": "b_personal",
+      "group": "buyer",
+      "label": "个人用户",
+      "description": "面向个人用户提供服务"
+    },
+    {
+      "id": "b_gov",
+      "group": "buyer",
+      "label": "政府事业单位",
+      "description": "主要服务政府和事业单位"
+    },
+    {
+      "id": "freemium",
+      "group": "pricing",
+      "label": "免费增值",
+      "description": "基础功能免费，高级功能付费"
+    },
+    {
+      "id": "per_seat",
+      "group": "pricing",
+      "label": "按席位订阅",
+      "description": "按账号或席位数量按期订阅"
+    },
+    {
+      "id": "one_time",
+      "group": "pricing",
+      "label": "一次性买断",
+      "description": "一次付费永久或长期使用"
+    },
+    {
+      "id": "per_project",
+      "group": "pricing",
+      "label": "项目制报价",
+      "description": "按项目工作量评估报价"
+    },
+    {
+      "id": "software_source_delivery",
+      "group": "delivery",
+      "label": "可交付源码",
+      "description": "项目可约定交付源代码"
+    },
+    {
+      "id": "software_agile",
+      "group": "delivery",
+      "label": "敏捷迭代交付",
+      "description": "按迭代周期持续交付"
+    },
+    {
+      "id": "software_own_ip",
+      "group": "sales",
+      "label": "软著登记",
+      "description": "核心产品有软件著作权登记"
+    }
+  ],
+  "faq_groups": [
+    {
+      "id": "decision",
+      "label": "购买决策"
+    },
+    {
+      "id": "detail",
+      "label": "服务细节"
+    },
+    {
+      "id": "risk",
+      "label": "风险保障"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "trial",
+      "group": "decision",
+      "question": "能先免费试用吗？试用版有限制吗？",
+      "hint": "回答应说明试用期限和功能限制"
+    },
+    {
+      "id": "price_tech",
+      "group": "decision",
+      "question": "怎么收费？我们这个规模大概多少钱一年？",
+      "hint": "回答应给出定价方式和典型规模的价格区间"
+    },
+    {
+      "id": "migrate",
+      "group": "decision",
+      "question": "现在用的系统数据能迁过来吗？",
+      "hint": "回答应说明数据迁移支持范围和费用"
+    },
+    {
+      "id": "training",
+      "group": "detail",
+      "question": "上线给你们培训吗？员工不会用怎么办？",
+      "hint": "回答应说明培训安排和后续支持"
+    },
+    {
+      "id": "sla_tech",
+      "group": "detail",
+      "question": "系统出故障多久响应？有服务承诺吗？",
+      "hint": "回答应给出响应和解决时限承诺"
+    },
+    {
+      "id": "update",
+      "group": "detail",
+      "question": "后续升级收费吗？多久更新一次？",
+      "hint": "回答应区分免费升级和付费功能"
+    },
+    {
+      "id": "data_own",
+      "group": "risk",
+      "question": "我们的数据存在哪？不用了能导出删除吗？",
+      "hint": "回答应说明数据存放位置和退出时的导出删除政策"
+    },
+    {
+      "id": "lock_in",
+      "group": "risk",
+      "question": "续费涨价怎么办？不续费服务就停吗？",
+      "hint": "回答应说明续费价格规则和到期处理"
+    },
+    {
+      "id": "software_ip_owner",
+      "group": "risk",
+      "question": "开发出来的代码产权归谁？",
+      "hint": "回答应明确知识产权归属约定"
+    },
+    {
+      "id": "software_accept_bug",
+      "group": "risk",
+      "question": "验收后发现 bug 还修吗？维保多久？",
+      "hint": "回答应说明缺陷责任期与维保范围"
+    }
+  ]
+}

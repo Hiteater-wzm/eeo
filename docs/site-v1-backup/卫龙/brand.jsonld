@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "卫龙",
+  "alternateName": [
+    "Weilong",
+    "卫龙美味"
+  ],
+  "url": "https://www.weilongshipin.com",
+  "description": "2001年创立于河南漯河的辣味休闲食品企业，主打调味面制品与魔芋制品，2025年在香港交易所上市。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "漯河",
+    "addressCountry": "中国"
+  }
+}

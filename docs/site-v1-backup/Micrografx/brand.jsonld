@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Micrografx",
+  "alternateName": "Micrografx Inc.",
+  "url": "http://www.igrafx.com",
+  "description": "former United States-based software-house"
+}

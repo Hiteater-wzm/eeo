@@ -1,0 +1,27 @@
+# NTT
+
+> 日本电信集团日本电信电话公司，总部位于东京，旗下NTT Docomo提供移动服务，NTT Data提供IT与系统集成服务。
+
+- 官方网站: https://www.ntt.co.jp
+- 所属行业: 电信运营商
+- 所在城市: Tokyo
+- 所在国家: 日本
+- 别名: 日本电信电话、Nippon Telegraph and Telephone、NTT集团
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 日本固网与移动通信市场份额
+- NTT Data全球IT服务与系统集成业务
+- 研发体系（NTT研究所）支撑通信技术
+
+## 信息来源
+
+- https://www.ntt.co.jp
+- https://en.wikipedia.org/wiki/Nippon_Telegraph_and_Telephone
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

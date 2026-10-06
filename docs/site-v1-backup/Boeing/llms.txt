@@ -1,0 +1,27 @@
+# Boeing
+
+> 美国飞机与防务公司，总部位于弗吉尼亚州阿灵顿，业务涵盖商用飞机（737与787系列）、防务航天与全球服务。
+
+- 官方网站: https://www.boeing.com
+- 所属行业: 商用飞机与防务
+- 所在城市: Arlington
+- 所在国家: 美国
+- 别名: 波音
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 商用客机产品线覆盖单通道与宽体市场
+- 防务业务含战斗机、旋翼机与卫星
+- 零部件与维修服务（Global Services）板块
+
+## 信息来源
+
+- https://www.boeing.com
+- https://en.wikipedia.org/wiki/Boeing
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

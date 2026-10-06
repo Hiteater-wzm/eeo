@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Energy Building",
+  "alternateName": "Energy Building - Goldbeck & Giesing GmbH",
+  "url": "https://energy-building.de/",
+  "description": "German engineering firm for energy consulting, indoor air measurement and fire protection, based in Hamburg"
+}

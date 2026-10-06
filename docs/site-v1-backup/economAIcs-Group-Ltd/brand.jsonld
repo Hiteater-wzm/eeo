@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "economAIcs Group Ltd",
+  "alternateName": [
+    "economAIcs",
+    "economAIcs Group Ltd",
+    "YourTransportBrain"
+  ],
+  "url": "https://economaicsgroup.com",
+  "description": "British software company developing AI tools and specialist AI consulting for the public transport industry"
+}

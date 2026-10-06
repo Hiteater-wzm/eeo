@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Akai",
+  "alternateName": [
+    "Akai Electric Company Ltd",
+    "Akai Professional"
+  ],
+  "url": "https://www.akai.com/",
+  "description": "Hong Kong manufacturer of consumer electronics, founded as Akai Electric Company Ltd in Tokyo, Japan, in 1946"
+}

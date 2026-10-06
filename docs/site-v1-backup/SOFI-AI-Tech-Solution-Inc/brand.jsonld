@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SOFI AI Tech Solution Inc.",
+  "alternateName": [
+    "SOFI",
+    "sofi",
+    "sofi ai",
+    "SOFI AI",
+    "sofi ai tech"
+  ],
+  "url": "https://sofitech.ai/",
+  "description": "Philippine software company specializing in AI agents, conversational AI, workflow automation, and enterprise AI integra"
+}

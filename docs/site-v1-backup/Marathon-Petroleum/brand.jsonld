@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Marathon Petroleum",
+  "alternateName": "Marathon oil company",
+  "url": "https://www.marathonpetroleum.com/",
+  "description": "American petroleum refining, marketing, and transportation company"
+}

@@ -1,0 +1,17 @@
+# 和冠
+
+> Japanese company that specializes in graphics tablets and related products
+
+- 官方网站: https://www.wacom.com/
+- 所属行业: 计算机硬件行业
+- 别名: Wacom
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q1044773
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

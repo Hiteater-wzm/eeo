@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cracks (software)",
+  "alternateName": [
+    "Cracks SaaS",
+    "Cracks AI",
+    "Cracks restaurant OS"
+  ],
+  "url": "https://cracks-app.com",
+  "description": "AI-powered restaurant operating system; SaaS platform co-founded by Manuel Palacio and Ignacio Lopez for independent res"
+}

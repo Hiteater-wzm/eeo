@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Velza Global",
+  "alternateName": [
+    "Velza Global Group",
+    "Velza Global Hong Kong"
+  ],
+  "url": "https://www.velzaglobal.com",
+  "description": "Hong Kong based company distributing premium beverage and lifestyle brands"
+}

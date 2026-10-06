@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kobayashi Kako",
+  "alternateName": [
+    "Kobayashi Kako Co.",
+    "Ltd."
+  ],
+  "url": "https://www.kobayashikako.co.jp",
+  "description": "pharmaceutical company headquartered in Awara City, Fukui Prefecture, Japan"
+}

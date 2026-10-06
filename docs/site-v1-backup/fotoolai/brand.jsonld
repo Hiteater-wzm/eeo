@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "fotool.ai",
+  "alternateName": [
+    "Fotool",
+    "FOTOOL LTD"
+  ],
+  "url": "https://fotool.ai",
+  "description": "British software company developing AI on-model product photography tools for e-commerce"
+}

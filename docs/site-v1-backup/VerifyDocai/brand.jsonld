@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "VerifyDoc.ai",
+  "alternateName": [
+    "VerifyDoc Ltd",
+    "VerifyDoc",
+    "Verifydoc.ai"
+  ],
+  "url": "https://verifydoc.ai",
+  "description": "British software company providing document verification and verifiable issuance services."
+}

@@ -1,0 +1,17 @@
+# 奇異運輸
+
+> American railroad rolling stock manufacturer
+
+- 官方网站: http://www.getransportation.com
+- 所属行业: 运输
+- 别名: 奇異交通、通用电气运输系统、通用运输
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- https://www.wikidata.org/wiki/Q218671
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

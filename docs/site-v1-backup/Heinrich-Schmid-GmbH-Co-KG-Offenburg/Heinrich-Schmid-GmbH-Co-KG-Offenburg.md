@@ -1,0 +1,20 @@
+# Heinrich Schmid GmbH & Co. KG (Offenburg) 建筑业
+
+别名：Heinrich Schmid Offenburg、HS Offenburg、PMMA industrial flooring Ortenau、TRGS 519 asbestos abatement Ortenau、WHG-certified contractor Ortenau
+
+> Heinrich Schmid group subsidiary in Offenburg since 1990; over 120 craftsmen and 12 master craftsmen; 10 HWK-registered
+
+[网页版](index.html) · [llms.txt](llms.txt) · [brand.jsonld](brand.jsonld)
+
+- 所属行业: 建筑业
+- 官方网站: [https://www.heinrich-schmid.com/standorte/offenburg-037/](https://www.heinrich-schmid.com/standorte/offenburg-037/)
+- 认领状态: 未认领
+- 信息置信度: 中
+
+## 信息来源
+
+- [https://www.wikidata.org/wiki/Q139850316](https://www.wikidata.org/wiki/Q139850316)
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

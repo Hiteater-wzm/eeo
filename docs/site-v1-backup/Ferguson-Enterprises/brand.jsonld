@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ferguson Enterprises",
+  "alternateName": [
+    "Ferguson",
+    "Ferguson plc",
+    "Wolseley plc"
+  ],
+  "url": "https://www.fergusonplc.com/en/index.html",
+  "description": "U.S. distributor of plumbing, heating, ventilation and air conditioning, appliances, and lighting to pipes, valves and f"
+}

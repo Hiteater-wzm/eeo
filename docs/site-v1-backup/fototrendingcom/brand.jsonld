@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "fototrending.com",
+  "alternateName": [
+    "fototrending",
+    "photography blog fototrending"
+  ],
+  "url": "https://fototrending.com/",
+  "description": "Fototrending is a photography blog dedicated to any camera lover. On the web there are complete help guides for any phot"
+}

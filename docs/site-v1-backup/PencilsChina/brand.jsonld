@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PencilsChina",
+  "alternateName": [
+    "Qingyuan County Hongyun Penindustry Co.",
+    "Ltd"
+  ],
+  "url": "https://www.pencilschina.com",
+  "description": "Pencil manufacturing company based in Zhejiang, China"
+}

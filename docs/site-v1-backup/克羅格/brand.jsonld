@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "克羅格",
+  "alternateName": [
+    "Kroger Co.",
+    "Kroger Grocery and Baking",
+    "The Kroger Co."
+  ],
+  "url": "https://www.kroger.com",
+  "description": "American multinational retailing company"
+}

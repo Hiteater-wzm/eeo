@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Boston Scientific",
+  "alternateName": "波士顿科学",
+  "url": "https://www.bostonscientific.com",
+  "description": "美国医疗器械公司，总部位于马萨诸塞州Marlborough，专注心血管、外周介入与电生理等介入性医疗器械。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Marlborough",
+    "addressCountry": "美国"
+  }
+}

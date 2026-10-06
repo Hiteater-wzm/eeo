@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bolter",
+  "alternateName": "bolter.chat",
+  "url": "https://bolter.chat",
+  "description": "AI-native messaging platform for automating business processes, incubated by Improbable (London, 2026)"
+}

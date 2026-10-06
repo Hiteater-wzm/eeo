@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Shell",
+  "alternateName": "壳牌",
+  "url": "https://www.shell.com",
+  "description": "能源集团，注册于英国，总部位于伦敦，业务涵盖油气勘探生产、液化天然气、炼化销售与低碳能源（电力与充电网络）。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressCountry": "英国"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Inclusive Sport Design",
+  "alternateName": [
+    "ISD",
+    "Michael Woods"
+  ],
+  "url": "https://www.inclusivesportdesign.com",
+  "description": "Australian based independent consulting agency founded by Michael Woods specializing in diversity, equity and inclusion"
+}

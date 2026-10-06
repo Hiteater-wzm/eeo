@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Chevron",
+  "alternateName": "雪佛龙",
+  "url": "https://www.chevron.com",
+  "description": "美国能源公司，总部位于得克萨斯州休斯敦，业务涵盖油气勘探生产、炼化营销与化工，2024年宣布收购赫斯公司。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Houston",
+    "addressCountry": "美国"
+  }
+}

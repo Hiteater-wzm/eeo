@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Walundi",
+  "alternateName": [
+    "Yiwu Walundi Trading Co.",
+    "Ltd."
+  ],
+  "url": "https://walundi.com",
+  "description": "Chinese yoga and activewear manufacturer (OEM/ODM), founded 2013, based in Yiwu, Zhejiang"
+}

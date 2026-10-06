@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "中国中投证券有限责任公司",
+  "alternateName": [
+    "China Investment Securities",
+    "China Jianyin Investment Securities"
+  ],
+  "url": "http://www.china-invs.cn/",
+  "description": "successor of China Southern Securities, Chinese company"
+}

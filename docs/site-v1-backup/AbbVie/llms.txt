@@ -1,0 +1,27 @@
+# AbbVie
+
+> 美国生物制药公司，由雅培分拆设立，总部位于伊利诺伊州North Chicago，产品涵盖免疫（Humira与Skyrizi）、肿瘤与医美（Botox）领域。
+
+- 官方网站: https://www.abbvie.com
+- 所属行业: 生物制药
+- 所在城市: North Chicago
+- 所在国家: 美国
+- 别名: 艾伯维
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 免疫领域Humira与后续产品构成产品序列
+- 收购艾尔建后医美与神经科学产品线扩大
+- 血肿瘤与神经系统罕见病药物管线
+
+## 信息来源
+
+- https://www.abbvie.com
+- https://en.wikipedia.org/wiki/AbbVie
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成

@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UIC GmbH",
+  "alternateName": [
+    "UIC",
+    "UIC Alzenau",
+    "UIC Distillation",
+    "UIC GmbH Alzenau"
+  ],
+  "url": "https://www.uic-distillation.com/",
+  "description": "Manufacturer of thin-film and short-path distillation systems based in Alzenau (Bavaria, Germany)"
+}

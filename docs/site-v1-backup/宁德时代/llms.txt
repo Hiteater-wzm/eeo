@@ -1,0 +1,27 @@
+# 宁德时代
+
+> 中国动力电池制造商，总部位于福建省宁德市，产品涵盖电动汽车动力电池与储能系统，多机构统计其动力电池装机量近年位居全球首位。
+
+- 官方网站: https://www.catl.com
+- 所属行业: 动力电池制造
+- 所在城市: 宁德
+- 所在国家: 中国
+- 别名: CATL、Contemporary Amperex Technology
+- 认领状态: 未认领
+- 信息置信度: 高
+
+## 优势
+
+- 动力电池装机量近年位居全球首位（SNE等机构统计）
+- 储能电池与系统集成业务
+- 德国与匈牙利等海外基地布局
+
+## 信息来源
+
+- https://www.catl.com
+- https://en.wikipedia.org/wiki/CATL
+- https://fortune.com/ranking/global500/
+
+---
+
+依据 EEO 品牌信息规范（eeo.brand.v1）生成
