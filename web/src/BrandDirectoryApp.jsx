@@ -34,11 +34,13 @@ export default function BrandDirectoryApp({ initialView = 'directory' }) {
     fetch(DATA_URL(0))
       .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
       .then(async (d) => {
-        const rows = d.b || [];
+        let rows = d.b || [];
         const total = d.count || rows.length;
         const parts = d.parts || 1;
         setLoadProgress({ done: 1, total: parts });
-        // 首片即刻可用：先渲染，其余片后台续载（每片到位即合并，检索范围随之扩大）
+        // 首片即刻可用：先渲染，其余片后台续载。
+        // 合并必须产出新数组引用（concat）：既避开超大参数展开的栈上限，
+        // 也让下游 useMemo（检索索引/筛选）感知数据变化——原地 push 会让搜索永远停在首片。
         setBrands({ rows, countries: d.countries || [], industries: d.industries || [], stats: d.stats || null, count: total });
         for (let p = 1; p < parts; p++) {
           try {
@@ -46,7 +48,7 @@ export default function BrandDirectoryApp({ initialView = 'directory' }) {
               if (!r.ok) throw new Error(String(r.status));
               return r.json();
             });
-            rows.push(...part.b);
+            rows = rows.concat(part.b);
             setBrands((cur) => (cur ? { ...cur, rows } : cur));
             setLoadProgress({ done: p + 1, total: parts });
           } catch (e) {

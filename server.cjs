@@ -492,10 +492,17 @@ const server = http.createServer(async (req, res) => {
     const mDraft = p.match(/^\/api\/draft\/([a-f0-9]+)$/);
     if (req.method === 'POST' && mDraft) {
       // 内容执行包：依据体检结果生成第三方内容草稿
+      // 配额护栏：与检测同享日限流；refresh 重生成同任务最多 3 次（缓存 1 小时内本就直接返回）
+      if (!allowIp(clientIp(req))) return json(res, 429, { error: '今日额度已用完。明日可继续使用' });
       const job = loadJob(mDraft[1]);
       if (!job) return json(res, 404, { error: 'not found' });
       if (job.drafts && Date.now() - job.drafts.at < 3600000 && !url.searchParams.get('refresh')) {
         return json(res, 200, job.drafts);
+      }
+      if (url.searchParams.get('refresh')) {
+        job.draftRegen = (job.draftRegen || 0) + 1;
+        if (job.draftRegen > 3) return json(res, 429, { error: '该报告的草稿重生成次数已用完' });
+        saveJob(job);
       }
       const ds = CFG.engines.find(e => e.id === 'deepseek');
       if (!ds || !ds.enabled) return json(res, 503, { error: '引擎不可用' });

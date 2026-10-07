@@ -54,7 +54,7 @@ async function askEngine(engine, question, apiKey) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), engine.timeoutMs || 120000);
   try {
-    const r = await fetch(engine.baseURL + '/chat/completions', { method: 'POST', headers, body, signal: ctrl.signal });
+    const r = await fetch(engine.baseURL + (isAnthropic ? '/v1/messages' : '/chat/completions'), { method: 'POST', headers, body, signal: ctrl.signal });
     if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 120));
     const d = await r.json();
     const text = isAnthropic
@@ -279,6 +279,7 @@ async function runAudit(input, engines, onProgress) {
   const counters = {};
   active.forEach(e => counters[e.id] = 0);
   active.forEach(e => questions.forEach(q => tasks.push({ e, q })));
+  const errors = {}; // 引擎级失败计数：全部作答失败时不能照常出低分报告
   await pool(tasks, 4, async (t) => {
     try {
       const txt = await askEngine(t.e, t.q.q, t.e.apiKey);
@@ -287,6 +288,7 @@ async function runAudit(input, engines, onProgress) {
     } catch (err) {
       t.q.answers = t.q.answers || {};
       t.q.answers[t.e.id] = '';
+      errors[t.e.id] = (errors[t.e.id] || 0) + 1;
     }
     counters[t.e.id]++;
     if (onProgress) onProgress(t.e, counters[t.e.id], questions.length);
@@ -297,8 +299,21 @@ async function runAudit(input, engines, onProgress) {
     q.answers = q.answers || {};
     active.forEach(e => { if (!(e.id in q.answers)) q.answers[e.id] = ''; });
   });
+  // 有效样本护栏：某引擎全部作答失败时标记 degraded 并剔除该引擎，
+  // 全部引擎无有效作答时直接判失败——接口故障不得被误读为品牌表现差。
+  const failedEngines = active.filter(e => errors[e.id] && errors[e.id] >= questions.length);
+  let degraded = null;
+  if (failedEngines.length) {
+    degraded = { engines: failedEngines.map(e => e.id), note: '以下引擎全部作答失败，其结果不计入：' + failedEngines.map(e => e.name).join('、') };
+    const bad = new Set(failedEngines.map(e => e.id));
+    questions.forEach(q => { q.answers = q.answers || {}; bad.forEach(id => delete q.answers[id]); });
+  }
+  const validEngines = active.filter(e => !failedEngines.includes(e));
+  if (!validEngines.length) {
+    return { input, phase: 'error', error: '所有引擎作答均失败（接口故障或密钥无效），本次结果不代表品牌表现', summary: null };
+  }
   const summary = analyze(input, questions, results);
-  return { input, ...summary };
+  return { input, ...(degraded ? { degraded } : {}), ...summary };
 }
 
 module.exports = { coreWord, countHits, NOINFO_RE, AMBIG_RE, DEPTHS, gradeOf, askEngine, genQuestions, pool, extractSources, analyze, runAudit };

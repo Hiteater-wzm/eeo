@@ -39,14 +39,15 @@ jobs:
           base="$(git merge-base "origin/${BASE_REF}" HEAD)"
           {
             echo 'files<<EOF'
-            git diff --name-only --diff-filter=ACMR "$base" HEAD -- '*.json'
+            git diff --name-only --diff-filter=ACMR "$base" HEAD -- '*.json' 'datasets/registry/*.jsonl'
             echo 'EOF'
-          } >> "$GITHUB_OUTPUT"
+            echo "base=$base" >> "$GITHUB_OUTPUT"
 
       - name: Verify claims
         id: verify
         env:
           PR_FILES: ${{ steps.files.outputs.files }}
+          BASE_SHA: ${{ steps.files.outputs.base }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           CLAIM_REPORT: ${{ runner.temp }}/claim-report.md
         run: node platform/claim-verify.cjs

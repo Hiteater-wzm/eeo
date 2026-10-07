@@ -34,30 +34,53 @@ function collectFiles(argv) {
   return files;
 }
 
+// 盖章单张卡的 claim（就地），返回品牌名或 null
+function stampClaim(card, prNumber) {
+  if (!obj(card)) return null;
+  if (str(card.schema) !== 'eeo.brand.v1') return null;
+  const claim = obj(card.claim) || (card.claim = {});
+  if (str(claim.status) !== 'claiming') return null;
+
+  claim.status = 'claimed';
+  claim.method = 'domain-file';
+  claim.claimedAt = new Date().toISOString();
+  if (!Array.isArray(claim.history)) claim.history = [];
+  const date = claim.claimedAt.slice(0, 10);
+  claim.history.push(
+    date + ' 官网验证文件核验通过' + (prNumber ? '（PR #' + prNumber + '）' : '') + '，条目转为已认领'
+  );
+  return str(card.name) || '(未命名)';
+}
+
 // 就地盖章，返回盖章的品牌名列表（空数组 = 本文件无事可做）
+// 支持 JSON（单卡/数组）与 JSONL（注册表分片：逐行盖章，保留其余行不动）
 function finalizeFile(file, prNumber) {
   const raw = fs.readFileSync(file, 'utf8');
-  const data = JSON.parse(raw); // 解析失败直接抛，workflow 标红——合并进来的数据不该是坏的
 
+  if (file.endsWith('.jsonl')) {
+    const lines = raw.split('\n');
+    const names = [];
+    for (let i = 0; i < lines.length; i++) {
+      const t = lines[i].trim();
+      if (!t) continue;
+      const card = JSON.parse(t); // 坏行直接抛，workflow 标红——合并进来的数据不该是坏的
+      const name = stampClaim(card, prNumber);
+      if (name) {
+        names.push(name);
+        lines[i] = JSON.stringify(card);
+      }
+    }
+    if (names.length) fs.writeFileSync(file, lines.join('\n'));
+    return names;
+  }
+
+  const data = JSON.parse(raw); // 解析失败直接抛，workflow 标红——合并进来的数据不该是坏的
   const cards = Array.isArray(data) ? data : [data];
   const names = [];
   for (const card of cards) {
-    if (!obj(card)) continue;
-    if (str(card.schema) !== 'eeo.brand.v1') continue;
-    const claim = obj(card.claim) || (card.claim = {});
-    if (str(claim.status) !== 'claiming') continue;
-
-    claim.status = 'claimed';
-    claim.method = 'domain-file';
-    claim.claimedAt = new Date().toISOString();
-    if (!Array.isArray(claim.history)) claim.history = [];
-    const date = claim.claimedAt.slice(0, 10);
-    claim.history.push(
-      date + ' 官网验证文件核验通过' + (prNumber ? '（PR #' + prNumber + '）' : '') + '，条目转为已认领'
-    );
-    names.push(str(card.name) || '(未命名)');
+    const name = stampClaim(card, prNumber);
+    if (name) names.push(name);
   }
-
   if (!names.length) return names;
   const out = JSON.stringify(data, null, 2) + (/\n$/.test(raw) ? '\n' : '');
   fs.writeFileSync(file, out);
@@ -74,7 +97,7 @@ function main() {
 
   let total = 0;
   for (const f of files) {
-    if (!f.endsWith('.json')) continue;
+    if (!f.endsWith('.json') && !f.endsWith('.jsonl')) continue;
     if (!fs.existsSync(f)) {
       console.error('⚠️ 跳过不存在的文件：' + f);
       continue;

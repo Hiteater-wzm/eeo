@@ -113,7 +113,18 @@ function v4Blocked(ip) {
   return false;
 }
 function ipBlocked(ip) {
-  const s = String(ip).toLowerCase().split('%')[0]; // 去掉 zone id
+  const s0 = String(ip).toLowerCase().split('%')[0]; // 去掉 zone id
+  // IPv6 十六进制写法的 IPv4 映射地址（::ffff:7f00:1 / 0:0:0:0:0:ffff:7f00:1）
+  // 先展开为 8 组，识别 ::ffff:0:0/96 后换算回点分再查 v4 段——绕开"压缩/全写两态"的漏网
+  const hexMapped = s0.match(/^(?:(?:0:){1,5}|::)ffff:([0-9a-f]{1,4}):([0-9a-f]{1,4})$/);
+  if (hexMapped) {
+    // IPv4 映射形态（::ffff:0:0/96）按段核对——公网域名解析不应返回映射地址，两种写法一律拦
+    const hi = parseInt(hexMapped[1], 16), lo = parseInt(hexMapped[2], 16);
+    return v4Blocked(((hi >> 8) & 255) + '.' + (hi & 255) + '.' + ((lo >> 8) & 255) + '.' + (lo & 255)) || true;
+  }
+  // IPv4 兼容/全零前缀地址（::x / 0:0:…:x）全部视为保留——公网单播 IPv6 的前 48 位不会全零
+  if (/^::/.test(s0) || /^0(?::0){4,}/.test(s0)) return true;
+  const s = s0;
   if (s.includes('.')) return v4Blocked(s);
   const mapped = s.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/);
   if (mapped) return v4Blocked(mapped[1]);
@@ -215,10 +226,21 @@ async function fetchClaimFile(host, token, name) {
 
 // ---------- 单卡校验 ----------
 // 返回：null = 与认领无关；{ok:true} = 通过；{ok:false, reason} = 失败
-async function verifyCard(card, file) {
+async function verifyCard(card, file, baseCard) {
   const name = str(card.name);
   const claim = obj(card.claim) || {};
   const status = str(claim.status);
+
+  // 基准身份绑定：认领 PR 不允许顺带改动品牌名或官网——
+  // 把 website 和 claim.domain 一起换成自己的域名不应得到"验证通过"的背书
+  if (baseCard) {
+    if (str(baseCard.name) && str(baseCard.name) !== name) {
+      return { name: name || file, file, ok: false, domain: '', reason: `品牌名与基准分支不一致（基准 ${str(baseCard.name)}），改名请另开 PR 单独说明` };
+    }
+    if (str(baseCard.website) && str(baseCard.website) !== str(card.website || '')) {
+      return { name: name || file, file, ok: false, domain: '', reason: `官网与基准分支不一致（基准 ${str(baseCard.website)}），变更官网请另开 PR 单独审核` };
+    }
+  }
 
   if (status !== 'claiming') {
     if (status === 'claimed') {
@@ -295,13 +317,44 @@ function buildReport(results, scanned) {
 }
 
 // ---------- 主流程 ----------
+const { execSync } = require('child_process');
+
+// 取基准分支版本的文件内容（CI 里 BASE_SHA 由 workflow 注入；本地无基准时返回 null）
+function baseFileText(f) {
+  const sha = str(process.env.BASE_SHA);
+  if (!sha) return null;
+  try {
+    return execSync(`git show ${sha}:${JSON.stringify(f)}`, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 64 * 1024 * 1024 });
+  } catch (_) {
+    return null; // 新增文件或路径不在基准里
+  }
+}
+
+// 任意格式（JSON 对象/数组 或 JSONL）解析为卡数组
+function parseCards(text, isJsonl) {
+  if (text == null) return [];
+  if (isJsonl) {
+    const out = [];
+    for (const line of String(text).split('\n')) {
+      const t = line.trim();
+      if (!t) continue;
+      try { const c = JSON.parse(t); if (obj(c)) out.push(c); } catch { /* 坏行忽略：新文件侧才严格 */ }
+    }
+    return out;
+  }
+  try { return [...iterCards(JSON.parse(text))]; } catch { return []; }
+}
+
+const cardKey = (c) => str(c.wikidata) || ('name:' + str(c.name));
+const canon = (c) => JSON.stringify({ ...c, claim: undefined });
+
 async function main() {
   const argv = process.argv.slice(2);
   if (argv.includes('--self-test')) return selfTest();
 
   const files = collectFiles(argv);
   if (!files.length) {
-    console.error('未指定待核验文件：请传 JSON 文件路径参数，或设置 PR_FILES 环境变量（换行分隔）');
+    console.error('未指定待核验文件：请传 JSON/JSONL 文件路径参数，或设置 PR_FILES 环境变量（换行分隔）');
     process.exit(1);
   }
 
@@ -309,11 +362,40 @@ async function main() {
   let scanned = 0;
 
   for (const f of files) {
-    if (!f.endsWith('.json')) continue;
+    const isJsonl = f.endsWith('.jsonl');
+    if (!isJsonl && !f.endsWith('.json')) continue;
     if (!fs.existsSync(f)) {
       results.push({ name: f, file: f, ok: false, domain: '', reason: '文件不存在（检出内容与 diff 不一致）' });
       continue;
     }
+    if (isJsonl) {
+      // 注册表分片可能十几万行：逐行流式比对，只把真正变更的条目送核验
+      const baseText = baseFileText(f);
+      const baseMap = new Map(parseCards(baseText, true).map((c) => [cardKey(c), c]));
+      const lines = fs.readFileSync(f, 'utf8').split('\n');
+      for (let i = 0; i < lines.length; i++) {
+        const t = lines[i].trim();
+        if (!t) continue;
+        let card;
+        try { card = JSON.parse(t); } catch (e) {
+          results.push({ name: f + ':' + (i + 1), file: f, ok: false, domain: '', reason: 'JSONL 第 ' + (i + 1) + ' 行解析失败：' + e.message });
+          continue;
+        }
+        if (!obj(card) || str(card.schema) !== 'eeo.brand.v1') continue;
+        const base = baseMap.get(cardKey(card)) || null;
+        const claimChanged = !base || JSON.stringify(obj(card.claim) || null) !== JSON.stringify(obj(base.claim) || null);
+        if (base && !claimChanged && canon(card) === canon(base)) continue; // 条目整体未变：跳过
+        scanned++;
+        if (str(card.claim && card.claim.status) === 'claiming' || claimChanged) {
+          const r = await verifyCard(card, f, base);
+          if (r) results.push(r);
+        }
+      }
+      continue;
+    }
+    // JSON（单卡或数组）：同样只核验有变更的卡；基准缺失时按老规则全量扫
+    const baseText = baseFileText(f);
+    const baseMap = new Map(parseCards(baseText, false).map((c) => [cardKey(c), c]));
     let data;
     try {
       data = JSON.parse(fs.readFileSync(f, 'utf8'));
@@ -323,8 +405,11 @@ async function main() {
     }
     for (const card of iterCards(data)) {
       if (str(card.schema) !== 'eeo.brand.v1') continue; // 非 EEO 品牌卡，跳过
+      const base = baseMap.size ? (baseMap.get(cardKey(card)) || null) : null;
+      const claimChanged = base == null || JSON.stringify(obj(card.claim) || null) !== JSON.stringify(obj(base.claim) || null);
+      if (base && !claimChanged && canon(card) === canon(base)) continue; // 无变更条目不再拦截
       scanned++;
-      const r = await verifyCard(card, f);
+      const r = await verifyCard(card, f, base);
       if (r) results.push(r);
     }
   }

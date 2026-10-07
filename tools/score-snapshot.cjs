@@ -96,12 +96,13 @@ function scoreSnapshot(dir) {
       for (const grp of g.values()) if (grp.mentioned.has(b)) hit++;
       return hit >= k;
     }).length;
-    const rates = [...groups.values()].map((g) => {
-      let hit = 0, tot = 0;
-      for (const grp of g.values()) { tot++; if (grp.mentioned.has(b)) hit++; }
-      return tot ? hit / tot : 0;
+    // 措辞敏感度 = 同一道题内不同改写之间的提及极差，按题取均值。
+    // 度量的是"换个问法可见性是否就变"，不是题目之间的差异。
+    const perQ = [...groups.values()].map((g) => {
+      const paraHit = [...g.values()].map((grp) => (grp.mentioned.has(b) ? 1 : 0));
+      return paraHit.length ? Math.max(...paraHit) - Math.min(...paraHit) : 0;
     });
-    const sens = rates.length ? Math.max(...rates) - Math.min(...rates) : 0;
+    const sens = perQ.length ? perQ.reduce((x, y) => x + y, 0) / perQ.length : 0;
     const btRow = bt.find((x) => x.id === b);
     return {
       brand: b,

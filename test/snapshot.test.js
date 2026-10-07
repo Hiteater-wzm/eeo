@@ -106,6 +106,8 @@ test('打分器：指标正确且字节级确定', () => {
   assert.strictEqual(yi.robust_visibility, 0, '乙只在一个题的部分改写组出现，不应稳健');
   assert.strictEqual(bing.mention_share, 0);
   assert.strictEqual(s1.pairwise_ranking[0].brand, '甲品牌');
-  assert.ok(jia.sensitivity <= yi.sensitivity, '乙的措辞敏感度不低于甲');
+  // 敏感度方向：甲每题全部改写都提及 → 0；乙只在 q0 的前两个改写出现 → q0 极差 1、其余 0 → 均值 1/3
+  assert.strictEqual(jia.sensitivity, 0, '全改写稳定的品牌敏感度必须为 0');
+  assert.ok(Math.abs(yi.sensitivity - 1 / 3) < 5e-5, `单改写幸存者的敏感度应为 1/3，实测 ${yi.sensitivity}`); // 打分器按 4 位小数舍入
   assert.strictEqual(s1.robust_threshold_k, 3, '4 组改写的 70% 阈值 = 3');
 });
