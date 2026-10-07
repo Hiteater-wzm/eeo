@@ -16,6 +16,7 @@ export default function BrandDirectoryApp({ initialView = 'directory' }) {
   const [view, setView] = useState(initialView); // 'home' | 'directory'
   const [brands, setBrands] = useState(null);
   const [error, setError] = useState(false);
+  const [loadProgress, setLoadProgress] = useState({ done: 0, total: 0 }); // 渐进加载进度
   const [pendingFilters, setPendingFilters] = useState(() => {
     // 支持 /directory?industry=xx&country=xx&q=xx 带参进入
     const sp = new URLSearchParams(window.location.search);
@@ -29,22 +30,30 @@ export default function BrandDirectoryApp({ initialView = 'directory' }) {
 
   const load = useCallback(() => {
     setError(false);
+    setLoadProgress({ done: 0, total: 0 });
     fetch(DATA_URL(0))
       .then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
       .then(async (d) => {
         const rows = d.b || [];
         const total = d.count || rows.length;
-        if (d.parts > 1) {
-          for (let p = 1; p < d.parts; p++) {
+        const parts = d.parts || 1;
+        setLoadProgress({ done: 1, total: parts });
+        // 首片即刻可用：先渲染，其余片后台续载（每片到位即合并，检索范围随之扩大）
+        setBrands({ rows, countries: d.countries || [], industries: d.industries || [], stats: d.stats || null, count: total });
+        for (let p = 1; p < parts; p++) {
+          try {
             const part = await fetch(DATA_URL(p)).then((r) => {
               if (!r.ok) throw new Error(String(r.status));
               return r.json();
             });
             rows.push(...part.b);
+            setBrands((cur) => (cur ? { ...cur, rows } : cur));
+            setLoadProgress({ done: p + 1, total: parts });
+          } catch (e) {
+            setError(true);
+            break;
           }
         }
-        if (rows.length !== total) throw new Error('parts incomplete ' + rows.length + '/' + total);
-        setBrands({ rows, countries: d.countries || [], industries: d.industries || [], stats: d.stats || null, count: total });
       })
       .catch(() => setError(true));
   }, []);
@@ -76,6 +85,11 @@ export default function BrandDirectoryApp({ initialView = 'directory' }) {
             <span className="block text-[10px] font-medium tracking-widest text-[#64748B] uppercase">eeo.brand.v2</span>
           </button>
           <nav className="flex items-center gap-3">
+            {brands && loadProgress.total > 1 && loadProgress.done < loadProgress.total && (
+              <span className="text-xs text-[#64748B] tabular-nums" aria-live="polite">
+                数据加载 {loadProgress.done}/{loadProgress.total}
+              </span>
+            )}
             <button className={navBtn(view === 'home')} onClick={goHome}>
               首页
             </button>

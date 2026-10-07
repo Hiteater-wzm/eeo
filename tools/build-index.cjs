@@ -26,7 +26,7 @@ const ROOT = path.join(__dirname, '..');
 const OUT_DIR = process.env.EEO_INDEX_DIR ? path.resolve(process.env.EEO_INDEX_DIR) : path.join(ROOT, 'web', 'public', 'data');
 /* 条数为动态值（注册表随批次增长），仅做下限护栏 */
 const MIN_COUNT = 50000;
-const SPLIT_BYTES = 85 * 1048576;
+const SPLIT_BYTES = 22 * 1048576;   // 渐进加载：首片约 22MB 秒开，其余后台续载
 
 function fail(msg) {
   console.error('[build-index] FAIL: ' + msg);
