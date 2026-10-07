@@ -11,7 +11,7 @@ EEO stands for *Everything Engine Optimization* — this community's umbrella te
 
 When a buyer asks an AI for a recommendation the answer is assembled from what the model has read, and the brand's own statement rarely reaches the model in structured form. This community works at the source: brands state their facts in an open format, prove domain ownership through a public pull request, and any engine, tool or buyer can read the result for free. The standard behind all of it, including a five-rule conduct pact for optimization providers, is [docs/eeo-standard.md](docs/eeo-standard.md).
 
-1. **Brand directory** — 1,542,575 machine-readable brand cards following the `eeo.brand.v1` schema, browsable and searchable at https://hiteater-wzm.github.io/eeo/
+1. **Brand directory** — 1,542,575 organization and brand cards following the `eeo.brand.v1` schema, browsable and searchable at https://hiteater-wzm.github.io/eeo/ ; cards are quality-graded (287,506 full cards with website and real description; 1,221,296 standard; 33,773 stubs) and 42,373 carry LEI registry codes as third-party verification
 2. **Audit tooling** — asks AI engines the questions buyers ask, keeps every original answer and grades visibility; ships as a single file (`eeo-local.html`), a CLI (`cli.cjs`), a self-hosted server (`server.cjs`), an MCP server, a GitHub Action and a browser extension, with 26 engine presets of which 11 are China-native
 3. **Claim system** — domain verification runs in CI on a public pull request; nothing leaves git
 
