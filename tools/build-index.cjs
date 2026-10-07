@@ -68,6 +68,15 @@ let withWebsite = 0;
 let withAliases = 0;
 let withDesc = 0;
 let claimed = 0;
+let withLei = 0, listedCnt = 0;
+const tierCount = { 3: 0, 2: 0, 1: 0 };
+
+// UTF-16 单元长度（对齐 JS String.length 语义）
+const u16len = (str) => {
+  let n = 0;
+  for (const ch of str) n += ch.codePointAt(0) >= 0x10000 ? 2 : 1;
+  return n;
+};
 
 const rows = brands.map((b) => {
   const o = { n: String(b.name || '') };
@@ -85,6 +94,13 @@ const rows = brands.map((b) => {
   const extra = (Array.isArray(b.sources) ? b.sources : []).filter((s) => !WIKIDATA_RE.test(s));
   if (extra.length) o.src = extra;
   if (b.founded) o.f = b.founded;
+  if (b.reg && b.reg.lei) o.rg = { lei: b.reg.lei.slice(0, 2), listed: b.reg.listed ? 1 : undefined };
+  // 质量档：3=完整（有官网且描述≥20字）2=标准（描述≥10字或有官网）1=存根
+  const dl = u16len(o.d || '');
+  if (o.rg) { withLei++; if (o.rg.listed) listedCnt++; }
+  const tier = (dl >= 20 && o.w) ? 3 : ((dl >= 10 || o.w) ? 2 : 1);
+  o.tr = tier;
+  tierCount[tier]++;
   return o;
 });
 
@@ -95,6 +111,8 @@ const head = {
   industries,
   stats: {
     claimed,
+    tiers: { full: tierCount[3], standard: tierCount[2], stub: tierCount[1] },
+    regBadges: { lei: withLei, listed: listedCnt },
     countriesCounted: countries.map((c, i) => [c, coCount[i]]).sort((x, y) => y[1] - x[1]),
     industriesCounted: industries.map((c, i) => [c, indCount[i]]).sort((x, y) => y[1] - x[1]),
   },

@@ -30,3 +30,6 @@ schemas/
 Thumbs.db
 datasets/harvest/
 public/brands/
+datasets/sources/ror-data.zip
+datasets/sources/gleif*.zip
+datasets/sources/gleif*.csv

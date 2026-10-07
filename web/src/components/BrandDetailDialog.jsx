@@ -22,6 +22,8 @@ const CLAIM_COLOR = {
   claimed: 'text-emerald-600',
   verified: 'text-emerald-700',
 };
+const TIER_LABEL = { 3: '完整卡（有官网且描述完整）', 2: '标准卡', 1: '存根卡（信息待补全）' };
+const TIER_COLOR = { 3: 'text-emerald-700', 2: 'text-neutral-600', 1: 'text-neutral-400' };
 const CONFIDENCE_LABEL = {
   high: '高置信',
   medium: '中置信',
@@ -67,6 +69,16 @@ export default function BrandDetailDialog({ brand, onClose }) {
           <Field label="置信度">
             <span className="text-muted-foreground">
               {CONFIDENCE_LABEL[b.confidence] || b.confidence || '—'}
+            </span>
+          </Field>
+          <Field label="卡片档位">
+            <span className={TIER_COLOR[b.tier] || 'text-neutral-400'}>
+              {TIER_LABEL[b.tier] || '—'}
+            </span>
+          </Field>
+          <Field label="注册背书">
+            <span className="text-neutral-600">
+              {b.reg ? [b.reg.lei && b.reg.lei.length + ' 个 LEI 码', b.reg.listed && '上市实体'].filter(Boolean).join('　') || '—' : '—'}
             </span>
           </Field>
         </div>

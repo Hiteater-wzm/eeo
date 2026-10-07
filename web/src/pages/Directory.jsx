@@ -82,6 +82,8 @@ function rowToBrand(o, countries, industries) {
     advantages: o.adv || [],
     sources: o.src || [],
     founded: o.f || '',
+    tier: o.tr || 0,
+    reg: o.rg || null,
   };
 }
 

@@ -13,8 +13,11 @@ export default function Home({ brands, onSearch, onIndustry }) {
   const stats = useMemo(() => {
     if (!brands) return null;
     const s = brands.stats || {};
+    const tiers = s.tiers || {};
     return {
       total: brands.count || (brands.rows ? brands.rows.length : 0),
+      full: tiers.full || 0,
+      lei: (s.regBadges && s.regBadges.lei) || 0,
       countries: s.countriesCounted ? s.countriesCounted.length : 0,
       industries: s.industriesCounted ? s.industriesCounted.length : 0,
       top: (s.industriesCounted || []).slice(0, 12),
@@ -32,7 +35,7 @@ export default function Home({ brands, onSearch, onIndustry }) {
       <h1 className="text-2xl font-semibold tracking-tight text-[#0F172A]">EEO Brand Directory</h1>
       <p className="mt-1.5 text-sm text-[#64748B] tabular-nums">
         {stats
-          ? <>搜索 {stats.total.toLocaleString()} 个品牌　覆盖 {stats.countries} 个国家/地区　{stats.industries.toLocaleString()} 个行业分类</>
+          ? <>完整品牌卡 {stats.full.toLocaleString()}　全库组织 {stats.total.toLocaleString()}　LEI 注册背书 {stats.lei.toLocaleString()}　覆盖 {stats.countries} 个国家/地区</>
           : '品牌数据加载中…'}
       </p>
 
