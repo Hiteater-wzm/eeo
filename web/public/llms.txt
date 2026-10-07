@@ -17,7 +17,6 @@ Data:
 - Full registry, sharded JSONL under CC0 / Apache-2.0 (1,542,575 brands): https://github.com/Hiteater-wzm/eeo/tree/main/datasets/registry
 - Lightweight site index: /eeo/data/brand-index-p0.json (sharded, part 0 carries stats)
 - Crawlable brand pages: /eeo/brands/index.html (full name index, 2000 entries per page); individual cards at /eeo/brands/<Wikidata-QID>.html with a Markdown twin at .md (seed set + claimed + top 5000 by completeness)
-- Curated seed set, 1,000 brands: https://raw.githubusercontent.com/Hiteater-wzm/eeo/main/datasets/brands-1k.json
 - Industry taxonomy, 3,119 entries: https://github.com/Hiteater-wzm/eeo/tree/main/standards/taxonomy
 
 Notes:
