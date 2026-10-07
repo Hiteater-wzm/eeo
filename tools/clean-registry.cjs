@@ -18,6 +18,7 @@
 'use strict';
 const { readRegistry, writeRegistry } = require('./registry-lib.cjs');
 const { normalizeLabel, normalizeCountry } = require('./normalize-labels.cjs');
+const { mapIndustry } = require('./industry-map.cjs');
 
 const QID_RE = /^q\d+$/i;
 const EVENT_RE = /\bevent\b[^.]*\bin (19|20)\d\d|\bin (19|20)\d\d[^.]*\bevent\b|(第.{1,4}届|运动会|世博会|选美大赛|友好运动会)/i;
@@ -70,6 +71,8 @@ const main = () => {
     if (b.name !== name) stripped++;
     // R6 标签归一：国家走白名单（繁简/译名统一+灭亡政体归并继承国+非现行地区清空），行业仅繁简统一
     if (b.country) b.country = normalizeCountry(String(b.country));
+    // R7 行业归位：自由文本标签映射到分类法正名（别名表+高频补充表），未命中保持归一写法
+    if (b.industry) b.industry = mapIndustry(b.industry);
     if (b.industry) { const n = normalizeLabel(String(b.industry)); if (n !== b.industry) { b.industry = n; } }
     const hasDesc = !!(b.description || '').trim();
     const hasWeb = !!(b.website || '').trim();

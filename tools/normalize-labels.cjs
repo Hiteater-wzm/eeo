@@ -111,6 +111,8 @@ function normalizeLabel(s) {
   let out = s;
   for (const [t, c] of Object.entries(WORD_MAP)) {
     if (out === t) { out = c; break; }
+    // 幂等守卫：目标已含在串中（如 中国香港 已含 香港）则跳过，避免重复套娃
+    if (out.includes(c)) continue;
     if (out.includes(t)) out = out.split(t).join(c);
   }
   // 字级（两字以上的键已由词级处理，这里只替换单字符键）
