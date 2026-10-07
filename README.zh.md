@@ -6,7 +6,7 @@ EEO 全称 Everything Engine Optimization（全引擎优化），是本社区对
 
 ## 四块成果
 
-**品牌目录站**　收录 1,542,575 个品牌，正本为分片 JSONL，可检索可筛选，认领状态全量公开，由 GitHub Pages 托管，地址 https://hiteater-wzm.github.io/eeo/
+**品牌目录站**　收录 1,542,575 个组织与品牌，卡片分三档——完整卡 287,506（有官网且描述完整）、标准卡 1,221,296、存根卡 33,773，其中 42,373 张带 LEI 全球法人码背书；可检索可筛选，认领状态全量公开，由 GitHub Pages 托管，地址 https://hiteater-wzm.github.io/eeo/
 
 **检测工具**　以单文件网页、命令行、自托管服务、MCP 服务、GitHub Action 与浏览器扩展六种形态提供，内置 26 个引擎预设（含国产引擎 11 家），逐题留存原始回答以备核对。
 
