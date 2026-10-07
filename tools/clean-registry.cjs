@@ -73,6 +73,18 @@ const main = () => {
     if (b.country) b.country = normalizeCountry(String(b.country));
     // R7 行业归位：自由文本标签映射到分类法正名（别名表+高频补充表），未命中保持归一写法
     if (b.industry) b.industry = mapIndustry(b.industry);
+    // R8 官网归一：去掉 query 与 fragment——一次性回调码、跟踪参数不是主页身份，
+    // 还会带出 appid 类标识符触发密钥扫描误报
+    if (b.website) {
+      const w = String(b.website);
+      const cut = w.search(/[?#]/);
+      if (cut > 0) {
+        let base = w.slice(0, cut);
+        while (base.length > 0 && base[base.length - 1] === '/') base = base.slice(0, -1);
+        // 归一后为空壳（如整条就是查询串）则整字段清空，交给空壳规则重判
+        b.website = base;
+      }
+    }
     if (b.industry) { const n = normalizeLabel(String(b.industry)); if (n !== b.industry) { b.industry = n; } }
     const hasDesc = !!(b.description || '').trim();
     const hasWeb = !!(b.website || '').trim();
