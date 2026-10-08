@@ -17,7 +17,7 @@ When a buyer asks an AI for a recommendation the answer is assembled from what t
 
 Accuracy is enforced by review rather than assertion: five passes of per-entry AI judgment covered 1,497,628 candidates and rejected 46,883 non-organizations (single events, persons, places, list pages, fiction, web pages and junk). Every verdict file is archived in this repository, and the deterministic cleaning rules are code anyone can read.
 
-A fourth piece is under construction: reproducible measurement built on fixed question panels, frozen engine snapshots and byte-reproducible scoring, designed to answer the two objections against single-shot audits — unstable scores and mention being mistaken for recommendation.
+A fourth piece is live: reproducible measurement on fixed question panels, frozen engine snapshots and byte-reproducible scoring. The first published snapshot (`snapshots/panel-奶茶-v1-*`, milk-tea panel, dual engines, dual judges, agreement kappa 0.909, Wilson intervals, paraphrase-robustness and pairwise rankings) answers the two objections against single-shot audits: unstable scores, and mention being mistaken for recommendation.
 
 ## Numbers
 
