@@ -91,14 +91,19 @@ function buildPanel({ industry, category, brands, version = 1, perParaphrase = 1
 
 function main() {
   const argv = process.argv.slice(2);
-  const opt = {};
+  const opt = { brands: [] };
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === '--industry') opt.industry = argv[++i];
     else if (argv[i] === '--category') opt.category = argv[++i];
-    else if (argv[i] === '--brands') opt.brands = argv[++i].split(/[,，、\s]+/).filter(Boolean);
+    else if (argv[i] === '--brands') {
+      // 吞掉后续所有非旗标参数作为品牌名
+      opt.brands = [];
+      while (i + 1 < argv.length && !argv[i + 1].startsWith('--')) opt.brands.push(argv[++i]);
+    }
     else if (argv[i] === '--out') opt.out = argv[++i];
     else if (argv[i] === '--version') opt.version = parseInt(argv[++i], 10) || 1;
   }
+  opt.brands = opt.brands.join(' ').split(/[,，、\s]+/).filter(Boolean);
   const panel = buildPanel(opt);
   const json = JSON.stringify(panel, null, 1);
   if (opt.out) {
