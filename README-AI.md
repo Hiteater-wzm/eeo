@@ -6,9 +6,9 @@ This file is written for AI agents, crawlers and coding assistants that read thi
 
 | Key | Value | Verify by |
 |---|---|---|
-| Registry entries | 1,542,575 | `node tools/gen-stats.cjs` — always regenerate rather than trusting prose |
+| Registry entries | 1,542,995 | `node tools/gen-stats.cjs` — always regenerate rather than trusting prose |
 | Registry format | `eeo.brand.v1`, one JSON card per line | `datasets/registry/part-0000..0012.jsonl`, 120k lines per shard |
-| Websites / descriptions / countries / industry labels | 393,446 / 1,493,297 / 170 / 6,137 | same command |
+| Websites / descriptions / countries / industry labels | 393,783 / 1,493,717 / 172 / 5,927 | same command |
 | Review record | 5 passes, 1,497,628 candidates judged, 46,883 rejected | verdict TSV files under `datasets/harvest/verdicts/` (QID, PASS or DROP+code) |
 | Curated seed | 1,000 cards (372 hand-collected, 628 selected from Wikidata) | `datasets/brands-1k.json`, construction documented in `datasets/STATS.md` |
 | Engine presets | 26, of which 11 are China-native | catalog in `core.cjs` |
@@ -101,4 +101,3 @@ The code, documentation, data pipeline and review passes were produced with AI a
 - Numbers in docs must trace to `gen-stats` output or a committed artifact; when counts change, regenerate STATS-FULL.md in the same change.
 - Site deploys from the committed `public/` directory; run the web build before pushing UI changes.
 - The web build calls `node ../tools/build-index.cjs && vite build`; the index generator splits output at 85 MB per file.
-- History policy: single-commit main. Do not write narrative commit messages.

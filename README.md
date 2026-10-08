@@ -11,7 +11,7 @@ EEO stands for *Everything Engine Optimization* — this community's umbrella te
 
 When a buyer asks an AI for a recommendation the answer is assembled from what the model has read, and the brand's own statement rarely reaches the model in structured form. This community works at the source: brands state their facts in an open format, prove domain ownership through a public pull request, and any engine, tool or buyer can read the result for free. The standard behind all of it, including a five-rule conduct pact for optimization providers, is [docs/eeo-standard.md](docs/eeo-standard.md).
 
-1. **Global brand directory** — 1,542,995 organization and brand cards following the `eeo.brand.v1` schema across 172 countries and regions, browsable and searchable at https://hiteater-wzm.github.io/eeo/ ; 287,843 cards carry a live website and a full description, 42,373 carry LEI global legal-entity codes as authoritative third-party verification, and 13,626 are listed companies
+1. **Global brand directory** — 1,542,995 organization and brand cards following the `eeo.brand.v1` schema across 172 countries and regions, browsable and searchable at https://hiteater-wzm.github.io/eeo/ ; 287,843 are full cards (live website plus a real description), 42,373 carry LEI global legal-entity codes as authoritative third-party verification, and 13,626 are listed companies
 2. **Audit tooling** — asks AI engines the questions real buyers ask, archives every original answer, and grades visibility; ships in six forms — single file (`eeo-local.html`), CLI (`cli.cjs`), self-hosted server (`server.cjs`), MCP server, GitHub Action, browser extension — with 26 engine presets including all major China-native engines
 3. **Claim system** — domain verification runs in CI on a public pull request; nothing leaves git
 
@@ -23,14 +23,16 @@ A fourth piece sets the measurement bar: reproducible evaluation on fixed questi
 
 | What | Count | Source |
 |---|---|---|
-| Registry entries | 1,542,575 | `datasets/registry/` (13 JSONL shards), counted by `tools/gen-stats.cjs` |
-| Entries with a website | 393,446 | same |
-| Entries with a description | 1,493,297 | same |
-| Countries/regions labeled | 170 | same; labels normalized to current countries |
-| Industry labels | 6,137 | same |
+| Registry entries | 1,542,995 | `datasets/registry/` (13 JSONL shards), counted by `tools/gen-stats.cjs` |
+| Cards with a website | 393,783 | same |
+| Cards with a description | 1,493,717 | same |
+| Full cards (website and description of 20+ chars) | 287,843 | same, tier rules in `tools/build-index.cjs` |
+| Countries and regions labeled | 172 | same; labels normalized to current countries |
+| Industry labels | 5,927 | same |
+| LEI-verified cards | 42,373 | `reg.lei` field, sourced from Wikidata P1278 |
+| Listed-company cards | 13,626 | `reg.listed` field, sourced from Wikidata P414 |
 | Engine presets | 26 (11 China-native) | `core.cjs` catalog |
-
-House rule on numbers: a number is only quoted together with its source. `datasets/STATS-FULL.md` is regenerated from the live data after every merge and is the authoritative statement of registry statistics.
+Card metrics are disjoint-safe by definition: full cards require a website AND a description of at least 20 characters; cards holding a website with a shorter description are counted only in the website row. House rule on numbers: every number is quoted together with its source, regenerated from one stats run in the same change. `datasets/STATS-FULL.md` is regenerated from the live data after every merge and is the authoritative statement of registry statistics.
 
 ## Quick start
 

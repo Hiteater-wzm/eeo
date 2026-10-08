@@ -34,3 +34,4 @@ datasets/sources/ror-data.zip
 datasets/sources/gleif*.zip
 datasets/sources/gleif*.csv
 joblog.txt
+/public/

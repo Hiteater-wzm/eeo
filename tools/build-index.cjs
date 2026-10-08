@@ -94,10 +94,10 @@ const rows = brands.map((b) => {
   const extra = (Array.isArray(b.sources) ? b.sources : []).filter((s) => !WIKIDATA_RE.test(s));
   if (extra.length) o.src = extra;
   if (b.founded) o.f = b.founded;
-  if (b.reg && b.reg.lei) o.rg = { lei: b.reg.lei.slice(0, 2), listed: b.reg.listed ? 1 : undefined };
+  if (b.reg && (b.reg.lei || b.reg.listed)) o.rg = { lei: b.reg.lei ? b.reg.lei.slice(0, 2) : undefined, listed: b.reg.listed ? 1 : undefined };
   // 质量档：3=完整（有官网且描述≥20字）2=标准（描述≥10字或有官网）1=存根
   const dl = u16len(o.d || '');
-  if (o.rg) { withLei++; if (o.rg.listed) listedCnt++; }
+  if (o.rg) { if (o.rg.lei) withLei++; if (o.rg.listed) listedCnt++; }
   const tier = (dl >= 20 && o.w) ? 3 : ((dl >= 10 || o.w) ? 2 : 1);
   o.tr = tier;
   tierCount[tier]++;

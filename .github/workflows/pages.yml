@@ -15,6 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build web
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
       - name: Generate crawlable brand pages
         run: node tools/gen-brand-pages.cjs --out public/brands --top 5000
 
