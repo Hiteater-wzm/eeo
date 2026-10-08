@@ -26,6 +26,12 @@ jobs:
           npm ci
           npm run build
 
+      - name: Stage site (dist -> public, public 不再入库)
+        run: |
+          rm -rf public
+          mkdir -p public
+          cp -r web/dist/* public/
+
       - name: Generate crawlable brand pages
         run: node tools/gen-brand-pages.cjs --out public/brands --top 5000
 
