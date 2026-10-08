@@ -35,7 +35,7 @@ export default function Home({ brands, onSearch, onIndustry }) {
       <h1 className="text-2xl font-semibold tracking-tight text-[#0F172A]">EEO Brand Directory</h1>
       <p className="mt-1.5 text-sm text-[#64748B] tabular-nums">
         {stats
-          ? <>完整品牌卡 {stats.full.toLocaleString()}　全库组织 {stats.total.toLocaleString()}　LEI 注册背书 {stats.lei.toLocaleString()}　覆盖 {stats.countries} 个国家/地区</>
+          ? <>品牌与组织 {stats.total.toLocaleString()}　完整卡片 {stats.full.toLocaleString()}　LEI 权威背书 {stats.lei.toLocaleString()}　覆盖 {stats.countries} 个国家与地区</>
           : '品牌数据加载中…'}
       </p>
 

@@ -1,6 +1,6 @@
 # EEO (Every Engine Optimization)
 
-> Open brand directory and AI-visibility tooling. Brands define themselves for the AI era: measure how AI engines know and recommend a brand, publish a machine-readable brand card, claim ownership via domain verification.
+> The open brand knowledge base for the AI era: 1.54 million organization and brand cards across 172 countries, an industrial-grade fully auditable quality pipeline (five per-entry review passes, verdicts archived at row level), authoritative LEI registry verification on 42,373 entries, and reproducible AI-visibility measurement built on frozen snapshots and dual-judge adjudication (published kappa 0.909).
 
 Links:
 - Repository: https://github.com/Hiteater-wzm/eeo

@@ -1,6 +1,6 @@
 # EEO
 
-An open community where brands state their own facts for AI engines to read.
+The open brand knowledge base for the AI era: verified registry data, authoritative third-party endorsement, and reproducible measurement — so a brand's own statement reaches every engine in structured form.
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 ![Node](https://img.shields.io/badge/node-18%2B-339933)
@@ -11,13 +11,13 @@ EEO stands for *Everything Engine Optimization* — this community's umbrella te
 
 When a buyer asks an AI for a recommendation the answer is assembled from what the model has read, and the brand's own statement rarely reaches the model in structured form. This community works at the source: brands state their facts in an open format, prove domain ownership through a public pull request, and any engine, tool or buyer can read the result for free. The standard behind all of it, including a five-rule conduct pact for optimization providers, is [docs/eeo-standard.md](docs/eeo-standard.md).
 
-1. **Brand directory** — 1,542,575 organization and brand cards following the `eeo.brand.v1` schema, browsable and searchable at https://hiteater-wzm.github.io/eeo/ ; 287,506 cards carry both a live website and a full description, and 42,373 carry LEI registry codes as third-party verification
-2. **Audit tooling** — asks AI engines the questions buyers ask, keeps every original answer and grades visibility; ships as a single file (`eeo-local.html`), a CLI (`cli.cjs`), a self-hosted server (`server.cjs`), an MCP server, a GitHub Action and a browser extension, with 26 engine presets of which 11 are China-native
+1. **Global brand directory** — 1,542,995 organization and brand cards following the `eeo.brand.v1` schema across 172 countries and regions, browsable and searchable at https://hiteater-wzm.github.io/eeo/ ; 287,843 cards carry a live website and a full description, 42,373 carry LEI global legal-entity codes as authoritative third-party verification, and 13,626 are listed companies
+2. **Audit tooling** — asks AI engines the questions real buyers ask, archives every original answer, and grades visibility; ships in six forms — single file (`eeo-local.html`), CLI (`cli.cjs`), self-hosted server (`server.cjs`), MCP server, GitHub Action, browser extension — with 26 engine presets including all major China-native engines
 3. **Claim system** — domain verification runs in CI on a public pull request; nothing leaves git
 
-Accuracy is enforced by review rather than assertion: five passes of per-entry AI judgment covered 1,497,628 candidates and rejected 46,883 non-organizations (single events, persons, places, list pages, fiction, web pages and junk). Every verdict file is archived in this repository, and the deterministic cleaning rules are code anyone can read.
+Data quality is an industrial-grade, fully auditable pipeline rather than a claim: five passes of per-entry AI judgment covered 1,497,628 candidates and rejected 46,883 non-organizations (single events, persons, places, list pages, fiction, web pages and junk). Every verdict file is archived in this repository for row-level audit, deterministic cleaning rules are readable code, and LEI registry data cross-verifies tens of thousands of entries against government-issued identifiers.
 
-A fourth piece is live: reproducible measurement on fixed question panels, frozen engine snapshots and byte-reproducible scoring. The first published snapshot (`snapshots/panel-奶茶-v1-*`, milk-tea panel, dual engines, dual judges, agreement kappa 0.909, Wilson intervals, paraphrase-robustness and pairwise rankings) answers the two objections against single-shot audits: unstable scores, and mention being mistaken for recommendation.
+A fourth piece sets the measurement bar: reproducible evaluation on fixed question panels, frozen engine snapshots and byte-reproducible scoring — dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility and Bradley-Terry rankings. The first snapshot (`snapshots/panel-奶茶-v1-*`) is published, and any single-shot audit's two fatal objections — unstable scores, and mention mistaken for recommendation — are answered by design.
 
 ## Numbers
 

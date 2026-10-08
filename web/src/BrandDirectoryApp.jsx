@@ -142,7 +142,7 @@ export default function BrandDirectoryApp({ initialView = 'directory' }) {
       {/* 脚部 */}
       <footer className="border-t border-border bg-[#F8FAFC]">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-5 py-6 text-xs text-[#64748B] sm:flex-row">
-          <span>EEO Brand Directory　数据经 AI 多轮逐条审核　开放数据（Apache-2.0 / CC0）</span>
+          <span>EEO 开放品牌知识库　多轮逐条审查　权威注册背书　可复现测量　开放数据（Apache-2.0 / CC0）</span>
           <a href={GITHUB_REPO} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-foreground">
             <Github className="size-3.5" /> Hiteater-wzm/eeo
           </a>
