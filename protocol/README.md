@@ -1,6 +1,6 @@
 # EEO Protocol
 
-An open protocol for AI agent communication, MCP-compatible, with extensions for identity, permissions and audit.
+An open protocol for AI agent communication, MCP-compatible. Specification in progress.
 
 ## Design
 

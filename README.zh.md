@@ -17,17 +17,17 @@ EEO（Everything Engine Optimization，全引擎优化）是一个开放基础�
 
 ### 2. 测量 — 可复现的 AI 可见性评估
 
-固定题板、冻结快照、字节级可复现打分。双引擎采样、双裁判立场裁决（已发布一致性 kappa 0.909）、Wilson 置信区间、改写稳健可见率、Bradley-Terry 排名。首份快照：[snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/)。
+固定题板、冻结快照、冻结数据上的字节级可复现打分。采样阶段按引擎配置使用温度参数；打分阶段只读冻结回答，确定性输出。双引擎采样、双裁判立场裁决（已发布一致性 kappa 0.909）、Wilson 置信区间、改写稳健可见率、Bradley-Terry 排名。首份快照：[snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/)。
 
 ### 3. 协议 — AI 智能体通信（新）
 
-MCP 兼容的开放智能体通信协议。见 [protocol/README.md](protocol/README.md)。
+MCP 兼容。规范编写中。见 [protocol/README.md](protocol/README.md)。
 
 ## 仓库结构
 
 ```
 eeo/
-├── protocol/          EEO 协议规范与参考实现
+├── protocol/          EEO 协议规范（编写中）
 ├── datasets/          注册表分片（Releases 分发）、精选种子、手工卡片
 ├── tools/             数据管线：采集、清洗、审查、索引、品牌页
 ├── lib/               统计内核与裁判层
@@ -42,6 +42,8 @@ eeo/
 ├── cli.cjs            批量命令行
 ├── server.cjs         自托管版
 ├── eeo-local.html     单文件审计工具
+├── examples/          sample reports and claim files
+├── watch/             runtime dir for scheduled monitors
 ├── docs/              标准与文档
 └── test/              123 项单元测试
 ```

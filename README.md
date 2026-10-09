@@ -17,7 +17,7 @@ Data pipeline: harvest → multi-pass AI review (verdicts archived per entry) �
 
 ### 2. Measurement — reproducible AI visibility evaluation
 
-Fixed question panels, frozen engine snapshots, byte-reproducible scoring. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: [snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/).
+Fixed question panels, frozen engine snapshots, byte-reproducible scoring on frozen data. Sampling uses temperature as configured per engine; scoring reads only the frozen answers and is deterministic. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: [snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/).
 
 ### 3. Protocol — agent communication (new)
 
@@ -27,12 +27,12 @@ Open protocol for AI agent communication, MCP-compatible. See [protocol/README.m
 
 ```
 eeo/
-├── protocol/          EEO Protocol specification and reference implementation
+├── protocol/          EEO Protocol specification (in progress)
 ├── datasets/          registry shards (via Releases), curated seed, handcrafted cards
 ├── tools/             data pipeline: harvest, clean, review, index, brand pages
 ├── lib/               statistics kernel and judge layer
 ├── standards/         industry taxonomy, measurement panels, EEO standard
-├── snapshots/         frozen measurement snapshots with scores
+├── snapshots/         published measurement snapshots with scores
 ├── web/               directory web UI (Vite, React)
 ├── platform/          claim verification (CI) and finalize
 ├── mcp/               MCP server for AI tool integration
@@ -42,6 +42,8 @@ eeo/
 ├── cli.cjs            batch CLI
 ├── server.cjs         self-hosted web edition
 ├── eeo-local.html     single-file audit tool, no install
+├── examples/          sample reports and claim files
+├── watch/             runtime dir for scheduled monitors
 ├── docs/              standards and notes
 └── test/              123 unit tests (node:test, zero dependencies)
 ```

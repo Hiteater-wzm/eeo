@@ -30,7 +30,6 @@ jobs/
 public/brands/
 schemas/
 site/
-snapshots/
 watch/*
 web/dist/
 web/node_modules/
