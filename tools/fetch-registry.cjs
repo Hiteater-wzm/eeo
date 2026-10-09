@@ -6,12 +6,13 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+
 
 const DIR = path.join(__dirname, '..', 'datasets', 'registry');
 const TAG = process.argv[2] || 'data-v1';
 const REPO = 'Hiteater-wzm/eeo';
 
+(async () => {
 if (fs.existsSync(DIR) && fs.readdirSync(DIR).filter((f) => f.endsWith('.jsonl')).length >= 13) {
   console.log('registry shards already present, skipping');
   process.exit(0);
@@ -24,6 +25,10 @@ for (let i = 0; i < 13; i++) {
   const out = path.join(DIR, name);
   if (fs.existsSync(out) && fs.statSync(out).size > 1024) continue;
   console.log(`downloading ${name}...`);
-  execSync(`curl -sL --retry 5 --retry-delay 10 -o "${out}" "${base}/${name}"`, { stdio: 'inherit' });
+  const r = await fetch(`${base}/${name}`, { signal: AbortSignal.timeout(300000) });
+  if (!r.ok) { console.error(`HTTP ${r.status} for ${name}`); process.exit(1); }
+  const buf = Buffer.from(await r.arrayBuffer());
+  fs.writeFileSync(out, buf);
 }
 console.log('done');
+})();

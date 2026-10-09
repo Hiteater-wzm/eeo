@@ -13,15 +13,15 @@ EEO stands for *Everything Engine Optimization*. The project has three pillars:
 
 1,542,995 machine-readable cards following the `eeo.brand.v1` schema across 172 countries and regions. 42,373 cards carry LEI global legal-entity codes as authoritative third-party verification. Browsable at https://hiteater-wzm.github.io/eeo/
 
-Data pipeline: harvest → multi-pass AI review (verdicts archived, 1,497,628 candidates judged, 46,883 rejected) → deterministic cleaning → sharded JSONL registry. Registry shards are distributed via [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases); run `node tools/fetch-registry.cjs` after cloning.
+Data pipeline: harvest → multi-pass AI review (verdicts archived per entry) → deterministic cleaning → sharded JSONL registry. Methodology and per-stage counts: [datasets/STATS-FULL.md](datasets/STATS-FULL.md). Registry shards are distributed via [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases); run `node tools/fetch-registry.cjs` after cloning.
 
 ### 2. Measurement — reproducible AI visibility evaluation
 
-Fixed question panels, frozen engine snapshots, byte-reproducible scoring. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: `snapshots/panel-milktea-v1`.
+Fixed question panels, frozen engine snapshots, byte-reproducible scoring. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: [snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/).
 
 ### 3. Protocol — agent communication (new)
 
-Open protocol for AI agent communication, built as a superset of MCP. See [protocol/README.md](protocol/README.md).
+Open protocol for AI agent communication, MCP-compatible. See [protocol/README.md](protocol/README.md).
 
 ## Repository layout
 

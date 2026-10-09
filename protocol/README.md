@@ -1,12 +1,12 @@
 # EEO Protocol
 
-An open protocol for AI agent communication, built as a superset of MCP (Model Context Protocol).
+An open protocol for AI agent communication, MCP-compatible, with extensions for identity, permissions and audit.
 
 ## Design
 
 EEO Protocol extends MCP with three layers:
 
-1. **Compatibility layer** — full MCP implementation. Any existing MCP client or server works with zero changes.
+1. **Compatibility layer** — MCP-compatible layer. Existing MCP clients and servers interoperate without changes.
 2. **Enhancement layer** — additions that MCP does not cover:
    - Agent identity registration (machine-readable identity cards, verifiable via the EEO registry)
    - Enterprise permission model (who may invoke which agent for what purpose)

@@ -13,15 +13,15 @@ EEO（Everything Engine Optimization，全引擎优化）是一个开放基础�
 
 收录 1,542,995 张 `eeo.brand.v1` 架构的组织与品牌卡，覆盖 172 个国家与地区。42,373 张带 LEI 全球法人识别码权威背书。目录站：https://hiteater-wzm.github.io/eeo/
 
-数据管线：采集 → 多轮 AI 逐条审查（判定文件全量留档，累计判定 1,497,628 条，剔除 46,883 条非组织主体）→ 确定性规则清洗 → 分片 JSONL 注册表。注册表分片通过 [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases) 分发，克隆后执行 `node tools/fetch-registry.cjs` 下载。
+数据管线：采集 → 多轮 AI 逐条审查（判定文件逐条留档）→ 确定性规则清洗 → 分片 JSONL 注册表。方法论与各阶段计数见 [datasets/STATS-FULL.md](datasets/STATS-FULL.md)。注册表分片通过 [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases) 分发，克隆后执行 `node tools/fetch-registry.cjs` 下载。
 
 ### 2. 测量 — 可复现的 AI 可见性评估
 
-固定题板、冻结快照、字节级可复现打分。双引擎采样、双裁判立场裁决（已发布一致性 kappa 0.909）、Wilson 置信区间、改写稳健可见率、Bradley-Terry 排名。首份快照：`snapshots/panel-milktea-v1`。
+固定题板、冻结快照、字节级可复现打分。双引擎采样、双裁判立场裁决（已发布一致性 kappa 0.909）、Wilson 置信区间、改写稳健可见率、Bradley-Terry 排名。首份快照：[snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/)。
 
 ### 3. 协议 — AI 智能体通信（新）
 
-MCP 超集的开放智能体通信协议。见 [protocol/README.md](protocol/README.md)。
+MCP 兼容的开放智能体通信协议。见 [protocol/README.md](protocol/README.md)。
 
 ## 仓库结构
 
