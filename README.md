@@ -68,6 +68,8 @@ node tools/judge.cjs snapshots/<dir> --judges id1,id2
 node tools/score-snapshot.cjs snapshots/<dir>
 ```
 
+The directory loads data progressively (first shard renders immediately, remaining shards load in background). Current total index size is ~190 MB; search covers loaded shards and expands as loading completes. Index optimization is on the roadmap.
+
 ## Taking part
 
 - Brands: claim your card via domain verification — [platform/README.md](platform/README.md)

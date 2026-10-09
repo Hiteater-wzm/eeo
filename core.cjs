@@ -47,9 +47,10 @@ async function askEngine(engine, question, apiKey) {
   const isAnthropic = engine.apiType === 'anthropic';
   const body = isAnthropic
     ? JSON.stringify({ model: engine.model, max_tokens: engine.maxTokens, messages: [{ role: 'user', content: question }] })
-    : JSON.stringify({ model: engine.model, messages: [{ role: 'user', content: question }], max_tokens: engine.maxTokens, temperature: 0.7, stream: false });
+    : // temperature is sampling-phase only; scoring on frozen snapshots is deterministic regardless
+    JSON.stringify({ model: engine.model, messages: [{ role: 'user', content: question }], max_tokens: engine.maxTokens, temperature: 0.7, stream: false });
   const headers = isAnthropic
-    ? { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01',  }
+    ? { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' }
     : { 'Content-Type': 'application/json', Authorization: 'Bearer ' + apiKey };
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), engine.timeoutMs || 120000);

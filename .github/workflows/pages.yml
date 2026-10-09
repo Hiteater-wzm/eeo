@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Fetch registry data from Releases
+        run: node tools/fetch-registry.cjs
+
       - name: Build web
         working-directory: web
         run: |
