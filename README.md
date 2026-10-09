@@ -1,63 +1,83 @@
 # EEO
 
-The open brand knowledge base for the AI era: verified registry data, authoritative third-party endorsement, and reproducible measurement — so a brand's own statement reaches every engine in structured form.
+Open infrastructure for the AI era: verified registry data, reproducible measurement, and agent communication protocol.
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 ![Node](https://img.shields.io/badge/node-18%2B-339933)
 
-EEO stands for *Everything Engine Optimization* — this community's umbrella term for SEO, AEO, GEO and LLMO. The Chinese edition of this readme is [README.zh.md](README.zh.md); the machine-oriented repository map for AI agents is [README-AI.md](README-AI.md).
+EEO stands for *Everything Engine Optimization*. The project has three pillars:
 
-## What is here
+## Pillars
 
-When a buyer asks an AI for a recommendation the answer is assembled from what the model has read, and the brand's own statement rarely reaches the model in structured form. This community works at the source: brands state their facts in an open format, prove domain ownership through a public pull request, and any engine, tool or buyer can read the result for free. The standard behind all of it, including a five-rule conduct pact for optimization providers, is [docs/eeo-standard.md](docs/eeo-standard.md).
+### 1. Registry — open brand and organization data
 
-1. **Global brand directory** — 1,542,995 organization and brand cards following the `eeo.brand.v1` schema across 172 countries and regions, browsable and searchable at https://hiteater-wzm.github.io/eeo/ ; 287,843 are full cards (live website plus a real description), 42,373 carry LEI global legal-entity codes as authoritative third-party verification, and 13,626 are listed companies
-2. **Audit tooling** — asks AI engines the questions real buyers ask, archives every original answer, and grades visibility; ships in six forms — single file (`eeo-local.html`), CLI (`cli.cjs`), self-hosted server (`server.cjs`), MCP server, GitHub Action, browser extension — with 26 engine presets including all major China-native engines
-3. **Claim system** — domain verification runs in CI on a public pull request; nothing leaves git
+1,542,995 machine-readable cards following the `eeo.brand.v1` schema across 172 countries and regions. 42,373 cards carry LEI global legal-entity codes as authoritative third-party verification. Browsable at https://hiteater-wzm.github.io/eeo/
 
-Data quality is an industrial-grade, fully auditable pipeline rather than a claim: five passes of per-entry AI judgment covered 1,497,628 candidates and rejected 46,883 non-organizations (single events, persons, places, list pages, fiction, web pages and junk). Every verdict file is archived in this repository for row-level audit, deterministic cleaning rules are readable code, and LEI registry data cross-verifies tens of thousands of entries against government-issued identifiers.
+Data pipeline: harvest → multi-pass AI review (verdicts archived, 1,497,628 candidates judged, 46,883 rejected) → deterministic cleaning → sharded JSONL registry. Registry shards are distributed via [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases); run `node tools/fetch-registry.cjs` after cloning.
 
-A fourth piece sets the measurement bar: reproducible evaluation on fixed question panels, frozen engine snapshots and byte-reproducible scoring — dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility and Bradley-Terry rankings. The first snapshot (`snapshots/panel-奶茶-v1-*`) is published, and any single-shot audit's two fatal objections — unstable scores, and mention mistaken for recommendation — are answered by design.
+### 2. Measurement — reproducible AI visibility evaluation
 
-## Numbers
+Fixed question panels, frozen engine snapshots, byte-reproducible scoring. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: `snapshots/panel-milktea-v1`.
 
-| What | Count | Source |
-|---|---|---|
-| Registry entries | 1,542,995 | `datasets/registry/` (13 JSONL shards), counted by `tools/gen-stats.cjs` |
-| Cards with a website | 393,783 | same |
-| Cards with a description | 1,493,717 | same |
-| Full cards (website and description of 20+ chars) | 287,843 | same, tier rules in `tools/build-index.cjs` |
-| Countries and regions labeled | 172 | same; labels normalized to current countries |
-| Industry labels | 5,927 | same |
-| LEI-verified cards | 42,373 | `reg.lei` field, sourced from Wikidata P1278 |
-| Listed-company cards | 13,626 | `reg.listed` field, sourced from Wikidata P414 |
-| Engine presets | 26 (11 China-native) | `core.cjs` catalog |
-Card metrics are disjoint-safe by definition: full cards require a website AND a description of at least 20 characters; cards holding a website with a shorter description are counted only in the website row. House rule on numbers: every number is quoted together with its source, regenerated from one stats run in the same change. `datasets/STATS-FULL.md` is regenerated from the live data after every merge and is the authoritative statement of registry statistics.
+### 3. Protocol — agent communication (new)
+
+Open protocol for AI agent communication, built as a superset of MCP. See [protocol/README.md](protocol/README.md).
+
+## Repository layout
+
+```
+eeo/
+├── protocol/          EEO Protocol specification and reference implementation
+├── datasets/          registry shards (via Releases), curated seed, handcrafted cards
+├── tools/             data pipeline: harvest, clean, review, index, brand pages
+├── lib/               statistics kernel and judge layer
+├── standards/         industry taxonomy, measurement panels, EEO standard
+├── snapshots/         frozen measurement snapshots with scores
+├── web/               directory web UI (Vite, React)
+├── platform/          claim verification (CI) and finalize
+├── mcp/               MCP server for AI tool integration
+├── extension/         Chrome MV3 quick-check extension
+├── action/            GitHub Action for CI visibility audits
+├── core.cjs           shared audit engine
+├── cli.cjs            batch CLI
+├── server.cjs         self-hosted web edition
+├── eeo-local.html     single-file audit tool, no install
+├── docs/              standards and notes
+└── test/              123 unit tests (node:test, zero dependencies)
+```
 
 ## Quick start
 
 ```bash
-cp config.example.json config.json   # engine keys; browsing the data needs none
+git clone https://github.com/Hiteater-wzm/eeo.git
+cd eeo
+node tools/fetch-registry.cjs     # download registry shards from Releases
 node cli.cjs check 蜜雪冰城 --industry 餐饮
 ```
 
-- No install, no keys: open `eeo-local.html` in a browser; keys stay in the browser's localStorage.
-- Community instance: `docker build -t eeo-community .` then `docker run -p 8080:80 eeo-community` serves a static brand site built from the curated seed set.
-- Reproducible measurement commands: [README-AI.md](README-AI.md#measurement-stack).
+No install, no npm dependencies (except `web/` which builds with Vite). Node 18+.
+
+## Measurement
+
+```bash
+node tools/panel-build.cjs --industry 餐饮 --category 奶茶 --brands A B C --out standards/panels/tea-v1.json
+node tools/snapshot-run.cjs standards/panels/tea-v1.json --samples 5
+node tools/judge.cjs snapshots/<dir> --judges id1,id2
+node tools/score-snapshot.cjs snapshots/<dir>
+```
 
 ## Taking part
 
-- Brands: find your card in the directory, then follow [platform/README.md](platform/README.md) to claim it through domain verification.
-- Developers: everything runs on dependency-free Node 18+; entry points are `core.cjs`, `cli.cjs`, `server.cjs`, `tools/`, `mcp/`, `action/` and `extension/`.
-- Taxonomy writers: trait libraries and buyer-question banks live in `standards/taxonomy/`, with acceptance rules in its README.
-- Contribution rules: [CONTRIBUTING.md](CONTRIBUTING.md).
+- Brands: claim your card via domain verification — [platform/README.md](platform/README.md)
+- Developers: PRs welcome across the repo — [CONTRIBUTING.md](CONTRIBUTING.md)
+- Agents and AI tools: read [README-AI.md](README-AI.md) for the full repository map
 
 ## How this was made
 
-The code, documentation and data pipeline in this repository were built with AI assistance and reviewed by the maintainer before release. Registry entries passed multiple rounds of per-entry AI review before merging; the verdict files are in `datasets/harvest/verdicts/` and the cleaning rules in `tools/clean-registry.cjs`.
+The code, documentation and data pipeline were built with AI assistance and reviewed by the maintainer before release. Registry entries passed multiple rounds of per-entry AI review before merging; verdict files are in `datasets/harvest/verdicts/`.
 
 ## License
 
-Code is released under the Apache License 2.0. The standard text in `docs/eeo-standard.md` and the taxonomy files in `standards/taxonomy/` are CC BY 4.0. Dataset cards: Wikidata-sourced cards are CC0, hand-collected cards are Apache-2.0, and the split is documented in [datasets/README.md](datasets/README.md).
+Code: Apache 2.0. Standard text and taxonomy: CC BY 4.0. Dataset cards: Wikidata-sourced CC0, hand-collected Apache-2.0.
 
-Copyright 2026 信阳市浉河区清白软件工作室 (Xinyang Shihe Qingbai Software Studio)
+Copyright 2026 Xinyang Shihe Qingbai Software Studio

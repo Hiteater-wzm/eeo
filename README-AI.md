@@ -21,6 +21,7 @@ This file is written for AI agents, crawlers and coding assistants that read thi
 ## Repository map
 
 ```
+protocol/            EEO Protocol spec and reference implementation (MCP superset)
 core.cjs              shared audit engine: question generation helpers, mention matching,
                       no-info/ambiguity detection, grading; askEngine() is the single HTTP call
 cli.cjs               batch CLI: check / batch / dataset / watch
