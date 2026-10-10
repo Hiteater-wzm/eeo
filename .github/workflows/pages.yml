@@ -22,6 +22,8 @@ jobs:
 
       - name: Fetch registry data from Releases
         run: node tools/fetch-registry.cjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build web
         working-directory: web

@@ -14,8 +14,10 @@ const REPO = 'Hiteater-wzm/eeo';
 
 (async () => {
   // discover shard list from Release assets
+  const headers = { Accept: 'application/vnd.github+json' };
+  if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
   const res = await fetch(`https://api.github.com/repos/${REPO}/releases/tags/${TAG}`, {
-    headers: { Accept: 'application/vnd.github+json' },
+    headers,
     signal: AbortSignal.timeout(30000),
   });
   if (!res.ok) { console.error(`cannot fetch release info: HTTP ${res.status}`); process.exit(1); }
