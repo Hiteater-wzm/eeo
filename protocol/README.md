@@ -1,21 +1,42 @@
 # EEO Protocol
 
-An open protocol for AI agent communication, MCP-compatible. Specification in progress.
+Open standard for AI agent identity, capability declaration, and interaction audit. MCP-compatible.
 
-## Design
+## Why
 
-EEO Protocol extends MCP with three layers:
+When AI agents act on behalf of organizations, three questions must be answerable:
 
-1. **Compatibility layer** — MCP-compatible layer. Existing MCP clients and servers interoperate without changes.
-2. **Enhancement layer** — additions that MCP does not cover:
-   - Agent identity registration (machine-readable identity cards, verifiable via the EEO registry)
-   - Enterprise permission model (who may invoke which agent for what purpose)
-   - Audit trail (every agent interaction logged with a cryptographic hash chain)
-3. **Ecosystem layer** — cross-agent task delegation and settlement, compatible with Google's A2A.
+- **Who is this agent?** (identity)
+- **What can it do?** (capability)
+- **What did it actually do?** (audit)
 
-## Status
+EEO Protocol answers all three using infrastructure that already exists in this repository: the registry for identity, the review pipeline for capability certification, and the measurement stack for behavior evaluation.
 
-Specification in progress. Reference implementation planned in Node.js (zero dependencies, same philosophy as the rest of EEO).
+## Components
+
+| Component | Status | Spec |
+|---|---|---|
+| Agent Identity Card | Draft | [spec/00-overview.md](spec/00-overview.md) |
+| Capability Manifest | In progress | — |
+| Audit Chain | In progress | — |
+
+## How it connects to the rest of EEO
+
+The registry (1.5M cards), measurement stack (reproducible scoring), and claim system (domain verification) are not separate products — they are the infrastructure that the protocol runs on:
+
+```
+EEO Registry ─── identity anchor ──→ Agent Identity Card
+     │                                      │
+EEO Claim ────── verification ──────→ Owner verification
+     │                                      │
+EEO Review ───── certification ─────→ Capability Manifest
+     │                                      │
+EEO Measurement ─ evaluation ───────→ Audit Chain
+```
+
+## Getting started
+
+Read the [specification overview](spec/00-overview.md) for the Agent Identity Card format, field definitions, and MCP binding.
 
 ## License
 

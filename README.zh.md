@@ -5,45 +5,56 @@
 
 本文件是 [README.md](README.md)（英文正本）的中文译本；面向 AI 代理的仓库全图见 [README-AI.md](README-AI.md)。
 
-EEO（Everything Engine Optimization，全引擎优化）是一个开放基础设施项目，包含三大支柱：注册表、测量和协议。
+EEO 是一个开放基础设施项目：一个协议，两层基础设施。
 
-## 三大支柱
+## 协议
 
-### 1. 注册表 — 开放品牌与组织数据
+**EEO 协议**（[protocol/](protocol/)）定义 AI 智能体如何注册身份、声明能力并记录可审计的交互。MCP 兼容。
 
-收录 1,542,995 张 `eeo.brand.v1` 架构的组织与品牌卡，覆盖 172 个国家与地区。42,373 张带 LEI 全球法人识别码权威背书。目录站：https://hiteater-wzm.github.io/eeo/
+| 组件 | 回答的问题 | 状态 |
+|---|---|---|
+| 智能体身份卡 | 这个智能体是谁？ | 规范草案 |
+| 能力清单 | 它能做什么？ | 编写中 |
+| 审计链 | 它做了什么？ | 编写中 |
 
-数据管线：采集 → 多轮 AI 逐条审查（判定文件逐条留档）→ 确定性规则清洗 → 分片 JSONL 注册表。方法论与各阶段计数见 [datasets/STATS-FULL.md](datasets/STATS-FULL.md)。注册表分片通过 [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases) 分发，克隆后执行 `node tools/fetch-registry.cjs` 下载。
+## 基础设施
 
-### 2. 测量 — 可复现的 AI 可见性评估
+协议运行在两层已投产的基础设施上：
 
-固定题板、冻结快照、冻结数据上的字节级可复现打分。采样阶段按引擎配置使用温度参数；打分阶段只读冻结回答，确定性输出。双引擎采样、双裁判立场裁决（已发布一致性 kappa 0.909）、Wilson 置信区间、改写稳健可见率、Bradley-Terry 排名。首份快照：[snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/)。
+### 注册表 — 身份锚
 
-### 3. 协议 — AI 智能体通信（新）
+收录 1,542,995 张 `eeo.brand.v1` 架构的组织卡，覆盖 172 个国家与地区，42,373 张带 LEI 法人码背书。卡片格式、域名验证认领、多轮 AI 审查管线——智能体身份卡直接继承这三套机制。
 
-MCP 兼容。规范编写中。见 [protocol/README.md](protocol/README.md)。
+注册表分片通过 [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases) 分发，克隆后执行 `node tools/fetch-registry.cjs` 下载。
+
+### 测量 — 行为评估
+
+固定题板、冻结快照、冻结数据上的字节级可复现打分。双引擎采样、双裁判立场裁决（kappa 0.909）、Wilson 置信区间、改写稳健可见率、Bradley-Terry 排名。首份快照：[snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/)。
+
+目录数据渐进加载（约 190 MB），索引优化在计划中。
 
 ## 仓库结构
 
 ```
 eeo/
-├── protocol/          EEO 协议规范（编写中）
+├── protocol/          EEO 协议规范
+│   └── spec/          智能体身份卡规范（草案）
 ├── datasets/          注册表分片（Releases 分发）、精选种子、手工卡片
-├── tools/             数据管线：采集、清洗、审查、索引、品牌页
+├── tools/             数据管线
 ├── lib/               统计内核与裁判层
 ├── standards/         行业分类法、测量题板、EEO 标准
-├── snapshots/         冻结测量快照与打分结果
-├── web/               目录站 Web UI（Vite, React）
-├── platform/          认领验证（CI）与盖章
+├── snapshots/         已发布测量快照
+├── web/               目录站 Web UI
+├── platform/          认领验证与盖章
 ├── mcp/               MCP 服务器
-├── extension/         Chrome MV3 快检扩展
+├── extension/         Chrome 扩展
 ├── action/            GitHub Action
 ├── core.cjs           共享审计引擎
-├── cli.cjs            批量命令行
+├── cli.cjs            命令行
 ├── server.cjs         自托管版
 ├── eeo-local.html     单文件审计工具
-├── examples/          sample reports and claim files
-├── watch/             runtime dir for scheduled monitors
+├── examples/          示例报告
+├── watch/             定时监测运行时目录
 ├── docs/              标准与文档
 └── test/              123 项单元测试
 ```
@@ -59,20 +70,11 @@ node cli.cjs check 蜜雪冰城 --industry 餐饮
 
 零依赖 Node 18+（web/ 构建用 Vite 除外）。
 
-## 测量
-
-```bash
-node tools/panel-build.cjs --industry 餐饮 --category 奶茶 --brands A B C --out standards/panels/tea-v1.json
-node tools/snapshot-run.cjs standards/panels/tea-v1.json --samples 5
-node tools/judge.cjs snapshots/<目录> --judges id1,id2
-node tools/score-snapshot.cjs snapshots/<目录>
-```
-
 ## 参与方式
 
-- 品牌方：按 [platform/README.md](platform/README.md) 走域名验证认领
+- AI 代理与工具：读 [协议规范](protocol/spec/00-overview.md) 和 [README-AI.md](README-AI.md)
+- 品牌方：[platform/README.md](platform/README.md)
 - 开发者：[CONTRIBUTING.md](CONTRIBUTING.md)
-- AI 代理：读 [README-AI.md](README-AI.md)
 
 ## 制作说明
 

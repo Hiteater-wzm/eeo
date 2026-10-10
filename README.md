@@ -1,33 +1,44 @@
 # EEO
 
-Open infrastructure for the AI era: verified registry data, reproducible measurement, and agent communication protocol.
+Open infrastructure for AI agent identity, visibility measurement, and trust. One protocol, two infrastructure layers.
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 ![Node](https://img.shields.io/badge/node-18%2B-339933)
 
-EEO stands for *Everything Engine Optimization*. The project has three pillars:
+## The protocol
 
-## Pillars
+**EEO Protocol** ([protocol/](protocol/)) defines how AI agents register identity, declare capabilities, and record auditable interactions. MCP-compatible. The specification is open and the reference implementation uses the same zero-dependency Node.js philosophy as the rest of this repository.
 
-### 1. Registry — open brand and organization data
+Three components:
 
-1,542,995 machine-readable cards following the `eeo.brand.v1` schema across 172 countries and regions. 42,373 cards carry LEI global legal-entity codes as authoritative third-party verification. Browsable at https://hiteater-wzm.github.io/eeo/
+| Component | What it answers | Status |
+|---|---|---|
+| Agent Identity Card | Who is this agent? | Spec draft |
+| Capability Manifest | What can it do? | In progress |
+| Audit Chain | What did it do? | In progress |
 
-Data pipeline: harvest → multi-pass AI review (verdicts archived per entry) → deterministic cleaning → sharded JSONL registry. Methodology and per-stage counts: [datasets/STATS-FULL.md](datasets/STATS-FULL.md). Registry shards are distributed via [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases); run `node tools/fetch-registry.cjs` after cloning.
+## The infrastructure
 
-### 2. Measurement — reproducible AI visibility evaluation
+The protocol runs on two infrastructure layers that are already in production:
 
-Fixed question panels, frozen engine snapshots, byte-reproducible scoring on frozen data. Sampling uses temperature as configured per engine; scoring reads only the frozen answers and is deterministic. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: [snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/).
+### Registry — identity anchor
 
-### 3. Protocol — agent communication (new)
+1,542,995 machine-readable organization cards (`eeo.brand.v1` schema) across 172 countries. 42,373 cards carry LEI legal-entity verification. The card format, domain-verification claim system, and multi-pass AI review pipeline are the same mechanisms that agent identity cards inherit.
 
-Open protocol for AI agent communication, MCP-compatible. See [protocol/README.md](protocol/README.md).
+Registry data is distributed via [GitHub Releases](https://github.com/Hiteater-wzm/eeo/releases); run `node tools/fetch-registry.cjs` after cloning.
+
+### Measurement — behavior evaluation
+
+Fixed question panels, frozen engine snapshots, byte-reproducible scoring on frozen data. Dual-engine sampling, dual-judge stance adjudication (published agreement kappa 0.909), Wilson confidence intervals, paraphrase-robust visibility, Bradley-Terry rankings. First published snapshot: [snapshots/panel-milktea-v1-20261008](snapshots/panel-milktea-v1-20261008/).
+
+The directory loads data progressively (first shard renders immediately, remaining shards load in background). Current total index size is ~190 MB; index optimization is on the roadmap.
 
 ## Repository layout
 
 ```
 eeo/
-├── protocol/          EEO Protocol specification (in progress)
+├── protocol/          EEO Protocol specification
+│   └── spec/          Agent Identity Card spec (draft)
 ├── datasets/          registry shards (via Releases), curated seed, handcrafted cards
 ├── tools/             data pipeline: harvest, clean, review, index, brand pages
 ├── lib/               statistics kernel and judge layer
@@ -68,13 +79,11 @@ node tools/judge.cjs snapshots/<dir> --judges id1,id2
 node tools/score-snapshot.cjs snapshots/<dir>
 ```
 
-The directory loads data progressively (first shard renders immediately, remaining shards load in background). Current total index size is ~190 MB; search covers loaded shards and expands as loading completes. Index optimization is on the roadmap.
-
 ## Taking part
 
+- Agents and AI tools: read the [protocol spec](protocol/spec/00-overview.md) and [README-AI.md](README-AI.md)
 - Brands: claim your card via domain verification — [platform/README.md](platform/README.md)
-- Developers: PRs welcome across the repo — [CONTRIBUTING.md](CONTRIBUTING.md)
-- Agents and AI tools: read [README-AI.md](README-AI.md) for the full repository map
+- Developers: PRs welcome — [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## How this was made
 
