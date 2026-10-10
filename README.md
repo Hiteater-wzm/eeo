@@ -13,9 +13,17 @@ Three components:
 
 | Component | What it answers | Status |
 |---|---|---|
-| Agent Identity Card | Who is this agent? | Spec draft |
-| Capability Manifest | What can it do? | In progress |
-| Audit Chain | What did it do? | In progress |
+| Agent Identity Card | Who is this agent? | Spec + reference implementation |
+| Capability Manifest | What can it do? | Reference implementation |
+| Audit Chain | What did it do? | Reference implementation |
+
+Quick start:
+
+```bash
+node protocol/reference/agent.cjs init "My Agent"     # create identity card
+node protocol/reference/agent.cjs test              # run tools + view audit
+node protocol/reference/agent.cjs serve             # start as MCP server
+```
 
 ## The infrastructure
 

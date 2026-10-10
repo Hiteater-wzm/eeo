@@ -13,9 +13,17 @@ EEO 是一个开放基础设施项目：一个协议，两层基础设施。
 
 | 组件 | 回答的问题 | 状态 |
 |---|---|---|
-| 智能体身份卡 | 这个智能体是谁？ | 规范草案 |
-| 能力清单 | 它能做什么？ | 编写中 |
-| 审计链 | 它做了什么？ | 编写中 |
+| 智能体身份卡 | 这个智能体是谁？ | 规范 + 参考实现 |
+| 能力清单 | 它能做什么？ | 参考实现 |
+| 审计链 | 它做了什么？ | 参考实现 |
+
+快速开始：
+
+```bash
+node protocol/reference/agent.cjs init "My Agent"     # 创建身份卡
+node protocol/reference/agent.cjs test              # 运行工具 + 查看审计
+node protocol/reference/agent.cjs serve             # 启动为 MCP 服务器
+```
 
 ## 基础设施
 
