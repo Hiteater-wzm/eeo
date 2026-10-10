@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: 22
 
+      - name: Fetch registry data
+        run: node tools/fetch-registry.cjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build web
         working-directory: web
         run: |
