@@ -1,0 +1,179 @@
+openapi: 3.0.0
+info:
+  title: EEO Agent Tools
+  description: Brand registry lookup, AI visibility measurement, and audit trail — powered by the EEO open infrastructure (1.5M organization cards across 172 countries).
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3700
+    description: Local EEO Tools API
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+
+security:
+  - ApiKeyAuth: []
+
+paths:
+  /api/v1/brand/lookup:
+    get:
+      operationId: brandLookup
+      summary: Look up brands in the EEO registry
+      description: Search 1.5M organization and brand cards across 172 countries. Returns name, country, industry, website, LEI verification status, and claim status.
+      parameters:
+        - name: name
+          in: query
+          required: true
+          description: Brand name to search for (partial match)
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                          description: Brand name
+                        country:
+                          type: string
+                          description: Country or region
+                        industry:
+                          type: string
+                          description: Industry classification
+                        website:
+                          type: string
+                          description: Official website URL
+                        description:
+                          type: string
+                          description: Brief description
+                        has_lei:
+                          type: boolean
+                          description: Whether verified by LEI legal-entity code
+                        claim_status:
+                          type: string
+                          description: unclaimed / claimed / verified
+
+  /api/v1/brand/visibility:
+    get:
+      operationId: brandVisibility
+      summary: Get AI visibility report for a brand
+      description: Returns the brand's visibility metrics from the latest published EEO measurement snapshot, including mention share with confidence intervals, recommendation share, paraphrase-robust visibility, and pairwise ranking.
+      parameters:
+        - name: brand
+          in: query
+          required: true
+          description: Brand name to check visibility for
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Visibility metrics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  snapshot:
+                    type: string
+                    description: Snapshot identifier
+                  found:
+                    type: boolean
+                    description: Whether the brand was found in this snapshot
+                  metrics:
+                    type: object
+                    properties:
+                      brand:
+                        type: string
+                      mention_share:
+                        type: number
+                        description: Share of AI answers mentioning the brand (0-1)
+                      mention_ci95:
+                        type: array
+                        description: 95% confidence interval [low, high]
+                      recommendation_share:
+                        type: number
+                        description: Share of AI answers recommending the brand
+                      robust_visibility:
+                        type: number
+                        description: Robust visibility rate (survives paraphrasing)
+                      sensitivity:
+                        type: number
+                        description: Wording sensitivity (0 = stable, 1 = highly variable)
+
+  /api/v1/audit:
+    get:
+      operationId: auditQuery
+      summary: Query the audit trail
+      description: Returns recent entries from the tamper-evident audit chain. Every API call is logged with SHA-256 hash linking.
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          description: Number of recent entries to return (default 50, max 200)
+          schema:
+            type: integer
+            default: 50
+      responses:
+        '200':
+          description: Audit trail entries
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                    description: Total audit entries
+                  recent:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        ts:
+                          type: string
+                          description: Timestamp
+                        event:
+                          type: string
+                          description: Event type
+                        detail:
+                          type: object
+                        hash:
+                          type: string
+                          description: SHA-256 hash of this entry
+
+  /api/v1/agent/identity:
+    get:
+      operationId: agentIdentity
+      summary: Get this agent's identity card
+      description: Returns the EEO Agent Identity Card (eeo.agent.v1) with capabilities, constraints, and claim status.
+      responses:
+        '200':
+          description: Agent identity card
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  schema:
+                    type: string
+                  agent_id:
+                    type: string
+                  name:
+                    type: string
+                  capabilities:
+                    type: array
+                    items:
+                      type: string
