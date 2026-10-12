@@ -415,6 +415,11 @@ const server = http.createServer(async (req, res) => {
   try {
     if (req.method === 'POST' && p === '/api/start') {
       const body = await readBody(req);
+      // 申请码门禁：ACCESS_CODE 环境变量设了就必须验，没设则跳过
+      const requiredCode = process.env.ACCESS_CODE || '';
+      if (requiredCode && String(body.access_code || '').trim() !== requiredCode) {
+        return json(res, 403, { error: '申请码不正确' });
+      }
       const brand = String(body.brand || '').replace(/[<>"'`&{}$]/g, '').trim().slice(0, 30);
       const industry = String(body.industry || '').trim().slice(0, 20) || '教育培训';
       const clean = (x) => String(x).replace(/[<>"'`&{}$]/g, '').trim();

@@ -178,7 +178,9 @@ export default function App() {
         }),
       });
       const d = await r.json();
-      if (!r.ok || !d.jobId) { setRstate({ view: 'err', err: d.error || '提交失败' }); return; }
+      if (!r.ok || !d.jobId) {
+        if (r.status === 403 && d.error && d.error.includes('申请码')) { window.dispatchEvent(new CustomEvent('code-error', { detail: d.error })); return; }
+        setRstate({ view: 'err', err: d.error || '提交失败' }); return; }
       history.pushState(null, '', BASE_PATH + '/r/' + d.jobId);
       dispatchEvent(new PopStateEvent('popstate'));
       setRstate({ view: 'run', jobId: d.jobId, status: null });

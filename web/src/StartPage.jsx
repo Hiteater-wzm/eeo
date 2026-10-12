@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, ArrowRight, ArrowLeft, Coins } from 'lucide-react';
 import { Label, Hint, SPRING, Lines } from './ui.jsx';
@@ -12,11 +12,23 @@ const DEPTHS = [
 ];
 
 export default function StartPage({ onStart, busy }) {
-  const [step, setStep] = useState(1);
-  const [form, setForm] = useState({ brand: '', website: '', city: '', desc: '', industry: INDUSTRIES[0], audience: AUDIENCES[0], competitors: '', depth: 'quick' });
+  const [step, setStep] = useState(0);
+  const [form, setForm] = useState({ brand: '', website: '', city: '', desc: '', industry: INDUSTRIES[0], audience: AUDIENCES[0], competitors: '', depth: 'quick', access_code: '' });
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
   const brandOk = form.brand.trim().length >= 2;
   const depthObj = DEPTHS.find((d) => d.id === form.depth);
+  const [codeError, setCodeError] = useState('');
+
+  // 服务端拒绝申请码时跳回门禁页
+  useEffect(() => {
+    const h = (e) => { setStep(0); setCodeError(e.detail || '申请码不正确'); };
+    window.addEventListener('code-error', h);
+    return () => window.removeEventListener('code-error', h);
+  }, []);
+
+  const submitCode = () => {
+    if (form.access_code.trim()) { setStep(1); setCodeError(''); }
+  };
 
   return (
     <div className="mx-auto max-w-3xl px-5 pt-12 pb-20">
@@ -24,6 +36,27 @@ export default function StartPage({ onStart, busy }) {
       <p className="mt-2 text-[14px] font-medium text-zinc-600">三步完成填写。提交后自动执行。无需人工值守</p>
 
       <div className="mt-8 border-[3px] border-black bg-white p-6 shadow-[8px_8px_0_#000] md:p-9">
+        {step === 0 ? (
+          <motion.div key="s0" initial={{ x: 32, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}>
+            <div className="py-12 text-center">
+              <ShieldCheck size={40} strokeWidth={2} className="mx-auto mb-4" />
+              <div className="text-xl font-black">本工具凭申请码使用</div>
+              <p className="mt-2 text-[13px] font-medium text-zinc-600">请输入管理员发放的申请码</p>
+              <input
+                value={form.access_code}
+                onChange={set('access_code')}
+                onKeyDown={(e) => e.key === 'Enter' && submitCode()}
+                placeholder="输入申请码"
+                className="mx-auto mt-6 block w-64 border-2 border-black bg-white px-4 py-3 text-center text-lg font-bold uppercase tracking-widest outline-none focus:bg-[#FFDE59]"
+              />
+              {codeError && <p className="mt-3 text-[13px] font-bold text-red-600">{codeError}</p>}
+              <button className="btn-primary mt-6 px-10 py-2.5 text-[15px]" onClick={submitCode} disabled={!form.access_code.trim()}>
+                验证进入<ArrowRight size={15} strokeWidth={2.5} />
+              </button>
+            </div>
+          </motion.div>
+        ) : (
+        <>
         <div className="mb-8 grid grid-cols-3 border-2 border-black">
           {['品牌档案', '市场定位', '体检深度'].map((t, i) => (
             <div key={t} className={`border-r-2 border-black py-2.5 text-center text-[13px] font-bold last:border-r-0 ${step === i + 1 ? 'bg-[#FFDE59] text-black' : 'bg-white text-zinc-500'}`}>
@@ -116,6 +149,8 @@ export default function StartPage({ onStart, busy }) {
             </motion.div>
           )}
         </AnimatePresence>
+        </>
+        )}
       </div>
     </div>
   );
