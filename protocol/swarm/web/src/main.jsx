@@ -13,6 +13,12 @@ function App() {
   const [subs, setSubs] = useState(null);
   const [audit, setAudit] = useState(null);
   const [newTask, setNewTask] = useState({ category: '查询', summary: '' });
+  const [accessCode, setAccessCode] = useState(localStorage.getItem('eeo_code') || '');
+  const [codeValid, setCodeValid] = useState(null);
+  const [detectBrand, setDetectBrand] = useState('');
+  const [detectResult, setDetectResult] = useState(null);
+  const [detectBusy, setDetectBusy] = useState(false);
+  const [codes, setCodes] = useState(null);
 
   const load = useCallback(() => {
     fetch('/health').then(r => r.json()).then(setHealth).catch(() => setHealth(null));
@@ -20,7 +26,8 @@ function App() {
     fetch('/api/swarm/work').then(r => r.json()).then(setWork).catch(() => {});
     fetch('/api/swarm/subordinates').then(r => r.json()).then(setSubs).catch(() => {});
     fetch('/api/swarm/audit?limit=15').then(r => r.json()).then(setAudit).catch(() => {});
-  }, []);
+    if ((identity?.level || 1) >= 2) fetch('/api/swarm/codes').then(r => r.json()).then(setCodes).catch(() => {});
+  }, [identity?.level]);
 
   useEffect(() => { load(); const t = setInterval(load, 10000); return () => clearInterval(t); }, [load]);
 
@@ -33,6 +40,38 @@ function App() {
     });
     setNewTask({ category: '查询', summary: '' });
     load();
+  };
+
+  const verifyCode = async () => {
+    if (!accessCode.trim()) return;
+    const r = await fetch('/api/swarm/verify-code', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code: accessCode.trim() }),
+    }).then(r => r.json());
+    setCodeValid(r.valid);
+    if (r.valid) localStorage.setItem('eeo_code', accessCode.trim());
+  };
+
+  const runDetect = async () => {
+    if (!detectBrand.trim() || detectBusy) return;
+    setDetectBusy(true); setDetectResult(null);
+    try {
+      const r = await fetch('/api/swarm/detect', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: accessCode.trim(), brand: detectBrand.trim() }),
+      }).then(r => r.json());
+      setDetectResult(r);
+      load();
+    } catch (e) { setDetectResult({ error: e.message }); }
+    setDetectBusy(false);
+  };
+
+  const generateNewCode = async () => {
+    const r = await fetch('/api/swarm/codes/generate', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ max_uses: 50 }),
+    }).then(r => r.json());
+    if (r.code) load();
   };
 
   const tab = (v, label) => (
@@ -61,8 +100,10 @@ function App() {
             </div>
             <nav className="flex items-center gap-5 text-sm">
               {tab('dashboard', '总览')}
+              {tab('detect', '检测')}
               {tab('work', '工作记录')}
               {(identity?.level || 1) >= 2 && tab('team', '团队')}
+              {(identity?.level || 1) >= 2 && tab('codes', '申请码')}
               {tab('audit', '审计')}
               <span className={`text-xs ${health?.status === 'ok' ? 'text-emerald-500' : 'text-zinc-600'}`}>
                 {health?.status === 'ok' ? '在线' : '离线'}
@@ -138,6 +179,105 @@ function App() {
               ) : (
                 <p className="text-sm text-zinc-500">暂无下级报告。下级 Daemon 配置 SWARM_SUPERIOR 指向本机后自动上报。</p>
               )}
+            </>
+          )}
+
+          {view === 'detect' && (
+            <>
+              <h2 className="mb-4 text-lg font-semibold text-white">品牌可见性检测</h2>
+              {codeValid === null || codeValid === false ? (
+                <div className="mx-auto max-w-md border border-zinc-800 bg-zinc-900/50 p-6 text-center">
+                  <p className="mb-1 text-sm text-zinc-400">此工具需要申请码</p>
+                  <p className="mb-4 text-xs text-zinc-600">请联系管理员获取</p>
+                  <input
+                    value={accessCode}
+                    onChange={e => { setAccessCode(e.target.value); setCodeValid(null); }}
+                    onKeyDown={e => e.key === 'Enter' && verifyCode()}
+                    placeholder="输入申请码"
+                    className={`mb-3 w-full border px-4 py-3 text-center text-sm uppercase outline-none ${codeValid === false ? 'border-red-600' : 'border-zinc-700'} bg-zinc-900 text-white`}
+                  />
+                  {codeValid === false && <p className="mb-3 text-xs text-red-400">申请码无效或已过期</p>}
+                  <button onClick={verifyCode} disabled={!accessCode.trim()} className="text-sm font-semibold text-white underline underline-offset-4 disabled:opacity-30">
+                    验证
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <div className="mb-4 flex gap-2">
+                    <input
+                      value={detectBrand}
+                      onChange={e => setDetectBrand(e.target.value)}
+                      onKeyDown={e => e.key === 'Enter' && runDetect()}
+                      placeholder="输入品牌名，如：蜜雪冰城"
+                      className="flex-1 border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-white outline-none focus:border-zinc-500"
+                    />
+                    <button onClick={runDetect} disabled={!detectBrand.trim() || detectBusy} className="text-sm font-semibold text-white underline underline-offset-4 disabled:opacity-30">
+                      {detectBusy ? '检测中' : '开始检测'}
+                    </button>
+                  </div>
+                  {detectResult && (
+                    <div>
+                      {detectResult.error ? (
+                        <div className="border border-red-800 bg-red-950/30 p-4 text-sm text-red-300">{detectResult.error}</div>
+                      ) : (
+                        <>
+                          <div className="mb-4 grid grid-cols-3 gap-3">
+                            <div className="border border-zinc-800 bg-zinc-900/50 p-4">
+                              <div className="text-xs text-zinc-500">提及率</div>
+                              <div className="mt-1 text-2xl font-semibold text-white">{detectResult.mention_share}%</div>
+                            </div>
+                            <div className="border border-zinc-800 bg-zinc-900/50 p-4">
+                              <div className="text-xs text-zinc-500">问题数</div>
+                              <div className="mt-1 text-2xl font-semibold text-white">{detectResult.total_questions}</div>
+                            </div>
+                            <div className="border border-zinc-800 bg-zinc-900/50 p-4">
+                              <div className="text-xs text-zinc-500">被提及</div>
+                              <div className="mt-1 text-2xl font-semibold text-emerald-500">{detectResult.mentioned}</div>
+                            </div>
+                          </div>
+                          <div className="border border-zinc-800">
+                            {(detectResult.details || []).map((d, i) => (
+                              <div key={i} className="flex items-start border-b border-zinc-800/50 px-4 py-2 text-xs last:border-b-0">
+                                <span className={`mr-2 font-medium ${d.mentioned ? 'text-emerald-500' : 'text-zinc-500'}`}>{d.mentioned ? '提及' : '未提及'}</span>
+                                <span className="mr-2 text-zinc-400">{d.engine}</span>
+                                <span className="text-zinc-600">{d.answer_preview || d.error || ''}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
+            </>
+          )}
+
+          {view === 'codes' && (
+            <>
+              <div className="mb-4 flex items-center justify-between">
+                <h2 className="text-lg font-semibold text-white">申请码管理</h2>
+                <button onClick={generateNewCode} className="text-sm font-semibold text-white underline underline-offset-4">生成新码</button>
+              </div>
+              <div className="border border-zinc-800">
+                {(codes?.codes || []).map((c, i) => (
+                  <div key={i} className="flex items-center justify-between border-b border-zinc-800/50 px-4 py-3 text-sm last:border-b-0">
+                    <div>
+                      <span className="font-mono text-base font-semibold text-white">{c.code}</span>
+                      <span className={`ml-3 text-xs ${c.is_valid ? 'text-emerald-500' : 'text-zinc-600'}`}>
+                        {c.is_valid ? '有效' : c.revoked ? '已撤销' : '已过期'}
+                      </span>
+                    </div>
+                    <div className="text-xs text-zinc-500">
+                      使用 {c.used || 0}/{c.max_uses || '∞'}
+                      {c.expires && <span className="ml-3">过期 {new Date(c.expires).toLocaleDateString()}</span>}
+                    </div>
+                  </div>
+                ))}
+                {(!codes?.codes || codes.codes.length === 0) && (
+                  <div className="px-4 py-8 text-center text-sm text-zinc-600">暂无申请码，点击上方生成</div>
+                )}
+              </div>
             </>
           )}
 

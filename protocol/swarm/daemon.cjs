@@ -136,6 +136,75 @@ function receiveReport(report) {
   auditAppend('report_received', { from: report.agent_id, tasks: report.total_tasks, avg_score: report.avg_score });
 }
 
+/* ==================== 检测工具门禁 ==================== */
+/* 申请码存储：管理员生成，员工凭码使用检测工具 */
+const accessCodesFile = path.join(CFG.dataDir, 'access-codes.json');
+let accessCodes = {};
+if (fs.existsSync(accessCodesFile)) {
+  try { accessCodes = JSON.parse(fs.readFileSync(accessCodesFile, 'utf8')); } catch { accessCodes = {}; }
+}
+function saveCodes() { fs.writeFileSync(accessCodesFile, JSON.stringify(accessCodes, null, 2)); }
+function generateCode() {
+  return crypto.randomBytes(3).toString('hex').toUpperCase();
+}
+function isValidCode(code) {
+  // 每次验证时从磁盘重载（管理员可能在不同进程生成了新码）
+  if (fs.existsSync(accessCodesFile)) {
+    try { accessCodes = JSON.parse(fs.readFileSync(accessCodesFile, 'utf8')); } catch { /* keep current */ }
+  }
+  const c = accessCodes[String(code || '').trim().toUpperCase()];
+  if (!c) return false;
+  if (c.revoked) return false;
+  if (c.expires && new Date(c.expires) < new Date()) return false;
+  if (c.max_uses && c.used >= c.max_uses) return false;
+  return true;
+}
+function useCode(code) {
+  const c = accessCodes[String(code).trim().toUpperCase()];
+  if (c) { c.used = (c.used || 0) + 1; saveCodes(); }
+}
+
+/* ==================== 检测工具（品牌可见性） ==================== */
+async function runDetection(brand, engines) {
+  const configPath = path.join(CFG.dataDir, '..', 'config.json');
+  if (!fs.existsSync(configPath)) {
+    return { error: '引擎配置未找到，请先配置 config.json' };
+  }
+  const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+  const activeEngines = (config.engines || []).filter((e) => e.enabled && e.apiKey);
+  if (!activeEngines.length) return { error: '没有可用引擎' };
+
+  const questions = [
+    `买${brand}的话选哪个品牌好？`,
+    `${brand}和竞品比怎么样？`,
+    `想了解${brand}，有哪些推荐？`,
+  ];
+  const results = [];
+  for (const engine of activeEngines) {
+    for (const q of questions) {
+      try {
+        const { askEngine } = require('../../core.cjs');
+        const answer = await askEngine(engine, q, engine.apiKey);
+        const mentioned = answer.includes(brand);
+        results.push({ engine: engine.name, question: q.slice(0, 30), mentioned, answer_preview: answer.slice(0, 100) });
+      } catch (e) {
+        results.push({ engine: engine.name, question: q.slice(0, 30), mentioned: false, error: String(e.message || e).slice(0, 80) });
+      }
+    }
+  }
+  const totalMentioned = results.filter((r) => r.mentioned).length;
+  const share = results.length ? (totalMentioned / results.length) : 0;
+  logWork('分析', `执行品牌检测：${brand}，提及率 ${(share * 100).toFixed(0)}%`, { tools_used: true });
+  return {
+    brand,
+    engines: activeEngines.map((e) => e.name),
+    total_questions: results.length,
+    mentioned: totalMentioned,
+    mention_share: +(share * 100).toFixed(1),
+    details: results,
+  };
+}
+
 /* ==================== 本机 Agent 发现 ==================== */
 function discoverLocalAgents() {
   const agents = [];
@@ -239,6 +308,98 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'POST' && p === '/api/swarm/report-now') {
       await reportToSuperior();
       return json(res, 200, { triggered: true });
+    }
+
+    /* ===== 检测工具（凭申请码） ===== */
+
+    // 验证申请码
+    if (req.method === 'POST' && p === '/api/swarm/verify-code') {
+      let body = '';
+      req.on('data', (c) => body += c);
+      req.on('end', () => {
+        try {
+          const { code } = JSON.parse(body);
+          const valid = isValidCode(code);
+          auditAppend('code_verify', { valid, code: String(code || '').slice(0, 8) + '***' });
+          return json(res, 200, { valid });
+        } catch { return json(res, 400, { error: 'invalid body' }); }
+      });
+      return;
+    }
+
+    // 执行检测（需申请码）
+    if (req.method === 'POST' && p === '/api/swarm/detect') {
+      let body = '';
+      req.on('data', (c) => body += c);
+      req.on('end', async () => {
+        try {
+          const { code, brand } = JSON.parse(body);
+          if (!brand) return json(res, 400, { error: 'brand required' });
+          if (!isValidCode(code)) {
+            auditAppend('detect_denied', { brand, reason: 'invalid code' });
+            return json(res, 403, { error: '申请码无效或已过期' });
+          }
+          useCode(code);
+          auditAppend('detect_start', { brand, code: String(code).slice(0, 4) + '***' });
+          const result = await runDetection(brand);
+          auditAppend('detect_done', { brand, share: result.mention_share });
+          return json(res, 200, result);
+        } catch (e) { return json(res, 500, { error: String(e.message || e) }); }
+      });
+      return;
+    }
+
+    // 管理申请码（仅管理员及以上）
+    if (req.method === 'GET' && p === '/api/swarm/codes') {
+      if (CFG.level < 2) return json(res, 403, { error: 'insufficient level' });
+      const list = Object.entries(accessCodes).map(([code, info]) => ({
+        code, ...info,
+        is_valid: isValidCode(code),
+      }));
+      return json(res, 200, { codes: list });
+    }
+
+    if (req.method === 'POST' && p === '/api/swarm/codes/generate') {
+      if (CFG.level < 2) return json(res, 403, { error: 'insufficient level' });
+      let body = '';
+      req.on('data', (c) => body += c);
+      req.on('end', () => {
+        try {
+          const { max_uses, expires_hours } = JSON.parse(body);
+          const code = generateCode();
+          accessCodes[code] = {
+            created: new Date().toISOString(),
+            created_by: identity.name,
+            max_uses: max_uses || 50,
+            expires: expires_hours ? new Date(Date.now() + expires_hours * 3600000).toISOString() : null,
+            used: 0,
+            revoked: false,
+          };
+          saveCodes();
+          auditAppend('code_generated', { code: code.slice(0, 2) + '***', max_uses: max_uses || 50 });
+          return json(res, 200, { code, ...accessCodes[code] });
+        } catch { return json(res, 400, { error: 'invalid body' }); }
+      });
+      return;
+    }
+
+    if (req.method === 'POST' && p === '/api/swarm/codes/revoke') {
+      if (CFG.level < 2) return json(res, 403, { error: 'insufficient level' });
+      let body = '';
+      req.on('data', (c) => body += c);
+      req.on('end', () => {
+        try {
+          const { code } = JSON.parse(body);
+          if (accessCodes[code]) {
+            accessCodes[code].revoked = true;
+            saveCodes();
+            auditAppend('code_revoked', { code: code.slice(0, 2) + '***' });
+            return json(res, 200, { revoked: true });
+          }
+          return json(res, 404, { error: 'code not found' });
+        } catch { return json(res, 400, { error: 'invalid body' }); }
+      });
+      return;
     }
 
     // 静态文件（Swarm Web UI）

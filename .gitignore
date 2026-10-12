@@ -41,3 +41,4 @@ protocol/tools/web/node_modules/
 protocol/swarm/web/dist/
 protocol/swarm/web/node_modules/
 protocol/data/
+protocol/data/swarm/config.json
