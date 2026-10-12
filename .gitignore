@@ -36,3 +36,5 @@ web/node_modules/
 web/preview.log
 web/public/data/brand-index.json
 data/agents/
+web/dist/
+protocol/tools/web/node_modules/

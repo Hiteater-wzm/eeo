@@ -173,6 +173,24 @@ const server = http.createServer((req, res) => {
       return json(res, 200, identityCard);
     }
 
+    // 静态文件（Agent Web UI）
+    if (req.method === 'GET') {
+      const webDir = path.join(__dirname, 'web', 'dist');
+      let filePath = p === '/' ? path.join(webDir, 'index.html') : path.join(webDir, p);
+      if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+        const ext = path.extname(filePath);
+        const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.json': 'application/json', '.ico': 'image/x-icon', '.woff2': 'font/woff2' };
+        const buf = fs.readFileSync(filePath);
+        res.writeHead(200, { 'Content-Type': mime[ext] || 'application/octet-stream', 'Cache-Control': ext === '.html' ? 'no-cache' : 'public,max-age=3600' });
+        return res.end(buf);
+      }
+      const indexFile = path.join(webDir, 'index.html');
+      if (fs.existsSync(indexFile)) {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        return res.end(fs.readFileSync(indexFile));
+      }
+    }
+
     return json(res, 404, { error: 'not found', available: ['/health', '/api/v1/brand/lookup', '/api/v1/brand/visibility', '/api/v1/audit', '/api/v1/agent/identity'] });
   } catch (e) {
     auditAppend('server_error', { path: p, error: String(e.message || e).slice(0, 200) });
