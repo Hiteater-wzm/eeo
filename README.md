@@ -13,17 +13,9 @@ Three components:
 
 | Component | What it answers | Status |
 |---|---|---|
-| Agent Identity Card | Who is this agent? | Spec + reference implementation |
-| Capability Manifest | What can it do? | Reference implementation |
-| Audit Chain | What did it do? | Reference implementation |
-
-Quick start:
-
-```bash
-node protocol/reference/agent.cjs init "My Agent"     # create identity card
-node protocol/reference/agent.cjs test              # run tools + view audit
-node protocol/reference/agent.cjs serve             # start as MCP server
-```
+| Agent Identity Card | Who is this agent? | Spec draft |
+| Capability Manifest | What can it do? | In progress |
+| Audit Chain | What did it do? | In progress |
 
 ## The infrastructure
 
@@ -77,6 +69,16 @@ node cli.cjs check 蜜雪冰城 --industry 餐饮
 ```
 
 No install, no npm dependencies (except `web/` which builds with Vite). Node 18+.
+
+### Self-hosting the audit tool
+
+`server.cjs` serves the audit UI and API. Optionally set `ACCESS_CODE` to require an access code before running audits — useful when engine API keys are configured, so strangers cannot spend your quota:
+
+```bash
+ACCESS_CODE=your-code node server.cjs
+```
+
+Without `ACCESS_CODE` the tool is open to anyone who can reach it.
 
 ## Measurement
 
