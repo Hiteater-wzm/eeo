@@ -7,7 +7,7 @@ Open infrastructure for AI agent identity, visibility measurement, and trust. On
 
 ## The protocol
 
-**EEO Protocol** ([protocol/](protocol/)) defines how AI agents register identity, declare capabilities, and record auditable interactions. MCP-compatible. The specification is open and the reference implementation uses the same zero-dependency Node.js philosophy as the rest of this repository.
+**EEO Protocol** ([protocol/](protocol/)) defines how AI agents register identity, declare capabilities, and record auditable interactions. MCP-compatible. The specification is open.
 
 Three components:
 
