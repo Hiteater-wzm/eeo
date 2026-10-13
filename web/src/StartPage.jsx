@@ -38,19 +38,19 @@ export default function StartPage({ onStart, busy }) {
       <div className="mt-8 border-[3px] border-black bg-white p-6 shadow-[8px_8px_0_#000] md:p-9">
         {step === 0 ? (
           <motion.div key="s0" initial={{ x: 32, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}>
-            <div className="py-12 text-center">
-              <ShieldCheck size={40} strokeWidth={2} className="mx-auto mb-4" />
-              <div className="text-xl font-black">本工具凭申请码使用</div>
-              <p className="mt-2 text-[13px] font-medium text-zinc-600">请输入管理员发放的申请码</p>
+            <div className="py-16 text-center">
+              <div className="mx-auto mb-5 inline-block border-2 border-black bg-[#FFDE59] px-4 py-1.5 text-[12px] font-black tracking-widest shadow-[3px_3px_0_#000]">EEO 体检 凭码使用</div>
+              <div className="text-xl font-black">请输入申请码</div>
+              <p className="mt-2 text-[13px] font-medium text-zinc-600">申请码由管理员发放 未获取请勿填入</p>
               <input
                 value={form.access_code}
                 onChange={set('access_code')}
                 onKeyDown={(e) => e.key === 'Enter' && submitCode()}
-                placeholder="输入申请码"
-                className="mx-auto mt-6 block w-64 border-2 border-black bg-white px-4 py-3 text-center text-lg font-bold uppercase tracking-widest outline-none focus:bg-[#FFDE59]"
+                placeholder="申请码"
+                className="mx-auto mt-8 block w-64 border-2 border-black bg-white px-4 py-3 text-center text-lg font-bold uppercase tracking-widest outline-none focus:bg-[#FFDE59] focus:shadow-[4px_4px_0_#000]"
               />
               {codeError && <p className="mt-3 text-[13px] font-bold text-red-600">{codeError}</p>}
-              <button className="btn-primary mt-6 px-10 py-2.5 text-[15px]" onClick={submitCode} disabled={!form.access_code.trim()}>
+              <button className="btn-primary mt-8 px-10 py-2.5 text-[15px]" onClick={submitCode} disabled={!form.access_code.trim()}>
                 验证进入<ArrowRight size={15} strokeWidth={2.5} />
               </button>
             </div>

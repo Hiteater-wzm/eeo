@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // GitHub Pages 项目站点地址为 https://hiteater-wzm.github.io/eeo/，base 必须是 /eeo/。
 // 自建部署在 /geo/ 路径下时，用 `VITE_BASE=/geo/ vite build` 重建（路由前缀会跟随 base）。
-const BASE = process.env.VITE_BASE || '/eeo/';
+const BASE = '/geo/';
 
 // GitHub Pages 静态托管没有 SPA 重写规则：把 index.html 复制一份为 404.html，
 // 深链（如 /eeo/directory）落到 404.html 时照样拉起 SPA，路由按 pathname 正常渲染。

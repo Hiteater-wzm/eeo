@@ -228,7 +228,7 @@ export default function App() {
   }, [isReport, rstate, loadReport]);
 
   // 站点门面 = 品牌目录（白底 SPA 不套体检头尾）；体检工具首页在 /audit
-  if (page === '/') return <BrandDirectoryApp initialView="home" />;
+  // 服务器部署：体检在根，目录在子路径
   if (page === '/directory') return <BrandDirectoryApp initialView="directory" />;
 
   return (
@@ -239,7 +239,7 @@ export default function App() {
           {isReport && rstate?.view === 'run' && <RunView status={rstate.status} />}
           {isReport && rstate?.view === 'report' && <ReportView rep={rstate.rep} onBack={() => nav('/')} />}
           {isReport && rstate?.view === 'err' && <ErrView err={rstate.err} onBack={() => nav('/')} />}
-          {page === '/audit' && <Home />}
+          {page === '/' && <Home />}
           {page === '/method' && <MethodPage nav={nav} />}
           {page === '/start' && <StartPage onStart={start} busy={busy} />}
           {page === '/crawler' && <CrawlerPage />}
